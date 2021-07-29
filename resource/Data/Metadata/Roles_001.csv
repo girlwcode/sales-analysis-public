@@ -1,0 +1,5 @@
+Role Id,Role Name,Reports To Id,Share Data with Peers,Category,Description,Forecast Manager Id
+zcrm_1920545000000026005,Managing Director,,true,false,crm.security.role.admin.desc,
+zcrm_1920545000002593007,Sales,zcrm_1920545000000026005,true,true,,
+zcrm_1920545000016869025,Customer Success,zcrm_1920545000000026005,true,true,Customer Support,
+zcrm_1920545000022623001,Logistic,zcrm_1920545000000026005,true,true,,

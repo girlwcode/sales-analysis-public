@@ -1,0 +1,516 @@
+Translation Id,Language Code Id,Translated Value,Type
+zcrm_1920545000000003303,zcrm_en_US,References,1
+zcrm_1920545000000003305,zcrm_en_US,Event,1
+zcrm_1920545000000003319,zcrm_en_US,Inbound,1
+zcrm_1920545000000003323,zcrm_en_US,Outbound,1
+zcrm_1920545000000003389,zcrm_en_US,Outbound - cold visit,1
+zcrm_1920545000000003415,zcrm_en_US,Private Medical,1
+zcrm_1920545000000003421,zcrm_en_US,Sports,1
+zcrm_1920545000000003439,zcrm_en_US,Government Medical,1
+zcrm_1920545000000006803,zcrm_en_US,2. C- Consideration,1
+zcrm_1920545000000006805,zcrm_en_US,3. B- Negotiation,1
+zcrm_1920545000000006811,zcrm_en_US,5. Confirmed (Partial Payment),1
+zcrm_1920545000000097439,zcrm_en_US,Government Medical,1
+zcrm_1920545000000097445,zcrm_en_US,Hospitality,1
+zcrm_1920545000000686318,zcrm_en_US,Product,2
+zcrm_1920545000000686336,zcrm_en_US,BSM370,1
+zcrm_1920545000000686340,zcrm_en_US,Inkids,1
+zcrm_1920545000000686352,zcrm_en_US,State-,2
+zcrm_1920545000000686430,zcrm_en_US,Billing State-,2
+zcrm_1920545000002374055,zcrm_en_US,InBody 170,1
+zcrm_1920545000002374057,zcrm_en_US,InBody R20,1
+zcrm_1920545000002676172,zcrm_en_US,Academic,1
+zcrm_1920545000002703107,zcrm_en_US,InBody 720,1
+zcrm_1920545000002899100,zcrm_en_US,Fitness,1
+zcrm_1920545000002899104,zcrm_en_US,Defense,1
+zcrm_1920545000006748013,zcrm_en_US,GST Registration Number,2
+zcrm_1920545000015697221,zcrm_en_US,Sales Route,2
+zcrm_1920545000015703606,zcrm_en_US,Zone,2
+zcrm_1920545000019022005,zcrm_en_US,4. A- Verbal Approval,1
+zcrm_1920545000019117038,zcrm_en_US,Need,2
+zcrm_1920545000019117042,zcrm_en_US,Time,2
+zcrm_1920545000019117046,zcrm_en_US,Budget,2
+zcrm_1920545000019117050,zcrm_en_US,Authority,2
+zcrm_1920545000019117105,zcrm_en_US,On the basis of Budget,2
+zcrm_1920545000019117109,zcrm_en_US,On the basis of Authority,2
+zcrm_1920545000019117113,zcrm_en_US,On the basis of Need,2
+zcrm_1920545000019117117,zcrm_en_US,On the basis of Time,2
+zcrm_1920545000019117121,zcrm_en_US,Total Score,2
+zcrm_1920545000022036003,zcrm_en_US,Inbound,1
+zcrm_1920545000022405230,zcrm_en_US,Fitness,1
+zcrm_1920545000022747632,zcrm_en_US,1.  D- Qualified Deal,1
+zcrm_1920545000022747636,zcrm_en_US,Discount Approval,1
+zcrm_1920545000022747640,zcrm_en_US,Discount Rejected,1
+zcrm_1920545000022753044,zcrm_en_US,D evaluate,2
+zcrm_1920545000022753664,zcrm_en_US,Inbound,1
+zcrm_1920545000022753666,zcrm_en_US,Inbound-IndiaMart,1
+zcrm_1920545000022753668,zcrm_en_US,Outbound - cold visit,1
+zcrm_1920545000022753670,zcrm_en_US,InBody Seminar,1
+zcrm_1920545000022753672,zcrm_en_US,Client referral,1
+zcrm_1920545000022753674,zcrm_en_US,Customer service,1
+zcrm_1920545000022753676,zcrm_en_US,Tender,1
+zcrm_1920545000022753678,zcrm_en_US,Inbound-Call,1
+zcrm_1920545000022753680,zcrm_en_US,Exhibition,1
+zcrm_1920545000022753682,zcrm_en_US,Dealer referral,1
+zcrm_1920545000022753701,zcrm_en_US,Outbound - cold call,1
+zcrm_1920545000022753710,zcrm_en_US,Outbound - cold call cold mail,1
+zcrm_1920545000022772005,zcrm_en_US,1D,1
+zcrm_1920545000022772009,zcrm_en_US,1. A,1
+zcrm_1920545000022779001,zcrm_en_US,Start,1
+zcrm_1920545000022779023,zcrm_en_US,Discount,2
+zcrm_1920545000022934232,zcrm_en_US,Type of Meeting/ Event,2
+zcrm_1920545000022934234,zcrm_en_US,Followup Visit,1
+zcrm_1920545000022934236,zcrm_en_US,New lead/ Cold Visit,1
+zcrm_1920545000022934238,zcrm_en_US,Event,1
+zcrm_1920545000022934240,zcrm_en_US,Cold Visit,1
+zcrm_1920545000022934257,zcrm_en_US,Demo,1
+zcrm_1920545000022934281,zcrm_en_US,Closing Meeting,1
+zcrm_1920545000022934290,zcrm_en_US,CS Visit,1
+zcrm_1920545000022934292,zcrm_en_US,Existing User Visit,1
+zcrm_1920545000022977019,zcrm_en_US,Sub-Industry,2
+zcrm_1920545000022977021,zcrm_en_US,High Budget Fitness,1
+zcrm_1920545000022977023,zcrm_en_US,Low budget Fitness,1
+zcrm_1920545000022977068,zcrm_en_US,Hospitality,1
+zcrm_1920545000022977073,zcrm_en_US,Physio and rehab,1
+zcrm_1920545000022977076,zcrm_en_US,Defense,1
+zcrm_1920545000022977078,zcrm_en_US,Dealer,1
+zcrm_1920545000022977098,zcrm_en_US,Corporate Wellness,1
+zcrm_1920545000022977100,zcrm_en_US,Diagnostic Center,1
+zcrm_1920545000022977102,zcrm_en_US,Nephrology,1
+zcrm_1920545000022977104,zcrm_en_US,Medium Budget Fitness,1
+zcrm_1920545000022977106,zcrm_en_US,Bariatric,1
+zcrm_1920545000022977108,zcrm_en_US,Pharmacy,1
+zcrm_1920545000022977110,zcrm_en_US,Slimming Center,1
+zcrm_1920545000022977112,zcrm_en_US,Diabetic,1
+zcrm_1920545000022977134,zcrm_en_US,Army,1
+zcrm_1920545000022977136,zcrm_en_US,Spa,1
+zcrm_1920545000022977138,zcrm_en_US,Paramilitary,1
+zcrm_1920545000022977140,zcrm_en_US,Sports Team,1
+zcrm_1920545000022977142,zcrm_en_US,Academic,1
+zcrm_1920545000022977144,zcrm_en_US,Police,1
+zcrm_1920545000022977146,zcrm_en_US,Navy,1
+zcrm_1920545000022977148,zcrm_en_US,Gynaecologist,1
+zcrm_1920545000022977150,zcrm_en_US,Airforce,1
+zcrm_1920545000022977152,zcrm_en_US,Medical,1
+zcrm_1920545000022977154,zcrm_en_US,Sports Club,1
+zcrm_1920545000022977156,zcrm_en_US,Physiotherapist,1
+zcrm_1920545000022977158,zcrm_en_US,Re-habitation,1
+zcrm_1920545000022977160,zcrm_en_US,Hotel,1
+zcrm_1920545000022977162,zcrm_en_US,Fitness,1
+zcrm_1920545000022989909,zcrm_en_US,Email,2
+zcrm_1920545000022989914,zcrm_en_US,Mobile,2
+zcrm_1920545000023017001,zcrm_en_US,Sub Lead Source,2
+zcrm_1920545000023017003,zcrm_en_US,call,1
+zcrm_1920545000023017005,zcrm_en_US,Homepage,1
+zcrm_1920545000023017007,zcrm_en_US,Indiamart,1
+zcrm_1920545000023017009,zcrm_en_US,Cold call,1
+zcrm_1920545000023017011,zcrm_en_US,Cold Visit,1
+zcrm_1920545000023017013,zcrm_en_US,Exhibition,1
+zcrm_1920545000023017015,zcrm_en_US,Seminar,1
+zcrm_1920545000023017017,zcrm_en_US,Academia,1
+zcrm_1920545000023017019,zcrm_en_US,Client reference,1
+zcrm_1920545000023017021,zcrm_en_US,Dealer reference,1
+zcrm_1920545000023017023,zcrm_en_US,Employee reference,1
+zcrm_1920545000023017025,zcrm_en_US,External reference,1
+zcrm_1920545000023017065,zcrm_en_US,Outbound,1
+zcrm_1920545000023017067,zcrm_en_US,Tendor,1
+zcrm_1920545000023017069,zcrm_en_US,Reference,1
+zcrm_1920545000023017071,zcrm_en_US,Customer-Service,1
+zcrm_1920545000023017073,zcrm_en_US,Event,1
+zcrm_1920545000023017086,zcrm_en_US,Government,1
+zcrm_1920545000023017088,zcrm_en_US,Private,1
+zcrm_1920545000023040249,zcrm_en_US,General Medicine,1
+zcrm_1920545000023071087,zcrm_en_US,Corporates,1
+zcrm_1920545000023423001,zcrm_en_US,New Market Visit,2
+zcrm_1920545000023423208,zcrm_en_US,New Market,2
+zcrm_1920545000023423210,zcrm_en_US,Yes,1
+zcrm_1920545000023423212,zcrm_en_US,No,1
+zcrm_1920545000023508100,zcrm_en_US,Edit,2
+zcrm_1920545000023656172,zcrm_en_US,Cosmetologist,1
+zcrm_1920545000023656174,zcrm_en_US,Wellness,1
+zcrm_1920545000023656184,zcrm_en_US,Cosmetologist,1
+zcrm_1920545000023656186,zcrm_en_US,Wellness,1
+zcrm_1920545000023812117,zcrm_en_US,Deposit,2
+zcrm_1920545000023812153,zcrm_en_US,Deposit amount,2
+zcrm_1920545000023812161,zcrm_en_US,Other,1
+zcrm_1920545000023812174,zcrm_en_US,Payment terms,2
+zcrm_1920545000023812749,zcrm_en_US,Payment terms(days),2
+zcrm_1920545000023868065,zcrm_en_US,State,2
+zcrm_1920545000023868083,zcrm_en_US,State,2
+zcrm_1920545000023868085,zcrm_en_US,Andhra Pradesh,1
+zcrm_1920545000023868087,zcrm_en_US,Arunachal Pradesh,1
+zcrm_1920545000023868089,zcrm_en_US,Assam,1
+zcrm_1920545000023868091,zcrm_en_US,Bihar,1
+zcrm_1920545000023868093,zcrm_en_US,Chhattisgarh,1
+zcrm_1920545000023868095,zcrm_en_US,Goa,1
+zcrm_1920545000023868097,zcrm_en_US,Gujarat,1
+zcrm_1920545000023868099,zcrm_en_US,Haryana,1
+zcrm_1920545000023868101,zcrm_en_US,Himachal Pradesh,1
+zcrm_1920545000023868103,zcrm_en_US,Jharkhand,1
+zcrm_1920545000023868105,zcrm_en_US,Karnataka,1
+zcrm_1920545000023868107,zcrm_en_US,Kerala,1
+zcrm_1920545000023868109,zcrm_en_US,Madhya Pradesh,1
+zcrm_1920545000023868111,zcrm_en_US,Maharashtra,1
+zcrm_1920545000023868113,zcrm_en_US,Manipur,1
+zcrm_1920545000023868115,zcrm_en_US,Meghalaya,1
+zcrm_1920545000023868117,zcrm_en_US,Mizoram,1
+zcrm_1920545000023868119,zcrm_en_US,Nagaland,1
+zcrm_1920545000023868121,zcrm_en_US,Odisha,1
+zcrm_1920545000023868123,zcrm_en_US,Punjab,1
+zcrm_1920545000023868125,zcrm_en_US,Rajasthan,1
+zcrm_1920545000023868127,zcrm_en_US,Sikkim,1
+zcrm_1920545000023868129,zcrm_en_US,Tamil Nadu,1
+zcrm_1920545000023868131,zcrm_en_US,Telangana,1
+zcrm_1920545000023868133,zcrm_en_US,Tripura,1
+zcrm_1920545000023868135,zcrm_en_US,Uttar Pradesh,1
+zcrm_1920545000023868137,zcrm_en_US,Uttarakhand,1
+zcrm_1920545000023868139,zcrm_en_US,West Bengal,1
+zcrm_1920545000023868141,zcrm_en_US,Andaman and Nicobar Islands,1
+zcrm_1920545000023868143,zcrm_en_US,Dadar and Nagar Haveli,1
+zcrm_1920545000023868145,zcrm_en_US,Chandigarh,1
+zcrm_1920545000023868147,zcrm_en_US,Daman and Diu,1
+zcrm_1920545000023868149,zcrm_en_US,Lakshadweep,1
+zcrm_1920545000023868151,zcrm_en_US,Puducherry,1
+zcrm_1920545000023868153,zcrm_en_US,National Capital Region of Delhi,1
+zcrm_1920545000023890005,zcrm_en_US,Jammu and Kashmir,1
+zcrm_1920545000023890007,zcrm_en_US,Ladakh,1
+zcrm_1920545000023890023,zcrm_en_US,Campaign,1
+zcrm_1920545000023890078,zcrm_en_US,Pediatric,1
+zcrm_1920545000023890188,zcrm_en_US,Forecast,2
+zcrm_1920545000024138119,zcrm_en_US,Machine,2
+zcrm_1920545000024138121,zcrm_en_US,InBody 770,1
+zcrm_1920545000024138123,zcrm_en_US,InBody 120,1
+zcrm_1920545000024138125,zcrm_en_US,InBody 370s,1
+zcrm_1920545000024138127,zcrm_en_US,InBody 570,1
+zcrm_1920545000024138129,zcrm_en_US,InBody 270,1
+zcrm_1920545000024144162,zcrm_en_US,Machine,2
+zcrm_1920545000024144164,zcrm_en_US,InBody 770,1
+zcrm_1920545000024144166,zcrm_en_US,InBody 120,1
+zcrm_1920545000024144168,zcrm_en_US,InBody 370s,1
+zcrm_1920545000024144170,zcrm_en_US,InBody 570,1
+zcrm_1920545000024144172,zcrm_en_US,InBody 270,1
+zcrm_1920545000024144174,zcrm_en_US,Lookin Body 120,1
+zcrm_1920545000024168235,zcrm_en_US,Warranty,2
+zcrm_1920545000024221847,zcrm_en_US,Private Medical,1
+zcrm_1920545000024302188,zcrm_en_US,BP170,1
+zcrm_1920545000024411971,zcrm_en_US,10. Warm lead,1
+zcrm_1920545000024539067,zcrm_en_US,Forecast,2
+zcrm_1920545000024539132,zcrm_en_US,Dietitian,1
+zcrm_1920545000024631267,zcrm_en_US,Installation,1
+zcrm_1920545000024899001,zcrm_en_US,Doctor's Bazaar,1
+zcrm_1920545000024915057,zcrm_en_US,West2,1
+zcrm_1920545000025134001,zcrm_en_US,Overseas,1
+zcrm_1920545000025508097,zcrm_en_US,KOL's Reference,1
+zcrm_1920545000026034064,zcrm_en_US,InBody Dial,1
+zcrm_1920545000026034066,zcrm_en_US,BP Bio,1
+zcrm_1920545000026034068,zcrm_en_US,Others,1
+zcrm_1920545000026034070,zcrm_en_US,InBody Band Strap,1
+zcrm_1920545000026034072,zcrm_en_US,InBody J30,1
+zcrm_1920545000026034074,zcrm_en_US,Service,1
+zcrm_1920545000026034076,zcrm_en_US,Rent,1
+zcrm_1920545000026436009,zcrm_en_US,BPBIO750,1
+zcrm_1920545000026436011,zcrm_en_US,BPBIO250,1
+zcrm_1920545000026436138,zcrm_en_US,InBodyJ30,1
+zcrm_1920545000026699021,zcrm_en_US,Recurring,1
+zcrm_1920545000026699036,zcrm_en_US,Other,1
+zcrm_1920545000026699043,zcrm_en_US,Franchise,1
+zcrm_1920545000026739027,zcrm_en_US,Outbound,1
+zcrm_1920545000026739029,zcrm_en_US,Reference,1
+zcrm_1920545000026739031,zcrm_en_US,Event,1
+zcrm_1920545000026739033,zcrm_en_US,Dealer,1
+zcrm_1920545000026739035,zcrm_en_US,Other,1
+zcrm_1920545000026739076,zcrm_en_US,Recurring,1
+zcrm_1920545000026862001,zcrm_en_US,Sub Lead Source,2
+zcrm_1920545000026862003,zcrm_en_US,Call,1
+zcrm_1920545000026862005,zcrm_en_US,Homepage,1
+zcrm_1920545000026862007,zcrm_en_US,Indiamart,1
+zcrm_1920545000026862009,zcrm_en_US,Doctor's Bazaar,1
+zcrm_1920545000026862011,zcrm_en_US,Cold call,1
+zcrm_1920545000026862013,zcrm_en_US,Cold Visit,1
+zcrm_1920545000026862015,zcrm_en_US,Email,1
+zcrm_1920545000026862017,zcrm_en_US,client reference,1
+zcrm_1920545000026862019,zcrm_en_US,Dealer reference,1
+zcrm_1920545000026862021,zcrm_en_US,Other reference,1
+zcrm_1920545000026862023,zcrm_en_US,Seminar,1
+zcrm_1920545000026862025,zcrm_en_US,Trade show,1
+zcrm_1920545000026862027,zcrm_en_US,Other,1
+zcrm_1920545000026975004,zcrm_en_US,Sales Person,2
+zcrm_1920545000026975006,zcrm_en_US,Anees Mukhtar,1
+zcrm_1920545000026975008,zcrm_en_US,Ayan,1
+zcrm_1920545000026975010,zcrm_en_US,Ashwini Dixit,1
+zcrm_1920545000026975012,zcrm_en_US,Gurraj Singh,1
+zcrm_1920545000026975014,zcrm_en_US,Afnan Mohammed,1
+zcrm_1920545000026975016,zcrm_en_US,Mahesh Gulwani,1
+zcrm_1920545000026975018,zcrm_en_US,Shubham Tonk,1
+zcrm_1920545000026975020,zcrm_en_US,Arun Sharma,1
+zcrm_1920545000026975022,zcrm_en_US,Nasir,1
+zcrm_1920545000026975024,zcrm_en_US,Karn Sharma,1
+zcrm_1920545000026975026,zcrm_en_US,Taukheer Ahmed,1
+zcrm_1920545000026975028,zcrm_en_US,Nihal Pawar,1
+zcrm_1920545000026975030,zcrm_en_US,Dixita Sharma,1
+zcrm_1920545000026975052,zcrm_en_US,Sales Person,2
+zcrm_1920545000026975054,zcrm_en_US,Anees Mukhtar,1
+zcrm_1920545000026975056,zcrm_en_US,Ayan,1
+zcrm_1920545000026975058,zcrm_en_US,Ashwini Dixit,1
+zcrm_1920545000026975060,zcrm_en_US,Gurraj Singh,1
+zcrm_1920545000026975062,zcrm_en_US,Mohammad Afnan,1
+zcrm_1920545000026975064,zcrm_en_US,Mahesh Gulwani,1
+zcrm_1920545000026975066,zcrm_en_US,Shubham Tonk,1
+zcrm_1920545000026975068,zcrm_en_US,Arun Sharma,1
+zcrm_1920545000026975070,zcrm_en_US,Nasir,1
+zcrm_1920545000026975072,zcrm_en_US,Karn Sharma,1
+zcrm_1920545000026975074,zcrm_en_US,Taukheer Ahmed,1
+zcrm_1920545000026975076,zcrm_en_US,Nihal Pawar,1
+zcrm_1920545000026975078,zcrm_en_US,Dixiata Sharma,1
+zcrm_1920545000026975100,zcrm_en_US,Sales Person,2
+zcrm_1920545000026975102,zcrm_en_US,Anees Mukhtar,1
+zcrm_1920545000026975104,zcrm_en_US,Ayan,1
+zcrm_1920545000026975106,zcrm_en_US,Ashwini Dixit,1
+zcrm_1920545000026975108,zcrm_en_US,Gurraj Singh,1
+zcrm_1920545000026975110,zcrm_en_US,Afnan Mohammed,1
+zcrm_1920545000026975112,zcrm_en_US,Mahesh Gulwani,1
+zcrm_1920545000026975114,zcrm_en_US,Shubham Tonk,1
+zcrm_1920545000026975116,zcrm_en_US,Arun Sharma,1
+zcrm_1920545000026975118,zcrm_en_US,Nasir,1
+zcrm_1920545000026975120,zcrm_en_US,Karn Sharma,1
+zcrm_1920545000026975122,zcrm_en_US,Taukheer Ahmed,1
+zcrm_1920545000026975124,zcrm_en_US,Nihal Pawar,1
+zcrm_1920545000026975126,zcrm_en_US,Dixita Sharma,1
+zcrm_1920545000026975148,zcrm_en_US,Sales Person,2
+zcrm_1920545000026975150,zcrm_en_US,Anees Mukhtar,1
+zcrm_1920545000026975152,zcrm_en_US,Ayan,1
+zcrm_1920545000026975154,zcrm_en_US,Ashwini Dixit,1
+zcrm_1920545000026975156,zcrm_en_US,Gurraj Singh,1
+zcrm_1920545000026975158,zcrm_en_US,Afnan Mohammed,1
+zcrm_1920545000026975160,zcrm_en_US,Mahesh Gulwani,1
+zcrm_1920545000026975162,zcrm_en_US,Shubham Tonk,1
+zcrm_1920545000026975164,zcrm_en_US,Arun Sharma,1
+zcrm_1920545000026975166,zcrm_en_US,Nasir,1
+zcrm_1920545000026975168,zcrm_en_US,Karn Sharma,1
+zcrm_1920545000026975170,zcrm_en_US,Taukheer Ahmed,1
+zcrm_1920545000026975172,zcrm_en_US,Nihal Pawar,1
+zcrm_1920545000026975174,zcrm_en_US,Dixiata Sharma,1
+zcrm_1920545000027026520,zcrm_en_US,Kenneth Cha,1
+zcrm_1920545000027026527,zcrm_en_US,Kenneth Cha,1
+zcrm_1920545000027032949,zcrm_en_US,Kenneth Cha,1
+zcrm_1920545000027048179,zcrm_en_US,Overseas,1
+zcrm_1920545000027048318,zcrm_en_US,Chris Shin,1
+zcrm_1920545000027048661,zcrm_en_US,Chris Shin,1
+zcrm_1920545000027048668,zcrm_en_US,Chris Shin,1
+zcrm_1920545000027048745,zcrm_en_US,Chris Shin,1
+zcrm_1920545000027100004,zcrm_en_US,AMZ/CS/Other,1
+zcrm_1920545000027208258,zcrm_en_US,Sales Person,2
+zcrm_1920545000027208260,zcrm_en_US,Anees Mukhtar,1
+zcrm_1920545000027208262,zcrm_en_US,Ashwini Dixit,1
+zcrm_1920545000027208264,zcrm_en_US,Amey Naik,1
+zcrm_1920545000027208266,zcrm_en_US,Gurraj Singh,1
+zcrm_1920545000027208268,zcrm_en_US,Afnan Mohammed,1
+zcrm_1920545000027208270,zcrm_en_US,Mahesh Gulwani,1
+zcrm_1920545000027208272,zcrm_en_US,Shubham Tonk,1
+zcrm_1920545000027208274,zcrm_en_US,Arun Sharma,1
+zcrm_1920545000027208276,zcrm_en_US,Nasir,1
+zcrm_1920545000027208278,zcrm_en_US,Karn Sharma,1
+zcrm_1920545000027208280,zcrm_en_US,Nihal Pawar,1
+zcrm_1920545000027208282,zcrm_en_US,Taukheer Ahmed,1
+zcrm_1920545000027208284,zcrm_en_US,Dixita Sharma,1
+zcrm_1920545000028024001,zcrm_en_US,InBody Band 2,1
+zcrm_1920545000028384006,zcrm_en_US,BSM 370,1
+zcrm_1920545000028384008,zcrm_en_US,LookinBody,1
+zcrm_1920545000028384010,zcrm_en_US,Printer,1
+zcrm_1920545000028384012,zcrm_en_US,BPBIO,1
+zcrm_1920545000028384014,zcrm_en_US,InBody S10,1
+zcrm_1920545000028384016,zcrm_en_US,BSM 170,1
+zcrm_1920545000028570001,zcrm_en_US,Aaruni Sinha,1
+zcrm_1920545000029095001,zcrm_en_US,Prasad Gosavi,1
+zcrm_1920545000029095008,zcrm_en_US,Aaruni Sinha,1
+zcrm_1920545000029095010,zcrm_en_US,Prasad Gosavi,1
+zcrm_1920545000029095018,zcrm_en_US,Aaruni Sinha,1
+zcrm_1920545000029095020,zcrm_en_US,Prasad Gosavi,1
+zcrm_1920545000029095026,zcrm_en_US,Aaruni Sinha,1
+zcrm_1920545000029095028,zcrm_en_US,Prasad Gosavi,1
+zcrm_1920545000029095036,zcrm_en_US,Aaruni Sinha,1
+zcrm_1920545000029095038,zcrm_en_US,Prasad Gosavi,1
+zcrm_1920545000029531001,zcrm_en_US,Mrunal Sardar,1
+zcrm_1920545000029531008,zcrm_en_US,Mrunal Sardar,1
+zcrm_1920545000029531015,zcrm_en_US,Mrunal Sardar,1
+zcrm_1920545000029531020,zcrm_en_US,Mrunal Sardar,1
+zcrm_1920545000029947456,zcrm_en_US,Referral Partner,1
+zcrm_1920545000029972001,zcrm_en_US,Channel Partner,1
+zcrm_1920545000029972003,zcrm_en_US,Dealer,1
+zcrm_1920545000030665011,zcrm_en_US,Ayan,1
+zcrm_1920545000032130057,zcrm_en_US,Campaign Subject,2
+zcrm_1920545000032130064,zcrm_en_US,Sender Name,2
+zcrm_1920545000032130070,zcrm_en_US,Sender Address,2
+zcrm_1920545000032130072,zcrm_en_US,dummy1,1
+zcrm_1920545000032130074,zcrm_en_US,dummy2,1
+zcrm_1920545000032130085,zcrm_en_US,Reply-to Address,2
+zcrm_1920545000032130087,zcrm_en_US,dummy1,1
+zcrm_1920545000032130089,zcrm_en_US,dummy2,1
+zcrm_1920545000032637001,zcrm_en_US,Standard (Standard),1
+zcrm_1920545000032666001,zcrm_en_US,4-1. Negotiation,1
+zcrm_1920545000032679109,zcrm_en_US,Dealer/Referral  Name,2
+zcrm_1920545000032684615,zcrm_en_US,Mobile,2
+zcrm_1920545000032684621,zcrm_en_US,Percentage,1
+zcrm_1920545000032684622,zcrm_en_US,Commission Based on,2
+zcrm_1920545000032684625,zcrm_en_US,Fixed commission,1
+zcrm_1920545000032684635,zcrm_en_US,Phone,2
+zcrm_1920545000032684641,zcrm_en_US,First Name,2
+zcrm_1920545000032684647,zcrm_en_US,Last Name,2
+zcrm_1920545000032684783,zcrm_en_US,Commission percent,2
+zcrm_1920545000032684796,zcrm_en_US,Referral,2
+zcrm_1920545000032684827,zcrm_en_US,Referral,2
+zcrm_1920545000032739048,zcrm_en_US,Instagram,1
+zcrm_1920545000032739057,zcrm_en_US,Instagram,1
+zcrm_1920545000032739176,zcrm_en_US,CS/Amazon/Other,1
+zcrm_1920545000033155129,zcrm_en_US,Ankita,1
+zcrm_1920545000033155134,zcrm_en_US,Ankita,1
+zcrm_1920545000033155141,zcrm_en_US,Ankita,1
+zcrm_1920545000033155146,zcrm_en_US,Ankita,1
+zcrm_1920545000034139329,zcrm_en_US,Endocrinologist,1
+zcrm_1920545000034440003,zcrm_en_US,Sub industry,2
+zcrm_1920545000034440005,zcrm_en_US,Low Budget Fitness,1
+zcrm_1920545000034440007,zcrm_en_US,Medium Budget Fitness,1
+zcrm_1920545000034440009,zcrm_en_US,High Budget Fitness,1
+zcrm_1920545000034440011,zcrm_en_US,Dietician,1
+zcrm_1920545000034440013,zcrm_en_US,Slimming Centers,1
+zcrm_1920545000034440015,zcrm_en_US,Corporate Wellness,1
+zcrm_1920545000034440017,zcrm_en_US,Pharmacy,1
+zcrm_1920545000034440019,zcrm_en_US,Diagnostic Center,1
+zcrm_1920545000034440021,zcrm_en_US,Diabetic,1
+zcrm_1920545000034440023,zcrm_en_US,Bariatric,1
+zcrm_1920545000034440025,zcrm_en_US,Nephrology,1
+zcrm_1920545000034440027,zcrm_en_US,Physiotherapist,1
+zcrm_1920545000034440029,zcrm_en_US,Re-Habitation,1
+zcrm_1920545000034440031,zcrm_en_US,Gynaecologist,1
+zcrm_1920545000034440033,zcrm_en_US,Hotel,1
+zcrm_1920545000034440035,zcrm_en_US,Spa,1
+zcrm_1920545000034440037,zcrm_en_US,Navy,1
+zcrm_1920545000034440039,zcrm_en_US,Army,1
+zcrm_1920545000034440041,zcrm_en_US,Police,1
+zcrm_1920545000034440043,zcrm_en_US,Paramilitary,1
+zcrm_1920545000034440045,zcrm_en_US,Airforce,1
+zcrm_1920545000034440047,zcrm_en_US,Fitness,1
+zcrm_1920545000034440049,zcrm_en_US,Medical,1
+zcrm_1920545000034440051,zcrm_en_US,Academic,1
+zcrm_1920545000034440053,zcrm_en_US,Sports Club,1
+zcrm_1920545000034440055,zcrm_en_US,Sports Team,1
+zcrm_1920545000034440057,zcrm_en_US,General Medicine,1
+zcrm_1920545000034440059,zcrm_en_US,Wellness,1
+zcrm_1920545000034440061,zcrm_en_US,Cosmetologist,1
+zcrm_1920545000034440063,zcrm_en_US,Pediatric,1
+zcrm_1920545000034440065,zcrm_en_US,Endocrinologist,1
+zcrm_1920545000034440106,zcrm_en_US,Individual,1
+zcrm_1920545000034440108,zcrm_en_US,Academic,1
+zcrm_1920545000034440110,zcrm_en_US,Corporates,1
+zcrm_1920545000034440112,zcrm_en_US,Sports,1
+zcrm_1920545000034440130,zcrm_en_US,Dealer,1
+zcrm_1920545000034627001,zcrm_en_US,Warranty,2
+zcrm_1920545000034627003,zcrm_en_US,Under warranty,1
+zcrm_1920545000034627005,zcrm_en_US,Over Warranty,1
+zcrm_1920545000034724011,zcrm_en_US,Contact Person,2
+zcrm_1920545000035203001,zcrm_en_US,InBody260,1
+zcrm_1920545000035418003,zcrm_en_US,10.Archive,1
+zcrm_1920545000035439006,zcrm_en_US,Amazon/CS,1
+zcrm_1920545000035699201,zcrm_en_US,Facebook,1
+zcrm_1920545000035699208,zcrm_en_US,Facebook,1
+zcrm_1920545000035854646,zcrm_en_US,Do they having Budget,2
+zcrm_1920545000035854648,zcrm_en_US,Yes,1
+zcrm_1920545000035854650,zcrm_en_US,No,1
+zcrm_1920545000035854663,zcrm_en_US,Do they having Authority,2
+zcrm_1920545000035854665,zcrm_en_US,Yes,1
+zcrm_1920545000035854667,zcrm_en_US,No,1
+zcrm_1920545000035854680,zcrm_en_US,Do they having Need,2
+zcrm_1920545000035854682,zcrm_en_US,Yes,1
+zcrm_1920545000035854684,zcrm_en_US,No,1
+zcrm_1920545000035854697,zcrm_en_US,Requirement time is short?,2
+zcrm_1920545000035854699,zcrm_en_US,Yes,1
+zcrm_1920545000035854701,zcrm_en_US,No,1
+zcrm_1920545000035854801,zcrm_en_US,Authority?,2
+zcrm_1920545000035854803,zcrm_en_US,Yes,1
+zcrm_1920545000035854805,zcrm_en_US,No,1
+zcrm_1920545000035854816,zcrm_en_US,Budget?,2
+zcrm_1920545000035854818,zcrm_en_US,Yes,1
+zcrm_1920545000035854820,zcrm_en_US,No,1
+zcrm_1920545000035854831,zcrm_en_US,Timeline?,2
+zcrm_1920545000035854833,zcrm_en_US,Yes,1
+zcrm_1920545000035854835,zcrm_en_US,No,1
+zcrm_1920545000035854846,zcrm_en_US,Need?,2
+zcrm_1920545000035854848,zcrm_en_US,Yes,1
+zcrm_1920545000035854850,zcrm_en_US,No,1
+zcrm_1920545000036266001,zcrm_en_US,Corporates,1
+zcrm_1920545000036266003,zcrm_en_US,Other,1
+zcrm_1920545000036266011,zcrm_en_US,Corporates,1
+zcrm_1920545000036266013,zcrm_en_US,Other,1
+zcrm_1920545000036266021,zcrm_en_US,Overseas,1
+zcrm_1920545000036266030,zcrm_en_US,Overseas,1
+zcrm_1920545000037280005,zcrm_en_US,Serial Number 2,2
+zcrm_1920545000037280012,zcrm_en_US,Serial Number 1,2
+zcrm_1920545000037280019,zcrm_en_US,Serial Number 4,2
+zcrm_1920545000037280026,zcrm_en_US,Serial Number 3,2
+zcrm_1920545000037590017,zcrm_en_US,Abhinanda Ghosh,1
+zcrm_1920545000037590019,zcrm_en_US,Neelabh Kashyap,1
+zcrm_1920545000037590021,zcrm_en_US,Puneet Shukla,1
+zcrm_1920545000037590023,zcrm_en_US,Srishti Jaiswal,1
+zcrm_1920545000037590039,zcrm_en_US,Abhinanda Ghosh,1
+zcrm_1920545000037590041,zcrm_en_US,Neelabh Kashyap,1
+zcrm_1920545000037590043,zcrm_en_US,Puneet Shukla,1
+zcrm_1920545000037590045,zcrm_en_US,Srishti Jaiswal,1
+zcrm_1920545000037590065,zcrm_en_US,Abhinanda Ghosh,1
+zcrm_1920545000037590067,zcrm_en_US,Ankita,1
+zcrm_1920545000037590069,zcrm_en_US,Neelabh Kashyap,1
+zcrm_1920545000037590071,zcrm_en_US,Puneet Shukla,1
+zcrm_1920545000037590073,zcrm_en_US,Srishti Jaiswal,1
+zcrm_1920545000037590092,zcrm_en_US,Abhinanda Ghosh,1
+zcrm_1920545000037590094,zcrm_en_US,Neelabh Kashyap,1
+zcrm_1920545000037590096,zcrm_en_US,Puneet Shukla,1
+zcrm_1920545000037590098,zcrm_en_US,Srishti Jaiswal,1
+zcrm_1920545000037590116,zcrm_en_US,Abhinanda Ghosh,1
+zcrm_1920545000037590118,zcrm_en_US,Neelabh Kashyap,1
+zcrm_1920545000037590120,zcrm_en_US,Puneet Shukla,1
+zcrm_1920545000037590122,zcrm_en_US,Srishti Jaiswal,1
+zcrm_1920545000037645076,zcrm_en_US,Physiology,1
+zcrm_1920545000037645078,zcrm_en_US,Research Centers and Medical collage,1
+zcrm_1920545000037645084,zcrm_en_US,Physiology,1
+zcrm_1920545000037645086,zcrm_en_US,Research Center and Medical Collage,1
+zcrm_1920545000038236002,zcrm_en_US,Channel,2
+zcrm_1920545000038236004,zcrm_en_US,Direct,1
+zcrm_1920545000038236006,zcrm_en_US,Dealer,1
+zcrm_1920545000038236008,zcrm_en_US,Reference,1
+zcrm_1920545000038236010,zcrm_en_US,Other,1
+zcrm_1920545000038475035,zcrm_en_US,Authority explanation,2
+zcrm_1920545000038475042,zcrm_en_US,Budget explanation,2
+zcrm_1920545000038475049,zcrm_en_US,Timeline explanation,2
+zcrm_1920545000038475056,zcrm_en_US,Need explanation,2
+zcrm_1920545000038650033,zcrm_en_US,Industry,2
+zcrm_1920545000038650035,zcrm_en_US,Fitness,1
+zcrm_1920545000038650037,zcrm_en_US,Medical,1
+zcrm_1920545000038650039,zcrm_en_US,Government,1
+zcrm_1920545000038650041,zcrm_en_US,Hospitality,1
+zcrm_1920545000038650043,zcrm_en_US,Defence,1
+zcrm_1920545000038650045,zcrm_en_US,Institution,1
+zcrm_1920545000038650047,zcrm_en_US,Sports,1
+zcrm_1920545000038650049,zcrm_en_US,Corporates,1
+zcrm_1920545000038650066,zcrm_en_US,Sales Person,2
+zcrm_1920545000038650068,zcrm_en_US,Aaruni Sinha,1
+zcrm_1920545000038650070,zcrm_en_US,Anees Mukhtar,1
+zcrm_1920545000038650072,zcrm_en_US,Ashwini Dixit,1
+zcrm_1920545000038650074,zcrm_en_US,Ayan,1
+zcrm_1920545000038650076,zcrm_en_US,Neelabh  Kashyap,1
+zcrm_1920545000038650078,zcrm_en_US,Mrunal Sardar,1
+zcrm_1920545000038650080,zcrm_en_US,Ankita,1
+zcrm_1920545000038650082,zcrm_en_US,Prasad Gosavi,1
+zcrm_1920545000038650084,zcrm_en_US,Karn Sharma,1
+zcrm_1920545000038650086,zcrm_en_US,Taukheer Ahmed,1
+zcrm_1920545000038650088,zcrm_en_US,Nihal Pawar,1
+zcrm_1920545000038650090,zcrm_en_US,Mahesh Gulwani,1
+zcrm_1920545000038650092,zcrm_en_US,Shubham Tonk,1
+zcrm_1920545000038650094,zcrm_en_US,Srishti Jaiswal,1
+zcrm_1920545000038650096,zcrm_en_US,Abhinanda Ghosh,1
+zcrm_1920545000038650098,zcrm_en_US,Puneet Shukla,1
+zcrm_1920545000038650100,zcrm_en_US,Kenneth Cha,1
+zcrm_1920545000038650126,zcrm_en_US,Dealer/ Reference,2
+zcrm_1920545000038650128,zcrm_en_US,Reference,1
+zcrm_1920545000038650130,zcrm_en_US,Dealer,1
+zcrm_1920545000038650174,zcrm_en_US,Description,2
+zcrm_1920545000038650183,zcrm_en_US,Employee,1
+zcrm_1920545000038883070,zcrm_en_US,Nasir,1

@@ -1,0 +1,37 @@
+Module Id,Name,Label,Api Name,Singular Label,Module Type,Web Link,Parent Module Id,Modified by ID,Modified Time
+zcrm_1920545000000002175,Leads,Leads,Leads,Lead,1,,,zcrm_1920545000000097003,2021-06-12 01:00:43
+zcrm_1920545000000002177,Accounts,Companies,Accounts,Company,1,,,zcrm_1920545000016756022,2021-05-19 02:52:51
+zcrm_1920545000000002179,Contacts,Customers,Contacts,Customer,1,,,zcrm_1920545000016756022,2021-05-14 02:37:14
+zcrm_1920545000000002181,Potentials,Deals,Deals,Deal,1,,,zcrm_1920545000016756022,2021-06-09 02:53:25
+zcrm_1920545000000002183,Campaigns,Campaigns,Campaigns,Campaign,1,,,zcrm_1920545000016756022,2021-02-25 01:38:56
+zcrm_1920545000000002193,Tasks,Tasks,Tasks,Task,1,,,zcrm_1920545000016756022,2020-04-21 10:30:38
+zcrm_1920545000000002195,Events,Meetings,Events,Meeting,1,,,zcrm_1920545000016756022,2021-05-14 02:32:10
+zcrm_1920545000000002201,Forecasts,Forecasts,Forecasts,Forecast,1,,,,
+zcrm_1920545000000002209,Cases,Cases,Cases,Case,1,,,zcrm_1920545000000097003,2018-09-25 21:12:15
+zcrm_1920545000000002211,Solutions,Solutions,Solutions,Solution,1,,,zcrm_1920545000000097003,2018-09-25 21:12:15
+zcrm_1920545000000002213,Products,Products,Products,Product,1,,,zcrm_1920545000016756022,2021-06-18 05:18:27
+zcrm_1920545000000002215,Vendors,Vendors,Vendors,Vendor,1,,,zcrm_1920545000016756022,2021-06-28 22:06:58
+zcrm_1920545000000002217,PriceBooks,Price Books,Price_Books,Price Book,1,,,,
+zcrm_1920545000000002219,Quotes,Quotes,Quotes,Quote,1,,,zcrm_1920545000000097003,2019-04-04 20:31:04
+zcrm_1920545000000002221,SalesOrders,Sales Orders,Sales_Orders,Sales Order,1,,,zcrm_1920545000000097003,2018-09-25 21:12:15
+zcrm_1920545000000002223,PurchaseOrders,Purchase Orders,Purchase_Orders,Purchase Order,1,,,zcrm_1920545000000097003,2018-09-25 21:12:15
+zcrm_1920545000000002225,Invoices,Invoices,Invoices,Invoice,1,,,zcrm_1920545000000097003,2018-09-25 21:12:15
+zcrm_1920545000000033015,Calls,Calls,Calls,Call,1,,,zcrm_1920545000016756022,2020-11-13 01:52:46
+zcrm_1920545000000077007,Visits,Visits,Visits,Visit,1,,,,
+zcrm_1920545000001942018,CustomModule1,CustomPotentials,Potentials1,CustomPotential,4,,,zcrm_1920545000000097003,2018-03-04 06:13:07
+zcrm_1920545000007363001,CustomModule5005,Items,CustomModule5005,Item,1,,zcrm_1920545000007367161,,2018-05-25 20:56:27
+zcrm_1920545000007363740,CustomModule5001,Invoices,CustomModule5001,Invoice,1,,zcrm_1920545000007367161,,2018-05-25 20:56:28
+zcrm_1920545000007364682,CustomModule5002,Estimates,CustomModule5002,Estimate,1,,zcrm_1920545000007367161,,2018-05-25 20:56:28
+zcrm_1920545000007365509,CustomModule5004,Sales Orders,CustomModule5004,Sales Order,1,,zcrm_1920545000007367161,,2018-05-25 20:56:29
+zcrm_1920545000007366334,CustomModule5003,Purchase Orders,CustomModule5003,Purchase Order,1,,zcrm_1920545000007367161,zcrm_1920545000000097003,2018-09-25 21:12:15
+zcrm_1920545000007383003,CustomModule5006,Expenses,CustomModule5006,Expense,1,https://expense.zoho.com/switch?organization_id=665571948&redirect_url=/app?from_zcrm=true#/expenses,zcrm_1920545000007385309,,2018-05-25 21:00:58
+zcrm_1920545000007383847,CustomModule5007,Expense Reports,CustomModule5007,Expense Report,1,https://expense.zoho.com/switch?organization_id=665571948&redirect_url=/app?from_zcrm=true#/expensereports,zcrm_1920545000007385309,,2018-05-25 21:00:59
+zcrm_1920545000007384607,CustomModule5008,Expense Items,CustomModule5008,Expense Item,1,,zcrm_1920545000007385309,,2018-05-25 21:00:59
+zcrm_1920545000010557001,DealHistory,Stage History,DealHistory,Stage History,9,,zcrm_1920545000000002181,,
+zcrm_1920545000021155015,QuotedItems,Quoted Items,Quoted_Items,Quoted Items,7,,zcrm_1920545000000002219,,
+zcrm_1920545000021155454,OrderedItems,Ordered Items,Ordered_Items,Ordered Items,7,,zcrm_1920545000000002221,,
+zcrm_1920545000021155891,PurchaseItems,Purchase Items,Purchase_Items,Purchase Items,7,,zcrm_1920545000000002223,,
+zcrm_1920545000021156330,InvoicedItems,Invoiced Items,Invoiced_Items,Invoiced Items,7,,zcrm_1920545000000002225,,
+zcrm_1920545000022252066,LinkingModule1,Lead Status History,Lead_Status_History,Lead Status History,9,,zcrm_1920545000000002175,zcrm_1920545000000097003,2019-10-15 04:32:55
+zcrm_1920545000032679061,CustomModule2,Dealer,Referral,Dealers,4,,,zcrm_1920545000016756022,2021-06-25 02:33:14
+zcrm_1920545000032684021,LinkingModule3,Audit Log,Audit_Log,Audit Log,7,,zcrm_1920545000032679061,zcrm_1920545000016756022,2021-01-05 04:18:13

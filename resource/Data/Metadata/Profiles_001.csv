@@ -1,0 +1,4 @@
+Profile Id,Profile Name,Category,Created by ID,Modified by ID,Created Time,Modified Time,Type,Description
+zcrm_1920545000000026011,Administrator,false,,zcrm_1920545000000097003,,2018-05-24 16:50:15,,crm.security.profile.admin.desc
+zcrm_1920545000000026014,Standard,false,,zcrm_1920545000000097003,,2019-02-20 18:18:31,,crm.security.profile.std.desc
+zcrm_1920545000016869001,Customer Success,true,zcrm_1920545000011122001,zcrm_1920545000000097003,2019-03-26 19:53:59,2019-10-29 14:38:13,,Customer Support
