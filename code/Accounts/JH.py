@@ -23,6 +23,10 @@ for df in dfs['Company Owner ID'] :
     num += 1
     if df == 'zcrm_1920545000000117001' :
         dfs['Sales Person'][num] = 'Arun Sharma'
+    if df == 'zcrm_1920545000001530001' :
+        dfs['Sales Person'][num] = 'Mahesh Gulwani'
+    if df == 'zcrm_1920545000011182001' :
+        dfs['Sales Person'][num] = 'Taukheer Ahmed'
 
 # df[(df['Company Owner ID']=='zcrm_1920545000000117001')]['Sales person'] ='Arun Sharma'
 # print(df)
