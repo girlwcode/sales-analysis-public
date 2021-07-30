@@ -18,17 +18,18 @@ from openpyxl import Workbook
 #
 dfs = pd.read_csv("../../resource/CleansedData/ParsedData/Accounts_001_droppedCol.csv")
 
-num = 0
-for df in dfs :
-    print(df)
-    if df['Company Owner ID'] == 'zcrm_1920545000000117001' :
-        df['Sales Person'] = 'Arun Sharma'
-    if df == 'zcrm_1920545000001530001' :
-        dfs['Sales Person'][num] = 'Mahesh Gulwani'
-    if df == 'zcrm_1920545000011182001' :
-        dfs['Sales Person'][num] = 'Taukheer Ahmed'
+for i in dfs.index :
+    if dfs['Company Owner ID'][i] == 'zcrm_1920545000000117001':
+        dfs['Sales Person'][i] = 'Arun Sharma'
+
+    # if df['Company Owner ID'] == 'zcrm_1920545000000117001' :
+    #     df['Sales Person'] = 'Arun Sharma'
+    # if df == 'zcrm_1920545000001530001' :
+    #     dfs['Sales Person'][num] = 'Mahesh Gulwani'
+    # if df == 'zcrm_1920545000011182001' :
+    #     dfs['Sales Person'][num] = 'Taukheer Ahmed'
 
 # df[(df['Company Owner ID']=='zcrm_1920545000000117001')]['Sales person'] ='Arun Sharma'
-# print(df)
+
 
 # dfs.to_csv('Accounts_001_droppedCol2.csv',index =False)
