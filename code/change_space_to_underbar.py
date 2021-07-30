@@ -1,3 +1,4 @@
+import pandas as pd
 def change_space_to_name():#pandas 객체를 리턴함
     target_path='../resource/OriginalData/'
     target_file='Accounts_001'
