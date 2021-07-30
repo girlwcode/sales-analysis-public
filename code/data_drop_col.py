@@ -12,7 +12,7 @@ leads_col = pd.read_csv(save_col_path+txt_name, sep='\t')
 print(leads_col)
 
 # # Use this If, there's a outlier in drop col txt
-# leads_col = leads_col.drop(columns=['Unnamed: 1','Unnamed: 4','Unnamed: 67'])
+#leads_col = leads_col.drop(columns=['Unnamed: 26'])
 leads_col = leads_col.columns.tolist()
 
 leads2 = leads[leads_col]
