@@ -1,18 +1,27 @@
 import pandas as pd
 
-origin_data_path = '../resource/OriginalData/'
-file_name = 'Accounts_001'
-leads = pd.read_csv(origin_data_path+file_name+'.csv')
+# use this if dataset is in original directory
+# origin_data_path = '../resource/OriginalData/'
+# file_name = 'Potentials_001'
+# leads = pd.read_csv(origin_data_path+file_name+'.csv')
+
+# use this if dataset is in modified directory
+modified_data_path = '../resource/CleansedData/ModifiedData/'
+file_name = 'Contacts_001_unsubscribed_row_deleted'
+leads = pd.read_csv(modified_data_path+file_name+'.csv')
+file_name = 'Contacts_001'
+
 
 save_col_path = '../resource/SaveCol/'
-txt_name = 'Account_save_col.txt'
+txt_name = 'Contacts_save_col.txt'
 
 leads_col = pd.read_csv(save_col_path+txt_name, sep='\t')
 
 print(leads_col)
 
-# # Use this If, there's a outlier in drop col txt
+# Use this If, there's a outlier in drop col txt (Contacts)
 #leads_col = leads_col.drop(columns=['Unnamed: 26'])
+
 leads_col = leads_col.columns.tolist()
 
 leads2 = leads[leads_col]
