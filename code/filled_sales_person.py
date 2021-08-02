@@ -1,0 +1,106 @@
+import pandas as pd
+import re
+
+
+# %%
+path='../resource/CleansedData/ParsedData/'
+file_name='Accounts_001_droppedCol'
+csv=pd.read_csv(path+file_name+'.csv')
+save_as='../resource/CleansedData/ModifiedData/Accounts_001_droppedCol_deleted_korean.csv'
+
+
+# %%
+people=set()
+for person in csv['Sales Person']:
+        people.add(str(person))
+
+
+# %%
+csv.count()
+
+
+# %%
+print(people)
+
+
+# %%
+mapping=dict()
+
+for person in people:
+    mapping[person]=set()
+
+
+# %%
+print(mapping)
+
+
+# %%
+for i in range(len(csv['Sales Person'])):
+    if csv['Sales Person'][i] in people:
+        mapping[csv['Sales Person'][i]].add(csv['Territories'][i])
+
+'''
+for sales in csv['Sales Person']:
+    for person in people:
+        if sales == person:
+'''
+        
+
+
+# %%
+print(mapping)
+
+
+# %%
+#Mohammad Afnan,Dixiata Sharma,Gurraj Singh,Abhinanda Ghosh, Nasir,Puneet Shukla,Neelabh Kashyap
+
+people=set()
+people.add('Mohammad Afnan')
+people.add('Dixiata Sharma')
+people.add('Gurraj Singh')
+people.add('Abhinanda Ghosh') 
+people.add('Nasir')
+people.add('Puneet Shukla')
+people.add('Neelabh Kashyap')
+
+people
+
+
+# %%
+count=0
+for i in range(len(csv['Territories'])):
+    if csv['Sales Person'][i] in people:
+        csv['Territories'][i] = mapping[person]
+        count+=1
+print(count)
+#csv
+
+
+# %%
+print(len(csv))
+# csv['Territories'].count(isnull())
+print(csv['Territories'].count())
+print(csv['Territories'].notna().sum() + csv['Territories'].isnull().sum())
+
+
+# %%
+for person in csv['Sales Person']:
+    if person in people:
+        csv['Territories'] = mapping[person]
+csv = csv.to_csv("tst1.csv")
+
+
+# %%
+#한국말 있는지 확인
+korean=[]
+for row in csv['Full Name']:
+    hangul=re.compile('[ㄱ-ㅎ|가-힣]+')
+    #print(hangul.findall(row))
+    name=hangul.findall(row)
+    if len(name)!=0:
+        korean.append(name)
+korean
+
+
+# %%
+csv.to_csv(save_as)
