@@ -101,4 +101,4 @@ for i in contacts.index:
         elif person_name == 'Prasad Gosavi':
             contacts.loc[i, 'Territories'] = 'North'
 
-contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
+# contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
