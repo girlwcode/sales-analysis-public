@@ -3,7 +3,7 @@ import pandas as pd
 origin_data_path = '../resource/OriginalData/'
 
 # Enter the case (contacts = 1 or leads = 2)
-case = 2
+case = 1
 if case == 1 :
     file_name = 'Contacts_001'
     contacts = pd.read_csv(origin_data_path + file_name + '.csv')
@@ -32,13 +32,13 @@ if case == 1 :
     print(contacts[drop_col1].unique())
     print(contacts[drop_col2].unique())
     print(len(contacts))
-    contacts.to_csv('../resource/CleansedData/ModifiedData/Contacts_001_unsubscribed_row_deleted.csv')
+    contacts.to_csv('../resource/CleansedData/ModifiedData/Contacts_001_unsubscribed_row_deleted.csv',index=False)
 elif case == 2 :
     leads = datas
     print(leads[drop_col1].unique())
     print(leads[drop_col2].unique())
     print(len(leads))
-    leads.to_csv('../resource/CleansedData/ModifiedData/Leads_001_unsubscribed_row_deleted.csv')
+    leads.to_csv('../resource/CleansedData/ModifiedData/Leads_001_unsubscribed_row_deleted.csv',index=False)
 
 
 
