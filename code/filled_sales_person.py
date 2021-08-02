@@ -3,10 +3,10 @@ import re
 
 
 # %%
-path='../resource/CleansedData/ParsedData/'
-file_name='Accounts_001_droppedCol'
+path='../resource/CleansedData/ModifiedData/'
+file_name='Accounts_001_droppedCol_deleted_korean'
 csv=pd.read_csv(path+file_name+'.csv')
-save_as='../resource/CleansedData/ModifiedData/Accounts_001_droppedCol_deleted_korean.csv'
+save_as='../resource/CleansedData/ModifiedData/Accounts_001_filled_territory_by_sales_man.csv'
 
 
 # %%
@@ -87,20 +87,4 @@ print(csv['Territories'].notna().sum() + csv['Territories'].isnull().sum())
 for person in csv['Sales Person']:
     if person in people:
         csv['Territories'] = mapping[person]
-csv = csv.to_csv("tst1.csv")
-
-
-# %%
-#한국말 있는지 확인
-korean=[]
-for row in csv['Full Name']:
-    hangul=re.compile('[ㄱ-ㅎ|가-힣]+')
-    #print(hangul.findall(row))
-    name=hangul.findall(row)
-    if len(name)!=0:
-        korean.append(name)
-korean
-
-
-# %%
-csv.to_csv(save_as)
+csv = csv.to_csv(save_as,index=False)
