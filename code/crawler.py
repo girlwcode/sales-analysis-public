@@ -2,11 +2,11 @@ from selenium import webdriver
 import time
 
 # 크롬창(웹드라이버) 열기
-driver = webdriver.Chrome("./chromedriver.exe")
+driver = webdriver.Chrome("../resource/exe/chromedriver.exe")
 
 #키워드 입력
 keyword='hospital'
-state='in mumbai'
+state=' in mumbai'
 
 # 구글 지도 접속하기
 driver.get("https://www.google.com/maps/")
@@ -21,7 +21,7 @@ searchbutton.click()
 
 for i in range(10000):
     # 시간 지연
-    time.sleep(3)
+    time.sleep(1)
 
     # 컨테이너(사업장명) 데이터 수집 // div.section-result-content
     stores = driver.find_elements_by_css_selector("div.section-result-content")
