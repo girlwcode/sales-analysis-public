@@ -117,7 +117,7 @@ for i in contacts.index:
 
 
 
-# company id가 없는 데이터 175개
+# 4. company id가 없는 데이터 175개
 
 no_company =[]
 for i in contacts.index:
@@ -129,6 +129,7 @@ for i in contacts.index:
 
 
 # contacts에서 no_company_id 중 deal에 company id가 있는 customer id
+# contacts company id 채우기
 comp_custom = {}
 for i in potentials.index:
     if potentials.loc[i, 'Customer ID'] in no_company and pd.notnull(potentials.loc[i, 'Company ID']):
@@ -142,3 +143,4 @@ for i in contacts.index:
 
 # Parsing the dataset
 contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
+
