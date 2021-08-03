@@ -19,3 +19,4 @@ print(deal.columns)
 #print(accounts['Industry'].nunique(), accounts['Industry'].unique())
 
 print(accounts['Industry'].isnull().sum())
+# 1433개
