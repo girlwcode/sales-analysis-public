@@ -2,7 +2,7 @@ import pandas as pd
 
 contacts = pd.read_csv('../resource/CleansedData/ModifiedData/Contacts_001_deleted_korean.csv')
 accounts = pd.read_csv('../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
-deal = pd.read_csv('../resource/CleansedData/ModifiedData/Potentials_001_USDtoINR.csv')
+deals = pd.read_csv('../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
 
 # print(accounts['Territories'].unique())
 
@@ -83,12 +83,19 @@ for i in contacts.index:
 # 3. deal의 CompanyID와 연동하여 territory 찾기
 company_id = {}
 for i in contacts.index:
-    c_id = contacts.loc[i, 'Company ID']
-    territory = contacts.loc[i, 'Territories']
-    if c_id not in territories:
+    if pd.isna(contacts["Territories"][i]):
+        c_id = contacts.loc[i, 'Company ID']
         company_id[c_id] = []
-    company_id[c_id].append(territory)
 
+for c_id in company_id:
+    if deals['Company ID'] == c_id:
+        mask = deals['Company ID'] == c_id
+        territory = deals.loc[mask,'Territory']
+        company_id[c_id].append(territory)
+
+# 확인
+for id in company_id:
+    print(id,':',company_id[id])
 
 # Parsing the dataset
 # contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
