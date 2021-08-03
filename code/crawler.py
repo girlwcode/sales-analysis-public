@@ -21,7 +21,7 @@ searchbutton.click()
 
 for i in range(10000):
     # 시간 지연
-    time.sleep(3)
+    time.sleep(1)
 
     # 컨테이너(사업장명) 데이터 수집 // div.section-result-content
     stores = driver.find_elements_by_css_selector("div.section-result-content")
