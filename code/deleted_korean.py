@@ -1,23 +1,19 @@
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
-# %%
 import pandas as pd
 import re
 
 
-# %%
 #70개의 한국어 사업장 제거됨
 path='../resource/CleansedData/ParsedData/'
-file_name='Contacts_001_unsubscribed_row_deleted'
+file_name='Contacts_001_droppedCol'
 csv=pd.read_csv(path+file_name+'.csv')
 save_as='../resource/CleansedData/ModifiedData/Contacts_001__deleted_korean.csv'
 
 
-# %%
 csv['Full Name']
 
 
-# %%
 cnt=0
 for row in csv['Full Name']:
     if row.isascii()==False:
@@ -26,7 +22,6 @@ for row in csv['Full Name']:
 print(cnt)
 
 
-# %%
 cnt=0
 for i in range(len(csv['Full Name'])):
     hangul=re.compile('[ㄱ-ㅎ|가-힣]+')
@@ -37,11 +32,9 @@ for i in range(len(csv['Full Name'])):
 print(cnt)           
 
 
-# %%
 csv['Full Name']
 
 
-# %%
 #한국말 있는지 확인
 korean=[]
 for row in csv['Full Name']:
@@ -52,8 +45,6 @@ for row in csv['Full Name']:
         korean.append(name)
 korean
 
-
-# %%
 csv.to_csv(save_as,index=False)
 
 
