@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 # 크롬창(웹드라이버) 열기
-driver = webdriver.Chrome("./chromedriver")
+driver = webdriver.Chrome("./chromedriver.exe")
 
 #키워드 입력
 keyword='hospital'
@@ -28,7 +28,7 @@ for i in range(10000):
     
     for s in stores:
         # 사업장 이름 데이터 수집 // h3.section-result-title
-        title = s.find_element_by_css_selector("h3.section-result-title").text
+        title = s.find_element_by_css_selector("h3.section-result-title").text  
 
         # 카테고리 수집 // span.cards-rating-score
         # 카테고리가 없는 경우 에러 발산
