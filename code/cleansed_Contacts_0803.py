@@ -1,7 +1,7 @@
 import pandas as pd
 
 contacts = pd.read_csv('../resource/CleansedData/ModifiedData/Contacts_001_droppedCol_deleted_korean.csv')
-accounts = pd.read_csv('../resource/CleansedData/ModifiedData/Accounts_001_droppedCol_deleted_korean.csv')
+accounts = pd.read_csv('../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
 deal = pd.read_csv('../resource/CleansedData/ModifiedData/Potentials_001_USDtoINR.csv')
 
 print(accounts['Territories'].unique())
