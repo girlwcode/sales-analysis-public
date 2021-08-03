@@ -2,6 +2,7 @@ import pandas as pd
 
 contacts = pd.read_csv('../resource/CleansedData/ModifiedData/Contacts_001_droppedCol_deleted_korean.csv')
 accounts = pd.read_csv('../resource/CleansedData/ModifiedData/Accounts_001_droppedCol_deleted_korean.csv')
+deal = pd.read_csv('../resource/CleansedData/ModifiedData/Potentials_001_USDtoINR.csv')
 
 print(accounts['Territories'].unique())
 
@@ -28,7 +29,7 @@ print(contacts['Sales Person'].nunique(), contacts['Sales Person'].unique())
 territories = {}
 owner_id = {}
 
-# 직원별 territory dict 저장
+# 1. 직원별 territory dict 저장
 for i in contacts.index:
     if pd.notnull(contacts.loc[i, 'Sales Person']) and pd.notnull(contacts.loc[i, 'Territories']):
         name = contacts.loc[i, 'Sales Person']
@@ -45,7 +46,7 @@ for name in territories:
         name_list.append(name)
 
 
-# id 별 territory
+# 2. id 별 territory
 for i in contacts.index:
     if pd.notnull(contacts.loc[i, 'Territories']) :
         id = contacts.loc[i, 'Customer Owner ID']
@@ -60,8 +61,6 @@ for id in owner_id:
     if len(set(owner_id[id])) == 1:
         print(id, ':', set(owner_id[id]))
         id_dict[id] = owner_id[id][0]
-        # name_list.append(name)
-
 
 # 1. 직원별 territory dict 고유값 채워주기 - 3개
 for i in contacts.index:
@@ -79,7 +78,14 @@ for i in contacts.index:
 for i in contacts.index:
     if contacts.loc[i, 'Customer Owner ID'] in id_dict and pd.isnull(contacts.loc[i, 'Territories']):
         contacts['Territories'][i] = id_dict[contacts.loc[i, 'Customer Owner ID']]
-        print(id_dict[contacts.loc[i, 'Customer Owner ID']], contacts['Territories'][i])
+        # print(id_dict[contacts.loc[i, 'Customer Owner ID']], contacts['Territories'][i])
+
+# 3. deal의 CompanyID와 연동하여 territory 찾기
+company_id = {}
+for i in contacts.index:
+    if contacts['Territories'][i].isna():
+        break
+
 
 # Parsing the dataset
 contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)

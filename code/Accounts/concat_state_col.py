@@ -34,3 +34,9 @@ def concat_billing_state(df):
     new_df = df.drop(['Billing State', 'Billing State-'], axis=1)
     return (new_df)
 
+accounts = pd.read_csv('../../resource/CleansedData/ModifiedData/Accounts_001_deleted_korean.csv')
+accounts = concat_shipping_state(accounts)
+accounts = concat_billing_state(accounts)
+
+accounts.to_csv('../../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
+

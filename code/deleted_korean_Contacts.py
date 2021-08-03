@@ -8,7 +8,7 @@ import re
 path='../resource/CleansedData/ParsedData/'
 file_name='Contacts_001_droppedCol'
 csv=pd.read_csv(path+file_name+'.csv')
-save_as='../resource/CleansedData/ModifiedData/Contacts_001__deleted_korean.csv'
+save_as='../resource/CleansedData/ModifiedData/Contacts_001_deleted_korean.csv'
 
 
 csv['Full Name']
