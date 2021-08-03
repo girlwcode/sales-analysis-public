@@ -6,7 +6,7 @@ driver = webdriver.Chrome("./chromedriver.exe")
 
 #키워드 입력
 keyword='hospital'
-state='in mumbai'
+state=' in mumbai'
 
 # 구글 지도 접속하기
 driver.get("https://www.google.com/maps/")
