@@ -19,4 +19,7 @@ print(deal.columns)
 #print(accounts['Industry'].nunique(), accounts['Industry'].unique())
 
 print(accounts['Industry'].isnull().sum())
+<<<<<<< HEAD
 # 1433개
+=======
+>>>>>>> origin/master
