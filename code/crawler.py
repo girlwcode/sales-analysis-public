@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 # 크롬창(웹드라이버) 열기
-driver = webdriver.Chrome("./chromedriver.exe")
+driver = webdriver.Chrome("../resource/exe/chromedriver.exe")
 
 #키워드 입력
 keyword='hospital'
