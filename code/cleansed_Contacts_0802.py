@@ -27,7 +27,6 @@ print(contacts['Sales Person'].nunique(), contacts['Sales Person'].unique())
 
 territories = {}
 owner_id = {}
-ids = {}
 
 # 직원별 territory dict 저장
 for i in contacts.index:
@@ -38,59 +37,33 @@ for i in contacts.index:
             territories[name] = []
         territories[name].append(territory)
 
-# territory dict 출력
+# territory dict 출력 - 8개
 name_list = []
 for name in territories:
     if len(set(territories[name])) == 1:
         # print(name, ':', set(territories[name]))
         name_list.append(name)
 
-# # 직원별 id dict 저장
-# for i in contacts.index:
-#     if pd.notnull(contacts.loc[i, 'Sales Person']) :
-#         name = contacts.loc[i, 'Sales Person']
-#         id = contacts.loc[i, 'Customer Owner ID']
-#         if name not in owner_id:
-#             owner_id[name] = []
-#         owner_id[name].append(id)
-#
-# # 직원별 id dict - 고유 id 저장
-# id_list1 = list()
-# for name in owner_id :
-#     if len(set(owner_id[name])) == 1:
-#         # print(name,':', set(owner_id[name]))
-#         a = owner_id[name][0]
-#         id_list1.append(a)
 
-# ID 별 직원 dict 저장
+# id 별 territory
 for i in contacts.index:
-    if pd.notnull(contacts.loc[i, 'Sales Person']) :
+    if pd.notnull(contacts.loc[i, 'Territories']) :
         id = contacts.loc[i, 'Customer Owner ID']
-        name = contacts.loc[i, 'Sales Person']
-        if id not in ids:
-            ids[id] = []
-        ids[id].append(name)
+        territory = contacts.loc[i, 'Territories']
+        if id not in owner_id:
+            owner_id[id] = []
+        owner_id[id].append(territory)
 
-# ID 별 직원 dict - 고유 ID 저장
-id_list2 = list()
-for id in ids :
-    if len(set(ids[id])) == 1:
-        print(id,':', set(ids[id]))
-        a = ids[id][0]
-        id_list2.append(a)
-
-print(id_list2)
-for n in id_list2 :
-    cnt = 0
-    for id in ids :
-        if n in ids[id] :
-            cnt += 1
-    print(cnt)
-    if cnt == 1 :
-        print(n)
+# territory dict 출력 - 9개
+id_dict = {}
+for id in owner_id:
+    if len(set(owner_id[id])) == 1:
+        print(id, ':', set(owner_id[id]))
+        id_dict[id] = owner_id[id][0]
+        # name_list.append(name)
 
 
-# 직원별 territory dict 고유값 채워주기
+# 1. 직원별 territory dict 고유값 채워주기 - 3개
 for i in contacts.index:
     if contacts.loc[i, 'Sales Person'] in name_list and pd.isnull(contacts.loc[i, 'Territories']):
         person_name = contacts.loc[i, 'Sales Person']
@@ -101,4 +74,12 @@ for i in contacts.index:
         elif person_name == 'Prasad Gosavi':
             contacts.loc[i, 'Territories'] = 'North'
 
-# contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
+
+# 2. id별 territory dict 고유값 채워주기 - 10개
+for i in contacts.index:
+    if contacts.loc[i, 'Customer Owner ID'] in id_dict and pd.isnull(contacts.loc[i, 'Territories']):
+        contacts['Territories'][i] = id_dict[contacts.loc[i, 'Customer Owner ID']]
+        print(id_dict[contacts.loc[i, 'Customer Owner ID']], contacts['Territories'][i])
+
+# Parsing the dataset
+contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
