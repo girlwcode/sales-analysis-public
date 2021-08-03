@@ -1,15 +1,17 @@
+import numpy as np
 import pandas as pd
 
 contacts = pd.read_csv('../resource/CleansedData/ModifiedData/Contacts_001_deleted_korean.csv')
 accounts = pd.read_csv('../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
-deal = pd.read_csv('../resource/CleansedData/ModifiedData/Potentials_001_USDtoINR.csv')
+potentials = pd.read_csv('../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
 
 # print(accounts['Territories'].unique())
 
-# 3134
+# 3134/7088
 # print(accounts['Territories'].isna().sum())
-# 1408
+# 1338/4070
 # print(contacts['Territories'].isna().sum())
+
 
 # 23 'Arun Sharma' 'Mahesh Gulwani' 'Taukheer Ahmed' 'Karn Sharma'
 #  'Ashwini Dixit' 'Anees Mukhtar' 'Shubham Tonk' 'Ayan' 'CS/Amazon/Other'
@@ -73,22 +75,70 @@ for i in contacts.index:
         elif person_name == 'Prasad Gosavi':
             contacts.loc[i, 'Territories'] = 'North'
 
-
 # 2. id별 territory dict 고유값 채워주기 - 10개
 for i in contacts.index:
     if contacts.loc[i, 'Customer Owner ID'] in id_dict and pd.isnull(contacts.loc[i, 'Territories']):
         contacts['Territories'][i] = id_dict[contacts.loc[i, 'Customer Owner ID']]
         # print(id_dict[contacts.loc[i, 'Customer Owner ID']], contacts['Territories'][i])
 
+
 # 3. deal의 CompanyID와 연동하여 territory 찾기
+count=0
 company_id = {}
 for i in contacts.index:
-    c_id = contacts.loc[i, 'Company ID']
-    territory = contacts.loc[i, 'Territories']
-    if c_id not in territories:
+    if pd.isna(contacts["Territories"][i]):
+        count+=1
+        c_id = contacts.loc[i, 'Company ID']
         company_id[c_id] = []
-    company_id[c_id].append(territory)
 
+# print('no territory:',len(company_id))
+# 964 territory가 없는 고유 company id 개수
+# print('count:',count)
+# 1325 territory가 없는 총 company id 개수 (중복있는 company id 362개)
+
+for i in potentials.index:
+    if potentials.loc[i]['Company ID'] in company_id and pd.notnull(potentials['Territory'][i]):
+        id = potentials['Company ID'][i]
+        territory = potentials['Territory'][i]
+        company_id[id].append(territory)
+
+company_id_new = {}
+for id in company_id:
+    if len(set(company_id[id])) == 1:
+        # print(id, ':', set(owner_id[id]))
+        company_id_new[id] = company_id[id][0]
+
+# 3.  CompanyID별 고유 territory 채우기
+for i in contacts.index:
+    if contacts.loc[i, 'Company ID'] in company_id_new and pd.isnull(contacts.loc[i, 'Territories']):
+        contacts['Territories'][i] = company_id_new[contacts.loc[i, 'Company ID']]
+# null 1319개
+# print(contacts['Territories'].isnull().sum())
+
+
+
+# company id가 없는 데이터 175개
+
+no_company =[]
+for i in contacts.index:
+    if pd.isnull(contacts.loc[i, 'Company ID']):
+        no_company.append(contacts.loc[i, 'Record Id'])
+
+# print(no_company)
+# print(len(set(no_company)))
+
+
+# contacts에서 no_company_id 중 deal에 company id가 있는 customer id
+comp_custom = {}
+for i in potentials.index:
+    if potentials.loc[i, 'Customer ID'] in no_company and pd.notnull(potentials.loc[i, 'Company ID']):
+        custom_id = potentials.loc[i, 'Customer ID']
+        com_id = potentials.loc[i, 'Company ID']
+        comp_custom[custom_id] = com_id
+
+for i in contacts.index:
+    if contacts.loc[i, 'Record Id'] in comp_custom and pd.isnull(contacts.loc[i, 'Company ID']):
+        contacts.loc[i, 'Company ID'] = comp_custom[contacts['Record Id'][i]]
 
 # Parsing the dataset
-# contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)
+contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritory_ver1.csv', index=False)

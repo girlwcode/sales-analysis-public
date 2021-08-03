@@ -38,5 +38,5 @@ accounts = pd.read_csv('../../resource/CleansedData/ModifiedData/Accounts_001_de
 accounts = concat_shipping_state(accounts)
 accounts = concat_billing_state(accounts)
 
-accounts.to_csv('../../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
+accounts.to_csv('../../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv', index=False)
 
