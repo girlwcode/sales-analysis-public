@@ -1,20 +1,20 @@
 import pandas as pd
+import numpy as np
 
 path='../resource/CleansedData/ModifiedData/'
 file_name='Accounts_001_concat_state'
 accounts =pd.read_csv(path+file_name+'.csv')
 
 deal = pd.read_csv('../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
-print(deal.shape)
 
-print(accounts.columns)
+
 # territories Unique 값 - 'South' 'South, West 2' 'East' 'West 1' 'West 2' 'North'
 #  'South, North' 'North, West 1' 'North, East' 'South, East' 'East, West 1'
 #  'North, West 2' 'South, West 1' 'West 1, West 2'
 # print(accounts['Territories'].unique())
 
 # territories 결측치 - 3134개
-print('Before', accounts['Territories'].isna().sum())
+print('Before : ', accounts['Territories'].isna().sum())
 
 # Sales Person Unique 값 - 23개 'Arun Sharma' 'Mahesh Gulwani' 'Taukheer Ahmed' 'Karn Sharma'
 #  'Ashwini Dixit' 'Anees Mukhtar' 'Shubham Tonk' 'Ayan' 'CS/Amazon/Other'
@@ -113,29 +113,60 @@ for i in deal.index :
 #     if pd.isnull(accounts['Territories'][i]) and accounts['Record Id'][i] in company.keys():
 #         cnt += 1
 # print(cnt)
-
+#
 #32개 채워짐
 for i in accounts.index :
     if pd.isnull(accounts.loc[i, 'Territories']) :
         for key in company.keys() :
             if (key ==  accounts.loc[i,'Record Id']) :
                 accounts['Territories'][i] = company[key]
-                # print(accounts['Record Id'][i],  accounts['Territories'][i])
+                print(accounts['Record Id'][i],  accounts['Territories'][i])
+
+# 4. 이상한 Territories - 37개
+customer_id = {}
+for i in accounts.index:
+    terri = accounts['Territories'][i]
+    if ',' in str(terri):
+        customer_id[accounts['Record Id'][i]] = ""
+
+# Deal에서 nan인것은 N으로 할당 - 6개
+for i in deal.index:
+    if deal['Company ID'][i] in customer_id.keys() :
+        if (pd.isnull(deal['Territory'][i])) :
+            terr = 'N'
+        else : terr = deal['Territory'][i]
+        customer_id[deal['Company ID'][i]] = terr
+
+print(customer_id)
+
+# 특정 id는 deal에서 중복으로 남아있어 한개로 넣어줌 (2건)
+for i in accounts.index:
+    target = accounts['Record Id'][i]
+    if(target in customer_id.keys()) :
+        if (target == 'zcrm_1920545000008489001') :
+            accounts['Territories'][i] = 'South'
+        elif (target == 'zcrm_1920545000014798021') :
+            accounts['Territories'][i] = 'North'
+        elif (customer_id[target] == "") :
+            accounts['Territories'][i] = np.nan
+        else:
+            accounts['Territories'][i] = customer_id[target]
 
 
 # Cleansing 이후 territories 결측치 - 3077 (57개 넣음)
-print('After', accounts['Territories'].isna().sum())
+print('After : ', accounts['Territories'].isna().sum())
 
 # Customer id가 있는 레코드 1994/2313
-print((pd.notnull(deal['Customer ID']) | pd.notnull(deal['Customer ID.1'])).sum())
+#print((pd.notnull(deal['Customer ID']) | pd.notnull(deal['Customer ID.1'])).sum())
 
 # Customer 없는 company 가 319개 / 2313
-print(((pd.notnull(deal['Company ID'])) & (pd.isnull(deal['Customer ID.1']) & pd.isnull(deal['Customer ID']))).sum())
+#rint(((pd.notnull(deal['Company ID'])) & (pd.isnull(deal['Customer ID.1']) & pd.isnull(deal['Customer ID']))).sum())
 
 # Deal 에서 company Id 없는 레코드 - 0
-print((pd.isnull(deal['Company ID'])).sum())
+#print((pd.isnull(deal['Company ID'])).sum())
 
-print((pd.isnull(deal['Territory'])).sum())
+# Deal 에서 territory null 값 - 139
+#print((pd.isnull(deal['Territory'])).sum())
 
 # Parsing the dataset
 accounts.to_csv('../resource/CleansedData/Accounts_001_fillTerritory_ver1.csv', index=False)

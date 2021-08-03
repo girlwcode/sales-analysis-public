@@ -28,7 +28,9 @@ for i in contacts.index:
     if contacts['Company ID'][i] in dict_accounts.keys() and pd.isnull(contacts['Territories'][i]):
         contacts['Territories'][i] = dict_accounts[contacts['Company ID'][i]]
 
+# 3081
 print(accounts['Territories'].isna().sum())
+# 1301
 print(contacts['Territories'].isna().sum())
 
 accounts=accounts.dropna(subset=['Territories'],axis=0)
