@@ -18,6 +18,15 @@ print(deal.columns)
 #  'Academic' 'Hospitals' 'Amazon/CS' 'Aarti Diagnostic Centre']
 #print(accounts['Industry'].nunique(), accounts['Industry'].unique())
 
-print(accounts['Industry'].isnull().sum())
 # 1433개
+print(accounts['Industry'].isnull().sum())
 
+# 19개,'Dietician' 'Medical' 'Bariatric' 'Medium Budget Fitness'
+#  'Corporates' 'High Budget Fitness' 'Low Budget Fitness'
+#  'Slimming Centers' 'Wellness' 'Fitness' 'Other' 'Endocrinologist'
+#  'Diabetic' 'Nephrology' 'Corporate Wellness' 'Dietitian' 'Academic'
+#  'General Medicine' 'Pediatric'
+print(accounts['Sub industry'].nunique(), accounts['Sub industry'].unique())
+
+# 3899
+print(accounts['Sub industry'].isnull().sum())
