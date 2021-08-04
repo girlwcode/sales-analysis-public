@@ -3,7 +3,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
 
-driver_path = '../../resource/exe/chromedriver.exe'
+driver_path = '../resource/exe/chromedriver.exe'
 url = 'https://www.google.co.kr/maps/@19.0753242,72.7389776,11z?hl=ko'
 
 search_name = "hospital in mumbai"
