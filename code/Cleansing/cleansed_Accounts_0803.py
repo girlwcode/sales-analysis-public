@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 
-path='../resource/CleansedData/ModifiedData/'
+path= '../../resource/CleansedData/ModifiedData/'
 file_name='Accounts_001_concat_state'
 accounts =pd.read_csv(path+file_name+'.csv')
 
-deal = pd.read_csv('../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
+deal = pd.read_csv('../../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
 
 
 # territories Unique 값 - 'South' 'South, West 2' 'East' 'West 1' 'West 2' 'North'

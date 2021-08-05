@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 #웹드라이버 연결
-driver = webdriver.Chrome("../resource/exe/chromedriver.exe")
+driver = webdriver.Chrome("../../resource/exe/chromedriver.exe")
 #키워드 입력
 keyword='hospital'
 state='Goa'

@@ -1,6 +1,6 @@
 import pandas as pd
 
-origin_data_path = '../resource/OriginalData/'
+origin_data_path = '../../resource/OriginalData/'
 
 # Enter the case (contacts = 1 or leads = 2)
 case = 1

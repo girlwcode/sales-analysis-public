@@ -5,7 +5,7 @@ import re
 
 
 #70개의 한국어 사업장 제거됨
-path='../resource/CleansedData/ParsedData/'
+path= '../../resource/CleansedData/ParsedData/'
 file_name='Contacts_001_droppedCol'
 csv=pd.read_csv(path+file_name+'.csv')
 save_as='../resource/CleansedData/ModifiedData/Contacts_001_deleted_korean.csv'
