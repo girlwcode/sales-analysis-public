@@ -8,13 +8,13 @@ import pandas as pd
 # use this if dataset is in modified directory
 # Contacts - Contacts_001_unsubscribed_row_deleted
 # Potentials - Potentials_001_USDtoINR
-modified_data_path = '../resource/CleansedData/ModifiedData/'
+modified_data_path = '../../resource/CleansedData/ModifiedData/'
 file_name = 'Potentials_001_USDtoINR'
 leads = pd.read_csv(modified_data_path+file_name+'.csv')
 file_name = 'Potentials_001'
 
 
-save_col_path = '../resource/SaveCol/'
+save_col_path = '../../resource/SaveCol/'
 txt_name = 'Potentials_save_col.txt'
 
 leads_col = pd.read_csv(save_col_path+txt_name, sep='\t')

@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-contacts = pd.read_csv('../resource/CleansedData/ModifiedData/Contacts_001_deleted_korean.csv')
-accounts = pd.read_csv('../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
-potentials = pd.read_csv('../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
+contacts = pd.read_csv('../../resource/CleansedData/ModifiedData/Contacts_001_deleted_korean.csv')
+accounts = pd.read_csv('../../resource/CleansedData/ModifiedData/Accounts_001_concat_state.csv')
+potentials = pd.read_csv('../../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
 
 # print(accounts['Territories'].unique())
 

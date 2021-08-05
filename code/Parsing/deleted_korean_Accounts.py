@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 #44개의 한국어 사업장 제거됨
-path='../resource/CleansedData/ParsedData/'
+path= '../../resource/CleansedData/ParsedData/'
 file_name='Accounts_001_droppedCol'
 csv=pd.read_csv(path+file_name+'.csv')
 save_as='../resource/CleansedData/ModifiedData/Accounts_001_deleted_korean.csv'
