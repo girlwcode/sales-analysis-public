@@ -168,6 +168,8 @@ print('After : ', accounts['Territories'].isna().sum())
 # Deal 에서 territory null 값 - 139
 #print((pd.isnull(deal['Territory'])).sum())
 
+
+
 # Parsing the dataset
 accounts.to_csv('../resource/CleansedData/Accounts_001_fillTerritory_ver1.csv', index=False)
 
