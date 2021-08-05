@@ -73,6 +73,8 @@ for row in accounts.index:
 #2040
 #2107
 print('Cleansed:',cnt)
+print('Cleansed:',cnt)
+
 
 
 is_not_changed = accounts['Industry Fin'] == 'No'
