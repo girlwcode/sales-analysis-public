@@ -39,7 +39,7 @@ contacts=contacts.dropna(subset=['Territories'],axis=0)
 print(accounts['Territories'].isna().sum())
 print(contacts['Territories'].isna().sum())
 
-accounts[(accounts['Company Name'] == 'Vashi')] = 'Aarti Diagnostic Centre , Vashi'
+accounts.loc[accounts['Company Name'] == 'Vashi', 'Company Name'] = 'Aarti Diagnostic Centre , Vashi'
 
 # data pharsing
 accounts.to_csv('../resource/CleansedData/Accounts_001_fillTerritories_final.csv', index=False)
