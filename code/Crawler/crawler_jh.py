@@ -16,6 +16,9 @@ soup = BeautifulSoup(page, "html.parser")   #html파싱하겠다~
 data1 = []
 data2 = []
 
+browser2 = webdriver.Chrome(executable_path = driver_path) #Chrome driver
+url2 = 'https://www.google.co.kr/maps/search/hospital+in+mumbai/@19.0752184,72.7389769,11z?hl=en'
+browser2.get(url2)
 def searchPlace():
     searchBox = browser.find_element_by_id("searchboxinput")
     searchBox.send_keys(search_name)
