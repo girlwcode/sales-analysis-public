@@ -25,6 +25,9 @@ def searchPlace():
 
     pyautogui.moveTo(178, 429)  #마우스 좌표 이동
 
+
+
+
     # while True:
     #     SCROLL_PAUSE_SEC = 1
     #     # 끝까지 스크롤 다운
@@ -41,15 +44,17 @@ def searchPlace():
 
 
 searchPlace()
-# 끝까지 스크롤 다운
-browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-time.sleep(2)
-browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+itemlist = browser.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[4]/div[1]')
+
+for _ in range(4):  # 스크롤 끝까지 다운
+    browser.execute_script('argument[0].scrollBy(0,1000)', itemlist)
+    time.sleep(1)
 
 for i in range(22):
     try:
         html = browser.page_source
-        soup = BeautifulSoup(html, features="lxml")
+        soup = BeautifulSoup(html, "html.parser")
         tmp = soup.select('.a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')  # 한 페이지에 병원 정보 20개 있으니까 20개 찾아짐
         data1.extend(tmp)  # data라는 리스트에 추가
     except:
