@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 import pandas as pd
+import numpy as np
 import time
 
 
@@ -30,7 +31,10 @@ def crawling(browser):
     search_result["Company_Name"].append(name.text)
     # Category
     categories = browser.find_elements_by_class_name('h0ySl-wcwwM-E70qVe')
-    search_result["Category"].append(categories[1].text)
+    try:
+        search_result["Category"].append(categories[1].text)
+    except:
+        search_result["Category"].append(np.nan)
     # Address
     elements = browser.find_elements_by_class_name('rogA2c')
     for element in elements:
@@ -59,7 +63,6 @@ while True:
     scrolling()
     time.sleep(2)
     search_list = browser.find_elements_by_class_name('a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')
-
     browser_company = webdriver.Chrome(executable_path=driverPath)
     # 검색페이지 1개당 검색결과 20개
     for i, company_url in enumerate(search_list):
