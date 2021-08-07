@@ -26,28 +26,28 @@ def crawling(browser):
     end = browser.find_element_by_class_name('aopO7e-divider')
     scroll = ActionChains(browser).move_to_element(end)
     scroll.perform()
+    time.sleep(1)
     # Company_Name
     name = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
-    search_result["Company_Name"].append(name.text)
+    data_dict['Company_Name'] = name.text
     # Category
     categories = browser.find_elements_by_class_name('h0ySl-wcwwM-E70qVe')
     try:
-        search_result["Category"].append(categories[1].text)
+        data_dict['Category'] = categories[1].text
     except:
-        search_result["Category"].append(np.nan)
+        data_dict['Category'] = np.nan
     # Address
     elements = browser.find_elements_by_class_name('rogA2c')
     for element in elements:
         if 'covid' in element.text.lower():
             continue
         else:
-            search_result["Address"].append(element.text)
+            data_dict['Address'] = element.text
             break
 
 
-
 # Main
-search_result = {'Company_Name': [], 'Category': [], 'Address': [], 'Url': []}
+search_result = pd.DataFrame(columns=['Company_Name', 'Category', 'Address', 'Url'])
 
 googleMap_url = 'https://www.google.co.kr/maps/@37.053745,125.6553969,5z?hl=en'
 driverPath = '../../resource/exe/chromedriver.exe'
@@ -66,13 +66,18 @@ while True:
     browser_company = webdriver.Chrome(executable_path=driverPath)
     # 검색페이지 1개당 검색결과 20개
     for i, company_url in enumerate(search_list):
+        data_dict = dict.fromkeys(['Company_Name', 'Category', 'Address', 'Url'])
         # Company_url 열기
         browser_company.get(company_url.get_attribute('href'))
-        time.sleep(3)
+        time.sleep(5)
         # 데이터 가져오기
         crawling(browser_company)
-        search_result['Url'].append(company_url.get_attribute('href'))
-    print(len(search_list))
+        data_dict['Url'] = company_url.get_attribute('href')
+        # 데이터프레임에 row 추가
+        search_result = search_result.append(data_dict, ignore_index=True)
+        print(data_dict)
+
+    print(len(search_list))     # list 하나 완료
     browser_company.close()
 
     # 다음페이지있으면 넘어가기
@@ -84,6 +89,5 @@ while True:
         break
 
 # Data phrasing
-result = pd.DataFrame(search_result)
-save_dir = '../../resource/CrawlingData/'+search_keyword+'.csv'
-result.to_csv(save_dir, index=False)
+save_dir = '../../resource/CrawlingData/' + search_keyword + '.csv'
+search_result.to_csv(save_dir, index=False)
