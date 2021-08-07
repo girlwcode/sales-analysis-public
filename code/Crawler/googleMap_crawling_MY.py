@@ -18,12 +18,6 @@ def scrolling():
         browser.execute_script('arguments[0].scrollBy(0, 1000)', itemlist)
         time.sleep(1)
 
-# Company_url 스크롤
-def scrolling_company():
-    itemlist = browser.find_element_by_class_name('widget-pane-content.cYB2Ge-oHo7ed')
-    browser.execute_script('arguments[0].scrollBy(0, 50)', itemlist)
-    time.sleep(1)
-
 
 # 데이터 가져오기
 def crawling(browser):
