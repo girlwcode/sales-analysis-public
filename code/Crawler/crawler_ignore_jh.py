@@ -16,6 +16,9 @@ soup = BeautifulSoup(page, "html.parser")   #html파싱하겠다~
 data1 = []
 data2 = []
 
+browser2 = webdriver.Chrome(executable_path = driver_path) #Chrome driver
+url2 = 'https://www.google.co.kr/maps/search/hospital+in+mumbai/@19.0752184,72.7389769,11z?hl=en'
+browser2.get(url2)
 def searchPlace():
     searchBox = browser.find_element_by_id("searchboxinput")
     searchBox.send_keys(search_name)
@@ -24,41 +27,33 @@ def searchPlace():
     time.sleep(2)
 
     pyautogui.moveTo(178, 429)  #마우스 좌표 이동
-
-
-
-
-    # while True:
-    #     SCROLL_PAUSE_SEC = 1
-    #     # 끝까지 스크롤 다운
-    #     browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    #
-    #     # 1초 대기
-    #     time.sleep(SCROLL_PAUSE_SEC)
-    #
-    #     # 스크롤 다운 후 스크롤 높이 다시 가져옴
-    #     new_height = browser.execute_script("return document.body.scrollHeight")
-    #     last_height = new_height
-    #     if new_height == last_height:
-    #         break
-
-
 searchPlace()
 
-itemlist = browser.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[4]/div[1]')
-
-for _ in range(4):  # 스크롤 끝까지 다운
-    browser.execute_script('argument[0].scrollBy(0,1000)', itemlist)
-    time.sleep(1)
+# while True:
+#     SCROLL_PAUSE_SEC = 2
+#     # 끝까지 스크롤 다운
+#     browser2.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+#
+#     # 1초 대기
+#     time.sleep(SCROLL_PAUSE_SEC)
+#
+#     # 스크롤 다운 후 스크롤 높이 다시 가져옴
+#     new_height = browser2.execute_script("return document.body.scrollHeight")
+#     if new_height == last_height:
+#         break
+#     last_height = new_height
 
 for i in range(22):
     try:
-        html = browser.page_source
+        html = browser2.page_source
         soup = BeautifulSoup(html, "html.parser")
         tmp = soup.select('.a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')  # 한 페이지에 병원 정보 20개 있으니까 20개 찾아짐
         data1.extend(tmp)  # data라는 리스트에 추가
+        browser2.execute_script("window.scrollTo(0, document.body.scrollHeight),;")
+        time.sleep(3)
     except:
-        break
+        nextButton = browser2.find_element_by_id('ppdPk-Ej1Yeb-LgbsSe-tJiF1e')
+        nextButton.click()
 # print(data1)
 
 dataList = []
