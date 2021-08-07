@@ -66,8 +66,6 @@ while True:
         # Company_url 열기
         browser_company.get(company_url.get_attribute('href'))
         time.sleep(3)
-        # 스크롤
-        scrolling_company()
         # 데이터 가져오기
         crawling(browser_company)
         search_result['Url'].append(company_url.get_attribute('href'))
