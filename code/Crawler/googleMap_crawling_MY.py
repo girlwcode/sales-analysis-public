@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 import pandas as pd
 import time
 
@@ -13,39 +14,42 @@ def searching(search_keyword):
 # 검색결과 스크롤
 def scrolling():
     itemlist = browser.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[4]/div[1]')
-    for _ in range(4):
+    for _ in range(5):
         browser.execute_script('arguments[0].scrollBy(0, 1000)', itemlist)
-        time.sleep(2)
-    time.sleep(3)
+        time.sleep(1)
+
+# Company_url 스크롤
+def scrolling_company():
+    itemlist = browser.find_element_by_class_name('widget-pane-content.cYB2Ge-oHo7ed')
+    browser.execute_script('arguments[0].scrollBy(0, 50)', itemlist)
+    time.sleep(1)
 
 
 # 데이터 가져오기
 def crawling(browser):
+    # 주소있는 layout까지 scrap
+    end = browser.find_element_by_class_name('aopO7e-divider')
+    scroll = ActionChains(browser).move_to_element(end)
+    scroll.perform()
     # Company_Name
     name = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
-    # print(name.text)
     search_result["Company_Name"].append(name.text)
     # Category
-    category = browser.find_elements_by_class_name('gm2-body-2')
-    search_result["Category"].append(category[1].text)
-    # print(category[1].text)
+    categories = browser.find_elements_by_class_name('h0ySl-wcwwM-E70qVe')
+    search_result["Category"].append(categories[1].text)
     # Address
-    elements = browser.find_elements_by_class_name('AeaXub')
-    if "covid" in elements[0].text.lower():
-        if "covid" in elements[1].text.lower():
-            # print(elements[2].text)
-            search_result["Address"].append(elements[2].text)
+    elements = browser.find_elements_by_class_name('rogA2c')
+    for element in elements:
+        if 'covid' in element.text.lower():
+            continue
         else:
-            # print(elements[1].text)
-            search_result["Address"].append(elements[1].text)
-    else:
-        # print(elements[0].text)
-        search_result["Address"].append(elements[0].text)
+            search_result["Address"].append(element.text)
+            break
 
 
 
-# main
-search_result = {'Company_Name': [], 'Category': [], 'Address': []}
+# Main
+search_result = {'Company_Name': [], 'Category': [], 'Address': [], 'Url': []}
 
 googleMap_url = 'https://www.google.co.kr/maps/@37.053745,125.6553969,5z?hl=en'
 driverPath = '../../resource/exe/chromedriver.exe'
@@ -53,30 +57,38 @@ driverPath = '../../resource/exe/chromedriver.exe'
 browser = webdriver.Chrome(executable_path=driverPath)
 browser.get(googleMap_url)
 time.sleep(3)
-
+# 검색어
 search_keyword = 'hospital in Goa, India'
 searching(search_keyword)
 
 while True:
     scrolling()
+    time.sleep(2)
     search_list = browser.find_elements_by_class_name('a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')
 
     browser_company = webdriver.Chrome(executable_path=driverPath)
-    # 검색페이지 1개 당 검색결과 20개
+    # 검색페이지 1개당 검색결과 20개
     for i, company_url in enumerate(search_list):
-        # print(i, company_url.get_attribute('href'))
+        # Company_url 열기
         browser_company.get(company_url.get_attribute('href'))
-        time.sleep(2)
+        time.sleep(3)
+        # 스크롤
+        scrolling_company()
+        # 데이터 가져오기
         crawling(browser_company)
+        search_result['Url'].append(company_url.get_attribute('href'))
+    print(len(search_list))
     browser_company.close()
+
     # 다음페이지있으면 넘어가기
     try:
         browser.find_element_by_xpath('//*[@id="ppdPk-Ej1Yeb-LgbsSe-tJiF1e"]/img').click()
     except:
         browser.close()
-        print("END")
+        print("Crawling END")
         break
 
+# Data phrasing
 result = pd.DataFrame(search_result)
 save_dir = '../../resource/CrawlingData/'+search_keyword+'.csv'
 result.to_csv(save_dir, index=False)
