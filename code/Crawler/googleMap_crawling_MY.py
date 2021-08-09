@@ -22,9 +22,9 @@ def scrolling():
 
 # 데이터 가져오기
 def crawling(browser):
-    # 주소있는 layout까지 scrap
-    end = browser.find_element_by_class_name('aopO7e-divider')
-    scroll = ActionChains(browser).move_to_element(end)
+    # 스크롤 한번 움직임
+    start = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
+    scroll = ActionChains(browser).move_to_element(start)
     scroll.perform()
     time.sleep(1)
     # Company_Name
@@ -56,10 +56,11 @@ browser = webdriver.Chrome(executable_path=driverPath)
 browser.get(googleMap_url)
 time.sleep(3)
 # 검색어
-search_keyword = 'hospital in Goa, India'
+search_keyword = 'hospital in Jammu and Kashmir, India'
 searching(search_keyword)
 
 while True:
+    time.sleep(3)
     scrolling()
     time.sleep(2)
     search_list = browser.find_elements_by_class_name('a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')
