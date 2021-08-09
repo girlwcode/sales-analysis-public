@@ -3,7 +3,7 @@ import pandas as pd
 origin_data_path = '../../resource/OriginalData/'
 
 # Enter the case (contacts = 1 or leads = 2)
-case = 1
+case = 2
 if case == 1 :
     file_name = 'Contacts_001'
     contacts = pd.read_csv(origin_data_path + file_name + '.csv')
