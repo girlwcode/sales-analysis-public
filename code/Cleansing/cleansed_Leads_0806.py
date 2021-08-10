@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 leads = pd.read_csv('../../resource/CleansedData/ParsedData/Leads_001_droppedCol.csv')
-accounts = pd.read_csv('../../resource/CleansedData/Accounts_001_IndustryCleansed.csv')
+accounts = pd.read_csv('../../resource/CleansedData/Zoho CRM/Accounts_001_IndustryCleansed.csv')
 
 leads['Industry Fin'] = 'No'
 
