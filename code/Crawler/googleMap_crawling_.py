@@ -50,7 +50,7 @@ def crawling(browser):
 # Main
 driverPath = '../../resource/exe/chromedriver.exe'
 # 검색할 state list
-search_keywords = ['Maharashtra', 'Gujarat', 'Rajasthan', 'Uttar Pardesh', 'Delhi', 'Haryana', 'Punjab']
+search_keywords = ['Maharashtra', 'Gujarat', 'Rajasthan', 'Uttar Pradesh', 'Delhi', 'Haryana', 'Punjab']
 
 for keyword in search_keywords:
     search_result = pd.DataFrame(columns=['Company_Name', 'Category', 'Address', 'Url'])
