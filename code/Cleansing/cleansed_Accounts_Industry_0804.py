@@ -48,18 +48,18 @@ keywords1 = {'hospital':'Hospital','hotel':'Hotel','clinic':'Clinic', 'gym':'Fit
                , 'principal':'Public Association', 'diagno':'Clinic', 'obesit':'Clinic', 'diabe':'Clinic','school':'Academic', 'dr ':'Clinic',
             'dr.':'Clinic', 'patho':'Clinic', 'personal':'Others_Individual', 'authority':'Public Association', 'national institute':'Academic'
             ,'commissioner':'Military','rehab':'Clinic', 'vlcc':'Others_Aesthetic','asthe':'Others_Aesthetic', 'aesthe':'Others_Aesthetic',
-             'mriu': 'Academic','nutricia':'Others_Others', 'medanta':'Hospital', 'shape n':'Others_Aesthetic', 'agricultural':'Academic','fitness':'Fitness'}
+             'mriu': 'Academic','nutricia':'Others_Others Corporate', 'medanta':'Hospital', 'shape n':'Others_Aesthetic', 'agricultural':'Academic','fitness':'Fitness'}
 
 ids_keywords = {'Fitness':'Fitness', 'Hotel':'Hotel', 'Hospitality':'Private Enterprise', 'Corporate wellness':'Others_Aesthetic'
-                ,'Corporates':'Others_Others','Academic':'Academic','Dealer':'Private Enterprise', 'Dealer_FItness':'Private Enterprise',
-                'Dealer_Medical':'Private Enterprise','Enterprise':'Others_Others', 'Health Functional Food sales':'Private Enterprise',
+                ,'Corporates':'Others_Others Corporate','Academic':'Academic','Dealer':'Private Enterprise', 'Dealer_FItness':'Private Enterprise',
+                'Dealer_Medical':'Private Enterprise','Enterprise':'Others_Others Corporate', 'Health Functional Food sales':'Private Enterprise',
                 'Individual':'Others_Individual', 'University':'Academic', 'Public Medical':'Hospital','Public Health Center':'Fitness'
                 ,'Pharmacy':'Private Enterprise', 'National and Public Institutions':'Public Association','Military base':'Military',
                 'Middle budget Fitness' : 'Fitness','Key man':'Private Enterprise','Individual Fitness':'Fitness','Hospitals':'Hospital',
-                'High budget Fitness':'Fitness', 'Government Medical' : 'Hospital', 'Amazon/CS' : 'Others_Others'
+                'High budget Fitness':'Fitness', 'Government Medical' : 'Hospital', 'Amazon/CS' : 'Others_Others Corporate'
                 }
 
-keywords2 = {'self':'Others_Individual', 'dietician':'clinic', 'insurance':'Private Enterprise', 'loss':'clinic', 'mechanics':'Fitness','association':'Public Association',
+keywords2 = {'self':'Others_Individual', 'dietician':'Clinic', 'insurance':'Private Enterprise', 'loss':'clinic', 'mechanics':'Fitness','association':'Public Association',
              'football':'Public Association', 'fit':'Fitness', 'diet centre' : 'Clinic', 'path lab' :'Clinic', 'safe': 'Clinic',
              'dt ':'Clinic', 'dt.':'Clinic', 'diet':'Clinic', 'ms.':'Others_Individual', 'mr ':'Others_Individual', 'mr.':'Others_Individual',
              'nutri':'Private Enterprise','nutritionist':'Clinic','healthcare':'Hospital', 'wellness':'Others_Aesthetic', 'cosmetics':'Others_Aesthetic', 'force':'Public Association',
@@ -68,17 +68,17 @@ keywords2 = {'self':'Others_Individual', 'dietician':'clinic', 'insurance':'Priv
 }
 
 ids_keywords2 = {'Sports':'Private Enterprise', 'Private Medical':'Private Enterprise', 'Health Center':'Others_Aesthetic','Defense':'Private Enterprise',
-                 'Others':'Others_Others'}
+                 'Others':'Others_Others Corporate'}
 
-keywords3 = {'club':'Hotel','tech':'Others_Others', 'health':'Private Enterprise', 'health club':'Fitness',
-             'federation':'Public Association','foundation':'Public Association', 'ltd':'Others_Others', 'body':'Fitness','studio':'Others_Others' ,
-             'sakthivel.a':'Academic', 'enterpri':'Private Enterprise', 'private':'Others_Others', 'sai ':'Private Enterprise',
-             'm.m':'Public Association', 'officer':'Military', 'company':'Others_Others', 'burger':'Clinic', 'Slimming':'Private Enterprise',
-             'centr':'Clinic','Talwalkars':'Fitness', 'franchise':'Fitness', 'develop':'Others_Others', 'iifw':'Others_Others', 'square':'Others_Others',
-             'corporation':'Others_Others', 'limited':'Others_Others','life':'Clinic','llp':'Others_Others', 'general':'Public Association','seven':'Others_Others' ,
-             'olympic':'Others_Others', 'physio':'Clinic', 'equipment':'Private Enterprise','push':'Fitness', 'associate':'Public Association',
-             'solution':'Private Enterprise', 'infra':'Others_Others', 'nuelife':'Private Enterprise', 'squad':'Others_Others','workout':'Fitness',
-             'resort':'Hotel', 'venture':'Others_Others', 'sprinklr':'Others_Others', 'cdmdt':'Public Association', 'eat':'Clinic','commander':'Military',
+keywords3 = {'club':'Hotel','tech':'Others_Others Corporate', 'health':'Private Enterprise', 'health club':'Fitness',
+             'federation':'Public Association','foundation':'Public Association', 'ltd':'Others_Others Corporate', 'body':'Fitness','studio':'Others_Others Corporate' ,
+             'sakthivel.a':'Academic', 'enterpri':'Private Enterprise', 'private':'Others_Others Corporate', 'sai ':'Private Enterprise',
+             'm.m':'Public Association', 'officer':'Military', 'company':'Others_Others Corporate', 'burger':'Clinic', 'Slimming':'Private Enterprise',
+             'centr':'Clinic','Talwalkars':'Fitness', 'franchise':'Fitness', 'develop':'Others_Others Corporate', 'iifw':'Others_Others Corporate', 'square':'Others_Others Corporate',
+             'corporation':'Others_Others Corporate', 'limited':'Others_Others Corporate','life':'Clinic','llp':'Others_Others Corporate', 'general':'Public Association','seven':'Others_Others Corporate' ,
+             'olympic':'Others_Others Corporate', 'physio':'Clinic', 'equipment':'Private Enterprise','push':'Fitness', 'associate':'Public Association',
+             'solution':'Private Enterprise', 'infra':'Others_Others Corporate', 'nuelife':'Private Enterprise', 'squad':'Others_Others Corporate','workout':'Fitness',
+             'resort':'Hotel', 'venture':'Others_Others Corporate', 'sprinklr':'Others_Others Corporate', 'cdmdt':'Public Association', 'eat':'Clinic','commander':'Military',
 }
 
 # Classification 1
@@ -110,7 +110,7 @@ for row in accounts.index :
             accounts['Industry Fin'][row] = 'Clinic'
 
         if (accounts['Sales Person'][row] == 'CS/Amazon/Other'):
-            accounts['Industry Fin'][row] = 'Others'
+            accounts['Industry Fin'][row] = 'Others_etc'
 
 
 for row in accounts.index:
@@ -143,7 +143,8 @@ for row in accounts.index:
         if(title in upper and title not in peoples):
             if (title == 'T VENUGOPAL' or title == 'NIKHIL PRABHAKAR BURUTE'):
                 accounts['Industry Fin'][row] = 'Clinic'
-            accounts['Industry Fin'][row] = 'Others_Others'
+            else : accounts['Industry Fin'][row] = 'Others_Others Corporate'
+
         elif(title in upper and title in peoples):
             accounts['Industry Fin'][row] = 'Others_Individual'
         else: accounts['Industry Fin'][row] = 'Others_etc'
@@ -163,5 +164,8 @@ is_not_changed = accounts['Industry Fin'] == 'No'
 parse = accounts[is_not_changed]
 print('Not Cleansed:',len(parse))
 
+#14개
+#print(accounts['Industry Fin'].nunique(), accounts['Industry Fin'].unique())
+
 accounts = accounts.drop(['Industry','Sub industry'],axis=1)
-accounts.to_csv('../resource/CleansedData/Accounts_001_IndustryCleansed.csv',index=False)
+accounts.to_csv('../../resource/CleansedData/Accounts_001_IndustryCleansed.csv',index=False)
