@@ -149,6 +149,7 @@ for row in accounts.index:
             accounts['Industry Fin'][row] = 'Others_Individual'
         else: accounts['Industry Fin'][row] = 'Others_etc'
 
+    # 이상치 제거
     if ('inbody' in accounts['Company Name'][row].lower() or accounts['Company Name'][row].lower() == 'unknown'):
         accounts = accounts.drop(index=row, axis=0)
         cnt += 1

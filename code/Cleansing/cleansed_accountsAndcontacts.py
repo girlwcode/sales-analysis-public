@@ -43,5 +43,5 @@ accounts.loc[accounts['Company Name'] == 'Vashi', 'Company Name'] = 'Aarti Diagn
 
 # data pharsing
 accounts.to_csv('../resource/CleansedData/Accounts_001_fillTerritories_final.csv', index=False)
-contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritories_final.csv', index=False)
+contacts.to_csv('../resource/CleansedData/Contacts_001_fillTerritories_ver2.csv', index=False)
 
