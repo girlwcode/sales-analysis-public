@@ -14,6 +14,7 @@ def searching(search_keyword):
 
 # 검색결과 스크롤
 def scrolling():
+    time.sleep(3)
     itemlist = browser.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[4]/div[1]')
     for _ in range(5):
         browser.execute_script('arguments[0].scrollBy(0, 1000)', itemlist)
@@ -26,7 +27,7 @@ def crawling(browser):
     start = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
     scroll = ActionChains(browser).move_to_element(start)
     scroll.perform()
-    time.sleep(1)
+    time.sleep(2)
     # Company_Name
     name = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
     data_dict['Company_Name'] = name.text
@@ -56,11 +57,10 @@ browser = webdriver.Chrome(executable_path=driverPath)
 browser.get(googleMap_url)
 time.sleep(3)
 # 검색어
-search_keyword = 'hospital in Jammu and Kashmir, India'
+search_keyword = 'fitness in Chandigarh, India'
 searching(search_keyword)
 
 while True:
-    time.sleep(3)
     scrolling()
     time.sleep(2)
     search_list = browser.find_elements_by_class_name('a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')
@@ -69,11 +69,11 @@ while True:
     for i, company_url in enumerate(search_list):
         data_dict = dict.fromkeys(['Company_Name', 'Category', 'Address', 'Url'])
         # Company_url 열기
-        browser_company.get(company_url.get_attribute('href'))
-        time.sleep(5)
+        data_dict['Url'] = company_url.get_attribute('href')
+        browser_company.get(data_dict['Url'])
+        time.sleep(7)
         # 데이터 가져오기
         crawling(browser_company)
-        data_dict['Url'] = company_url.get_attribute('href')
         # 데이터프레임에 row 추가
         search_result = search_result.append(data_dict, ignore_index=True)
         print(data_dict)
