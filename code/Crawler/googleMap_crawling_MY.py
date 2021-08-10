@@ -48,47 +48,48 @@ def crawling(browser):
 
 
 # Main
-search_result = pd.DataFrame(columns=['Company_Name', 'Category', 'Address', 'Url'])
-
-googleMap_url = 'https://www.google.co.kr/maps/@37.053745,125.6553969,5z?hl=en'
 driverPath = '../../resource/exe/chromedriver.exe'
+# 검색할 state list
+search_keywords = ['Maharashtra', 'Gujarat', 'Rajasthan', 'Uttar Pardesh', 'Delhi', 'Haryana', 'Punjab']
 
-browser = webdriver.Chrome(executable_path=driverPath)
-browser.get(googleMap_url)
-time.sleep(3)
-# 검색어
-search_keyword = 'fitness in Chandigarh, India'
-searching(search_keyword)
+for keyword in search_keywords:
+    search_result = pd.DataFrame(columns=['Company_Name', 'Category', 'Address', 'Url'])
 
-while True:
-    scrolling()
-    time.sleep(2)
-    search_list = browser.find_elements_by_class_name('a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')
-    browser_company = webdriver.Chrome(executable_path=driverPath)
-    # 검색페이지 1개당 검색결과 20개
-    for i, company_url in enumerate(search_list):
-        data_dict = dict.fromkeys(['Company_Name', 'Category', 'Address', 'Url'])
-        # Company_url 열기
-        data_dict['Url'] = company_url.get_attribute('href')
-        browser_company.get(data_dict['Url'])
-        time.sleep(7)
-        # 데이터 가져오기
-        crawling(browser_company)
-        # 데이터프레임에 row 추가
-        search_result = search_result.append(data_dict, ignore_index=True)
-        print(data_dict)
+    googleMap_url = 'https://www.google.co.kr/maps/@37.053745,125.6553969,5z?hl=en'
+    browser = webdriver.Chrome(executable_path=driverPath)
+    browser.get(googleMap_url)
+    time.sleep(3)
 
-    print(len(search_list))     # list 하나 완료
-    browser_company.close()
+    search_str = 'hospital in ' + keyword + ', India'
+    searching(search_str)
 
-    # 다음페이지있으면 넘어가기
-    try:
-        browser.find_element_by_xpath('//*[@id="ppdPk-Ej1Yeb-LgbsSe-tJiF1e"]/img').click()
-    except:
-        browser.close()
-        print("Crawling END")
-        break
+    while True:
+        scrolling()
+        time.sleep(2)
+        search_list = browser.find_elements_by_class_name('a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd')
+        browser_company = webdriver.Chrome(executable_path=driverPath)
+        # 검색페이지 1개당 검색결과 20개
+        for i, company_url in enumerate(search_list):
+            data_dict = dict.fromkeys(['Company_Name', 'Category', 'Address', 'Url'])
+            # Company_url 열기
+            browser_company.get(company_url.get_attribute('href'))
+            data_dict['Url'] = company_url.get_attribute('href')
+            time.sleep(7)
+            # 데이터 가져오기
+            crawling(browser_company)
+            # 데이터프레임에 row 추가
+            search_result = search_result.append(data_dict, ignore_index=True)
+            print(data_dict)
 
-# Data phrasing
-save_dir = '../../resource/CrawlingData/' + search_keyword + '.csv'
-search_result.to_csv(save_dir, index=False)
+        print(len(search_list))  # list 하나 완료
+        browser_company.close()
+
+        # 다음페이지있으면 넘어가기
+        try:
+            browser.find_element_by_xpath('//*[@id="ppdPk-Ej1Yeb-LgbsSe-tJiF1e"]/img').click()
+        except:
+            browser.close()
+            save_dir = '../../resource/CrawlingData/hospital/' + search_str + '.csv'
+            search_result.to_csv(save_dir, index=False)
+            print("Crawling END")
+            break
