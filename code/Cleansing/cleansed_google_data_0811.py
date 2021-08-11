@@ -26,7 +26,8 @@ for i in total_csv[0]:
     data_csv = pd.read_csv("../../resource/CrawlingData/clinic/" + i+'.csv')
     print(i,"\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
-    # new_data = data_csv.dropna(subset=['Category', 'Address'], how='all')  # 더미데이터 제거
+    data_csv = data_csv.dropna(subset=['Url'])  #url이 없으면 제거
+    new_data = data_csv.dropna(subset=['Category', 'Address'], how='all')  # 더미데이터 제거
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_clinic.append(data_csv)
@@ -63,19 +64,43 @@ drop_list_hos = ['eye', 'dental', 'animal', 'psychiatric', 'family', 'skin', 'ha
               'architecture','coffee','school','manufacturer','homeopath','printing','dairy','dry','grocery','photo','education center','phone','bank',
               'linen','corporate office','motor','baby store','criminal','statue','herbal medicine','furniture','marrage','appliance store','costume',
               'publisher','telecommunicatons','garden','familypractice','railway','video arcade','panipury', 'tourist attraction', 'secondary','seal shop',
-              'store','government office','veterinarian']
+              'store','government office','veterinarian', 'contractor','apartment building','charity','biotechnology company','maarage','clothing',
+              'telecommunication','employment agency','ophthalmologist','university','back office','anesthesiologist','advertising','sports association',
+              'transit deposit', 'housing', 'mosque', 'lodging', 'educational institution', 'milk delivery service','worship', 'playground', 'villa',
+              'free clinic','accountant', 'drinking water','hostel','human resource','home builder','interchange','stationery','atm'
+              'florist','fashion',  'function','post office','social services','ATM','district office','agriculture','state','historical',
+              'non-profit','tractor','association','army','computer', 'sculptor','sexologist','sports medicine','occupational','auditorium','foundation',
+              'dormitory','subway','optician','food court','air filter',]
 
 drop_list_clinic = ['skin care' ,'dermatology','hair transplantation','dental','eye','beauty salon','veterinarian','animal','veterinary','alternative',
               'pet','dentist','school','state government office','computer service','community health','psychologist','homeopath','shopping mall',
               'environmental health service','lawyer','car leasing','lasik','park','dermatologist','parking garage','church','bank','hotel',
               'water purification','dairy store','gas comapny','news','restaurant','plastic surgeon', 'non-profit organization','orthodontist',
               'optician','sexologist','drug store','speech','oral','car repair','day care center','tour','radiologist','pharmacy',
-              'hair removal','caterer','corporate','library','general store','lodging','atm']
+              'hair removal','caterer','corporate','library','general store','lodging','atm', 'psychiatrist','infectious','chiropractor',
+              'drug testing','nutritionist','testing service','hair replacement','hair salon','abortion clinic','hearing aid',
+              'camera store','computer store','chauffeur service','industrial area','abhilasha business','family planning','software',
+              'courier service','oil change','ambulance','bathroom','post office','jewelry','life insurance','baby store','interior',
+              'mental health','holiday','emergency room','laboratory','dormitory','college','transit','association','insurance','walk',
+              'native american','consultant','laboratory','university','call center','equipment','bus','gift','repair','bar','gas', 'winery',
+              'fabric','broadcaster','clothing','dar dealer','family','educational','psychiatric','travel','marriage','lounge','heritage',
+              'database','home health','research','sweet','acupuncture','back office','employment','appliance','electronics', 'herbalist','legal',
+              'agricultural','hiv','housing','apartment','student','historical','market','police','city or town','lodge', 'ear piercing','hiv',
+              'assistant','health food','cosmetics','playground','garden','shoe', 'watch store','optical','seed', 'referral','farm', 'internet marketing',
+              'dharamashala','manufacturer','grocery',  'night club','spa','e-commerce','homestay','government office','pharmaceutical company',
+              'plastic surgery','products','manu_dhumachharra','spa','condominium','mosque','medicine clinic','agricultural','foundation','temple',
+              '500 error', 'neonatal', 'american football', 'construction']
 
-drop_list_fit = ['martial arts school','exercise equipment store','business center','fitness equipment','supplements','trainer','make-up','dance',
+drop_list_fit = ['martial arts','exercise equipment store','business center','fitness equipment','supplements','trainer','make-up','dance',
               'grocery store','recruiting','repair service','instructor','butcher shop','meditation center','sports nutrition','university',
               'health and beauty','design','wellness center','store','oxygen cocktail','manufacturer','park', 'fencing', 'consultant',
-              'energy equipment','educational institution','playground','tempororily','religious institution' ]
+              'energy equipment','educational institution','playground','tempororily','religious institution', 'addiction','nutritionist','beauty',
+              'equipment rental agency', 'corporate', 'charter', 'gift', 'sports accessories', 'physical therapist','hotel', 'art school','software',
+              'water softening','therapy','spa','news','federal','government office','sports association','basketball court','unemployment school',
+              'vocational school','information','tai chi','back office','wellness','warehouse','construciton','wing','temple','supplier','distribution service'
+              ,'homestay','home','association','indoor swimming','non-governmental', 'lodging','exporter','wholesaler', 'school','vehicle','garden',
+              'recreation center','court','self defense','location','stadium','biotechnology','shopping','motorcycle', 'radhanagar','pharmacy',
+              'education','e-commerce','hospital',  'temporarily', 'studying center' , ]
 
 
 # Clinic
