@@ -63,14 +63,21 @@ drop_list_hos = ['eye', 'dental', 'animal', 'psychiatric', 'family', 'skin', 'ha
               'architecture','coffee','school','manufacturer','homeopath','printing','dairy','dry','grocery','photo','education center','phone','bank',
               'linen','corporate office','motor','baby store','criminal','statue','herbal medicine','furniture','marrage','appliance store','costume',
               'publisher','telecommunicatons','garden','familypractice','railway','video arcade','panipury', 'tourist attraction', 'secondary','seal shop',
-              'store','government office','veterinarian']
+              'store','government office','veterinarian', 'contractor','apartment building','charity','biotechnology company','maarage','clothing',
+              'telecommunication','employment agency','ophthalmologist','university','back office','anesthesiologist','advertising','sports association',
+              'transit deposit', 'housing', 'mosque', 'lodging', 'educational institution', 'milk delivery service','worship', 'playground', 'villa',
+              'free clinic','accountant', 'drinking water','hostel','human resource','home builder','interchange','stationery','atm'
+              'florist','fashion']
 
 drop_list_clinic = ['skin care' ,'dermatology','hair transplantation','dental','eye','beauty salon','veterinarian','animal','veterinary','alternative',
               'pet','dentist','school','state government office','computer service','community health','psychologist','homeopath','shopping mall',
               'environmental health service','lawyer','car leasing','lasik','park','dermatologist','parking garage','church','bank','hotel',
               'water purification','dairy store','gas comapny','news','restaurant','plastic surgeon', 'non-profit organization','orthodontist',
               'optician','sexologist','drug store','speech','oral','car repair','day care center','tour','radiologist','pharmacy',
-              'hair removal','caterer','corporate','library','general store','lodging','atm']
+              'hair removal','caterer','corporate','library','general store','lodging','atm', 'psychiatrist','infectious','chiropractor',
+              'drug testing','nutritionist','testing service','hair replacement','hair salon','abortion clinic','hearing aid',
+              'camera store','computer store','chauffeur service','industrial area','abhilasha business','family planning','software',
+              'courier service','oil change','ambulance','bathroom','post office','jewelry','life insurance','baby store','interior' ]
 
 drop_list_fit = ['martial arts school','exercise equipment store','business center','fitness equipment','supplements','trainer','make-up','dance',
               'grocery store','recruiting','repair service','instructor','butcher shop','meditation center','sports nutrition','university',
