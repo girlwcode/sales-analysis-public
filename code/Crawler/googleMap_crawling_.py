@@ -15,19 +15,30 @@ def searching(search_keyword):
 # 검색결과 스크롤
 def scrolling():
     time.sleep(3)
-    itemlist = browser.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[4]/div[1]')
-    for _ in range(5):
-        browser.execute_script('arguments[0].scrollBy(0, 1000)', itemlist)
-        time.sleep(1)
+    while True:
+        try:
+            itemlist = browser.find_element_by_xpath('//*[@id="pane"]/div/div[1]/div/div/div[4]/div[1]')
+            for _ in range(5):
+                browser.execute_script('arguments[0].scrollBy(0, 1000)', itemlist)
+                time.sleep(1)
+        except:
+            pass
+        else:
+            break
 
 
 # 데이터 가져오기
 def crawling(browser):
     # 스크롤 한번 움직임
-    start = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
-    scroll = ActionChains(browser).move_to_element(start)
-    scroll.perform()
-    time.sleep(2)
+    while True:
+        try:
+            end = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
+            ActionChains(browser).move_to_element(end).perform()
+        except:
+            pass
+        else:
+            break
+    time.sleep(1)
     # Company_Name
     name = browser.find_element_by_class_name('x3AX1-LfntMc-header-title-title.gm2-headline-5')
     data_dict['Company_Name'] = name.text
@@ -50,7 +61,7 @@ def crawling(browser):
 # Main
 driverPath = '../../resource/exe/chromedriver.exe'
 # 검색할 state list
-search_keywords = ['Maharashtra', 'Gujarat', 'Rajasthan', 'Uttar Pradesh', 'Delhi', 'Haryana', 'Punjab']
+search_keywords = ['Telangana', 'Kerala', 'West Bengal', 'Madhya Pradesh']
 
 for keyword in search_keywords:
     search_result = pd.DataFrame(columns=['Company_Name', 'Category', 'Address', 'Url'])
@@ -60,7 +71,7 @@ for keyword in search_keywords:
     browser.get(googleMap_url)
     time.sleep(3)
 
-    search_str = 'hospital in ' + keyword + ', India'
+    search_str = 'fitness in ' + keyword + ', India'
     searching(search_str)
 
     while True:
@@ -72,15 +83,22 @@ for keyword in search_keywords:
         for i, company_url in enumerate(search_list):
             data_dict = dict.fromkeys(['Company_Name', 'Category', 'Address', 'Url'])
             # Company_url 열기
-            browser_company.get(company_url.get_attribute('href'))
             data_dict['Url'] = company_url.get_attribute('href')
+            browser_company.get(data_dict['Url'])
             time.sleep(7)
-            # 데이터 가져오기
-            crawling(browser_company)
-            # 데이터프레임에 row 추가
-            search_result = search_result.append(data_dict, ignore_index=True)
-            print(data_dict)
-
+            # 500에러_category:500error
+            try:
+                error = browser_company.find_element_by_tag_name('ins')  # 되면 error
+            except:
+                # 데이터 가져오기
+                crawling(browser_company)
+                # 데이터프레임에 row 추가
+                search_result = search_result.append(data_dict, ignore_index=True)
+                print(data_dict)
+            else:
+                data_dict['Category'] = '500 error'
+                search_result = search_result.append(data_dict, ignore_index=True)
+                continue
         print(len(search_list))  # list 하나 완료
         browser_company.close()
 
