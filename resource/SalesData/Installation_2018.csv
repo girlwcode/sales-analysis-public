@@ -15,8 +15,7 @@ S. No.,Month,InBody/service/Dial,Customer Details ,Postal code,City ,State,Regio
 14,January,I,FIFTH GEAR FITNESS LLP.,,Gujarat,Gujarat,West 2,Fitness ,Mahesh,24.1.18,IB 270,LB,,,,INV1718-0158,"? 205,352.86","? 24,647.14","? 230,000.00","? 230,000.00",? 0.00,,,,,,
 15,January,S,VLCC WELNESS CENTRE,781001,Guwahati,Assam,East,Wellness,Mr. Dawson,24.1.18,Spare Parts,,,,ACCS,INV1718-0159,"? 63,420.00","? 7,968.00","? 71,388.00","? 71,388.00",? 0.00,,,,,,
 16,January,D,Danz & Aerobic Fitness Studio,517501,Tirupathi,Andhra Pradesh,South,Fitness ,Karn,25.1.18,InBody Dial,,,HH,,INV1718-0164,"? 17,857.14","? 2,142.86","? 20,000.00","? 20,000.00",? 0.00,,,,,,
-17,January,I,"ToneFitness
-",535002,Andhra Pradesh,Andhra Pradesh,South,Fitness ,Karn ,25.01.2018,Ib 270,LB,,,, INV1718-0165,"? 241,071.43","? 28,928.57","? 270,000.00","? 180,000.00","? 90,000.00",,,,,,
+17,January,I,ToneFitness,535002,Andhra Pradesh,Andhra Pradesh,South,Fitness ,Karn ,25.01.2018,Ib 270,LB,,,, INV1718-0165,"? 241,071.43","? 28,928.57","? 270,000.00","? 180,000.00","? 90,000.00",,,,,,
 18,January,I,MY GYM,502032,Hyderabad,Telangana,South,Fitness ,Alamjeet,26.01.2018,Ib 270,LB,,,ACCS, INV1718-0166,"? 241,071.43","? 28,928.57","? 270,000.00","? 100,000.00","? 170,000.00",,,,,,
 19,January,I,The Health Fitness Club ,444704,Amravati,Maharashtra,West 1,Fitness ,Anees,29.01.2018,InBody 270,,,,,INV1718-0167,"? 348,214.28","? 41,785.72","? 390,000.00","? 390,000.00",? 0.00,Complete,,,,,
 20,January,I,Vibes Healthcare Limited,411006,Pune,Maharashtra,West 1,Wellness,Chanu,29.01.2018,InBody 270,,,,,INV1718-0171,"? 348,214.28","? 41,785.72","? 390,000.00","? 390,000.00",? 0.00,Complete,,,,,
@@ -151,8 +150,7 @@ S. No.,Month,InBody/service/Dial,Customer Details ,Postal code,City ,State,Regio
 33,June,I,Team Core Fitness,122017,Gurgaon,Haryana,North,Fitness ,Arun ,14.06.2018,IB 120  ,LB,,,ACCS,INV-000064,"? 179,107.14","? 20,892.86","? 200,000.00","? 200,000.00",? 0.00,,,,,,
 34,June,I,Nobesity Healthcare LLP,380015,Ahmedabad,Gujrat,West 2,Wellness,Mahesh,18.06.2018,IB 370 S,,,,ACCS,INV-000065,"? 401,862.50","? 48,223.50","? 450,086.00","? 450,086.00",? 0.00,,,,,,
 35,June,I,Radiant Fitness,795001,Imphal,Manipur,East,Fitness ,Varun,18.06.2018,IB 370,LB,,,,INV-000066,"? 491,071.00","? 58,929.00","? 550,000.00","? 550,000.00",? 0.00,,,,,,
-36,June,I,Nineleaps Technology Solutions Pvt.Ltd,560034,Bangalore,Karnataka,South,Corporate,Karn ,18.06.2018,IB 270,LB,,,,INV-000067,"? 419,642.86","50,357.14
-","? 470,000.00","? 470,000.00",? 0.00,,,,,,
+36,June,I,Nineleaps Technology Solutions Pvt.Ltd,560034,Bangalore,Karnataka,South,Corporate,Karn ,18.06.2018,IB 270,LB,,,,INV-000067,"? 419,642.86","50,357.14","? 470,000.00","? 470,000.00",? 0.00,,,,,,
 37,June,I,Endolife Speciality Hosp Pvt ltd,522647,Guntur,Andhra Pradesh,South,Medical,Karn ,18.06.2018,IB 120 ,LB,,,ACCS,INV-000068,"? 208,928.57","? 25,071.43","? 234,000.00","? 234,000.00",? 0.00,,,,,,
 38,June,I,Kartik Associates,600053,Chennai,Tamilnadu,South,Corporate,Karn ,18.06.2018,IB 120 ,LB,,,ACCS,INV-000069,"? 147,321.43","? 17,678.57","? 165,000.00","? 165,000.00",? 0.00,,,,,,
 39,June,D,Meghana Rao,500026,Secunderabad,Telangana,South,Personal ,Amazon,22.06.2018,InBody Dial,,,HH,,INV-000070,"? 17,839.29","? 2,140.72","? 19,980.00","? 19,980.00",? 0.00,,,,,,
@@ -317,8 +315,7 @@ S. No.,Month,InBody/service/Dial,Customer Details ,Postal code,City ,State,Regio
 73,September,A,Vidhi Mehta,,Mumbai,Maharashtra,Academia,Academia,Academia,17.09.2018,Academia,,,,,INV-000227,"? 1,271.18",? 228.82,"? 1,500.00","? 1,500.00",? 0.00,,,,,,
 74,September,S,ATHLETICA FITNESS LLP,395007,Surat,Gujrat,West 2,Fitness,Karn,19.09.2018,Service,,,,ACCS,INV-000230,"? 4,464.29",? 535.71,"? 5,000.00",? 0.00,"? 5,000.00",,,,,,
 75,September,S,GL Fitness,110021,Delhi,Delhi,North,Fitness,Tushar,20.09.2018,Service,,,,ACCS,INV-000231,"? 11,000.00","? 1,680.00","? 12,680.00","? 5,000.00","? 7,680.00",,,,,,
-76,September,S,"GLOBAL HEALTH PVT LTD
-MEDANTA THE MEDICITY",,Gurgaon,Hyryana,North,Corporate,Dawson,20.09.2018,Service,,,,ACCS,INV-000232,? 0.00,? 0.00,? 0.00,? 0.00,? 0.00,,,,,,
+76,September,S,GLOBAL HEALTH PVT LTD MEDANTA THE MEDICITY,,Gurgaon,Hyryana,North,Corporate,Dawson,20.09.2018,Service,,,,ACCS,INV-000232,? 0.00,? 0.00,? 0.00,? 0.00,? 0.00,,,,,,
 77,September,S,PRIMOUS HOSPITAL / National Capital Territory of Delhi,110021,Delhi,Delhi,North,Medical,Tushar,20.09.2018,Service,,,,ACCS,INV-000233,"? 17,000.00","? 3,060.00","? 20,060.00","? 20,060.00",? 0.00,,,,,,
 78,September,S,Ravindranath GE Medical Associates Pvt Ltd,600100,Chennai,Tamilnadu,South,Medical,Karn,21.09.2018,Service,LB,,,ACCS,INV-000266,"? 14,500.00","? 1,740.00","? 16,240.00","? 16,240.00",? 0.00,,,,,,
 79,September,I,Freak Fitness,494001,Jagdalpur,Chhatisgarh,East,Fitness,Varun,21.09.2018,IB 120,LB,,,ACCS,INV-000267,"? 196,423.21","? 23,576.79","? 220,000.00","? 220,000.00",? 0.00,,,,,,
