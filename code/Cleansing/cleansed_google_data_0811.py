@@ -70,7 +70,14 @@ drop_list_hos = ['eye', 'dental', 'animal', 'psychiatric', 'family', 'skin', 'ha
               'free clinic','accountant', 'drinking water','hostel','human resource','home builder','interchange','stationery','atm'
               'florist','fashion',  'function','post office','social services','ATM','district office','agriculture','state','historical',
               'non-profit','tractor','association','army','computer', 'sculptor','sexologist','sports medicine','occupational','auditorium','foundation',
-              'dormitory','subway','optician','food court','air filter',]
+              'dormitory','subway','optician','food court','air filter',  'internal medicine','consultant','florist','shopping','library','research',
+              'indian restaurant','gas station','interior','recruiter','passport','ice cream','restaurant','media','bed','copper supplier','stock',
+              'winery','beauty salon','fast food','radio broadcaster','hotel','bazar','closed','services', 'ambulance service','religious','ground self','train',
+              'clubhouse','temple','organic shop','general practitioner','website designer','marketing agency','gas station', 'ethnic restaurant','church','market',
+              'police station','fire','bakery','park', 'hiv testing','food','gas shop','milwork','convention','marriage','fitness equipment', 'transit station','park',
+              'software', 'astrologer','night club','e-commerce','plastic surgeon','homestay','bar','tattoo shop','architect','tourist information','bathroom','tire shop','travel','court',
+              'cafeteria', 'water treatment', 'water damage', 'gps', 'condominium complex', 'news','safety',"sheriff",'mining','coaching','wellness','transit','emergency','dried flower',
+              'board of education','zoo', 'gaon','equipment','internet cafe','wedding','cleaning','500 error','racecourse','goods','online']
 
 drop_list_clinic = ['skin care' ,'dermatology','hair transplantation','dental','eye','beauty salon','veterinarian','animal','veterinary','alternative',
               'pet','dentist','school','state government office','computer service','community health','psychologist','homeopath','shopping mall',
