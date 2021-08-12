@@ -14,8 +14,7 @@ for i in detail_dir:    #  파일 내에 있는 모든 csv파일명 가져옴
     a=len(file_list_py)
     lenList.append(a)
     total_csv.append(file_list_py)
-# print(total_csv)
-# print(len(total_csv[2]))
+# print(lenList)
 
 
 # 1. 각 csv 파일 내 중복 , 더미데이터 제거
