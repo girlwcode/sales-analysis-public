@@ -1,16 +1,16 @@
 import os
 import pandas as pd
 
-def find_latitude_longtitude(url):
+def find_latitude_longitude(url):
     latitude_start_index = str(url).find('!3d')
     latitude_end_index = str(url).find('!4d')
-    longtitude_start_index = str(url).find('!4d')
-    longtitude_end_index = str(url).find('?')
+    longitude_start_index = str(url).find('!4d')
+    longitude_end_index = str(url).find('?')
 
     latitude = str(url)[latitude_start_index + 3: latitude_end_index]
-    longtitude = str(url)[longtitude_start_index + 3: longtitude_end_index]
+    longitude = str(url)[longitude_start_index + 3: longitude_end_index]
 
-    return latitude, longtitude
+    return latitude, longitude
     # return float(latitude), float(longtitude)
 
 # Main
@@ -23,7 +23,7 @@ for detail in os.listdir(origin_dir):
         # print(data.shape)
         # data.head()
 
-        data['latitude'], data['longtitude'] = zip(*data['Url'].apply(find_latitude_longtitude))
+        data['latitude'], data['longitude'] = zip(*data['Url'].apply(find_latitude_longitude))
         # data.head()
 
         save_dir = '../../resource/GeocodingData/' + detail + '/' + file_name
