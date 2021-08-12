@@ -1,7 +1,7 @@
 import pandas as pd
 
 # use this if dataset is in original directory
-# origin_data_path = '../resource/OriginalData/'
+# origin_data_path = '../resource/CRM_OriginalData/'
 # file_name = 'Potentials_001'
 # leads = pd.read_csv(origin_data_path+file_name+'.csv')
 
