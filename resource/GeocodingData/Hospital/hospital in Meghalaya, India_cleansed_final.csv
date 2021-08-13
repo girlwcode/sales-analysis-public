@@ -1,4 +1,4 @@
-Company_Name,Category,Address,Url,Latitude,Longitude,Territory
+Company_Name,Category,Address,Url,Latitude,Longitude,State
 Nazareth Hospital,General hospital,"Arbuthnot Rd, near Police Point, Nongkynrih, Laitumkhrah, Shillong, Meghalaya 793003, India",https://www.google.co.kr/maps/place/Nazareth+Hospital/data=!4m5!3m4!1s0x37507eba5269ca75:0xeba93ef78cda465d!8m2!3d25.571382!4d91.8979556?authuser=0&hl=en&rclk=1,25.571382,91.8979556,Meghalaya
 Woodland Hospital,General hospital,"Dhankheti, Malki, Shillong, Meghalaya 793003, India",https://www.google.co.kr/maps/place/Woodland+Hospital/data=!4m5!3m4!1s0x37507e986d90fc4d:0xfe2d6844b18b0384!8m2!3d25.5662852!4d91.8898463?authuser=0&hl=en&rclk=1,25.5662852,91.8898463,Meghalaya
 Civil Hospital Shillong,General hospital,"Laban, Lachumiere, Shillong, Meghalaya 793001, India",https://www.google.co.kr/maps/place/Civil+Hospital+Shillong/data=!4m5!3m4!1s0x37507e9aaa349c19:0xc17fab4baaf2b2c4!8m2!3d25.5677394!4d91.8810813?authuser=0&hl=en&rclk=1,25.5677394,91.8810813,Meghalaya

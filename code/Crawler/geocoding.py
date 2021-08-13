@@ -40,7 +40,7 @@ for detail in os.listdir(origin_dir):
         data['Latitude'], data['Longitude'] = zip(*data['Url'].apply(find_latitude_longitude))
         # data.head()
         # territory 추가
-        data['Territory'] = add_territory(file_name)
+        data['State'] = add_territory(file_name)
 
         save_dir = '../../resource/GeocodingData/'+detail+'/'+file_name+'_final.csv'
         data.to_csv(save_dir, index=False)

@@ -1,4 +1,4 @@
-Company_Name,Category,Address,Url,Latitude,Longitude,Territory
+Company_Name,Category,Address,Url,Latitude,Longitude,State
 Manipal Hospitals Goa,Private hospital,"Panaji, Dr E Borges Rd, Dona Paula, Goa 403004, India",https://www.google.co.kr/maps/place/Manipal+Hospitals+Goa/data=!4m5!3m4!1s0x3bbfc0cb6f59b763:0x5fef15ef316a7759!8m2!3d15.4600059!4d73.813462?authuser=0&hl=en&rclk=1,15.4600059,73.813462,Goa
 Victor Hospital,General hospital,"Old Station Rd, near Carmelite Monastery, Malbhat, Margao, Goa 403601, India",https://www.google.co.kr/maps/place/Victor+Hospital/data=!4m5!3m4!1s0x3bbfb3c6c5c4520d:0xa4045e195fdd67b3!8m2!3d15.2689598!4d73.9663188?authuser=0&hl=en&rclk=1,15.2689598,73.9663188,Goa
 Galaxy Hospital Mapusa Goa,Private hospital,"JR47+86M, Mapusa, Goa 403519, India",https://www.google.co.kr/maps/place/Galaxy+Hospital+Mapusa+Goa/data=!4m5!3m4!1s0x3bbfeb19fda362a9:0xded12d6f905c6f2!8m2!3d15.6058396!4d73.813057?authuser=0&hl=en&rclk=1,15.6058396,73.813057,Goa

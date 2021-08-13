@@ -1,4 +1,4 @@
-Company_Name,Category,Address,Url,Latitude,Longitude,Territory
+Company_Name,Category,Address,Url,Latitude,Longitude,State
 Clinic,Medical clinic,"MV8X+GP6, Jola, Himachal Pradesh 175001, India",https://www.google.co.kr/maps/place/Clinic/data=!4m5!3m4!1s0x39051e19dce58b0b:0x734b256e9d6b6a2c!8m2!3d31.6662763!4d76.899254?authuser=0&hl=en&rclk=1,31.6662763,76.899254,Himachal Pradesh
 Himachal Clinic,Medical clinic,"Manpul, Hamirpur, NH-70, Nadaun Road, Nadaun, Himachal Pradesh 177043, India",https://www.google.co.kr/maps/place/Himachal+Clinic/data=!4m5!3m4!1s0x391b2e433b078ba3:0xccf3c2ebe675b2d1!8m2!3d31.7634387!4d76.3367769?authuser=0&hl=en&rclk=1,31.7634387,76.3367769,Himachal Pradesh
 Clinic,Medical clinic,"9786+C78, Nangal Khurd, Himachal Pradesh 174301, India",https://www.google.co.kr/maps/place/Clinic/data=!4m5!3m4!1s0x391ac58d971a209d:0x201d001120b7153f!8m2!3d31.3660477!4d76.2606975?authuser=0&hl=en&rclk=1,31.3660477,76.2606975,Himachal Pradesh

@@ -1,4 +1,4 @@
-Company_Name,Category,Address,Url,Latitude,Longitude,Territory
+Company_Name,Category,Address,Url,Latitude,Longitude,State
 Hospital,Government hospital,"Unnamed Road, Ghuggu Kham, Uttarakhand 263001, India",https://www.google.co.kr/maps/place/Hospital/data=!4m5!3m4!1s0x39a0a183a029cc9f:0xc253b39d85506d28!8m2!3d29.4416814!4d79.4126558?authuser=0&hl=en&rclk=1,29.4416814,79.4126558,Uttarakhand
 Old Hospital Building,Hospital,"CCG5+XW5, Bagar Talla, Uttarakhand 263001, India",https://www.google.co.kr/maps/place/Old+Hospital+Building/data=!4m5!3m4!1s0x39a0a13269983c35:0x46d21dfcc804f70f!8m2!3d29.427388!4d79.4098694?authuser=0&hl=en&rclk=1,29.427388,79.4098694,Uttarakhand
 Ayurvedic Hospital,Government hospital,"Bagar Talla, Uttarakhand 263001, India",https://www.google.co.kr/maps/place/Ayurvedic+Hospital/data=!4m5!3m4!1s0x39a0a0eeed5e99c9:0x2fa2ccc7c3bb7ed5!8m2!3d29.4273662!4d79.4099723?authuser=0&hl=en&rclk=1,29.4273662,79.4099723,Uttarakhand
