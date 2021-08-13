@@ -25,8 +25,8 @@ for i in total_csv[0]:
     data_csv = pd.read_csv("../../resource/CrawlingData/clinic/" + i+'.csv')
     print(i,"\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
-    data_csv = data_csv.dropna(subset=['Url'])  #url이 없으면 제거
-    new_data = data_csv.dropna(subset=['Category', 'Address','Company_Name'], how='all')  # 더미데이터 제거
+    data_csv = data_csv.dropna(axis=0)
+
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_clinic.append(data_csv)
@@ -39,8 +39,7 @@ for j in total_csv[1]:
     data_csv = pd.read_csv("../../resource/CrawlingData/fitness/" + j+'.csv')
     print(j, "\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
-    data_csv = data_csv.dropna(subset=['Url'])  # url이 없으면 제거
-    new_data = data_csv.dropna(subset=['Category', 'Address','Company_Name'], how='any')  # 더미데이터 제거
+    data_csv = data_csv.dropna(axis=0)
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_fitness.append(data_csv)
@@ -52,8 +51,8 @@ for j in total_csv[2]:
     data_csv = pd.read_csv("../../resource/CrawlingData/hospital/" + j+'.csv')
     print(j, "\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
-    data_csv = data_csv.dropna(subset=['Url'])  # url이 없으면 제거
-    new_data = data_csv.dropna(subset=['Category', 'Address','Company_Name'], how='any')  # 더미데이터 제거
+
+    data_csv = data_csv.dropna(axis = 0)
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_hospital.append(data_csv)
