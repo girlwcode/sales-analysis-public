@@ -76,7 +76,7 @@ drop_list_hos = ['eye', 'dental', 'animal', 'psychiatric', 'family', 'skin', 'ha
               'police station','fire','bakery','park', 'hiv testing','food','gas shop','milwork','convention','marriage','fitness equipment', 'transit station','park',
               'software', 'astrologer','night club','e-commerce','plastic surgeon','homestay','bar','tattoo shop','architect','tourist information','bathroom','tire shop','travel','court',
               'cafeteria', 'water treatment', 'water damage', 'gps', 'condominium complex', 'news','safety',"sheriff",'mining','coaching','wellness','transit','emergency','dried flower',
-              'board of education','zoo', 'gaon','equipment','internet cafe','wedding','cleaning','500 error','racecourse','goods','online']
+              'board of education','zoo', 'gaon','equipment','internet cafe','wedding','cleaning','500 error','racecourse','goods','online','atm']
 
 drop_list_clinic = ['skin care' ,'dermatology','hair transplantation','dental','eye','beauty salon','veterinarian','animal','veterinary','alternative',
               'pet','dentist','school','state government office','computer service','community health','psychologist','homeopath','shopping mall',
@@ -95,7 +95,7 @@ drop_list_clinic = ['skin care' ,'dermatology','hair transplantation','dental','
               'assistant','health food','cosmetics','playground','garden','shoe', 'watch store','optical','seed', 'referral','farm', 'internet marketing',
               'dharamashala','manufacturer','grocery',  'night club','spa','e-commerce','homestay','government office','pharmaceutical company',
               'plastic surgery','products','manu_dhumachharra','spa','condominium','mosque','medicine clinic','agricultural','foundation','temple',
-              '500 error', 'neonatal', 'american football', 'construction']
+              '500 error', 'neonatal', 'american football', 'construction','atm']
 
 drop_list_fit = ['martial arts','exercise equipment store','business center','fitness equipment','supplements','trainer','make-up','dance',
               'grocery store','recruiting','repair service','instructor','butcher shop','meditation center','sports nutrition','university',
@@ -106,7 +106,7 @@ drop_list_fit = ['martial arts','exercise equipment store','business center','fi
               'vocational school','information','tai chi','back office','wellness','warehouse','construciton','wing','temple','supplier','distribution service'
               ,'homestay','home','association','indoor swimming','non-governmental', 'lodging','exporter','wholesaler', 'school','vehicle','garden',
               'recreation center','court','self defense','location','stadium','biotechnology','shopping','motorcycle', 'radhanagar','pharmacy',
-              'education','e-commerce','hospital',  'temporarily', 'studying center' , ]
+              'education','e-commerce','hospital',  'temporarily', 'studying center' ,'atm' ]
 
 
 # Clinic
