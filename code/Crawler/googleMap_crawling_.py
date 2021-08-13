@@ -61,7 +61,7 @@ def crawling(browser):
 # Main
 driverPath = '../../resource/exe/chromedriver.exe'
 # 검색할 state list
-search_keywords = ['Telangana', 'Kerala', 'West Bengal', 'Madhya Pradesh']
+search_keywords = ['Goa']
 
 for keyword in search_keywords:
     search_result = pd.DataFrame(columns=['Company_Name', 'Category', 'Address', 'Url'])
@@ -107,7 +107,7 @@ for keyword in search_keywords:
             browser.find_element_by_xpath('//*[@id="ppdPk-Ej1Yeb-LgbsSe-tJiF1e"]/img').click()
         except:
             browser.close()
-            save_dir = '../../resource/CrawlingData/hospital/' + search_str + '.csv'
+            save_dir = '../../resource/CrawlingData/fitness/' + search_str + '.csv'
             search_result.to_csv(save_dir, index=False)
             print("Crawling END")
             break
