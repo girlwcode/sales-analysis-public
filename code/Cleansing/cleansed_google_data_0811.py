@@ -26,7 +26,7 @@ for i in total_csv[0]:
     print(i,"\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
     data_csv = data_csv.dropna(subset=['Url'])  #url이 없으면 제거
-    new_data = data_csv.dropna(subset=['Category', 'Address'], how='all')  # 더미데이터 제거
+    new_data = data_csv.dropna(subset=['Category', 'Address','Company_Name'], how='all')  # 더미데이터 제거
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_clinic.append(data_csv)
@@ -39,7 +39,8 @@ for j in total_csv[1]:
     data_csv = pd.read_csv("../../resource/CrawlingData/fitness/" + j+'.csv')
     print(j, "\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
-    # new_data = data_csv.dropna(subset=['Category', 'Address'], how='all')  # 더미데이터 제거
+    data_csv = data_csv.dropna(subset=['Url'])  # url이 없으면 제거
+    new_data = data_csv.dropna(subset=['Category', 'Address','Company_Name'], how='any')  # 더미데이터 제거
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_fitness.append(data_csv)
@@ -51,7 +52,8 @@ for j in total_csv[2]:
     data_csv = pd.read_csv("../../resource/CrawlingData/hospital/" + j+'.csv')
     print(j, "\tlength of raw data: ", len(data_csv), end='')
     data_csv = data_csv.drop_duplicates(['Url'])  # 중복 제거
-    # new_data = data_csv.dropna(subset=['Category', 'Address'], how='all')  # 더미데이터 제거
+    data_csv = data_csv.dropna(subset=['Url'])  # url이 없으면 제거
+    new_data = data_csv.dropna(subset=['Category', 'Address','Company_Name'], how='any')  # 더미데이터 제거
     print("\tlength of new data : ", len(data_csv))
     data_csv = data_csv.reset_index(drop=True)
     new_hospital.append(data_csv)
@@ -106,7 +108,7 @@ drop_list_fit = ['martial arts','exercise equipment store','business center','fi
               'vocational school','information','tai chi','back office','wellness','warehouse','construciton','wing','temple','supplier','distribution service'
               ,'homestay','home','association','indoor swimming','non-governmental', 'lodging','exporter','wholesaler', 'school','vehicle','garden',
               'recreation center','court','self defense','location','stadium','biotechnology','shopping','motorcycle', 'radhanagar','pharmacy',
-              'education','e-commerce','hospital',  'temporarily', 'studying center' ,'atm' ]
+              'education','e-commerce','hospital',  'temporarily', 'studying center','atm' ]
 
 
 # Clinic
@@ -117,8 +119,9 @@ for data in new_clinic:
     print('Before: ',len(data), end='\t')
     for row in data.index:
         category = str(data['Category'][row]).lower()
+        company_name = str(data['Company_Name'][row]).lower()
         for l in drop_list_clinic:
-            if (l in category):
+            if l in category or l in company_name:
                 row_list.append(row)
     data = data.drop(index=row_list, axis=0)
     print('After:', len(data))
@@ -134,8 +137,9 @@ for data in new_fitness:
     print('Before: ',len(data), end='\t')
     for row in data.index:
         category = str(data['Category'][row]).lower()
+        company_name = str(data['Company_Name'][row]).lower()
         for l in drop_list_fit:
-            if (l in category):
+            if l in category or l in company_name:
                 row_list.append(row)
     data = data.drop(index=row_list, axis=0)
     print('After:', len(data))
@@ -151,8 +155,9 @@ for data in new_hospital:
     print('Before: ',len(data), end='\t')
     for row in data.index:
         category = str(data['Category'][row]).lower()
+        company_name = str(data['Company_Name'][row]).lower()
         for l in drop_list_hos:
-            if (l in category):
+            if l in category or l in company_name:
                 row_list.append(row)
     data = data.drop(index=row_list, axis=0)
     print('After:', len(data))
