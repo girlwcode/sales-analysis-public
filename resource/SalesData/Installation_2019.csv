@@ -1,4 +1,4 @@
-Invoice No.,Date,Month,Client,Postal code,City ,State,Region,Category,Sales Official,Installation Date,Order/ Model Details,Dealer,GST Rate,Gross Value,Net,GST,Payment Received,Balance, No.of units ,Installation Status,Installation By,Documents Status,CRM status,Feedback Call
+Invoice No.,Date,Month,Client,Postal code,City,State,Region,Category,Sales Official,Installation Date,Order/ Model Details,Dealer,GST Rate,Gross Value,Net,GST,Payment Received,Balance, No.of units ,Installation Status,Installation By,Documents Status,CRM status,Feedback Call
 INV-000542,2019-01-02,January,Ace Fitness,560032,Bangalore,Karnataka,South,Fitness,Eshan,2019-01-02,IB 270,,12.00%,"445,000","397,321","47,679","445,000",                       -  ,1,,,,,
 INV-000542,2019-01-02,January,Ace Fitness,560032,Bangalore,Karnataka,South,Fitness,Eshan,2019-01-02,Lookin Body,,12.00%,                   -  ,                   -  ,              -  ,                    -  ,                       -  ,,,,,,
 INV-000545,2019-01-02,January,Ballin Fitness,144001,Jalandhar,Punjab,North,Fitness,Tushar,2019-01-02,IB 370,,12.00%,"7,000","6,250",750,"7,000",                       -  ,                -  ,,,,,

@@ -1,50 +1,52 @@
 import pandas as pd
 import os
 
-
-origin_dir = '../../resource/GeocodingData/'
+google_dir = '../../resource/GeocodingData/'
 details = ['Clinic', 'Fitness', 'Hospital']
+sales_dir = '../../resource/SalesData/'
 
 # 카테고리 별로 데이터 concat
 for detail in details:
     df_list = []
-    for csv_data in os.listdir(origin_dir+detail):
-        data = pd.read_csv(origin_dir + detail + '/' + csv_data)
+    for csv_data in os.listdir(google_dir + detail):
+        data = pd.read_csv(google_dir + detail + '/' + csv_data)
         df_list.append(data)
     full_data = pd.concat(df_list, ignore_index=True)
-    print(detail, ': before', len(full_data), sep="", end='\t')
+    print(detail, ':\tbefore ', len(full_data), sep="", end='\t\t')
     full_data = full_data.drop_duplicates(['Url'])
-    print('after', len(full_data), sep="")
+    print('after ', len(full_data), sep="")
     # 데이터 저장
-    full_data.to_csv(origin_dir+'/merge/'+detail+'_final.csv', index=False)
+    full_data.to_csv(google_dir + '/merge/' + detail + '.csv', index=False)
 
-# before 2243	after 2228
-# before 5579	after 5172
-# before 2762	after 2729
-
-
-# already_installed 삭제
-installed = pd.read_csv('')
-
-for csv_data in os.listdir(origin_dir+'merge/'):
-    data = pd.read_csv(origin_dir+'merge/'+csv_data)
+# Clinic:	before 5748		after 5628
+# Fitness:	before 5745		after 5360
+# Hospital:	before 5815		after 5710
 
 
-
-
-
-'''
 # Clinic + Hospital
 url_list = []
 for detail in details:
     if detail == 'Clinic' or detail == 'Hospital':
-        for csv_data in os.listdir(origin_dir + detail):
-            data = pd.read_csv(origin_dir + detail + '/' + csv_data)
+        for csv_data in os.listdir(google_dir + detail):
+            data = pd.read_csv(google_dir + detail + '/' + csv_data)
             url_list.extend(data['Url'].to_list())
 
 print('before', len(url_list), end='\t')
 url_list = list(set(url_list))
 print('after', len(url_list))
 
-# before 6059	after 5162
+# before 11563	after 9337 (Clinic-Hospital 사이에 중복 존재)
+
+
+''' ## 완료
+# installed concat
+df_list = []
+for csv_data in os.listdir(sales_dir):
+    if csv_data.startswith('Installation') and csv_data.endswith('.csv'):
+        data = pd.read_csv(sales_dir+csv_data)
+        new_data = data[['Client', 'City', 'State']]
+        df_list.append(new_data)
+installed = pd.concat(df_list, ignore_index=True)
+installed = installed.drop_duplicates(['Client', 'City'])
+installed.to_csv(sales_dir+'Installation_full.csv', index=False)
 '''

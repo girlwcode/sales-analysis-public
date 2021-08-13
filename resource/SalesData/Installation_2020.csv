@@ -1,4 +1,4 @@
-Invoice No.,Date,Month,Client,Postal code,City ,State,Region,Category,Sales Official,Installation Date,Order/ Model Details,GST Rate,Gross Value,Net,GST,Payment Received,Balance,Dealer/Channel Partner/Refferal,No.of units,Installation Status,Installation By,Documents Status,CRM status,Feedback Call
+Invoice No.,Date,Month,Client,Postal code,City,State,Region,Category,Sales Official,Installation Date,Order/ Model Details,GST Rate,Gross Value,Net,GST,Payment Received,Balance,Dealer/Channel Partner/Refferal,No.of units,Installation Status,Installation By,Documents Status,CRM status,Feedback Call
 INV-001141,43833,January,D.V.Nirhali,400615,Thane,Maharashtra,Amazon,Others,Amazon,43833,IB Band,0.12,1299,1159.821429,139.1785714,1299,0,,1,,,,,
 INV-001142,43833,January,Dr.Sandeep Kate ,415001,Satara,Maharashtra,Amazon,Others,Amazon,43833,IB Dial,0.12,21980,19625,2355,21980,0,,1,,,,,
 INV-001143,43836,January,Manoj Verma,224001,Faizabad,Uttarpradesh,Amazon,Others,Amazon,43836,IB Band,0.12,1299,1159.821429,139.1785714,1299,0,,1,,,,,

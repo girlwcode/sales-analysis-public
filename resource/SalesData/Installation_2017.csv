@@ -1,4 +1,4 @@
-S. No.,Month,Customer Details ,City ,State,Region,Category,Sales Official,Installation Date,Order/ Model Details,Serial No.,Invoice Details,Actual Value,Tax ,Total,Payment Status (Rs) ,Payment Status,Installation Status,Warraty,installation,6month visit
+S. No.,Month,Client,City,State,Region,Category,Sales Official,Installation Date,Order/ Model Details,Serial No.,Invoice Details,Actual Value,Tax ,Total,Payment Status (Rs) ,Payment Status,Installation Status,Warraty,installation,6month visit
 1,January,"Ritu Sikchi, Nutri 2",Aurangabad,Maharashtra,West 1,Diet Clinic,Mayank Talwar,42755,IB 570 + LB 120 + Printer,F91602124,II-INV-000104,950000,50000,1000000,625000,100% received,Complete ,Done ,Done,Pending
 2,January,Hammers Fitness Pvt. Ltd,Bangalore,Karnataka,South,Fitness Club,Mayank Talwar,42756,IB 270 + LB 120 + BSM 170B,F91602619,II-INV-000122,428571.43,21428.57,450000,450000,100% payment received,Complete ,Done ,Done,Done
 3,January,Aspaventures (Apple Fitness),Bangalore,Karnataka,South,Fitness Club,Karn Sharma,43030,IB 270 + LB 120,F91602695,II-INV-000082,466666.67,23333.33,490000,490000,100% payment received,Complete ,Done ,Done,Done
