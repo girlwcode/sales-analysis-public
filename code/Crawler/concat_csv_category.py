@@ -5,6 +5,45 @@ google_dir = '../../resource/GeocodingData/'
 details = ['Clinic', 'Fitness', 'Hospital']
 sales_dir = '../../resource/SalesData/'
 
+
+clinic_assam = pd.read_csv('../../resource/GeocodingData/Clinic/clinic in Assam, India_cleansed_final.csv')
+fitness_assam = pd.read_csv('../../resource/GeocodingData/Fitness/fitness in Assam, India_cleansed_final.csv')
+hospital_assam = pd.read_csv('../../resource/GeocodingData/Hospital/hospital in Assam, India_cleansed_final.csv')
+
+clinic_meg = pd.read_csv('../../resource/GeocodingData/Clinic/clinic in Meghalaya, India_cleansed_final.csv')
+fitness_meg = pd.read_csv('../../resource/GeocodingData/Fitness/fitness in Meghalaya, India_cleansed_final.csv')
+hospital_meg = pd.read_csv('../../resource/GeocodingData/Hospital/hospital in Meghalaya, India_cleansed_final.csv')
+
+# assam, meg 후처리 - clinic
+idx_list = clinic_meg[clinic_meg['Address'].str.contains('Assam')].index.tolist()
+clinic_assam = clinic_assam.append(clinic_meg.iloc[idx_list])
+clinic_meg = clinic_meg.drop(idx_list, axis=0)
+clinic_meg['State'] = 'Meghalaya'
+clinic_assam['State'] = 'Assam'
+
+clinic_assam.to_csv('../../resource/GeocodingData/Clinic/clinic in Assam, India_cleansed_final.csv',index=False)
+clinic_meg.to_csv('../../resource/GeocodingData/Clinic/clinic in Meghalaya, India_cleansed_final.csv',index=False)
+
+# assam, meg 후처리 - Fitness
+idx_list = fitness_meg[fitness_meg['Address'].str.contains('Assam')].index.tolist()
+fitness_assam = fitness_assam.append(fitness_meg.iloc[idx_list])
+fitness_meg = fitness_meg.drop(idx_list, axis=0)
+fitness_meg['State'] = 'Meghalaya'
+fitness_assam['State'] = 'Assam'
+
+fitness_assam.to_csv('../../resource/GeocodingData/Fitness/fitness in Assam, India_cleansed_final.csv',index=False)
+fitness_meg.to_csv('../../resource/GeocodingData/Fitness/fitness in Meghalaya, India_cleansed_final.csv',index=False)
+
+# assam, meg 후처리 - Hospital
+idx_list = hospital_meg[hospital_meg['Address'].str.contains('Assam')].index.tolist()
+hospital_assam = hospital_assam.append(hospital_meg.iloc[idx_list])
+hospital_meg = hospital_meg.drop(idx_list, axis=0)
+hospital_meg['State'] = 'Meghalaya'
+hospital_assam['State'] = 'Assam'
+
+hospital_assam.to_csv('../../resource/GeocodingData/Hospital/hospital in Assam, India_cleansed_final.csv',index=False)
+hospital_meg.to_csv('../../resource/GeocodingData/Hospital/hospital in Meghalaya, India_cleansed_final.csv',index=False)
+
 # 카테고리 별로 데이터 concat
 for detail in details:
     df_list = []

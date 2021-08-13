@@ -1,5 +1,6 @@
 import pandas  as pd
 
+
 clinic = pd.read_csv('../../resource/GeocodingData/merge/Clinic_final.csv')
 hospital = pd.read_csv('../../resource/GeocodingData/merge/Hospital_final.csv')
 fitness = pd.read_csv('../../resource/GeocodingData/merge/Fitness_final.csv')
