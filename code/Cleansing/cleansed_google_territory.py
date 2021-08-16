@@ -59,7 +59,7 @@ idx_list = fitness_south[fitness_south['Address'].str.contains('Maharashtra')].i
 fitness_south.at[idx_list, 'State'] = 'Maharashtra'
 fitness_west1 = fitness_west1.append(fitness_south.iloc[idx_list])
 fitness_south = fitness_south.drop(idx_list, axis=0)
-
+'
 idx_list = hospital_south[hospital_south['Address'].str.contains('Maharashtra')].index.tolist()
 hospital_south.at[idx_list, 'State'] = 'Maharashtra'
 hospital_west1 = hospital_west1.append(hospital_south.iloc[idx_list])
@@ -191,7 +191,7 @@ hospital_west2.to_csv(data_dir+'west2_hospital_uninstalled.csv', index=False)
 # csv에 territory column 추가
 # concat Final
 # 카테고리 별로 데이터 concat
-'''
+
 for csv_data in os.listdir(data_dir):
     data = pd.read_csv(data_dir + csv_data)
     if 'east' in csv_data:
@@ -205,7 +205,7 @@ for csv_data in os.listdir(data_dir):
     elif 'west2' in csv_data:
         data['Territory'] = 'West 2'
     data.to_csv(data_dir+csv_data, index=False)
-'''
+
 
 clinic_list = []
 fitness_list = []
