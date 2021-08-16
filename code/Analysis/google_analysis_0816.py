@@ -51,5 +51,3 @@ for i, x_ in enumerate(x):
 
 plt.savefig('../../resource/Plot/Google by category.png')
 plt.show()
-
-print(clinic['State'].unique())

@@ -39,7 +39,7 @@ for i, x_ in enumerate(x):
              color='black',
              horizontalalignment='center',
              verticalalignment='bottom')
-# plt.savefig('../../resource/Plot/Contacts After Cleansing (Territory).png')
+plt.savefig('../../resource/Plot/Contacts After Cleansing (Territory).png')
 
 plt.figure(2, figsize=(13,5))
 plt.subplot(121)
@@ -69,10 +69,10 @@ for i, x_ in enumerate(x):
              horizontalalignment='center',
              verticalalignment='bottom')
 
-# plt.savefig('../../resource/Plot/Deals After Cleansing (Territory).png')
+plt.savefig('../../resource/Plot/Deals After Cleansing (Territory).png')
 plt.show()
 
-plt.figure(3, figsize=(5,5))
+plt.figure(3, figsize=(5,10))
 plt.title('Leads After Cleansing (Industry)',fontsize=15)
 l = leads_territories.items()
 l = sorted(l)
