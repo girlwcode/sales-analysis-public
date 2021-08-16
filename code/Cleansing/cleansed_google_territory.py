@@ -222,6 +222,9 @@ full_clinic = pd.concat(clinic_list, ignore_index=True)
 full_fitness = pd.concat(fitness_list, ignore_index=True)
 full_hospital = pd.concat(hospital_list, ignore_index=True)
 
+full_clinic = full_clinic.dropna(axis=0)
+idx_list = full_clinic[full_clinic['State'].str.contains('http')].index.to_list()
+full_clinic = full_clinic.drop(idx_list, axis=0)
 # 데이터 저장
 google_dir = '../../resource/GeocodingData/merge/'
 full_clinic.to_csv(google_dir+'Clinic_final2.csv', index=False)

@@ -27,20 +27,34 @@ print(leads_ids_before)
 leads_territories = collections.Counter(leads['Industry Fin'])
 print(leads_territories)
 
-plt.figure(1)
+plt.figure(1,figsize=(5,5))
 plt.title('Contacts After Cleansing (Territory)',fontsize=15)
 l = contacts_fin.items()
 l = sorted(l)
 x,y = zip(*l)
 plt.bar(x,y)
+for i, x_ in enumerate(x):
+    plt.text(x_, y[i], y[i],
+             fontsize=9,
+             color='black',
+             horizontalalignment='center',
+             verticalalignment='bottom')
+# plt.savefig('../../resource/Plot/Contacts After Cleansing (Territory).png')
 
-plt.figure(2)
+plt.figure(2, figsize=(13,5))
 plt.subplot(121)
 plt.title('Deals Before Cleansing (Territory)',fontsize=15)
 l = deals_terri_before.items()
 l = sorted(l)
 x,y = zip(*l)
 plt.bar(x,y)
+for i, x_ in enumerate(x):
+    plt.text(x_, y[i], y[i],
+             fontsize=9,
+             color='black',
+             horizontalalignment='center',
+             verticalalignment='bottom')
+
 
 plt.subplot(122)
 plt.title('Deals After Cleansing (Territory)',fontsize=15)
@@ -48,13 +62,29 @@ l = deals_territories.items()
 l = sorted(l)
 x,y = zip(*l)
 plt.bar(x,y)
+for i, x_ in enumerate(x):
+    plt.text(x_, y[i], y[i],
+             fontsize=9,
+             color='black',
+             horizontalalignment='center',
+             verticalalignment='bottom')
+
+# plt.savefig('../../resource/Plot/Deals After Cleansing (Territory).png')
 plt.show()
 
-plt.figure(3)
+plt.figure(3, figsize=(5,5))
 plt.title('Leads After Cleansing (Industry)',fontsize=15)
 l = leads_territories.items()
 l = sorted(l)
 x,y = zip(*l)
 plt.bar(x,y)
 plt.xticks(rotation=90, ha= 'center')
+for i, x_ in enumerate(x):
+    plt.text(x_, y[i], y[i],
+             fontsize=9,
+             color='black',
+             horizontalalignment='center',
+             verticalalignment='bottom')
+
+# plt.savefig('../../resource/Plot/Leads After Cleansing (Industry).png')
 plt.show()
