@@ -191,7 +191,7 @@ hospital_west2.to_csv(data_dir+'west2_hospital_uninstalled.csv', index=False)
 # csv에 territory column 추가
 # concat Final
 # 카테고리 별로 데이터 concat
-
+'''
 for csv_data in os.listdir(data_dir):
     data = pd.read_csv(data_dir + csv_data)
     if 'east' in csv_data:
@@ -225,8 +225,18 @@ full_hospital = pd.concat(hospital_list, ignore_index=True)
 full_clinic = full_clinic.dropna(axis=0)
 idx_list = full_clinic[full_clinic['State'].str.contains('http')].index.to_list()
 full_clinic = full_clinic.drop(idx_list, axis=0)
+
+full_hospital = full_hospital.dropna(axis=0)
+
 # 데이터 저장
 google_dir = '../../resource/GeocodingData/merge/'
-full_clinic.to_csv(google_dir+'Clinic_final2.csv', index=False)
-full_fitness.to_csv(google_dir+'Fitness_final2.csv', index=False)
+# full_clinic.to_csv(google_dir+'Clinic_final2.csv', index=False)
+# full_fitness.to_csv(google_dir+'Fitness_final2.csv', index=False)
 full_hospital.to_csv(google_dir+'Hospital_final2.csv', index=False)
+'''
+
+full_hospital = pd.read_csv('../../resource/GeocodingData/merge/Hospital_final2.csv')
+# idx_list = full_hospital[full_hospital['State'].str.contains('Thaltej')].index.to_list()
+# full_hospital = full_hospital.drop(idx_list, axis=0)
+# full_hospital.to_csv('../../resource/GeocodingData/merge/Hospital_final2.csv', index=False)
+print(len(full_hospital['State'].unique()))

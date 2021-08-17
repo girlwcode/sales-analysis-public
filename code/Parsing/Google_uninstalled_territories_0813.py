@@ -36,11 +36,11 @@ west2_df.to_csv('../../resource/GeocodingData/Territory_category(uninstalled)/we
 north_df.to_csv('../../resource/GeocodingData/Territory_category(uninstalled)/north_clinic_uninstalled.csv', index=False)
 south_df.to_csv('../../resource/GeocodingData/Territory_category(uninstalled)/south_clinic_uninstalled.csv', index=False)
 
-east_df = east_df.iloc[0:0]
-west1_df = west1_df.iloc[0:0]
-west2_df = west2_df.iloc[0:0]
-north_df = north_df.iloc[0:0]
-south_df = south_df.iloc[0:0]
+east_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+west1_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+west2_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+north_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+south_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
 
 
 for row in hospital.index:
@@ -61,11 +61,11 @@ west2_df.to_csv('../../resource/GeocodingData/Territory_category(uninstalled)/we
 north_df.to_csv('../../resource/GeocodingData/Territory_category(uninstalled)/north_hospital_uninstalled.csv', index=False)
 south_df.to_csv('../../resource/GeocodingData/Territory_category(uninstalled)/south_hospital_uninstalled.csv', index=False)
 
-east_df = east_df.iloc[0:0]
-west1_df = west1_df.iloc[0:0]
-west2_df = west2_df.iloc[0:0]
-north_df = north_df.iloc[0:0]
-south_df = south_df.iloc[0:0]
+east_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+west1_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+west2_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+north_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
+south_df = pd.DataFrame(columns=['Company_Name','Category','Address','Url','Latitude','Longitude','State'])
 
 for row in fitness.index:
     if fitness['State'][row] in east :
