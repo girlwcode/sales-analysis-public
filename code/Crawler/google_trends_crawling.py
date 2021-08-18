@@ -32,26 +32,25 @@ def input_date(year, month): # 윤년xxxxx, month는 1월부터
 
 
 # Main
-
-driver_path = '../../resource/exe/chromedriver.exe'
-driver = webdriver.Chrome(driver_path)
-# action = ActionChains(driver)
-
-#google trends india page
-baseUrl = 'https://trends.google.com/trends/?geo=IN'
-driver.get(baseUrl)
-time.sleep(1)
-
-#검색어 5개 입력 and ENTER
-searchbox = driver.find_element_by_css_selector('#input-254')
-keywords = "bmi,muscle,weight loss,gym,body mass"
-searchbox.send_keys(keywords)
-searchbox.send_keys(Keys.ENTER)
-time.sleep(4)
-
 for month in range(1,13):
+    driver_path = '../../resource/exe/chromedriver.exe'
+    driver = webdriver.Chrome(driver_path)
+
+    # google trends india page
+    baseUrl = 'https://trends.google.com/trends/?geo=IN'
+    driver.get(baseUrl)
+    time.sleep(1)
+
+    # 검색어 5개 입력 and ENTER
+    searchbox = driver.find_element_by_css_selector('#input-254')
+    keywords = "bmi,muscle,weight loss,gym,body mass"
+    searchbox.send_keys(keywords)
+    searchbox.send_keys(Keys.ENTER)
+    time.sleep(4)
+
     year = 2018
     start_date, end_date = input_date(year, month)
+
     #날짜 설정 팝업 띄우기
     menus = driver.find_elements_by_class_name('_md-select-value')
     menus[1].click()
@@ -80,4 +79,8 @@ for month in range(1,13):
     #csv download
     download_btn = driver.find_element_by_xpath('/html/body/div[2]/div[2]/div/md-content/div/div/div[1]/trends-widget/ng-include/widget/div/div/div/widget-actions/div/button[1]')
     download_btn.click()
+
+    driver.close()
+
+print("Crawling END")
 
