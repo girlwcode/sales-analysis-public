@@ -53,9 +53,11 @@ for month in range(1,13):
     year = 2018
     start_date, end_date = input_date(year, month)
     #날짜 설정 팝업 띄우기
-    datesetting1 = driver.find_element_by_xpath('//*[@id="select_10"]').click()
+    menus = driver.find_elements_by_class_name('_md-select-value')
+    menus[1].click()
     time.sleep(1)
-    datesetting2 = driver.find_element_by_xpath('//*[@id="select_option_22"]').click()
+    drop = driver.find_elements_by_class_name('custom-date-picker-select-option.md-ink-ripple')
+    drop[-1].click()
     time.sleep(1)
     #원하는 날짜 입력하기
     date_container = driver.find_elements_by_class_name('md-datepicker-input-container')
