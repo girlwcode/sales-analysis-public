@@ -123,7 +123,7 @@ hospital_final['State'][0] = 'Arunanchal Pradesh'
 hospital_final['State'][9] = 'NCT of Delhi'
 hospital_final['State'][12] = 'Jammu & Kashmir'
 
-hospital_final['id'] = hospital_final['State'].apply(lambda x: state_id_map[x] if x !='Thaltej' )
+hospital_final['id'] = hospital_final['State'].apply(lambda x: state_id_map[x] if x !='Thaltej')
 hospital_final
 
 
