@@ -32,7 +32,7 @@ def input_date(year, month): # 윤년xxxxx, month는 1월부터
 
 
 # Main
-for month in range(1,8):
+for month in range(1,13):
     driver_path = '../../resource/exe/chromedriver.exe'
     driver = webdriver.Chrome(driver_path)
 
@@ -48,7 +48,7 @@ for month in range(1,8):
     searchbox.send_keys(Keys.ENTER)
     time.sleep(4)
 
-    year = 2021
+    year = 2018
     start_date, end_date = input_date(year, month)
 
     #날짜 설정 팝업 띄우기
@@ -79,7 +79,6 @@ for month in range(1,8):
     #csv download
     download_btn = driver.find_element_by_xpath('/html/body/div[2]/div[2]/div/md-content/div/div/div[1]/trends-widget/ng-include/widget/div/div/div/widget-actions/div/button[1]')
     download_btn.click()
-    time.sleep(3)
 
     driver.close()
 
