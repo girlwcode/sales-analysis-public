@@ -5,9 +5,9 @@ import time
 
 
 def input_date(year, month): # 윤년xxxxx, month는 1월부터
-    start_date = str(year)+'.'+str(month)+'.01'
-    end_date = str(year)+'.'+str(month)+'.'
     if month < 10:
+        start_date = str(year) + '.0' + str(month) + '.01'
+        end_date = str(year) + '.0' + str(month) + '.'
         if month%2 == 1:    # 홀수달 31일(9월30일)
             if month == 9:
                 end_date += '30'
@@ -21,13 +21,14 @@ def input_date(year, month): # 윤년xxxxx, month는 1월부터
             else:
                 end_date += '31'
     else:
+        start_date = str(year) + '.' + str(month) + '.01'
+        end_date = str(year) + '.' + str(month) + '.'
         if month%2 == 0:    # 짝수달 31일
             end_date += '31'
         else:   # 홀수달 30일
             end_date += '30'
 
     return start_date, end_date
-
 
 
 # Main
@@ -49,7 +50,7 @@ searchbox.send_keys(Keys.ENTER)
 time.sleep(4)
 
 for month in range(1,13):
-    year = 2017
+    year = 2018
     start_date, end_date = input_date(year, month)
     #날짜 설정 팝업 띄우기
     datesetting1 = driver.find_element_by_xpath('//*[@id="select_10"]').click()
