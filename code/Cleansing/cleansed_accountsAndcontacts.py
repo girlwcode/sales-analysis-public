@@ -1,7 +1,7 @@
 import pandas as pd
 
-accounts = pd.read_csv('../../resource/CleansedData/Zoho CRM/Accounts_001_fillTerritory_ver1.csv')
-contacts = pd.read_csv('../../resource/CleansedData/Zoho CRM/Contacts_001_fillTerritory_ver1.csv')
+accounts = pd.read_csv('../../resource/CleansedData/ZohoCRM/Accounts_001_fillTerritory_ver1.csv')
+contacts = pd.read_csv('../../resource/CleansedData/ZohoCRM/Contacts_001_fillTerritory_ver1.csv')
 
 dict_accounts = {}
 dict_contacts = {}

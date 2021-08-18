@@ -3,13 +3,13 @@ import collections
 import matplotlib.pyplot as plt
 import numpy as np
 
-deals = pd.read_csv('../../resource/CleansedData/Zoho CRM/Potentials_001_fillTerritories_final.csv')
+deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillTerritories_final.csv')
 deals_before = pd.read_csv('../../resource/CRM_OriginalData/Potentials_001.csv')
 
-leads = pd.read_csv('../../resource/CleansedData/Zoho CRM/Leads_001_IndustryCleansed.csv')
+leads = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryCleansed.csv')
 leads_before = pd.read_csv('../../resource/CRM_OriginalData/Leads_001.csv')
 
-contacts = pd.read_csv('../../resource/CleansedData/Zoho CRM/Contacts_001_fillTerritories_final.csv')
+contacts = pd.read_csv('../../resource/CleansedData/ZohoCRM/Contacts_001_fillTerritories_final.csv')
 contacts_fin = collections.Counter(contacts['Territories'])
 print(contacts_fin)
 
