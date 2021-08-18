@@ -9,8 +9,8 @@ contacts = pd.read_csv('../../resource/CleansedData/ParsedData/Contacts_001_drop
 accounts = pd.read_csv('../../resource/CleansedData/ParsedData/Accounts_001_droppedCol.csv')
 
 # 전처리본
-contacts_fill = pd.read_csv('../../resource/CleansedData/Zoho CRM/Contacts_001_fillTerritories_ver2.csv')
-accounts_fill = pd.read_csv('../../resource/CleansedData/Zoho CRM/Accounts_001_fillTerritories_final.csv')
+contacts_fill = pd.read_csv('../../resource/CleansedData/ZohoCRM/Contacts_001_fillTerritories_ver2.csv')
+accounts_fill = pd.read_csv('../../resource/CleansedData/ZohoCRM/Accounts_001_fillTerritories_final.csv')
 
 deal['Territory_fin'] = np.nan
 

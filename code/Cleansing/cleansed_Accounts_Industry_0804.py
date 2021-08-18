@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Industry Cleansing
-accounts = pd.read_csv('../../resource/CleansedData/Zoho CRM/Accounts_001_fillTerritories_final.csv')
+accounts = pd.read_csv('../../resource/CleansedData/ZohoCRM/Accounts_001_fillTerritories_final.csv')
 deal = pd.read_csv('../../resource/CleansedData/ParsedData/Potentials_001_droppedCol.csv')
 peoples = pd.read_csv('../../resource/SaveCol/upper_names.txt', header=None)
 
