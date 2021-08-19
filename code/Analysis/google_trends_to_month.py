@@ -9,7 +9,7 @@ for detail in details:
     for csv_data in os.listdir(data_dir+detail):
         data_dict = dict.fromkeys(['Date', 'Interest Level'])  # date, mean의 곱 저장할 dict
         # 칼럼명 변경
-        data = pd.read_csv(data_dir + detail + csv_data)
+        data = pd.read_csv(data_dir + detail + csv_data, encoding='cp949')
         data.columns = ['Date', 'BMI', 'Muscle', 'Weight Loss', 'Gym', 'Body Mass']
 
         # 리스트에 date 추가

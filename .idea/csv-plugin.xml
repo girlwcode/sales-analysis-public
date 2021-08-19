@@ -3,7 +3,28 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\resource\SalesData\Installation_2018.csv">
+        <entry key="\resource\CleansedData\ZohoCRM\Accounts_001_fillTerritories_final.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\resource\Plot\Monthly Whole Revenue By Territories Amazon (2017-2021).csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\resource\Plot\Monthly Whole Revenue By Territories East (2017-2021).csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\resource\Plot\Monthly Whole Revenue By Territories North (2017-2021).csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

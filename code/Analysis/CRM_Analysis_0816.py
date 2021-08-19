@@ -150,15 +150,15 @@ for y in years :
 # revenue_territory
 year = 2017
 for y in years :
-    plt.cla()
-    year += 1
+    # plt.cla()
+    # year += 1
     # print(revenue)
     # print(year)
     revenue = {}
     for re in regions :
         r = sum(y[y['Region'] == re]['Net'])
         revenue[re] = r
-    title = 'Revenue of '+str(year)
+    # title = 'Revenue of '+str(year)
     # plt.figure(figsize=(10, 7))
     # plt.title(title, fontsize=15)
     # plt.plot(list(revenue.keys()), list(revenue.values()))
