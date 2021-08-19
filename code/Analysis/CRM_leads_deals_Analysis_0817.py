@@ -6,8 +6,8 @@ import dataframe as df
 
 sales_dir = '../../resource/SalesData/'
 
-leads = pd.read_csv('../../resource/CleansedData/Zoho CRM/Leads_001_IndustryCleansed.csv')
-deals = pd.read_csv('../../resource/CleansedData/Zoho CRM/Potentials_001_fillTerritories_final.csv')
+leads = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryCleansed.csv')
+deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillTerritories_final.csv')
 installed = pd.read_csv('../../resource/SalesData/Install_full.csv')
 revenue = pd.read_csv('../../resource/SalesData/Whole Revenue.csv')
 

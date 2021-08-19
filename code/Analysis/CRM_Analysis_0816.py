@@ -8,8 +8,8 @@ sales_19 = pd.read_csv('../../resource/SalesData/Installation_2019.csv')
 sales_20 = pd.read_csv('../../resource/SalesData/Installation_2020.csv')
 sales_21 = pd.read_csv('../../resource/SalesData/Installation_2021.csv')
 
-leads = pd.read_csv('../../resource/CleansedData/Zoho CRM/Leads_001_IndustryCleansed.csv')
-deals = pd.read_csv('../../resource/CleansedData/Zoho CRM/Potentials_001_fillTerritories_final.csv')
+leads = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryCleansed.csv')
+deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillTerritories_final.csv')
 
 #Index(['S. No.', 'Month', 'Client', 'City', 'State', 'Region', 'Category',
       #  'Sales Official', 'Installation Date', 'Order/ Model Details',
@@ -20,11 +20,11 @@ deals = pd.read_csv('../../resource/CleansedData/Zoho CRM/Potentials_001_fillTer
 # print(sales_17.columns)
 
 # 순 이익 : 17,18 - Actual Value, 19,20,21 - Net
-revenue_17 = sales_17.loc[:,['Month','Region','Category','Actual Value']]
-revenue_18 = sales_18.loc[:,['Month','Region','Category','Actual Value']]
-revenue_19 = sales_19.loc[:,['Month','Region','Category','Net']]
-revenue_20 = sales_20.loc[:,['Month','Region','Category','Net']]
-revenue_21 = sales_21.loc[:,['Month','Region','Category','Net']]
+revenue_17 = sales_17.loc[:,['Month','Client','Region','Category','Actual Value']]
+revenue_18 = sales_18.loc[:,['Month','Client','Region','Category','Actual Value']]
+revenue_19 = sales_19.loc[:,['Month','Client','Region','Category','Net']]
+revenue_20 = sales_20.loc[:,['Month','Client','Region','Category','Net']]
+revenue_21 = sales_21.loc[:,['Month','Client','Region','Category','Net']]
 
 
 # Lead, Deal 월별로 구분
@@ -65,11 +65,11 @@ revenue_20['Year'] = 2020
 revenue_21['Year'] = 2021
 
 # col 순서 변경
-revenue_17= revenue_17[['Year','Month','Region','Category','Net']]
-revenue_18= revenue_18[['Year','Month','Region','Category','Net']]
-revenue_19= revenue_19[['Year','Month','Region','Category','Net']]
-revenue_20= revenue_20[['Year','Month','Region','Category','Net']]
-revenue_21= revenue_21[['Year','Month','Region','Category','Net']]
+revenue_17= revenue_17[['Year','Month','Client','Region','Category','Net']]
+revenue_18= revenue_18[['Year','Month','Client','Region','Category','Net']]
+revenue_19= revenue_19[['Year','Month','Client','Region','Category','Net']]
+revenue_20= revenue_20[['Year','Month','Client','Region','Category','Net']]
+revenue_21= revenue_21[['Year','Month','Client','Region','Category','Net']]
 
 # print(revenue_17['Region'].unique())
 
