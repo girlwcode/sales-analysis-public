@@ -64,6 +64,7 @@ revenue_19['Year'] = 2019
 revenue_20['Year'] = 2020
 revenue_21['Year'] = 2021
 
+
 # col 순서 변경
 revenue_17= revenue_17[['Year','Month','Client','Region','Category','Net']]
 revenue_18= revenue_18[['Year','Month','Client','Region','Category','Net']]

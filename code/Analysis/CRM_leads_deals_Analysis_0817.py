@@ -25,6 +25,9 @@ industry = pd.DataFrame(lead['Industry Fin'].unique(), columns=['Industry'])
 df2 = pd.concat([lead_source,lead_Status,stage,deal_source,territory,industry], axis=0, ignore_index=True)
 # df2.to_csv('점수.csv',index=False)
 
+print(stage)
+# 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment)
+
 # 날짜 DateTime으로 변경
 lead['Created Time'] = pd.to_datetime(lead['Created Time'])
 deal['Created Time'] = pd.to_datetime(deal['Created Time'])
@@ -75,6 +78,42 @@ number_deal.rename(columns = {0 : 'deal'}, inplace = True)
 monthly_num = pd.concat([number_lead,number_deal['deal']],axis=1, ignore_index=True)
 monthly_num.rename(columns = {0 : 'year',1 : 'month',2 : 'lead',3 : 'deal'}, inplace = True)
 monthly_num['converted Rate'] = monthly_num['deal'] / (monthly_num['lead'] + monthly_num['deal']) * 100
+
+
+monthly_num = monthly_num[monthly_num['year']!=2016]
+
+# monthly plot's x
+x = []
+for row in monthly_num.index:
+    date = str(monthly_num['year'][row]) + '.' + str(monthly_num['month'][row])
+    x.append(date)
+
+# plot the lead creation
+plt.figure(figsize=(15,8))
+plt.title('Monthly Lead Creation (2017-2021)', fontsize=20)
+plt.plot(x, monthly_num['lead'])
+plt.xticks(rotation=90)
+plt.ylabel('Number of Leads')
+plt.savefig('../../resource/Plot/Monthly Lead Creation (2017-2021).png')
+
+# plot the deal creation
+plt.figure(figsize=(15,8))
+plt.title('Monthly Deal Creation (2017-2021)', fontsize=20)
+plt.plot(x, monthly_num['deal'])
+plt.xticks(rotation=90)
+plt.ylabel('Number of Deals')
+plt.savefig('../../resource/Plot/Monthly Deal Creation (2017-2021).png')
+
+
+# plot the conversion Rate
+plt.figure(figsize=(15,8))
+plt.title('Monthly Converted Rate Creation (2017-2021)', fontsize=20)
+plt.plot(x, monthly_num['converted Rate'])
+plt.xticks(rotation=90)
+plt.ylabel('Converted Rate (%)')
+plt.savefig('../../resource/Plot/Monthly Converted Rate Creation (2017-2021).png')
+
+
 
 # revenue per month and converted rate
 # y1 = list(rev_year.values())
