@@ -11,6 +11,8 @@ deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillTerr
 installed = pd.read_csv('../../resource/SalesData/Install_full.csv')
 revenue = pd.read_csv('../../resource/SalesData/Whole Revenue.csv')
 
+#sales - 1559
+print(len(revenue['Client'].unique()))
 # Lead, Deal 월별로 구분
 lead = leads.loc[:, ['Lead Source', 'Lead Status', 'Created Time', 'Industry Fin']]
 deal = deals.loc[:, ['Amount', 'Stage', 'Lead Source', 'Created Time', 'Territory_fin']]
