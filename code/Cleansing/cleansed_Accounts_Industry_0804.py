@@ -59,7 +59,7 @@ ids_keywords = {'Fitness':'Fitness', 'Hotel':'Hotel', 'Hospitality':'Private Ent
                 'High budget Fitness':'Fitness', 'Government Medical' : 'Hospital', 'Amazon/CS' : 'Others_Others Corporate'
                 }
 
-keywords2 = {'self':'Others_Individual', 'dietician':'Clinic', 'insurance':'Private Enterprise', 'loss':'clinic', 'mechanics':'Fitness','association':'Public Association',
+keywords2 = {'self':'Others_Individual', 'dietician':'Clinic', 'insurance':'Private Enterprise', 'loss':'Clinic', 'mechanics':'Fitness','association':'Public Association',
              'football':'Public Association', 'fit':'Fitness', 'diet centre' : 'Clinic', 'path lab' :'Clinic', 'safe': 'Clinic',
              'dt ':'Clinic', 'dt.':'Clinic', 'diet':'Clinic', 'ms.':'Others_Individual', 'mr ':'Others_Individual', 'mr.':'Others_Individual',
              'nutri':'Private Enterprise','nutritionist':'Clinic','healthcare':'Hospital', 'wellness':'Others_Aesthetic', 'cosmetics':'Others_Aesthetic', 'force':'Public Association',
@@ -169,4 +169,4 @@ print('Not Cleansed:',len(parse))
 #print(accounts['Industry Fin'].nunique(), accounts['Industry Fin'].unique())
 
 accounts = accounts.drop(['Industry','Sub industry'],axis=1)
-accounts.to_csv('../../resource/CleansedData/Accounts_001_IndustryCleansed.csv',index=False)
+accounts.to_csv('../../resource/CleansedData/ZohoCRM/Accounts_001_IndustryCleansed.csv',index=False)

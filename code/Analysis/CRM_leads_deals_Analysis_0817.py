@@ -11,8 +11,7 @@ deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillTerr
 installed = pd.read_csv('../../resource/SalesData/Install_full.csv')
 revenue = pd.read_csv('../../resource/SalesData/Whole Revenue.csv')
 
-#sales - 1559
-print(len(revenue['Client'].unique()))
+
 # Lead, Deal 월별로 구분
 lead = leads.loc[:, ['Lead Source', 'Lead Status', 'Created Time', 'Industry Fin']]
 deal = deals.loc[:, ['Amount', 'Stage', 'Lead Source', 'Created Time', 'Territory_fin']]
@@ -28,7 +27,7 @@ df2 = pd.concat([lead_source,lead_Status,stage,deal_source,territory,industry], 
 # df2.to_csv('점수.csv',index=False)
 
 print(stage)
-# 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment)
+# 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment),6. Installation
 
 # 날짜 DateTime으로 변경
 lead['Created Time'] = pd.to_datetime(lead['Created Time'])
@@ -115,6 +114,7 @@ plt.xticks(rotation=90)
 plt.ylabel('Converted Rate (%)')
 plt.savefig('../../resource/Plot/Monthly Converted Rate Creation (2017-2021).png')
 
+# 영업 성공률 = conversion Rate * Deal Final Success Rate
 
 
 # revenue per month and converted rate
