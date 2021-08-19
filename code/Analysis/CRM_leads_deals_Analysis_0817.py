@@ -2,6 +2,7 @@ import collections
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import dataframe as df
 
 sales_dir = '../../resource/SalesData/'
 
@@ -25,7 +26,8 @@ industry = pd.DataFrame(lead['Industry Fin'].unique(), columns=['Industry'])
 df2 = pd.concat([lead_source,lead_Status,stage,deal_source,territory,industry], axis=0, ignore_index=True)
 # df2.to_csv('점수.csv',index=False)
 
-
+print(stage)
+# 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment),6. Installation
 
 # 날짜 DateTime으로 변경
 lead['Created Time'] = pd.to_datetime(lead['Created Time'])
@@ -39,7 +41,7 @@ deal['year'] = pd.DatetimeIndex(deal['Created Time']).year
 deal['month'] = pd.DatetimeIndex(deal['Created Time']).month
 
 # 한 해 Customer
-# installed_company = collections.Counter(installed['Year'])
+installed_company = collections.Counter(installed['Year'])
 # print(installed_company)
 
 # Rev 월 변경
@@ -65,7 +67,7 @@ for y in rev_year.keys() :
         rm = round(sum(revenue[condition1 & condition2]['Net']),2)
         rev_month[y].append(rm)
 
-# print(rev_month.values())
+print(rev_month.values())
 
 # Converted Rate - Monthly
 number_lead = lead.groupby(['year', 'month']).size().reset_index()
@@ -76,42 +78,10 @@ number_deal.rename(columns = {0 : 'deal'}, inplace = True)
 
 monthly_num = pd.concat([number_lead,number_deal['deal']],axis=1, ignore_index=True)
 monthly_num.rename(columns = {0 : 'year',1 : 'month',2 : 'lead',3 : 'deal'}, inplace = True)
-monthly_num['converted Rate'] = round(monthly_num['deal'] / (monthly_num['lead'] + monthly_num['deal']),3)
+monthly_num['converted Rate'] = monthly_num['deal'] / (monthly_num['lead'] + monthly_num['deal']) * 100
 
-
-
-
-
-# 영업 성공률 = conversion Rate * Deal Final Success Rate
-# Stage = 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment), 6. Installation
-stages = ['5','6','7']
-index_list= []
-for s in stages:
-    index_list.extend(deal[deal['Stage'].str.contains(s)].index.tolist())
-
-
-index_list = sorted(index_list)
-closed_deal = deal.loc[index_list]
-
-number_closed_deal = closed_deal.groupby(['year', 'month']).size().reset_index()
-number_closed_deal.rename(columns = {0 : 'closed deal'}, inplace = True)
-new_data = {
-    'year' : 2020,
-    'month' : 4,
-    'closed deal' : 0
-}
-idx = 47  ## 원하는 인덱스
-
-temp1 = number_closed_deal[number_closed_deal.index < idx]
-temp2 = number_closed_deal[number_closed_deal.index >= idx]
-number_closed_deal = temp1.append(new_data, ignore_index=True).append(temp2, ignore_index=True)
-monthly_num = pd.concat([monthly_num,number_closed_deal['closed deal']],axis=1)
 
 monthly_num = monthly_num[monthly_num['year']!=2016]
-monthly_num = monthly_num[['year','month','lead','deal','closed deal','converted Rate']]
-monthly_num['sales success Rate'] = round(monthly_num['converted Rate'] * (monthly_num['closed deal']/monthly_num['deal']),3)
-monthly_num.to_csv('../../resource/CleansedData/ZohoCRM/Monthly_Sales_Trend.csv',index=False)
-
 
 # monthly plot's x
 x = []
@@ -127,15 +97,6 @@ plt.xticks(rotation=90)
 plt.ylabel('Number of Leads')
 plt.savefig('../../resource/Plot/Monthly Lead Creation (2017-2021).png')
 
-# export data to csv
-df = pd.DataFrame({
-    'x':x,
-    'y':monthly_num['lead']
-})
-df.to_csv('../../resource/PlotCSV/Monthly Lead Creation (2017-2021).csv', index=False)
-
-
-
 # plot the deal creation
 plt.figure(figsize=(15,8))
 plt.title('Monthly Deal Creation (2017-2021)', fontsize=20)
@@ -144,45 +105,16 @@ plt.xticks(rotation=90)
 plt.ylabel('Number of Deals')
 plt.savefig('../../resource/Plot/Monthly Deal Creation (2017-2021).png')
 
-# export data to csv
-df = pd.DataFrame({
-    'x':x,
-    'y':monthly_num['deal']
-})
-df.to_csv('../../resource/PlotCSV/Monthly Deal Creation (2017-2021).csv', index=False)
-
-
 
 # plot the conversion Rate
 plt.figure(figsize=(15,8))
-plt.title('Monthly Converted Rate (2017-2021)', fontsize=20)
+plt.title('Monthly Converted Rate Creation (2017-2021)', fontsize=20)
 plt.plot(x, monthly_num['converted Rate'])
 plt.xticks(rotation=90)
-plt.ylabel('Converted Rate')
-plt.savefig('../../resource/Plot/Monthly Converted Rate (2017-2021).png')
+plt.ylabel('Converted Rate (%)')
+plt.savefig('../../resource/Plot/Monthly Converted Rate Creation (2017-2021).png')
 
-# export data to csv
-df = pd.DataFrame({
-    'x':x,
-    'y':monthly_num['converted Rate']
-})
-df.to_csv('../../resource/PlotCSV/Monthly Converted Rate (2017-2021).csv', index=False)
-
-
-# plot the sales success Rate
-plt.figure(figsize=(15,8))
-plt.title('Monthly Sales Success Rate (2017-2021)', fontsize=20)
-plt.plot(x, monthly_num['sales success Rate'])
-plt.xticks(rotation=90)
-plt.ylabel('sales success Rate')
-plt.savefig('../../resource/Plot/Monthly Sales Success Rate (2017-2021).png')
-
-# export data to csv
-df = pd.DataFrame({
-    'x':x,
-    'y':monthly_num['sales success Rate']
-})
-df.to_csv('../../resource/PlotCSV/Monthly Sales Success Rate (2017-2021).csv', index=False)
+# 영업 성공률 = conversion Rate * Deal Final Success Rate
 
 
 # revenue per month and converted rate
