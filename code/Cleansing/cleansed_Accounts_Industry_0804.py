@@ -73,7 +73,7 @@ ids_keywords2 = {'Sports':'Private Enterprise', 'Private Medical':'Private Enter
 keywords3 = {'club':'Hotel','tech':'Others_Others Corporate', 'health':'Private Enterprise', 'health club':'Fitness',
              'federation':'Public Association','foundation':'Public Association', 'ltd':'Others_Others Corporate', 'body':'Fitness','studio':'Others_Others Corporate' ,
              'sakthivel.a':'Academic', 'enterpri':'Private Enterprise', 'private':'Others_Others Corporate', 'sai ':'Private Enterprise',
-             'm.m':'Public Association', 'officer':'Military', 'company':'Others_Others Corporate', 'burger':'Clinic', 'Slimming':'Private Enterprise',
+             'm.m':'Public Association', 'officer':'Military', 'company':'Others_Others Corporate', 'beast':'Clinic', 'Slimming':'Private Enterprise',
              'centr':'Clinic','Talwalkars':'Fitness', 'franchise':'Fitness', 'develop':'Others_Others Corporate', 'iifw':'Others_Others Corporate', 'square':'Others_Others Corporate',
              'corporation':'Others_Others Corporate', 'limited':'Others_Others Corporate','life':'Clinic','llp':'Others_Others Corporate', 'general':'Public Association','seven':'Others_Others Corporate' ,
              'olympic':'Others_Others Corporate', 'physio':'Clinic', 'equipment':'Private Enterprise','push':'Fitness', 'associate':'Public Association',

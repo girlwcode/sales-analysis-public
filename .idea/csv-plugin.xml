@@ -10,27 +10,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\resource\Plot\Monthly Whole Revenue By Territories Amazon (2017-2021).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\resource\Plot\Monthly Whole Revenue By Territories East (2017-2021).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\resource\Plot\Monthly Whole Revenue By Territories North (2017-2021).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\resource\SalesData\Whole Revenue.csv">
           <value>
             <Attribute>
