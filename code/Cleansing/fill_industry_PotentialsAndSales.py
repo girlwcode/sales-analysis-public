@@ -19,52 +19,29 @@ for i in accounts.index:
             industry = accounts['Industry Fin'][i]
             company_id_dict[company_id] = industry
 
-# 115개 Accounts랑 연결 안됨
-'''
-none_list = []
-for company_id in company_id_dict:
-    if company_id_dict[company_id] is None:
-        none_list.append(company_id)
-industry_none = dict.fromkeys(none_list)
-print(len(none_list))
-'''
-
-# Potential 채우기
+# Potential 채우기 - 115개 연결 안됨
 deals['Industry Fin'] = None
 for i in deals.index:
     company_id = deals['Company ID'][i]
     deals['Industry Fin'][i] = company_id_dict[company_id]
+print(pd.isna(deals['Industry Fin']).sum())
 
-deals.to_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv', index=False)
-
-'''
-# 2. Sales (Clinet) - Potential_fillIndustry (Deal Name) 연결
-deals_industry = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv')
-# print(len(sales['Client'].unique()))
-# 1560
-
-# dictionary 채우기
-company_name_dict = dict.fromkeys(list(sales['Client'].unique()))       # key: companyName, value: Industry
-for company_name in company_name_dict:
-    try:
-        if (deals_industry['Deal Name'].str.contains(company_name)).any():
-            industry = list(deals_industry[deals_industry['Deal Name'].str.contains(company_name)]['Industry Fin'].unique())
-            if np.nan in industry:
-                industry.remove(np.nan)
+# 2-1. Sales (Client) - Accounts (Company Name) 연결
+company_name_dict = dict.fromkeys(list(sales['Client'].unique()))  # key: companyName, value: Industry
+for i in accounts.index:
+    company_name = accounts['Company Name'][i]
+    if company_name in company_name_dict:
+        if company_name_dict[company_name] is None:
+            industry = accounts['Industry Fin'][i]
             company_name_dict[company_name] = industry
-    except:
-        continue
 
-count = 0
-for company_name in company_name_dict:
-    if company_name_dict[company_name] is None:
-        count+=1
-print(count)
-'''
+# Sales 채우기
+sales['Industry Fin'] = None
+for i in sales.index:
+    company_name = sales['Client'][i]
+    sales['Industry Fin'][i] = company_name_dict[company_name]
 
-# 2. Sales 기존 Category로 채우기
-
-print(accounts['Industry Fin'].unique())
+# 2-2. Sales 기존 Category로 채우기
 # ['Private Enterprise' 'Fitness' 'Hospital' 'Clinic'
 #  'Public Association' 'Others_Individual' 'Others_Aesthetic'
 #  'Others_Others Corporate' 'Hotel' 'Others_etc' 'Academic' 'Military']
@@ -82,7 +59,6 @@ cate_industry_dict['Others_Individual'] = ['Personal ', 'Home Health', 'diet']
 cate_industry_dict['Others_Others Corporate'] = ['Enterprise', 'Service']
 cate_industry_dict['Others_etc'] = ['Employee Gift', 'Amazon']
 
-sales['Industry Fin'] = None
 for industry in cate_industry_dict:
     idx_list = sales[sales['Category'].isin(cate_industry_dict[industry])].index.tolist()
     sales.at[idx_list, 'Industry Fin'] = industry
@@ -124,9 +100,6 @@ sales.at[idx_list, 'Industry Fin'] = 'Hospital'
 idx_list = sales[(sales['Industry Fin'].isna()) & (sales['Category']=='Corporate')
                  & (sales['Client'].str.lower().str.contains('charita'))].index.tolist()
 sales.at[idx_list, 'Industry Fin'] = 'Public Association'
-idx_list = sales[(sales['Industry Fin'].isna()) & (sales['Category']=='Corporate')
-                 & (sales['Client'].str.lower().str.contains('athleti'))].index.tolist()
-sales.at[idx_list, 'Industry Fin'] = 'Fitness'
 idx_list = sales[(sales['Industry Fin'].isna()) & (sales['Category']=='Corporate')].index.tolist()
 sales.at[idx_list, 'Industry Fin'] = 'Others_Others Corporate'
 # category == Scientific Research Institute
@@ -162,10 +135,56 @@ sales.at[idx_list, 'Industry Fin'] = 'Others_Individual'
 # category == others
 idx_list = sales[(sales['Industry Fin'].isna()) & (sales['Category']=='Others')
                  & (sales['Client'].str.lower().str.contains('ltd|limited'))].index.tolist()
-sales.at[idx_list, 'Industry Fin'] = 'Public Association'
+sales.at[idx_list, 'Industry Fin'] = 'Others_Others Corporate'
 idx_list = sales[(sales['Industry Fin'].isna()) & (sales['Category']=='Others')].index.tolist()
 sales.at[idx_list, 'Industry Fin'] = 'Others_Individual'
-# category == nan
+# inbody 들어가면 others_etc로
+idx_list = sales[sales['Client'].str.lower().str.contains('inbody')].index.tolist()
+sales.at[idx_list, 'Industry Fin'] = 'Others_etc'
+# category == nan(마지막 1개)
+idx_list = sales[sales['Industry Fin'].isna()].index.tolist()
+sales.at[idx_list, 'Industry Fin'] = 'Fitness'
 
 
+# 3. Potential 남은 115개 DealName으로 채우기
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('amazon|inbody|cs '))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Others_etc'
+idx_list = deals[(deals['Industry Fin'].isna()) &
+                 (deals['Deal Name'].str.lower().str.contains('fit|fint|gym|health club|bodyzone|finest|smeeta'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Fitness'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('hospital|hoapital|nursing'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Hospital'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('dr |dr.|dieti|nutri|food|eatwell'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Clinic'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('acade|weill cornel'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Academic'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('home use'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Others_Individual'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('navy'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Military'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('vibes|vlcc|skin|welona'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Others_Aesthetic'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.contains('CIAT'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Public Association'
+idx_list = deals[(deals['Industry Fin'].isna()) &
+                 (deals['Deal Name'].str.lower().str.contains('lifestyle studio|clinic|healtonation|bumb|rajeev|medic centre'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Clinic'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('club|the lodhi'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Hotel'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('ltd'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Others_Others Corporate'
+idx_list = deals[(deals['Industry Fin'].isna()) & (deals['Deal Name'].str.lower().str.contains('dummy|kamesh'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Others_etc'
+idx_list = deals[(deals['Industry Fin'].isna()) &
+                 (deals['Deal Name'].str.lower().str.contains('health|instrument|gsk|workout|ankush|mega'))].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Private Enterprise'
+# 나머지 individual
+idx_list = deals[deals['Industry Fin'].isna()].index.tolist()
+deals.at[idx_list, 'Industry Fin'] = 'Others_Individual'
+
+print(pd.isna(deals['Industry Fin']).sum())
+
+# data parsing
 sales.to_csv('../../resource/SalesData/Whole Revenue_fillIndustry.csv', index=False)
+deals.to_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv', index=False)
+

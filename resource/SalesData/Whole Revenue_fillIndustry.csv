@@ -14,15 +14,15 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2017,February,Towin Health Management,West 1,Fitness Club,453000.0,Fitness
 2017,February,Rajput Enterprise,East,Supplement Store,392156.86,Private Enterprise
 2017,February,Chisel,South,Fitness Club,424528.3,Fitness
-2017,February,Sunil Rodrigues,West 1,Others,433962.26,Others_Individual
+2017,February,Sunil Rodrigues,West 1,Others,433962.26,Others_Others Corporate
 2017,March,Friends Club,North,Fitness Club,461037.74,Fitness
 2017,March,Icon Fitness,West 1,Fitness Club,245283.02,Fitness
 2017,March,Super 4 ,North,Fitness Club,566037.74,Fitness
 2017,March,East Bourne Hotels & Properties India Pvt. Ltd.,North,Hotel,424528.3,Hotel
 2017,March,Sunshine Hospitals,South,Hospital,424529.25,Hospital
 2017,March,Shivay Fitness Pvt. Ltd.,South,Fitness Club,433962.26,Fitness
-2017,March,Springbay Bath Water Pvt. Ltd.,North,Others,429245.28,Public Association
-2017,March,Montecarlo Limited,West 2,Others,427358.49,Public Association
+2017,March,Springbay Bath Water Pvt. Ltd.,North,Others,429245.28,Others_Others Corporate
+2017,March,Montecarlo Limited,West 2,Others,427358.49,Others_Others Corporate
 2017,March,Sonal Vaidya,West 1,Wellness Centre,429245.28,Others_Aesthetic
 2017,March,Crown Fitness Pvt.Ltd. ,North,Fitness Club,433962.26,Fitness
 2017,April,Ravindranath GE MEDICAL ASSOCIATES PVT.LTD.,South,HealthCare Centre,627358.49,Hospital
@@ -34,24 +34,24 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2017,May,VLCC Healthcare,North,Wellness Centre,282735.85,Others_Aesthetic
 2017,May,Vivak Fitness & Wellness Club,West 1,Fitness Club,254716.98,Fitness
 2017,May,Parkmed Healthcare LLP,South,HealthCare Centre,542452.83,Hospital
-2017,June,Jarma Wellness LLP,West 1,Wellness Centre,45283.02,Others_Aesthetic
-2017,June,Eye Sense Herbals Private Ltd,East,Wellness Centre,613820.75,Others_Aesthetic
+2017,June,Jarma Wellness LLP,West 1,Wellness Centre,45283.02,Hospital
+2017,June,Eye Sense Herbals Private Ltd,East,Wellness Centre,613820.75,Private Enterprise
 2017,June,Chisel Fitness LLP,South,Fitness Club,424528.3,Fitness
 2017,June,Chisel Fitness LLP,South,Fitness Club,424528.3,Fitness
 2017,June,Acelife Fitness LLP,East,Fitness Club,433962.26,Fitness
 2017,June,amazon Seller Services Private Limited ,West 1,Other,22789.09,Others_Others Corporate
-2017,June,Asmita Kulkarni,West 1,Other,19829.38,Others_Individual
+2017,June,Asmita Kulkarni,West 1,Other,19829.38,Others_etc
 2017,June,Agility Fitness,West 1,Fitness Club,424528.3,Fitness
 2017,June,Volt Energy Club LLP,South,Fitness Club,441509.43,Fitness
-2017,June,M D EARTH MOVERS,East,Other,490566.04,Others_Others Corporate
-2017,June,Care India,North,Other,424528.3,Public Association
+2017,June,M D EARTH MOVERS,East,Other,490566.04,Fitness
+2017,June,Care India,North,Other,424528.3,Hospital
 2017,July,Mona Fitness Centre Private Limited ,West 1,Fitness Club,20322.04,Fitness
 2017,July,ARIHANT HEALTH CARE AND FITNESS SOLUTION,East,Fitness Club,910714.29,Fitness
 2017,July,Haier Fitness World LLP_Gold's gym,South,Fitness Club,1116071.43,Fitness
 2017,July,Moveza Fitness pvt.ltd,South,Fitness Club,433928.4,Fitness
 2017,July,Hero Motocorp Ltd_Neemrana,North,Other,425000.0,Others_Others Corporate
 2017,August,Oorjaa Fitness & Diet Studio?,North,Fitness Club,446875.89,Fitness
-2017,August,New Life Homeo Palace,West 2,Other,406250.0,Clinic
+2017,August,New Life Homeo Palace,West 2,Other,406250.0,Hospital
 2017,August,SRNC BODYCARE PRIVATE LIMITED?,East,Fitness Club,410714.29,Fitness
 2017,August,Alta Food & Fitness Pvt.Ltd.?,South,Fitness Club,425000.0,Fitness
 2017,August,Hero Motocorp Ltd.,North,Other,425000.0,Others_Others Corporate
@@ -81,8 +81,8 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2017,October,Yashoda Hospital,South,Hospital,803568.0,Hospital
 2017,October,Anytime Spar Fitness,East,Fitness Club,241071.43,Fitness
 2017,October,Mysore Univercity,South,University,1460714.2,Academic
-2017,October,Nakul Sohi,West 1,Other,18928.57,Others_Individual
-2017,November,R S Wellness,North,Wellness Centre,241071.43,Others_Aesthetic
+2017,October,Nakul Sohi,West 1,Other,18928.57,Others_Others Corporate
+2017,November,R S Wellness,North,Wellness Centre,241071.43,Fitness
 2017,November,Olympic Gold Quest,West 1,Other,241071.43,Others_Others Corporate
 2017,November,Anytime Fit Zone,North,Fitness Club,410718.75,Fitness
 2017,November,Veda Fitness,West 1,Fitness Club,1241071.42,Fitness
@@ -129,14 +129,14 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,February,Umesh Kumar Singh,South,Amazon,0.0,Others_etc
 2018,February,Fitness First Noida,North,Fitness ,12200.0,Fitness
 2018,February,Pramod Kumar,North,Amazon,0.0,Others_etc
-2018,February,Clara Healtonation Pvt Ltd,West 1,Wellness,10714.28,Others_Aesthetic
+2018,February,Clara Healtonation Pvt Ltd,West 1,Wellness,10714.28,Others_Others Corporate
 2018,February,Shraddha Gadit,West 1,Convention,714.28,Others_Individual
 2018,February,Sagar,West 1,Convention,714.28,Public Association
 2018,February,Satish Adepu,West 1,Convention,714.28,Others_Individual
-2018,February,Vaishali,West 1,Convention,714.28,Public Association
+2018,February,Vaishali,West 1,Convention,714.28,Others_etc
 2018,February,Holy Trinity Venture ,South,Medical,3571.42,Hospital
 2018,February,ATHLETICA FITNESS LLP,West 2,Fitness ,568750.0,Fitness
-2018,February,Neha Sewani,West 2,Convention,892.86,Others_Individual
+2018,February,Neha Sewani,West 2,Convention,892.86,Others_etc
 2018,February,Befastfit Gym,North,Fitness ,401780.4,Fitness
 2018,February,World Gym,West 1,Fitness ,2232.14,Fitness
 2018,February,AAHAR,West 1,Nutrition,446428.58,Clinic
@@ -147,13 +147,13 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,March,Inspire Gym,West 1,Fitness ,30625.0,Fitness
 2018,March,Vibes Healthcare Limited,East,Wellness,348242.29,Others_Aesthetic
 2018,March,Gold Gym Greater Noida,North,Fitness ,12945.57,Fitness
-2018,March,JAYPEE HEALTHCARE LTD.,North,Wellness,12946.43,Others_Aesthetic
+2018,March,JAYPEE HEALTHCARE LTD.,North,Wellness,12946.43,Hospital
 2018,March,Rage India Fitness,South,Fitness ,419642.86,Fitness
 2018,March,Swan Genx Projects Private Limited,North,Corporate,1205355.43,Others_Others Corporate
 2018,March,Dr.Bansi Saboo,West 2,Medical,375026.79,Hospital
 2018,March,Vibes Healthcare Limited,South,Wellness,348214.28,Others_Aesthetic
 2018,March,Balaji Fitness Health Club Pvt. Ltd.,North,Fitness ,410615.71,Fitness
-2018,March,Aryanbagga Associates Pvt Ltd,North,Corporate,410704.0,Others_Others Corporate
+2018,March,Aryanbagga Associates Pvt Ltd,North,Corporate,410704.0,Fitness
 2018,March,Lodhi hotel,North,Hospitality,396420.0,Private Enterprise
 2018,March,F2 Fun & Fitness India Pvt.Ltd.,West 1,Fitness ,8919.64,Fitness
 2018,March,Mr. Vikram,South,Home Health,17947.27,Others_Individual
@@ -179,21 +179,21 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,April,Silver Sports Club,West 1,Fitness ,366071.42,Fitness
 2018,April,Mr . Rohan Pusalkar,West 1,Amazon,0.0,Others_etc
 2018,April,BANERJIDA FIVE LOTUS RESORTS PVT.LTD,West 1,Hospitality,491071.0,Private Enterprise
-2018,April,R S Wellness,North,Wellness,0.0,Others_Aesthetic
-2018,April,InBody India,West 1,,0.0,
+2018,April,R S Wellness,North,Wellness,0.0,Fitness
+2018,April,InBody India,West 1,,0.0,Others_etc
 2018,April,VS Hospital,South,Medical,495625.0,Hospital
 2018,April,Jaguar Fitness,South,Fitness ,406250.0,Fitness
 2018,April,Chillies N Lemon Infra & Hospitality LLP,North,Hospitality,205314.29,Private Enterprise
 2018,April,Physio Fit KEI Industries,North,Fitness ,409500.0,Fitness
-2018,April,AKJ ENTERPRISES PRIVATE LIMITED,North,Corporate,409500.0,Others_Others Corporate
-2018,April,Shri Siddhivinayak Wellness LLP,West 1,Corporate,205410.72,Others_Aesthetic
+2018,April,AKJ ENTERPRISES PRIVATE LIMITED,North,Corporate,409500.0,Fitness
+2018,April,Shri Siddhivinayak Wellness LLP,West 1,Corporate,205410.72,Fitness
 2018,April,Be Fit Be Healthy ,West 1,Fitness ,181250.0,Fitness
-2018,April,InBody europe B V,Overseas,Corporate,17216.32,Others_Others Corporate
+2018,April,InBody europe B V,Overseas,Corporate,17216.32,Others_etc
 2018,April,Yaduvanshi Fitness Club Pvt. Ltd.,North,Fitness ,401798.21,Fitness
 2018,May,Ravissant Gym,North,Fitness ,247500.0,Fitness
 2018,May,Grey Hounds (OPC) Pvt Ltd,South,Government,968750.0,Public Association
 2018,May,Abhimanyu Munjal,North,Amazon,17911.61,Others_etc
-2018,May,NCR Foundation,South,Corporate,937500.0,Others_Others Corporate
+2018,May,NCR Foundation,South,Corporate,937500.0,Hospital
 2018,May, Salvem Health Pvt Ltd,West 1,Medical,181250.0,Hospital
 2018,May, VLCC HEALTH CARE LTD ,South,Wellness,46348.71,Others_Aesthetic
 2018,May,91 Fitness,West 2,Fitness ,379464.29,Fitness
@@ -201,13 +201,13 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,May,Road to fitness,East,Fitness ,178660.71,Fitness
 2018,May,DPO's NETT COLLEGE OF PHYSIOTHERAPY,West 1,Medical,178560.72,Hospital
 2018,May,Knockout Fitness Pvt Ltd,East,Fitness ,34900.0,Fitness
-2018,May,Garuda Vriddhi Wellness Pvt.Ltd.,South,Wellness,380133.93,Others_Aesthetic
+2018,May,Garuda Vriddhi Wellness Pvt.Ltd.,South,Wellness,380133.93,Fitness
 2018,May,Moveza Fitness pvt.ltd,South,Fitness ,500000.0,Fitness
 2018,May,SSK Gym Chisel,East,Fitness ,437500.0,Fitness
 2018,May,TRIM SLIM BODY PRIVATE LIMITED,West 1,Fitness ,401250.0,Fitness
 2018,May,Ghoongharwala sushila,North,Amazon,1071.42,Others_etc
 2018,May,Sreeram Sairam Iyer,West 1,Amazon,1071.42,Others_etc
-2018,May,Procter & Gamble Home Products Pvt.Ltd.,South,Corporate,410704.0,Others_Others Corporate
+2018,May,Procter & Gamble Home Products Pvt.Ltd.,South,Corporate,410704.0,Private Enterprise
 2018,May,Khanna Hotels Pvt Ltd,West 1,Hospitality,243750.0,Private Enterprise
 2018,May,major (Dr.) tilak raj takhtar bds,East,Medical,399464.71,Hospital
 2018,May,Mr. Shrutesh Reddy,South,Amazon,17839.28,Others_etc
@@ -227,7 +227,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,June,PLANET 9 FITNESS CENTRE (INDIA) PVT LTD,West 1,Fitness ,4464.28,Fitness
 2018,June,National Institute of Nutrition,South,Research,1160714.29,Public Association
 2018,June,Chetan Lathar,North,Fitness,180803.57,Fitness
-2018,June,Boost Events,West 1,Corporate,30000.0,Others_Others Corporate
+2018,June,Boost Events,West 1,Corporate,30000.0,Private Enterprise
 2018,June,SAMARA GYM,West 1,Fitness ,1252678.58,Fitness
 2018,June,Amanbi Sayed,South,Amazon,1071.43,Others_etc
 2018,June,Arwinder Sindhu,North,Amazon,1071.43,Others_etc
@@ -252,7 +252,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,June,Pravin K Amin,West 1,Amazon,1071.43,Others_etc
 2018,June,Ravinder Yadav,North,Amazon,1071.43,Others_etc
 2018,June,Team Core Fitness,North,Fitness ,179107.14,Fitness
-2018,June,Nobesity Healthcare LLP,West 2,Wellness,401862.5,Others_Aesthetic
+2018,June,Nobesity Healthcare LLP,West 2,Wellness,401862.5,Clinic
 2018,June,Radiant Fitness,East,Fitness ,491071.0,Fitness
 2018,June,Nineleaps Technology Solutions Pvt.Ltd,South,Corporate,419642.86,Others_Others Corporate
 2018,June,Endolife Speciality Hosp Pvt ltd,South,Medical,208928.57,Hospital
@@ -310,7 +310,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,July,Zest Fitness Studio,South,Fitness,17839.29,Fitness
 2018,July,Ambika Enterprises,West 1,Corporate,357137.0,Others_Others Corporate
 2018,July,Athlecross Fitness & Wellness LLP,West 2,Fitness,535721.43,Fitness
-2018,August,Gap Global Exim LLP,North,Corporate,205352.86,Others_Others Corporate
+2018,August,Gap Global Exim LLP,North,Corporate,205352.86,Fitness
 2018,August,Raw House Fitness,North,Fitness,205352.86,Fitness
 2018,August,Cardiac Diagnostic & Services Pvt Ltd,South,Medical,348214.29,Hospital
 2018,August,Elite Fitness & Entertainment Pvt Ltd,North,Fitness,57700.0,Fitness
@@ -318,7 +318,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,August,Knockout Fitness Pvt Ltd,East,Fitness,12946.43,Fitness
 2018,August,Nutri Essence,West 2,Nutrition,10714.29,Clinic
 2018,August,Manipal Hospital Delhi,North,Medical,1449400.0,Hospital
-2018,August,Jumpstart Ventures,North,Corporate,205650.0,Others_Others Corporate
+2018,August,Jumpstart Ventures,North,Corporate,205650.0,Fitness
 2018,August,Panjatan Khan,West 1,Amazon,17839.29,Others_etc
 2018,August,Praba's Vcare Health Clinic Pvt Ltd,South,Medical,16517.86,Hospital
 2018,August,Aaditya Marketing And Trading Co,West 2,Corporate,379500.0,Others_Others Corporate
@@ -328,7 +328,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,August,National Institute Of Nutrition,South,Research,0.0,Public Association
 2018,August,National Institute Of Nutrition,South,Research,0.0,Public Association
 2018,August,Kaya Limited,North,Nutrition,495525.0,Clinic
-2018,August,Krishna Garments,East,Corporate,178568.75,Others_Others Corporate
+2018,August,Krishna Garments,East,Corporate,178568.75,Fitness
 2018,August,Sairam Namma Ventures,South,Corporate,437496.52,Others_Others Corporate
 2018,August,Debkumar Biswas,East,Amazon,17839.29,Others_etc
 2018,August,Onyx Enterprises,West 2,Corporate,30356.89,Others_Others Corporate
@@ -338,17 +338,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,August,The Planet Fitness,East,Fitness,12946.43,Fitness
 2018,August,Belle Vue Clinic,East,Medical,379500.0,Hospital
 2018,August,Rajput Enterprises,East,Corporate,357136.21,Others_Others Corporate
-2018,August,Sultania Wellness Hub,East,Wellness,200892.86,Others_Aesthetic
+2018,August,Sultania Wellness Hub,East,Wellness,200892.86,Fitness
 2018,August,DNG Fitness,East,Fitness,196428.04,Fitness
 2018,August,Lalan Kumar,East,Amazon,17839.29,Others_etc
 2018,August,Aabhishek Kamal Kumar,West 1,Amazon,17865.68,Others_etc
 2018,September,Befastfit,North,Fitness,401700.0,Fitness
 2018,September,CDN Vision,North,Medical,402960.0,Hospital
-2018,September,Jarma Wellness LLP,West 1,Wellness,21428.58,Others_Aesthetic
-2018,September,Jarma Wellness LLP,West 1,Wellness,0.0,Others_Aesthetic
-2018,September,Jarma Wellness LLP,West 1,Wellness,0.0,Others_Aesthetic
+2018,September,Jarma Wellness LLP,West 1,Wellness,21428.58,Hospital
+2018,September,Jarma Wellness LLP,West 1,Wellness,0.0,Hospital
+2018,September,Jarma Wellness LLP,West 1,Wellness,0.0,Hospital
 2018,September,A A Fitness Studio,North,Fitness,419646.39,Fitness
-2018,September,Zorba Renaissance Pvt Ltd,West 1,Corporate,205312.5,Others_Others Corporate
+2018,September,Zorba Renaissance Pvt Ltd,West 1,Corporate,205312.5,Fitness
 2018,September,HeroMoto Corp,North,Corporate,424995.2,Others_Others Corporate
 2018,September,Shivshakti Fitness,North,Fitness,205352.86,Fitness
 2018,September,Mohit Global Services Pvt Ltd,North,Corporate,460714.29,Others_Others Corporate
@@ -356,7 +356,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,September,VLCC Healthcare Ltd,North,Wellness,23727.61,Others_Aesthetic
 2018,September,Balance Nutrition,West 1,Nutrition,393300.0,Clinic
 2018,September,Geeta Nutriheal Consultancy,West 1,Wellness,209821.42,Clinic
-2018,September,Nitin Cotton Industries,West 1,Corporate,204821.42,Others_Others Corporate
+2018,September,Nitin Cotton Industries,West 1,Corporate,204821.42,Fitness
 2018,September,INVESTING SOLUTIONS,North,Fitness,205380.05,Fitness
 2018,September,Aarti Bhagat,West 1,Academia,1271.18,Academic
 2018,September,Afsha Waghu,West 1,Academia,1271.18,Academic
@@ -426,7 +426,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,September,I MONETARY ADVISORY,South,Corporate,437500.0,Others_Others Corporate
 2018,September,Cultural Research Institute Kolkata,East,Research,178568.75,Public Association
 2018,September,Dt. Minal Asurlekar,West 1,Academia,1694.92,Academic
-2018,September,Inbody Academia Invoices,West 1,Academia,187788.2,Academic
+2018,September,Inbody Academia Invoices,West 1,Academia,187788.2,Others_etc
 2018,October,U Square,South,Pharma,147321.43,Private Enterprise
 2018,October,The Himalaya Drug Company,South,Pharma,400000.0,Private Enterprise
 2018,October,MITS Nutracueticals Pvt Ltd,West 1,Pharma,42372.88,Private Enterprise
@@ -447,7 +447,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,October,F2 Fun n Fitness Pvt Ltd,West 1,Fitness,8921.0,Fitness
 2018,October,Press Wellness Pvt Ltd,West 1,Wellness,401785.7,Others_Aesthetic
 2018,October,Yenepoya,South,Education,980000.0,Academic
-2018,October,Magadh Health & lifestyle,East,,379460.0,
+2018,October,Magadh Health & lifestyle,East,,379460.0,Fitness
 2018,October,Gold Fitness Pvt Ltd,West 1,Fitness,8919.64,Fitness
 2018,October,Sonam Karma,East,Amazon,17839.29,Others_etc
 2018,October,Arpit Singh,East,Amazon,16946.43,Others_etc
@@ -461,8 +461,8 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,October,Nutrica International Pvt Ltd,West 1,Corporate,300000.0,Others_Others Corporate
 2018,October,Multifit Wellness Pvt Ltd,South,Wellness,334821.43,Fitness
 2018,October,Samanvya LLP,South,Corporate,384330.36,Others_Others Corporate
-2018,October,Gharda Chemical Limited,West 1,Corporate,200891.26,Others_Others Corporate
-2018,October,Gharda Chemical Limited,West 1,Corporate,0.0,Others_Others Corporate
+2018,October,Gharda Chemical Limited,West 1,Corporate,200891.26,Private Enterprise
+2018,October,Gharda Chemical Limited,West 1,Corporate,0.0,Private Enterprise
 2018,October,Evolve Fitness,East,Fitness,205352.86,Fitness
 2018,October,Boost Events,West 1,Service,5000.0,Others_Others Corporate
 2018,October,Boost Events,West 1,Service,15000.0,Others_Others Corporate
@@ -479,7 +479,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,November,Raaw Fitness,West 1,Fitness,387500.0,Fitness
 2018,November,Reboot Fitness Hub,North,Fitness,424097.27,Fitness
 2018,November,Yaduvanshi Fitness Club Pvt Ltd,North,Fitness,401783.79,Fitness
-2018,November,Jarma Wellness LLP,West 1,Wellness,0.0,Others_Aesthetic
+2018,November,Jarma Wellness LLP,West 1,Wellness,0.0,Hospital
 2018,November,Aryanbagga Assosiates Pvt Ltd,North,Corporate,3571.43,Others_Others Corporate
 2018,November,Krupa Mhatre,West 1,Academia,1694.92,Academic
 2018,November,VC Fitness,West 1,Fitness,383571.0,Fitness
@@ -491,13 +491,13 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2018,November,Sarka World Hospital,South,Medical,1026785.71,Hospital
 2018,November,Jaswanth Fiitness,South,Fitness,419641.04,Fitness
 2018,November,Zothansanga,East,Amazon,17839.29,Others_etc
-2018,November,InBody Challenge,,,645764.52,
+2018,November,InBody Challenge,,,645764.52,Others_etc
 2018,December,Sportiqo Fitness LLP,East,Fitness,410714.29,Fitness
 2018,December,Saransh Fitness Solutions,West 1,Fitness,205357.14,Fitness
 2018,December,Sprusans Origin Pvt Ltd,West 1,Corporate,388392.84,Others_Others Corporate
 2018,December,Jupiter Lifeline Hospitals,West 1,Medical,16949.16,Hospital
 2018,December,Joginder Gandhi,North,Amazon,17839.29,Others_etc
-2018,December,Shweta Gaurav Pande,West 1,Wellness,383592.86,Others_Aesthetic
+2018,December,Shweta Gaurav Pande,West 1,Wellness,383592.86,Fitness
 2018,December,Multifit Wellness Pvt Ltd,South,Wellness,334821.43,Fitness
 2018,December,"The Inspector General of Police,Grey Hounds",South,Governement,901785.71,Public Association
 2018,December,First Space Health n Fitness,South,Fitness,419641.04,Fitness
@@ -549,13 +549,13 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,January,FIT24,South,Fitness,406250.0,Fitness
 2019,January,FIT24,South,Fitness,0.0,Fitness
 2019,January,A V Hospital,South,Medical,15750.0,Hospital
-2019,January,Amandeep Singh,Amazon,Others,1160.0,Others_Individual
+2019,January,Amandeep Singh,Amazon,Others,1160.0,Others_etc
 2019,January,Kartik,Amazon,Others,1160.0,Others_Individual
-2019,January,Gajendra Panwar,Amazon,Others,1160.0,Others_Individual
-2019,January,Reema Srivastava,Amazon,Others,1160.0,Others_Individual
+2019,January,Gajendra Panwar,Amazon,Others,1160.0,Others_etc
+2019,January,Reema Srivastava,Amazon,Others,1160.0,Others_etc
 2019,January,Kalla Dange,Amazon,Others,1160.0,Others_Individual
 2019,January,Harshavardhan B,Amazon,Others,1160.0,Others_Individual
-2019,January,Lokamanya Hospital Pvt Ltd,Amazon,Others,17839.0,Public Association
+2019,January,Lokamanya Hospital Pvt Ltd,Amazon,Others,17839.0,Others_Others Corporate
 2019,January,MD Amish,Amazon,Others,1160.0,Others_Individual
 2019,January,Hari Krishnan,Amazon,Others,1160.0,Others_Individual
 2019,January,Anil Gore,Amazon,Others,1160.0,Others_Individual
@@ -563,14 +563,14 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,January,Ramiara Fitness,North,Fitness,185714.0,Fitness
 2019,January,Ramiara Fitness,North,Fitness,893.0,Fitness
 2019,January,Ramiara Fitness,North,Fitness,893.0,Fitness
-2019,January,Prakash Christian,Amazon,Others,1160.0,Others_Individual
+2019,January,Prakash Christian,Amazon,Others,1160.0,Others_etc
 2019,January,TBN Total Fitness Pvt Ltd,West 1,Fitness,31250.0,Fitness
-2019,January,Chilukuri Seshu,Amazon,Others,1160.0,Others_Individual
+2019,January,Chilukuri Seshu,Amazon,Others,1160.0,Others_etc
 2019,January,Sudhir Joshi,Amazon,Others,17839.0,Others_Individual
 2019,January,Chaitanya Dhillion,North,Fitness,0.0,Fitness
 2019,January,Anuj Jain,North,Fitness,0.0,Fitness
 2019,January,Anees Shaikh,West 1,Fitness,0.0,Fitness
-2019,January,Samina Shaikh,Amazon,Others,1160.0,Others_Individual
+2019,January,Samina Shaikh,Amazon,Others,1160.0,Others_etc
 2019,January,Icon Fitness Pune,West 1,Fitness,14286.0,Fitness
 2019,January,Artaxerxes Fitness & Lifestyle Pvt Ltd,North,Fitness,351786.0,Fitness
 2019,January,Artaxerxes Fitness & Lifestyle Pvt Ltd,North,Fitness,893.0,Fitness
@@ -583,15 +583,15 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,January,Murali Krishna Nallibonia,Amazon,Others,1160.0,Others_Individual
 2019,January,Rajan Beri,Amazon,Others,17839.0,Others_Individual
 2019,January,Ravikumar CN,Amazon,Others,1160.0,Others_Individual
-2019,January,Jyotiprakash,Amazon,Others,1160.0,Others_Individual
+2019,January,Jyotiprakash,Amazon,Others,1160.0,Others_etc
 2019,January,Chhotoo Jakhar,Amazon,Others,1160.0,Others_Individual
 2019,January,CRS Health & Fitness Pvt Ltd,South,Fitness/Sports,29000.0,Fitness
 2019,January,Rigid Hospitals Pvt Ltd,South,Hospitals,15400.0,Hospital
 2019,January,Dhananjay Kumar Tiwari,Amazon,Others,1160.0,Others_Individual
-2019,January,Selvan Tamil,Amazon,Others,1160.0,Others_Individual
+2019,January,Selvan Tamil,Amazon,Others,1160.0,Others_etc
 2019,January,Venkatesh N,Amazon,Others,1160.0,Others_Individual
-2019,January,Kund Nath Jha,Amazon,Others,1160.0,Others_Individual
-2019,January,Monica R,Amazon,Others,1160.0,Others_Individual
+2019,January,Kund Nath Jha,Amazon,Others,1160.0,Others_etc
+2019,January,Monica R,Amazon,Others,1160.0,Others_etc
 2019,February,Matrix,East,Fitness/Sports,196433.0,Fitness
 2019,February,Matrix,East,Fitness/Sports,3571.0,Fitness
 2019,February,Matrix,East,Fitness/Sports,2679.0,Fitness
@@ -611,9 +611,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,February,SSK Fitness Club Pune,West 1,Fitness/Sports,27500.0,Fitness
 2019,February,SSK Fitness Club Pune,West 1,Fitness/Sports,10254.0,Fitness
 2019,February,The Cloud 9 Fitness Club,West 1,Fitness/Sports,10746.0,Fitness
-2019,February,Neeraj Sharda,Amazon,Others,1160.0,Others_Individual
+2019,February,Neeraj Sharda,Amazon,Others,1160.0,Others_etc
 2019,February,Kamlesh Autowheels,Amazon,Others,17839.0,Others_Individual
-2019,February,Ankit Chaudhary,Amazon,Others,17839.0,Others_Individual
+2019,February,Ankit Chaudhary,Amazon,Others,17839.0,Others_etc
 2019,February,Manoranjan Nayak,Amazon,Others,1160.0,Others_Individual
 2019,February,Neera Prasad,Amazon,Others,1160.0,Others_Individual
 2019,February,Ranjana M.P,Amazon,Others,1160.0,Others_Individual
@@ -622,38 +622,38 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,February,Simna International Fun n Fitness,East,Fitness/Sports,408579.0,Fitness
 2019,February,Simna International Fun n Fitness,East,Fitness/Sports,2644.0,Fitness
 2019,February,Simna International Fun n Fitness,East,Fitness/Sports,1786.0,Fitness
-2019,February,Shashank ND,Amazon,Others,17839.0,Others_Individual
+2019,February,Shashank ND,Amazon,Others,17839.0,Others_etc
 2019,February,Firoz Kumar Bagarty,Amazon,Others,1160.0,Others_Individual
-2019,February,Sanjay Sharma,Amazon,Others,1160.0,Others_Individual
+2019,February,Sanjay Sharma,Amazon,Others,1160.0,Others_etc
 2019,February,Anitha Ravl,Amazon,Others,1160.0,Others_Individual
 2019,February,Prakash Bhatt,Amazon,Others,1160.0,Others_Individual
 2019,February,Ample Technologies-Jayanagr,Amazon,Enterprise,92494.0,Others_Others Corporate
 2019,February,Ample Technologies,Amazon,Enterprise,61663.0,Others_Others Corporate
 2019,February,Ample Technologies,Amazon,Enterprise,30831.0,Others_Others Corporate
 2019,February,Shilen Vadodaria,Amazon,Others,1160.0,Others_Individual
-2019,February,Ayesha,Amazon,Others,1160.0,Others_Individual
+2019,February,Ayesha,Amazon,Others,1160.0,Others_etc
 2019,February,Paulsons Beauty & Fashion Pvt Ltd,South,Skin&SPA,145536.0,Others_Aesthetic
 2019,February,Paulsons Beauty & Fashion Pvt Ltd,South,Skin&SPA,893.0,Others_Aesthetic
 2019,February,Paulsons Beauty & Fashion Pvt Ltd,South,Skin&SPA,893.0,Others_Aesthetic
 2019,February,Kapil Kulkarni,Amazon,Others,1249.0,Others_Individual
-2019,February,Sameer Ugargol,Amazon,Others,1160.0,Others_Individual
+2019,February,Sameer Ugargol,Amazon,Others,1160.0,Others_etc
 2019,February,Tapan Awasthy,Amazon,Others,21411.0,Others_Individual
 2019,February,Victor Anthony,Amazon,Others,1160.0,Others_Individual
-2019,February,Sukanya,Amazon,Others,1160.0,Others_Individual
+2019,February,Sukanya,Amazon,Others,1160.0,Others_etc
 2019,February,Abhishek Ghorpade,Amazon,Others,21411.0,Others_Individual
 2019,February,Siva Rajesh,Amazon,Others,1160.0,Others_Individual
 2019,February,Anytime Fitness Shadara,Amazon,Fitness/Sports,0.0,Fitness
 2019,February,Anytime Fitness Vikaspuri,Amazon,Fitness/Sports,0.0,Fitness
 2019,February,Satwant Sarwara,Amazon,Others,1231.0,Others_Individual
-2019,February,InBody Co.ltd,West 1,Others,77655.0,Public Association
+2019,February,InBody Co.ltd,West 1,Others,77655.0,Others_etc
 2019,February,Kumar Mahajan,Amazon,Others,1160.0,Others_Individual
-2019,February,Prakash Gogari,Amazon,Others,1160.0,Others_Individual
+2019,February,Prakash Gogari,Amazon,Others,1160.0,Others_etc
 2019,February,Kenedy Kongkham,Amazon,Others,1160.0,Others_Individual
-2019,February,Pritesh Wani,Amazon,Others,21411.0,Others_Individual
-2019,February,Amrendra Rai,Amazon,Others,1160.0,Others_Individual
+2019,February,Pritesh Wani,Amazon,Others,21411.0,Others_etc
+2019,February,Amrendra Rai,Amazon,Others,1160.0,Others_etc
 2019,February,Indresh Chndra,Amazon,Others,1160.0,Others_Individual
 2019,February,James Varghese,Amazon,Others,1160.0,Others_Individual
-2019,February,Wasim Mujawar,Amazon,Others,1160.0,Others_Individual
+2019,February,Wasim Mujawar,Amazon,Others,1160.0,Others_etc
 2019,February,Gravite Fitness,South,Fitness/Sports,428571.0,Fitness
 2019,February,Gravite Fitness,South,Fitness/Sports,2679.0,Fitness
 2019,February,Superintendent Of Police,East,Government,1158929.0,Public Association
@@ -670,7 +670,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,February,Fitness Hub,North,Fitness/Sports,257.0,Fitness
 2019,February,Rohit Saraf,Amazon,Others,1160.0,Others_Individual
 2019,February,Jagdeesh Lala,Amazon,Others,2320.0,Others_Individual
-2019,March,Hardik Mistry,Amazon,Others,1160.0,Others_Individual
+2019,March,Hardik Mistry,Amazon,Others,1160.0,Others_etc
 2019,March,Av Fitness,West 2,Fitness/Sports,177991.0,Fitness
 2019,March,Av Fitness,West 2,Fitness/Sports,500.0,Fitness
 2019,March,Av Fitness,West 2,Fitness/Sports,80.0,Fitness
@@ -698,10 +698,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,March,Apollo Hospitals Enterprises Ltd,South,Hospitals,503571.0,Hospital
 2019,March,Apollo Hospitals Enterprises Ltd,South,Hospitals,1000.0,Hospital
 2019,March,Apollo Hospitals Enterprises Ltd,South,Hospitals,46321.0,Hospital
-2019,March,InBody Co.ltd,Amazon,Enterprise,2282.0,Others_Others Corporate
+2019,March,InBody Co.ltd,Amazon,Enterprise,2282.0,Others_etc
 2019,March,Trinity Mobile App lab pvt Ltd,Amazon,Enterprise,1160.0,Others_Others Corporate
 2019,March,Mohd Salman Rayeen,Amazon,Others,21411.0,Others_Individual
-2019,March,Ankit,Amazon,Others,21411.0,Others_Individual
+2019,March,Ankit,Amazon,Others,21411.0,Others_etc
 2019,March,Turbo Fitness Bandra,West 1,Fitness/Sports,4000.0,Fitness
 2019,March,21 Firness LLP,North,Fitness/Sports,400000.0,Fitness
 2019,March,21 Firness LLP,North,Fitness/Sports,200.0,Fitness
@@ -712,32 +712,32 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,March,Neha Enterprises,West 2,Fitness/Sports,777.0,Fitness
 2019,March,Vishwa Fitness Pvt Ltd,West 1,Fitness/Sports,392438.0,Fitness
 2019,March,Vishwa Fitness Pvt Ltd,West 1,Fitness/Sports,418.0,Fitness
-2019,March,Dushyant Kumar Singh,Amazon,Others,1160.0,Others_Individual
-2019,March,Dodo,Amazon,Others,21429.0,Others_Individual
+2019,March,Dushyant Kumar Singh,Amazon,Others,1160.0,Others_etc
+2019,March,Dodo,Amazon,Others,21429.0,Others_etc
 2019,March,Shanti's Health & fitness club,West 1,Fitness/Sports,27770.0,Fitness
-2019,March,Narendra,Amazon,Others,1160.0,Others_Individual
+2019,March,Narendra,Amazon,Others,1160.0,Others_etc
 2019,March,VLCC Healthcare ,North,Health Center,625.0,Others_Aesthetic
 2019,March,VLCC Healthcare ,North,Health Center,12946.0,Others_Aesthetic
 2019,March,Nitro Beapoke Fitness,West 1,Fitness/Sports,0.0,Fitness
 2019,March,Elancheliyan S,Amazon,Others,1160.0,Others_Individual
 2019,March,G S R Krishna,Amazon,Others,1160.0,Others_Individual
-2019,March,Abhijeet Gorgile,Amazon,Others,1160.0,Others_Individual
-2019,March,Pawan Gupta,Amazon,Others,1160.0,Others_Individual
+2019,March,Abhijeet Gorgile,Amazon,Others,1160.0,Others_etc
+2019,March,Pawan Gupta,Amazon,Others,1160.0,Others_etc
 2019,March,M K Enterprises,Amazon,Enterprise,17411.0,Others_Others Corporate
 2019,March,Meenakshi Multitrade Pvt Ltd,West 1,Enterprise,4464.0,Others_Others Corporate
 2019,March,VLCC Healthcare ,North,Health Center,12946.0,Others_Aesthetic
-2019,March,S N Giri,Amazon,Others,1160.0,Others_Individual
+2019,March,S N Giri,Amazon,Others,1160.0,Others_etc
 2019,March,Multifit Wellness Pvt Ltd,West 1,Health Center,330357.0,Others_Aesthetic
 2019,March,Multifit Wellness Pvt Ltd,West 1,Health Center,4464.0,Others_Aesthetic
 2019,March,Sreyaa Hollatic Remedies Pvt Ltd,South,Care Center,660535.0,Others_Others Corporate
 2019,March,Sreyaa Hollatic Remedies Pvt Ltd,South,Care Center,179.0,Others_Others Corporate
-2019,March,Apurva,Amazon,Others,1160.0,Others_Individual
-2019,March,Radhika Bansal,Amazon,Others,21411.0,Others_Individual
+2019,March,Apurva,Amazon,Others,1160.0,Others_etc
+2019,March,Radhika Bansal,Amazon,Others,21411.0,Others_etc
 2019,March,Manpreet Kaur,Amazon,Others,1160.0,Others_Individual
 2019,March,Meenakshi  ,Amazon,Others,1160.0,Others_Individual
 2019,March,Alltime Fintness Pvt Ltd,North,Fitness/Sports,410612.0,Fitness
 2019,March,Alltime Fintness Pvt Ltd,North,Fitness/Sports,268.0,Fitness
-2019,March,Pankaj Sinha,Amazon,Others,1160.0,Others_Individual
+2019,March,Pankaj Sinha,Amazon,Others,1160.0,Others_etc
 2019,March,M/S Vivid Ways Traders,North,Enterprise,125000.0,Others_Others Corporate
 2019,March,Atheletica Fitness LLP,West 2,Fitness/Sports,4464.0,Fitness
 2019,March,Bharat Petroleum corporation Ltd,West 1,Enterprise,392438.0,Others_Others Corporate
@@ -786,23 +786,23 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,April,D Srinivasulu,Amazon,Others,1160.0,Others_Individual
 2019,April,Vibes Healthcare Ltd,East,Health Center,8000.0,Others_Aesthetic
 2019,April,Vibes Healthcare Ltd,East,Health Center,8000.0,Others_Aesthetic
-2019,April,Alankrita Bhushan,Amazon,Others,1160.0,Others_Individual
-2019,April,Pushpa,Amazon,Others,1160.0,Others_Individual
+2019,April,Alankrita Bhushan,Amazon,Others,1160.0,Others_etc
+2019,April,Pushpa,Amazon,Others,1160.0,Fitness
 2019,April,Ritika Sharma,Amazon,Others,1160.0,Others_Individual
-2019,April,Vinod Kumar,Amazon,Others,1160.0,Others_Individual
+2019,April,Vinod Kumar,Amazon,Others,1160.0,Others_etc
 2019,April,Jagmohan Pharmacy,West 2,Pharmacy,196429.0,Private Enterprise
 2019,April,Jagmohan Pharmacy,West 2,Pharmacy,2679.0,Private Enterprise
 2019,April,Jagmohan Pharmacy,West 2,Pharmacy,1786.0,Private Enterprise
-2019,April,Saakshi Saraf,Amazon,Others,21482.0,Others_Individual
+2019,April,Saakshi Saraf,Amazon,Others,21482.0,Others_etc
 2019,April,L&K Wellness Services Pvt Ltd,West 1,Care Center,129491.0,Others_Aesthetic
 2019,April,L&K Wellness Services Pvt Ltd,West 1,Care Center,2679.0,Others_Aesthetic
 2019,April,L&K Wellness Services Pvt Ltd,West 1,Care Center,1786.0,Others_Aesthetic
 2019,April,Malay Kumar Dash,Amazon,Others,1160.0,Others_Individual
 2019,April,Gurpeet,Amazon,Others,21411.0,Others_Individual
-2019,April,Pushpa,Amazon,Others,1160.0,Others_Individual
+2019,April,Pushpa,Amazon,Others,1160.0,Fitness
 2019,April,VLCC Healthcare ,North,Health Center,12946.0,Others_Aesthetic
 2019,April,VLCC Healthcare ,North,Health Center,12946.0,Others_Aesthetic
-2019,April,Jamuna,Amazon,Others,21411.0,Others_Individual
+2019,April,Jamuna,Amazon,Others,21411.0,Others_etc
 2019,April,Tlwalkar Brothers Pvt Ltd,West 1,Fitness/Sports,354564.0,Fitness
 2019,April,Tlwalkar Brothers Pvt Ltd,West 1,Fitness/Sports,1250.0,Fitness
 2019,April,Tlwalkar Brothers Pvt Ltd,West 1,Fitness/Sports,1116.0,Fitness
@@ -812,7 +812,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,April,R S Wellness II,North,Fitness/Sports,13393.0,Fitness
 2019,April,R S Wellness II,North,Fitness/Sports,4464.0,Fitness
 2019,April,Sridhar M,Amazon,Others,1160.0,Others_Individual
-2019,April,Samsudeen,Amazon,Others,1160.0,Others_Individual
+2019,April,Samsudeen,Amazon,Others,1160.0,Others_etc
 2019,April,Sreyas Holistic Remedies Pvt Ltd,South,Health Center,329464.0,Others_Aesthetic
 2019,April,Sreyas Holistic Remedies Pvt Ltd,South,Health Center,893.0,Others_Aesthetic
 2019,April,Multifit Wellness Pvt Ltd,South,Fitness/Sports,0.0,Fitness
@@ -829,14 +829,14 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,April,Shri Sai Wellness,North,Fitness/Sports,0.0,Fitness
 2019,April,Shri Sai Wellness,North,Fitness/Sports,0.0,Fitness
 2019,April,Bharat Petroleum corporation Ltd,West 1,Enterprise,0.0,Others_Others Corporate
-2019,April,Santosh,Amazon,Others,1160.0,Others_Individual
-2019,April,Santosh,Amazon,Others,1160.0,Others_Individual
+2019,April,Santosh,Amazon,Others,1160.0,Others_etc
+2019,April,Santosh,Amazon,Others,1160.0,Others_etc
 2019,April,Peninsula Club House,West 1,Golf club,42203.0,Hotel
 2019,April,Omkar Deepak Ghalasa,West 1,Others,18750.0,Others_Individual
 2019,April,Ascend Fitness Pvt Ltd,West 1,Fitness/Sports,381829.0,Fitness
 2019,April,Ascend Fitness Pvt Ltd,West 1,Fitness/Sports,2100.0,Fitness
 2019,April,Raveendrnath Nara,Amazon,Others,1160.0,Others_Individual
-2019,April,Santosh,Amazon,Others,1160.0,Others_Individual
+2019,April,Santosh,Amazon,Others,1160.0,Others_etc
 2019,May,Ascend Fitness Pvt Ltd,West 1,Fitness/Sports,5357.0,Fitness
 2019,May,World Fitness,West 1,Fitness/Sports,169643.0,Fitness
 2019,May,World Fitness,West 1,Fitness/Sports,44643.0,Fitness
@@ -854,22 +854,22 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,May,Dr.Agarwal Children Hospital,West 1,Hospitals,2679.0,Hospital
 2019,May,Dr.Agarwal Children Hospital,West 1,Hospitals,1786.0,Hospital
 2019,May,Dr.Agarwal Children Hospital,West 1,Hospitals,17857.0,Hospital
-2019,May,Jyotiprakash,Amazon,Others,1160.0,Others_Individual
+2019,May,Jyotiprakash,Amazon,Others,1160.0,Others_etc
 2019,May,Laxmi Biradar,Amazon,Others,1160.0,Others_Individual
 2019,May,Fitnoholic,Amazon,Others,1054.0,Others_Individual
-2019,May,Ravikumar Patil,Amazon,Others,1160.0,Others_Individual
+2019,May,Ravikumar Patil,Amazon,Others,1160.0,Others_etc
 2019,May,Pranjal Pandey,Amazon,Others,1160.0,Others_Individual
 2019,May,Deepanshu,Amazon,Others,1160.0,Others_Individual
 2019,May,Gap Global Exim LLP,North,Enterprise,0.0,Others_Others Corporate
 2019,May,Anjali Singh Birender,Amazon,Others,21411.0,Others_Individual
 2019,May,Fifth Gear Fitness LLP,West 2,Fitness/Sports,408214.0,Fitness
 2019,May,Fifth Gear Fitness LLP,West 2,Fitness/Sports,2500.0,Fitness
-2019,May,Sundaresan,Amazon,Others,1160.0,Others_Individual
+2019,May,Sundaresan,Amazon,Others,1160.0,Others_etc
 2019,May,Satishkumar Bhopale,Amazon,Others,1160.0,Others_Individual
 2019,May,Atul Kumar ,Amazon,Others,1160.0,Others_Individual
-2019,May,InBody India Pvt Ltd,West 1,Others,0.0,Public Association
+2019,May,InBody India Pvt Ltd,West 1,Others,0.0,Others_etc
 2019,May,Fitness Mantra,West 1,Fitness/Sports,1786.0,Fitness
-2019,May,Dulal Chandra Bag,Amazon,Others,1160.0,Others_Individual
+2019,May,Dulal Chandra Bag,Amazon,Others,1160.0,Others_etc
 2019,May,SRS Health and Fitness LLP,North,Fitness/Sports,399464.0,Fitness
 2019,May,SRS Health and Fitness LLP,North,Fitness/Sports,536.0,Fitness
 2019,May,Ecostream,South,Fitness/Sports,14422.0,Fitness
@@ -877,17 +877,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,May,Maiden Helath n Wellness Wisdom,West 1,Health Center,250.0,Others_Aesthetic
 2019,May,Maiden Helath n Wellness Wisdom,West 1,Health Center,71.0,Others_Aesthetic
 2019,May,Ashwani Kumar,Amazon,Others,1160.0,Others_Individual
-2019,May,InBody India Pvt Ltd,West 1,,0.0,
+2019,May,InBody India Pvt Ltd,West 1,,0.0,Others_etc
 2019,May,Truefit Ventures LLP,West 1,Fitness/Sports,459875.0,Fitness
 2019,May,Truefit Ventures LLP,West 1,Fitness/Sports,393.0,Fitness
 2019,May,Truefit Ventures LLP,West 1,Fitness/Sports,8482.0,Fitness
 2019,May,Fitsquad Enterprises,South,Fitness/Sports,397321.0,Fitness
 2019,May,Fitsquad Enterprises,South,Fitness/Sports,4464.0,Fitness
-2019,May,InBody India Pvt Ltd,West 1,,0.0,
+2019,May,InBody India Pvt Ltd,West 1,,0.0,Others_etc
 2019,May,Dr.Aaditya Patakrao,Amazon,Medical,21411.0,Hospital
 2019,May,Prabir Haldar ,Amazon,Others,1160.0,Others_Individual
 2019,May,VLCC Healthcare Ltd,South,Health Center,2200.0,Others_Aesthetic
-2019,May,Pons,Amazon,Others,1160.0,Others_Individual
+2019,May,Pons,Amazon,Others,1160.0,Others_etc
 2019,May,VLCC Healthcare Ltd,East,Health Center,2600.0,Others_Aesthetic
 2019,May,Seven Core Fitness,West 2,Fitness,374464.0,Fitness
 2019,May,Seven Core Fitness,West 2,Fitness,536.0,Fitness
@@ -914,8 +914,8 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,June,Teej Fitness & Leisures Lvt Ltd,West 2,Fitness/Sports,25893.0,Fitness
 2019,June,Adaptive Fitness,North,Fitness/Sports,540179.0,Fitness
 2019,June,Adaptive Fitness,North,Fitness/Sports,4464.0,Fitness
-2019,June,Rohit Singal,Amazon,Others,21411.0,Others_Individual
-2019,June,Satya Narayan Rout,Amazon,Others,1160.0,Others_Individual
+2019,June,Rohit Singal,Amazon,Others,21411.0,Others_etc
+2019,June,Satya Narayan Rout,Amazon,Others,1160.0,Others_etc
 2019,June,Shivani,Amazon,Others,1160.0,Others_Individual
 2019,June,Nove Nordisk India Pvt Ltd,South,Pharmacy,1032143.0,Private Enterprise
 2019,June,Nove Nordisk India Pvt Ltd,South,Pharmacy,0.0,Private Enterprise
@@ -935,13 +935,13 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,June,Apurva Orthopedic Hospital,West 2,Hospitals,536.0,Hospital
 2019,June,Posco Maharashtra Steel Pvt Ltd,West 1,Enterprise,898214.0,Others_Others Corporate
 2019,June,Posco Maharashtra Steel Pvt Ltd,West 1,Enterprise,1786.0,Others_Others Corporate
-2019,June,Om Prakash Yadav,Amazon,Others,1160.0,Others_Individual
+2019,June,Om Prakash Yadav,Amazon,Others,1160.0,Others_etc
 2019,June,Swastik,Amazon,Others,1160.0,Others_Individual
 2019,June,Abhishek Parasher,Amazon,Others,1160.0,Others_Individual
 2019,June,Arjit Bhattacharya,Amazon,Others,1160.0,Others_Individual
-2019,June,Kirat Singh,Amazon,Others,1160.0,Others_Individual
+2019,June,Kirat Singh,Amazon,Others,1160.0,Others_etc
 2019,June,Physiocell Corporate Wellness Pvt Ltd,West 1,Health Center,22321.0,Others_Aesthetic
-2019,June,Victuals Food India Pvt Ltd,North,Others,18973.0,Public Association
+2019,June,Victuals Food India Pvt Ltd,North,Others,18973.0,Others_Others Corporate
 2019,June,Anjum's Diet & Wellness,West 1,Health Center,12500.0,Others_Aesthetic
 2019,June,Pravik Technologoies Pvt Ltd,West 1,Enterprise,178393.0,Others_Others Corporate
 2019,June,Pravik Technologoies Pvt Ltd,West 1,Enterprise,125.0,Others_Others Corporate
@@ -950,10 +950,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,June,Solaris Sports World,West 1,Fitness/Sports,4464.0,Fitness
 2019,June,Ageless Bodies,West 1,Fitness/Sports,490750.0,Fitness
 2019,June,Ageless Bodies,West 1,Fitness/Sports,321.0,Fitness
-2019,June,Varun Gandhi,Amazon,Others,1160.0,Others_Individual
-2019,June,Santanu Dingal,Amazon,Others,1160.0,Others_Individual
+2019,June,Varun Gandhi,Amazon,Others,1160.0,Others_etc
+2019,June,Santanu Dingal,Amazon,Others,1160.0,Others_etc
 2019,June,Chaynika Dutta,Amazon,Others,21411.0,Others_Individual
-2019,June,Nishant Mehta,Amazon,Others,1160.0,Others_Individual
+2019,June,Nishant Mehta,Amazon,Others,1160.0,Others_etc
 2019,June,KH Fitness,East,Fitness/Sports,487500.0,Fitness
 2019,June,KH Fitness,East,Fitness/Sports,2250.0,Fitness
 2019,June,KH Fitness,East,Fitness/Sports,429.0,Fitness
@@ -974,11 +974,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,July,Multifit Wellness Pvt Ltd,West 1,Fitness/Sports,330357.0,Fitness
 2019,July,Multifit Wellness Pvt Ltd,West 1,Fitness/Sports,4464.0,Fitness
 2019,July,Anil Kumar Joshi,Amazon,Others,1160.0,Others_Individual
-2019,July,Gail (India) Limited,Amazon,Others,1160.0,Public Association
+2019,July,Gail (India) Limited,Amazon,Others,1160.0,Others_Others Corporate
 2019,July,Bharat Singh,Amazon,Others,1160.0,Others_Individual
 2019,July,Mousumi Chatterjee,Amazon,Others,1160.0,Others_Individual
-2019,July,Archana Dash,Amazon,Others,1160.0,Others_Individual
-2019,July,Anand Valavi,Amazon,Others,21411.0,Others_Individual
+2019,July,Archana Dash,Amazon,Others,1160.0,Others_etc
+2019,July,Anand Valavi,Amazon,Others,21411.0,Others_etc
 2019,July,Deepak Dodia,Amazon,Others,1160.0,Others_Individual
 2019,July,Pratap Kishor Das,Amazon,Others,1160.0,Others_Individual
 2019,July,Jugal Kishor,Amazon,Others,1160.0,Others_Individual
@@ -989,7 +989,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,July,SLVSS INC,West 2,Fitness/Sports,392321.0,Fitness
 2019,July,SLVSS INC,West 2,Fitness/Sports,536.0,Fitness
 2019,July,VLCC Healthcare Ltd,South,Health Center,4100.0,Others_Aesthetic
-2019,July,Amit Chaturvedi,Amazon,Others,1160.0,Others_Individual
+2019,July,Amit Chaturvedi,Amazon,Others,1160.0,Others_etc
 2019,July,Ideal Weight Solutions,South,Fitness/Sports,401786.0,Fitness
 2019,July,Ideal Weight Solutions,South,Fitness/Sports,0.0,Fitness
 2019,July,Ideal Weight Solutions,South,Fitness/Sports,4464.0,Fitness
@@ -1004,17 +1004,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,July,Manipal Hospital Pvt Ltd,North,Hospitals,286.0,Hospital
 2019,July,Manipal Hospital Pvt Ltd,North,Hospitals,179.0,Hospital
 2019,July,Srinivas Rao,Amazon,Others,1160.0,Others_Individual
-2019,July,Raghukumar,Amazon,Others,1160.0,Others_Individual
+2019,July,Raghukumar,Amazon,Others,1160.0,Others_etc
 2019,July,Gursewak Maan,Amazon,Others,1160.0,Others_Individual
 2019,July,Tapas Malty,Amazon,Others,1160.0,Others_Individual
-2019,July,Gail (India) Limited,Amazon,Others,1160.0,Public Association
-2019,July,Manas Gupta,Amazon,Others,21411.0,Others_Individual
+2019,July,Gail (India) Limited,Amazon,Others,1160.0,Others_Others Corporate
+2019,July,Manas Gupta,Amazon,Others,21411.0,Others_etc
 2019,July,Prabhu Pharma,West 1,Pharmacy,18304.0,Private Enterprise
 2019,July,VLCC Healthcare Ltd,South,Health Center,13450.0,Others_Aesthetic
 2019,July,R SRC Murty ,South,Others,18750.0,Others_Individual
 2019,July,Sadhna Jain,Amazon,Others,1160.0,Others_Individual
 2019,July,Meghna Kumare ,Amazon,Others,21411.0,Others_Individual
-2019,July,Sanjay Mehra,Amazon,Others,21411.0,Others_Individual
+2019,July,Sanjay Mehra,Amazon,Others,21411.0,Others_etc
 2019,July,Paras Health Care Pvt Ltd ,North,Hospitals,357143.0,Hospital
 2019,July,Paras Health Care Pvt Ltd ,North,Hospitals,0.0,Hospital
 2019,July,Ravi,Amazon,Others,1160.0,Others_Individual
@@ -1023,11 +1023,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,July,1RM Fitness,South,Fitness/Sports,415179.0,Fitness
 2019,July,1RM Fitness,South,Fitness/Sports,4464.0,Fitness
 2019,July,Fitness First Mega Mall,West 1,Fitness/Sports,5261.0,Fitness
-2019,July,Suresh Kumar,Amazon,Others,1160.0,Others_Individual
-2019,July,Rupesh Kumar,Amazon,Others,1160.0,Others_Individual
+2019,July,Suresh Kumar,Amazon,Others,1160.0,Others_etc
+2019,July,Rupesh Kumar,Amazon,Others,1160.0,Others_etc
 2019,July,Bontha Reddy,Amazon,Others,1160.0,Others_Individual
 2019,July,Amit Shah,Amazon,Others,1160.0,Others_Individual
-2019,July,Rahul Mutha,Amazon,Others,21411.0,Others_Individual
+2019,July,Rahul Mutha,Amazon,Others,21411.0,Others_etc
 2019,July,Xtreme Fitness,South,Fitness/Sports,352679.0,Fitness
 2019,July,Xtreme Fitness,South,Fitness/Sports,2679.0,Fitness
 2019,July,Xtreme Fitness,South,Fitness/Sports,1786.0,Fitness
@@ -1038,7 +1038,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,July,Fab Fitness Enterprises,North,Fitness/Sports,536.0,Fitness
 2019,July,Fitness First India Pvt Ltd,North,Fitness/Sports,4634.0,Fitness
 2019,July,Niranajan Pradhan,Amazon,Others,1160.0,Others_Individual
-2019,July,Saurabh Verma,Amazon,Others,21411.0,Others_Individual
+2019,July,Saurabh Verma,Amazon,Others,21411.0,Others_etc
 2019,July,Divya Magnani,West 1,Enterprise,187500.0,Others_Others Corporate
 2019,July,Divya Magnani,West 1,Enterprise,2679.0,Others_Others Corporate
 2019,July,Divya Magnani,West 1,Enterprise,2679.0,Others_Others Corporate
@@ -1053,7 +1053,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,August,Shri Balaji Wellness,North,Health Center,3750.0,Others_Aesthetic
 2019,August,Shri Balaji Wellness,North,Health Center,714.0,Others_Aesthetic
 2019,August,Proactive Gym,West 1,Fitness/Sports,2679.0,Fitness
-2019,August,Srinivas Sarkar,Amazon,Others,1160.0,Others_Individual
+2019,August,Srinivas Sarkar,Amazon,Others,1160.0,Others_etc
 2019,August,Divyansh Goyal,Amazon,Others,1160.0,Others_Individual
 2019,August,M/S Balaji Associates,West 1,Enterprise,12200.0,Others_Others Corporate
 2019,August,Moments Fitness Hub,South,Fitness/Sports,389286.0,Fitness
@@ -1064,7 +1064,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,August,Fitness Kingdom Platinum,West 1,Fitness/Sports,384821.0,Fitness
 2019,August,Fitness Kingdom Platinum,West 1,Fitness/Sports,223.0,Fitness
 2019,August,Brajmohan Nayak,Amazon,Others,1160.0,Others_Individual
-2019,August,Jinisha Sharma,Amazon,Others,21411.0,Others_Individual
+2019,August,Jinisha Sharma,Amazon,Others,21411.0,Others_etc
 2019,August,Rasik Jalan,Amazon,Others,21411.0,Others_Individual
 2019,August,Murtuza Amreliwala,Amazon,Others,1160.0,Others_Individual
 2019,August,Murtuza Amreliwala,Amazon,Others,1160.0,Others_Individual
@@ -1075,7 +1075,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,August,Dr. Care,South,Fitness/Sports,401786.0,Fitness
 2019,August,Dr. Care,South,Fitness/Sports,1786.0,Fitness
 2019,August,Dr. Care,South,Fitness/Sports,2679.0,Fitness
-2019,August,Amit Ahlawat,Amazon,Others,1160.0,Others_Individual
+2019,August,Amit Ahlawat,Amazon,Others,1160.0,Others_etc
 2019,August,Vibes Healthcare Limited,South,Health Center,343750.0,Others_Aesthetic
 2019,August,Vibes Healthcare Limited,South,Health Center,4464.0,Others_Aesthetic
 2019,August,Vibes Healthcare Limited,South,Health Center,343750.0,Others_Aesthetic
@@ -1086,16 +1086,16 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,August,Karthik Groups,South,Fitness/Sports,3571.0,Fitness
 2019,August,Melappa Dengi,Amazon,Others,1160.0,Others_Individual
 2019,August,The MP Studio,Amazon,Others,21411.0,Others_Individual
-2019,August,Nishant Rajawat,Amazon,Others,21411.0,Others_Individual
-2019,August,Athashamuddin Khan,Amazon,Others,1160.0,Others_Individual
+2019,August,Nishant Rajawat,Amazon,Others,21411.0,Others_etc
+2019,August,Athashamuddin Khan,Amazon,Others,1160.0,Others_etc
 2019,August,Shudhi Ramani,Amazon,Others,1160.0,Others_Individual
-2019,August,Prabhat Kiran Padhy,Amazon,Others,1160.0,Others_Individual
+2019,August,Prabhat Kiran Padhy,Amazon,Others,1160.0,Others_etc
 2019,August,Kris Gethin Gyms,North,Fitness/Sports,8929.0,Fitness
 2019,August,Rohit Enterprises Pvt Ltd,North,Fitness/Sports,3000.0,Fitness
 2019,August,Professional Fitness Pvt Ltd,North,Fitness/Sports,370536.0,Fitness
 2019,August,Professional Fitness Pvt Ltd,North,Fitness/Sports,4464.0,Fitness
 2019,August,Professional Fitness Pvt Ltd,North,Fitness/Sports,4464.0,Fitness
-2019,August,Khushal,Amazon,Others,1160.0,Others_Individual
+2019,August,Khushal,Amazon,Others,1160.0,Others_etc
 2019,August,Sucharita Sahu,Amazon,Others,21411.0,Others_Individual
 2019,August,Onyx Enterprises ,South,Fitness/Sports,14732.0,Fitness
 2019,August,Believe Fitness,West 1,Fitness/Sports,377036.0,Fitness
@@ -1115,7 +1115,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,August,Fitness One,South,Fitness/Sports,23791.0,Fitness
 2019,August,Cult Fintess ,West 1,Fitness/Sports,1786.0,Fitness
 2019,August,Murphy,Amazon,Others,1160.0,Others_Individual
-2019,August,MAK Airways Pvt Ltd,Amazon,Others,1160.0,Public Association
+2019,August,MAK Airways Pvt Ltd,Amazon,Others,1160.0,Others_Others Corporate
 2019,August,Gympac Fitness System Pvt Ltd,South,Fitness/Sports,18286.0,Fitness
 2019,August,Anytime Fitness,West 2,Fitness/Sports,406250.0,Fitness
 2019,August,Anytime Fitness,West 2,Fitness/Sports,4464.0,Fitness
@@ -1123,21 +1123,21 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,August,9 Salvo Gym,West 2,Fitness/Sports,4464.0,Fitness
 2019,August,Statura Infrastructure LLP,South,Fitness,517857.0,Fitness
 2019,August,Statura Infrastructure LLP,South,Fitness,5357.0,Fitness
-2019,August,Nandkishor Bhadale,Amazon,Others,21411.0,Others_Individual
+2019,August,Nandkishor Bhadale,Amazon,Others,21411.0,Others_etc
 2019,August,Anil Gaouranna,Amazon,Others,1160.0,Others_Individual
 2019,August,Abhishek Parasher,Amazon,Others,1160.0,Others_Individual
-2019,August,Neeraj Sharda,Amazon,Others,1160.0,Others_Individual
-2019,September,Priya Goel,Amazon,Others,1160.0,Others_Individual
-2019,September,S.Ramkumar,Amazon,Others,1160.0,Others_Individual
-2019,September,Prathiksha Rao,Amazon,Others,1160.0,Others_Individual
+2019,August,Neeraj Sharda,Amazon,Others,1160.0,Others_etc
+2019,September,Priya Goel,Amazon,Others,1160.0,Others_etc
+2019,September,S.Ramkumar,Amazon,Others,1160.0,Others_etc
+2019,September,Prathiksha Rao,Amazon,Others,1160.0,Others_etc
 2019,September,Suresh Tiwari,Amazon,Others,1160.0,Others_Individual
 2019,September,Megha Godwani,Amazon,Others,1160.0,Others_Individual
 2019,September,Nalini Anand,Amazon,Others,1160.0,Others_Individual
-2019,September,Dr. Rashmi Lohiya,Amazon,Others,21411.0,Others_Individual
+2019,September,Dr. Rashmi Lohiya,Amazon,Others,21411.0,Clinic
 2019,September,Core Adore LLP,West 1,Fitness/Sports,202500.0,Fitness
 2019,September,Core Adore LLP,West 1,Fitness/Sports,357.0,Fitness
 2019,September,Core Adore LLP,West 1,Fitness/Sports,2500.0,Fitness
-2019,September,Vikash Jaiswal,Amazon,Others,21411.0,Others_Individual
+2019,September,Vikash Jaiswal,Amazon,Others,21411.0,Others_etc
 2019,September,Fusion Fit,North,Fitness/Sports,373929.0,Fitness
 2019,September,Fusion Fit,North,Fitness/Sports,1071.0,Fitness
 2019,September,Dynamic Gym,East,Fitness/Sports,218750.0,Fitness
@@ -1152,7 +1152,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,September,Sahar Razak,Amazon,Others,1160.0,Others_Individual
 2019,September,Ajay Kumar,Amazon,Others,1160.0,Others_Individual
 2019,September,Deepak Jindal,Amazon,Others,1160.0,Others_Individual
-2019,September,Sunny Singh,Amazon,Others,1160.0,Others_Individual
+2019,September,Sunny Singh,Amazon,Others,1160.0,Others_etc
 2019,September,Fitness Line,North,Fitness/Sports,12946.0,Fitness
 2019,September,Gym World,West 1,Fitness/Sports(Special),176786.0,Fitness
 2019,September,Gym World,West 1,Fitness/Sports(Special),1429.0,Fitness
@@ -1170,7 +1170,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,September,Silver Line Fitness System P Ltd ,South,Fitness/Sports,377232.0,Fitness
 2019,September,Silver Line Fitness System P Ltd ,South,Fitness/Sports,5357.0,Fitness
 2019,September,Silver Line Fitness System P Ltd ,South,Fitness/Sports,51518.0,Fitness
-2019,September,Shaik Mastan Vali,Amazon,Others,1160.0,Others_Individual
+2019,September,Shaik Mastan Vali,Amazon,Others,1160.0,Others_etc
 2019,September,Bhupendra Kumar,Amazon,Others,1160.0,Others_Individual
 2019,September,Fab Fitness Enterprises,North,Fitness/Sports,0.0,Fitness
 2019,September,Crown Ambassador,Amazon,Others,1160.0,Others_Individual
@@ -1195,15 +1195,15 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,September,Vibes Healthcare Ltd,North,Health Center,343750.0,Others_Aesthetic
 2019,September,Vibes Healthcare Ltd,North,Health Center,4464.0,Others_Aesthetic
 2019,September,Mr. Mahendra Nishan,North,Fitness/Sports,8429.0,Fitness
-2019,September,Vikas Kumar,Amazon,Others,1160.0,Others_Individual
-2019,September,Sunayana,Amazon,Others,1160.0,Others_Individual
-2019,September,Sriram,Amazon,Others,1160.0,Others_Individual
-2019,September,Addteq Software India Pvt Ltd,Amazon,Others,19625.0,Public Association
+2019,September,Vikas Kumar,Amazon,Others,1160.0,Others_etc
+2019,September,Sunayana,Amazon,Others,1160.0,Others_etc
+2019,September,Sriram,Amazon,Others,1160.0,Others_etc
+2019,September,Addteq Software India Pvt Ltd,Amazon,Others,19625.0,Others_Others Corporate
 2019,September,Aishwarya Sheshastri,Amazon,Others,1160.0,Others_Individual
 2019,September,Motwani Healthcare Pvt Ltd,West 1,Enterprise,320357.0,Others_Others Corporate
 2019,September,Motwani Healthcare Pvt Ltd,West 1,Enterprise,1071.0,Others_Others Corporate
-2019,September,Ravikumar Patil,Amazon,Others,1160.0,Others_Individual
-2019,September,Kishan Patil,Amazon,Others,1160.0,Others_Individual
+2019,September,Ravikumar Patil,Amazon,Others,1160.0,Others_etc
+2019,September,Kishan Patil,Amazon,Others,1160.0,Others_etc
 2019,October,Capital One,East,Fitness/Sports,205036.0,Fitness
 2019,October,Capital One,East,Fitness/Sports,250.0,Fitness
 2019,October,Capital One,East,Fitness/Sports,71.0,Fitness
@@ -1211,12 +1211,12 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,October,Yora Fitness Pvt Ltd,South,Fitness/Sports,883929.0,Fitness
 2019,October,Yora Fitness Pvt Ltd,South,Fitness/Sports,0.0,Fitness
 2019,October,Yora Fitness Pvt Ltd,South,Fitness/Sports,0.0,Fitness
-2019,October,Chandan A,Amazon,Others,19625.0,Others_Individual
+2019,October,Chandan A,Amazon,Others,19625.0,Others_etc
 2019,October,Sudhir Singh,Amazon,Others,1160.0,Others_Individual
 2019,October,Vipul Umrania,Amazon,Others,1160.0,Others_Individual
 2019,October,B.Kharapuri,Amazon,Others,1160.0,Others_Individual
 2019,October,Pushpa Loknath,Amazon,Others,19625.0,Others_Individual
-2019,October,Prabhakar Shahane,Amazon,Others,1160.0,Others_Individual
+2019,October,Prabhakar Shahane,Amazon,Others,1160.0,Others_etc
 2019,October,iFitness,South,Fitness/Sports,6321.0,Fitness
 2019,October,Everyday Fitness ,North,Fitness/Sports,352679.0,Fitness
 2019,October,Everyday Fitness ,North,Fitness/Sports,4464.0,Fitness
@@ -1227,8 +1227,8 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,October,Anther Human Resource Solution ,West 1,Health Center,2500.0,Others_Aesthetic
 2019,October,Anther Human Resource Solution ,West 1,Health Center,625.0,Others_Aesthetic
 2019,October,Vijaya Desu,Amazon,Others,1160.0,Others_Individual
-2019,October,Anurag,Amazon,Others,1160.0,Others_Individual
-2019,October,Rahul Kumar,Amazon,Others,19625.0,Others_Individual
+2019,October,Anurag,Amazon,Others,1160.0,Others_etc
+2019,October,Rahul Kumar,Amazon,Others,19625.0,Others_etc
 2019,October,Badri Narayanan,Amazon,Others,1160.0,Others_Individual
 2019,October,Syed Naqvi,Amazon,Others,19625.0,Others_Individual
 2019,October,DNA 360 Fitness,West 1,Fitness/Sports,397366.0,Fitness
@@ -1238,11 +1238,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,October,KYL Fitness,East,Fitness/Sports,200893.0,Fitness
 2019,October,KYL Fitness,East,Fitness/Sports,2679.0,Fitness
 2019,October,KYL Fitness,East,Fitness/Sports,1786.0,Fitness
-2019,October,Sreeroop Rajeswara,Amazon,Others,1160.0,Others_Individual
+2019,October,Sreeroop Rajeswara,Amazon,Others,1160.0,Others_etc
 2019,October,Wizita Healthcare Pvt Ltd,West 1,Health Center,354911.0,Others_Aesthetic
 2019,October,Wizita Healthcare Pvt Ltd,West 1,Health Center,1786.0,Others_Aesthetic
 2019,October,Wizita Healthcare Pvt Ltd,West 1,Health Center,0.0,Others_Aesthetic
-2019,October,Sahil Sachdeva,Amazon,Others,1160.0,Others_Individual
+2019,October,Sahil Sachdeva,Amazon,Others,1160.0,Others_etc
 2019,October,Deccan College Of Medical Science,South,Hospitals,589286.0,Hospital
 2019,October,Deccan College Of Medical Science,South,Hospitals,2679.0,Hospital
 2019,October,Deccan College Of Medical Science,South,Hospitals,1786.0,Hospital
@@ -1252,19 +1252,19 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,October,Creative Fitness Pvt Ltd,South,Fitness/Sports,6250.0,Fitness
 2019,October,Addict Fitness LLP,South,Fitness/Sports,495536.0,Fitness
 2019,October,Addict Fitness LLP,South,Fitness/Sports,4464.0,Fitness
-2019,October,Abhishek Gupta,Amazon,Others,1160.0,Others_Individual
+2019,October,Abhishek Gupta,Amazon,Others,1160.0,Others_etc
 2019,October,Jaal Bhagwat,Amazon,Others,1160.0,Others_Individual
-2019,October,Er Adwitiya Sharma,Amazon,Others,1160.0,Others_Individual
+2019,October,Er Adwitiya Sharma,Amazon,Others,1160.0,Others_etc
 2019,October,Jat Aziz Ibrahim,Amazon,Others,19625.0,Others_Individual
 2019,October,Fitness Next,East,Fitness/Sports,535714.0,Fitness
 2019,October,Fitness Next,East,Fitness/Sports,48.0,Fitness
-2019,October,Kulanthaivel,Amazon,Others,1160.0,Others_Individual
-2019,October,Sravan Kumar,Amazon,Others,1160.0,Others_Individual
-2019,October,Saif Quadr,Amazon,Others,19625.0,Others_Individual
+2019,October,Kulanthaivel,Amazon,Others,1160.0,Others_etc
+2019,October,Sravan Kumar,Amazon,Others,1160.0,Others_etc
+2019,October,Saif Quadr,Amazon,Others,19625.0,Others_etc
 2019,October,Giri Brothers,South,Enterprise,419643.0,Others_Others Corporate
 2019,October,Giri Brothers,South,Enterprise,54.0,Others_Others Corporate
 2019,October,Giri Brothers,South,Enterprise,625.0,Others_Others Corporate
-2019,October,Ajay Kumar Tripathi,Amazon,Others,1160.0,Others_Individual
+2019,October,Ajay Kumar Tripathi,Amazon,Others,1160.0,Others_etc
 2019,October,Smart Flips,West 1,Nutrition,172768.0,Clinic
 2019,October,Smart Flips,West 1,Nutrition,625.0,Clinic
 2019,October,Smart Flips,West 1,Nutrition,714.0,Clinic
@@ -1289,10 +1289,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,November,Ms.Chhaya Mishra,North,Nutrition,176786.0,Clinic
 2019,November,Ms.Chhaya Mishra,North,Nutrition,893.0,Clinic
 2019,November,Ms.Chhaya Mishra,North,Nutrition,893.0,Clinic
-2019,November,Jayant Mishra,Amazon,Others,1160.0,Others_Individual
+2019,November,Jayant Mishra,Amazon,Others,1160.0,Others_etc
 2019,November,Ritwick Sharma,Amazon,Others,1160.0,Others_Individual
-2019,November,Wizqart Pvt Ltd,Amazon,Others,19625.0,Public Association
-2019,November,Jadukula Tilak Rath,Amazon,Others,1160.0,Others_Individual
+2019,November,Wizqart Pvt Ltd,Amazon,Others,19625.0,Others_Others Corporate
+2019,November,Jadukula Tilak Rath,Amazon,Others,1160.0,Others_etc
 2019,November,Dr. Braja Jena,Amazon,Others,1160.0,Others_Individual
 2019,November,K Kiran Kumar,Amazon,Others,19625.0,Others_Individual
 2019,November,Transformation and Fitness Studio,West 2,Fitness,325893.0,Fitness
@@ -1300,11 +1300,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,November,S3 Fitness,North,Fitness/Sports,406250.0,Fitness
 2019,November,S3 Fitness,North,Fitness/Sports,4464.0,Fitness
 2019,November,VLCC Wellness Centre,South,Health Center,12946.0,Others_Aesthetic
-2019,November,SE Fitness,Amazon,Others,19625.0,Others_Individual
-2019,November,Vidyasagar,Amazon,Others,19625.0,Others_Individual
-2019,November,Robin,Amazon,Others,19625.0,Others_Individual
-2019,November,Vimal Shah,Amazon,Others,19625.0,Others_Individual
-2019,November,Digeshwar Pagote,Amazon,Others,1160.0,Others_Individual
+2019,November,SE Fitness,Amazon,Others,19625.0,Fitness
+2019,November,Vidyasagar,Amazon,Others,19625.0,Others_etc
+2019,November,Robin,Amazon,Others,19625.0,Others_etc
+2019,November,Vimal Shah,Amazon,Others,19625.0,Others_etc
+2019,November,Digeshwar Pagote,Amazon,Others,1160.0,Others_etc
 2019,November,Sara Lifestyle $ Leisures Pvt Ltd ,West 2,Fitness/Sports,12946.0,Fitness
 2019,November,Vibes Healthcare Ltd,East,Health Center,343750.0,Others_Aesthetic
 2019,November,Vibes Healthcare Ltd,East,Health Center,4464.0,Others_Aesthetic
@@ -1318,10 +1318,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,November,Sowrah,Amazon,Others,19625.0,Others_Individual
 2019,November,Rhea Choksy,Amazon,Others,19625.0,Others_Individual
 2019,November,Kapil Malhotra,Amazon,Others,1160.0,Others_Individual
-2019,November,Ambuj Kumar,Amazon,Others,1160.0,Others_Individual
-2019,November,Ajith Babu,Amazon,Others,19625.0,Others_Individual
+2019,November,Ambuj Kumar,Amazon,Others,1160.0,Others_etc
+2019,November,Ajith Babu,Amazon,Others,19625.0,Others_etc
 2019,November,B.Yerraswamy,Amazon,Others,1160.0,Others_Individual
-2019,November,Jatin Gautam,Amazon,Others,1160.0,Others_Individual
+2019,November,Jatin Gautam,Amazon,Others,1160.0,Others_etc
 2019,November,Chillies N Lemon Infra,North,Fitness/Sports,12946.0,Fitness
 2019,November,Shilp Body Design,West 2,Fitness/Sports,168750.0,Fitness
 2019,November,Shilp Body Design,West 2,Fitness/Sports,750.0,Fitness
@@ -1334,7 +1334,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,November,We Transform,South,Fitness/Sports,15357.0,Fitness
 2019,November,Raghav Sharma,Amazon,Others,1160.0,Others_Individual
 2019,November,Anurav Agarwal,Amazon,Others,19625.0,Others_Individual
-2019,December,Anurag Pratik,Amazon,Others,19625.0,Others_Individual
+2019,December,Anurag Pratik,Amazon,Others,19625.0,Others_etc
 2019,December,Satpal Joshi,Amazon,Others,1160.0,Others_Individual
 2019,December,Flyjin Fitness India Pilot LLP,West 1,Others,0.0,Others_Individual
 2019,December,Onyx Enetrprise,South,Fitness/Sports,14732.0,Fitness
@@ -1376,10 +1376,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,December,Jaikul Assosiates,West 1,Enterprise,357.0,Others_Others Corporate
 2019,December,Aishwarya Enetrprises,West 1,Enterprise,354241.0,Others_Others Corporate
 2019,December,Aishwarya Enetrprises,West 1,Enterprise,2902.0,Others_Others Corporate
-2019,December,Rejeuvine Enterprises Pvt Ltd,Amazon,Others,19625.0,Public Association
+2019,December,Rejeuvine Enterprises Pvt Ltd,Amazon,Others,19625.0,Others_Others Corporate
 2019,December,Rajes Iyer,Amazon,Others,1160.0,Others_Individual
-2019,December,Richa Singh,Amazon,Others,19625.0,Others_Individual
-2019,December,SE Fitness,Amazon,Others,19625.0,Others_Individual
+2019,December,Richa Singh,Amazon,Others,19625.0,Others_etc
+2019,December,SE Fitness,Amazon,Others,19625.0,Fitness
 2019,December,Praveen Srivastava,Amazon,Others,1160.0,Others_Individual
 2019,December,Keyur Nagori,Amazon,Others,19625.0,Others_Individual
 2019,December,Minati Baral,Amazon,Others,1160.0,Others_Individual
@@ -1396,13 +1396,13 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,December,Alpha Fox Fitness Training Centre LLP,East,Fitness/Sports,497656.0,Fitness
 2019,December,Alpha Fox Fitness Training Centre LLP,East,Fitness/Sports,94.0,Fitness
 2019,December,Alpha Fox Fitness Training Centre LLP,East,Fitness/Sports,2250.0,Fitness
-2019,December,Ratheesh,Amazon,Others,1160.0,Others_Individual
+2019,December,Ratheesh,Amazon,Others,1160.0,Others_etc
 2019,December,Ornate Wellness Pvt Ltd,West 1,Fitness/Sports,389914.0,Fitness
 2019,December,Ornate Wellness Pvt Ltd,West 1,Fitness/Sports,536.0,Fitness
 2019,December,Saga Fitness,West 2,Fitness/Sports,158357.0,Fitness
 2019,December,Saga Fitness,West 2,Fitness/Sports,5000.0,Fitness
 2019,December,Saga Fitness,West 2,Fitness/Sports,2143.0,Fitness
-2019,December,Balaji Real Estate Agent,Amazon,Others,1160.0,Others_Individual
+2019,December,Balaji Real Estate Agent,Amazon,Others,1160.0,Others_etc
 2019,December,Dr. Krishna's Cancer Healer Centre Pvt Ltd,North,Hospitals,912500.0,Hospital
 2019,December,Dr. Krishna's Cancer Healer Centre Pvt Ltd,North,Hospitals,893.0,Hospital
 2019,December,Dr. Krishna's Cancer Healer Centre Pvt Ltd,North,Hospitals,893.0,Hospital
@@ -1423,19 +1423,19 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2019,December,Divyam Enterprises ,West 1,Fitness/Sports,1964.0,Fitness
 2019,December,Raghvendra Bathal,Amazon,Others,19625.0,Others_Individual
 2019,December,Suneel Singh ,Amazon,Others,1160.0,Others_Individual
-2020,January,D.V.Nirhali,Amazon,Others,1159.821429,Others_Individual
+2020,January,D.V.Nirhali,Amazon,Others,1159.821429,Others_etc
 2020,January,Dr.Sandeep Kate ,Amazon,Others,19625.0,Others_Individual
-2020,January,Manoj Verma,Amazon,Others,1159.821429,Others_Individual
-2020,January,Mahesh,Amazon,Others,19625.0,Others_Individual
+2020,January,Manoj Verma,Amazon,Others,1159.821429,Others_etc
+2020,January,Mahesh,Amazon,Others,19625.0,Others_etc
 2020,January,Athletica Fitness LLP,West 2,Fitness/Sports,2232.142857,Fitness
-2020,January,Jarma Wellness LLP,West 1,Care Center,16071.428569999998,Others_Aesthetic
-2020,January,Avi vaghela,Amazon,Others,19625.0,Others_Individual
+2020,January,Jarma Wellness LLP,West 1,Care Center,16071.428569999998,Hospital
+2020,January,Avi vaghela,Amazon,Others,19625.0,Others_etc
 2020,January,Suresh Jagiri,Amazon,Others,1159.821429,Others_Individual
 2020,January,Cross Hammer,South,Fitness/Sports,223214.2857,Fitness
 2020,January,Cross Hammer,South,Fitness/Sports,2678.571429,Fitness
 2020,January,Cross Hammer,South,Fitness/Sports,1785.714286,Fitness
-2020,January,Gurkaran singh,Amazon,Others,1159.821429,Others_Individual
-2020,January,Sathish mano,Amazon,Others,1159.821429,Others_Individual
+2020,January,Gurkaran singh,Amazon,Others,1159.821429,Others_etc
+2020,January,Sathish mano,Amazon,Others,1159.821429,Others_etc
 2020,January,Lyfestyle Wellness,West 2,Health Center,258814.2857,Others_Aesthetic
 2020,January,Lyfestyle Wellness,West 2,Health Center,292.8571429,Others_Aesthetic
 2020,January,Rajesh Dwiwedi,Amazon,Others,1159.821429,Others_Individual
@@ -1444,10 +1444,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,January,Spin On Fitness,South,Fitness/Sports,714.2857142999999,Fitness
 2020,January,Faiz Khan,Amazon,Others,19625.0,Others_Individual
 2020,January,Prafulla Patkar,Amazon,Others,1159.821429,Others_Individual
-2020,January,Mohan Savalkar,Amazon,Others,19625.0,Others_Individual
+2020,January,Mohan Savalkar,Amazon,Others,19625.0,Others_etc
 2020,January,C Premkumar,Amazon,Others,1159.821429,Others_Individual
 2020,January,Dudekula P,Amazon,Others,1159.821429,Others_Individual
-2020,January,Mangesh Bhor,Amazon,Others,1159.821429,Others_Individual
+2020,January,Mangesh Bhor,Amazon,Others,1159.821429,Others_etc
 2020,January,4Ever Fit,South,Fitness/Sports,204910.7143,Fitness
 2020,January,4Ever Fit,South,Fitness/Sports,71.42857143,Fitness
 2020,January,4Ever Fit,South,Fitness/Sports,375.0,Fitness
@@ -1458,7 +1458,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,January,VLCC Healthcare Ltd,North,Health Center,348174.1071,Others_Aesthetic
 2020,January,VLCC Healthcare Ltd,North,Health Center,0.0,Others_Aesthetic
 2020,January,Parthsarathi,Amazon,Others,1159.821429,Others_Individual
-2020,January,Sanjeev Shukla,Amazon,Others,1159.821429,Others_Individual
+2020,January,Sanjeev Shukla,Amazon,Others,1159.821429,Others_etc
 2020,January,Sai Kripa Fitness,West 1,Fitness/Sports,184875.0,Fitness
 2020,January,Sai Kripa Fitness,West 1,Fitness/Sports,2500.0,Fitness
 2020,January,Sai Kripa Fitness,West 1,Fitness/Sports,625.0,Fitness
@@ -1467,14 +1467,14 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,January,Mohsin Shaikh,West 1,Fitness/Sports,535.7142857,Fitness
 2020,January,Tejash Patel,Amazon,Others,1159.821429,Others_Individual
 2020,January,Smita Holey,Amazon,Others,1159.821429,Others_Individual
-2020,January,Kavitha,Amazon,Others,1159.821429,Others_Individual
+2020,January,Kavitha,Amazon,Others,1159.821429,Others_etc
 2020,January,Kaushik,Amazon,Others,19625.0,Others_Individual
 2020,January,Ankush Dixit,Amazon,Others,1159.821429,Others_Individual
 2020,January,Repower Fitness Equipment,West 2,Fitness/Sports,372500.0,Fitness
 2020,January,Repower Fitness Equipment,West 2,Fitness/Sports,2500.0,Fitness
 2020,January,Samrat Motors,West 1,Enterprise,8928.571429000001,Others_Others Corporate
 2020,January,Bhumika Patel,Amazon,Others,1159.821429,Others_Individual
-2020,January,Ajay Bahl,Amazon,Others,19625.0,Others_Individual
+2020,January,Ajay Bahl,Amazon,Others,19625.0,Others_etc
 2020,January,Yukta Fitness Pvt Ltd,North,Fitness/Sports,191357.1429,Fitness
 2020,January,Yukta Fitness Pvt Ltd,North,Fitness/Sports,250.0,Fitness
 2020,January,Yukta Fitness Pvt Ltd,North,Fitness/Sports,357.14285710000007,Fitness
@@ -1486,18 +1486,18 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,January,Aswa Gym,West 2,Fitness/Sports,354615.0,Fitness
 2020,January,Aswa Gym,West 2,Fitness/Sports,2500.0,Fitness
 2020,February,Seema,Amazon,Others,1159.821429,Others_Individual
-2020,February,Vinati Kastia,Amazon,Others,19625.0,Others_Individual
+2020,February,Vinati Kastia,Amazon,Others,19625.0,Others_etc
 2020,February,Riddhesh Parab,Amazon,Others,19625.0,Others_Individual
-2020,February,Karan Saini,Amazon,Others,1159.821429,Others_Individual
-2020,February,S.Muralikrishnan,Amazon,Others,1159.821429,Others_Individual
+2020,February,Karan Saini,Amazon,Others,1159.821429,Others_etc
+2020,February,S.Muralikrishnan,Amazon,Others,1159.821429,Others_etc
 2020,February,Fitness First Mega Mall,West 1,Fitness/Sports,16949.15254,Fitness
 2020,February,JV Diet Clinic,South,Diet,20535.71429,Clinic
 2020,February,Sani,North,Fitness/Sports,400000.0,Fitness
 2020,February,Sani,North,Fitness/Sports,0.0,Fitness
 2020,February,Prakash Sahoo,Amazon,Others,1159.821429,Others_Individual
 2020,February,B Natural,Amazon,Others,19625.0,Others_Individual
-2020,February,Harish Ahuja,Amazon,Others,2319.642857,Others_Individual
-2020,February,Rozal,Amazon,Others,19625.0,Others_Individual
+2020,February,Harish Ahuja,Amazon,Others,2319.642857,Others_etc
+2020,February,Rozal,Amazon,Others,19625.0,Others_etc
 2020,February,Dulal Bag,Amazon,Others,1159.821429,Others_Individual
 2020,February,GSG Builders & Infrastructure Limited ,South,Fitness/Sports,355357.1429,Fitness
 2020,February,GSG Builders & Infrastructure Limited ,South,Fitness/Sports,1785.714286,Fitness
@@ -1509,16 +1509,16 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,February,Arihant Health Care and Fitness,East,Fitness/Sports,535.7142857,Fitness
 2020,February,Life Fitness Twenty Four Into Seven,East,Fitness/Sports,370000.0,Fitness
 2020,February,Life Fitness Twenty Four Into Seven,East,Fitness/Sports,535.7142857,Fitness
-2020,February,Nilesh Phadnis,Amazon,Others,1159.821429,Others_Individual
-2020,February,Faiz Rezwan,Amazon,Others,19625.0,Others_Individual
+2020,February,Nilesh Phadnis,Amazon,Others,1159.821429,Others_etc
+2020,February,Faiz Rezwan,Amazon,Others,19625.0,Others_etc
 2020,February,Jupiter Lifeline Hospital Ltd ,West 1,Hospitals,16949.15254,Hospital
 2020,February,Anand Gandhi,West 1,Fitness/Sports,11004.46429,Fitness
 2020,February,L M Acharya,Amazon,Others,19625.0,Others_Individual
 2020,February,Mahmood Ayaz,Amazon,Others,1159.821429,Others_Individual
 2020,February,Kelum W,Amazon,Others,1159.821429,Others_Individual
-2020,February,Midhun Lal,South,Others,205357.1429,Others_Individual
-2020,February,Midhun Lal,South,Others,267.8571429,Others_Individual
-2020,February,Midhun Lal,South,Others,357.14285710000007,Others_Individual
+2020,February,Midhun Lal,South,Others,205357.1429,Private Enterprise
+2020,February,Midhun Lal,South,Others,267.8571429,Private Enterprise
+2020,February,Midhun Lal,South,Others,357.14285710000007,Private Enterprise
 2020,February,Alm Ayush Centre,South,Health Center,398214.2857,Others_Aesthetic
 2020,February,Alm Ayush Centre,South,Health Center,892.8571429,Others_Aesthetic
 2020,February,Alm Ayush Centre,South,Health Center,892.8571429,Others_Aesthetic
@@ -1530,9 +1530,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,February,Fit 360,South,Fitness/Sports,408928.5714,Fitness
 2020,February,Fit 360,South,Fitness/Sports,446.4285714,Fitness
 2020,February,Fit 360,South,Fitness/Sports,446.4285714,Fitness
-2020,February,Ajit Prabhu,Amazon,Others,1159.821429,Others_Individual
-2020,February,Premalkumar Gonawala,Amazon,Others,1159.821429,Others_Individual
-2020,February,Anju Grover,Amazon,Others,1159.821429,Others_Individual
+2020,February,Ajit Prabhu,Amazon,Others,1159.821429,Others_etc
+2020,February,Premalkumar Gonawala,Amazon,Others,1159.821429,Others_etc
+2020,February,Anju Grover,Amazon,Others,1159.821429,Others_etc
 2020,February,VLCC Healthcare Ltd,South,Health Center,41758.92857,Others_Aesthetic
 2020,February,Somchand Jethalal & Co,West 1,Enterprise,435000.0,Others_Others Corporate
 2020,February,Somchand Jethalal & Co,West 1,Enterprise,2678.571429,Others_Others Corporate
@@ -1544,7 +1544,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,February,Wavesdesign,West 2,Enterprise,714.2857142999999,Others_Others Corporate
 2020,February,Raghvendra Pujari,Amazon,Others,1159.821429,Others_Individual
 2020,February,Shivkumar Vatwani,Amazon,Others,1159.821429,Others_Individual
-2020,February,Mohan Lal,Amazon,Others,1159.821429,Others_Individual
+2020,February,Mohan Lal,Amazon,Others,1159.821429,Others_etc
 2020,February,Gopinath Kanan,Amazon,Others,1159.821429,Others_Individual
 2020,February,Body Scluptor,West 1,Fitness/Sports,8035.714286,Fitness
 2020,February,Laxmikumaran & Sridharan,North,Enterprise,211607.1429,Others_Others Corporate
@@ -1555,7 +1555,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,February,S Fitness Zone,East,Fitness/Sports,205357.1429,Fitness
 2020,February,S Fitness Zone,East,Fitness/Sports,17.85714286,Fitness
 2020,February,S Fitness Zone,East,Fitness/Sports,17.85714286,Fitness
-2020,February,Smita Biswal,Amazon,Others,1159.821429,Others_Individual
+2020,February,Smita Biswal,Amazon,Others,1159.821429,Others_etc
 2020,February,Sikka Ports & Terminal Ltd,West 1,Enterprise,5803.571429,Others_Others Corporate
 2020,March,Sisodiya Superclan Pvt Ltd,North,Fitness/Sports,379285.7143,Fitness
 2020,March,Sisodiya Superclan Pvt Ltd,North,Fitness/Sports,178.5714286,Fitness
@@ -1565,8 +1565,8 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,March,Gymfull Fitness Pvt Ltd,East,Fitness/Sports,14500.0,Fitness
 2020,March,Harsh Daharia,Amazon,Others,1159.821429,Others_Individual
 2020,March,Vibes Healthcare Ltd JP Nagar ,South,Health Center,0.0,Others_Aesthetic
-2020,March,Sap Fitness,Amazon,Others,19625.0,Others_Individual
-2020,March,Shashi Jain,Amazon,Others,1159.821429,Others_Individual
+2020,March,Sap Fitness,Amazon,Others,19625.0,Fitness
+2020,March,Shashi Jain,Amazon,Others,1159.821429,Others_etc
 2020,March,PRV Fitness,West 2,Fitness/Sports,211071.4286,Fitness
 2020,March,PRV Fitness,West 2,Fitness/Sports,2500.0,Fitness
 2020,March,PRV Fitness,West 2,Fitness/Sports,714.2857142999999,Fitness
@@ -1574,21 +1574,21 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,March,Aditya Clinic,West 1,Health Center,2946.428571,Others_Aesthetic
 2020,March,Multifit Wellness Pvt Ltd ,North,Fitness/Sports,333928.5714,Fitness
 2020,March,Multifit Wellness Pvt Ltd ,North,Fitness/Sports,892.8571429,Fitness
-2020,March,InBody USA,Overseas,Fitness/Sports,371063.76,Fitness
+2020,March,InBody USA,Overseas,Fitness/Sports,371063.76,Others_etc
 2020,March,Motwani Healthcare Pvt Ltd,West 1,Fitness/Sports,0.0,Fitness
-2020,March,InBody India Pvt Ltd,West 1,Others,0.0,Public Association
-2020,March,Novo Nordisk Pvt Ltd,South,Others,0.0,Public Association
+2020,March,InBody India Pvt Ltd,West 1,Others,0.0,Others_etc
+2020,March,Novo Nordisk Pvt Ltd,South,Others,0.0,Others_Others Corporate
 2020,March,Fitness First Mega Mall,West 1,Fitness/Sports,22589.28571,Fitness
-2020,March,InBody India Pvt Ltd,West 1,Others,0.0,Public Association
-2020,March,InBody India Pvt Ltd,West 1,Others,0.0,Public Association
+2020,March,InBody India Pvt Ltd,West 1,Others,0.0,Others_etc
+2020,March,InBody India Pvt Ltd,West 1,Others,0.0,Others_etc
 2020,March,Aaruikant Sinha,Amazon,Others,1159.821429,Others_Individual
-2020,March,Ankita Ghag,Amazon,Others,1159.821429,Others_Individual
-2020,March,Satyam Vengala,Amazon,Others,1159.821429,Others_Individual
+2020,March,Ankita Ghag,Amazon,Others,1159.821429,Others_etc
+2020,March,Satyam Vengala,Amazon,Others,1159.821429,Others_etc
 2020,March,Sandeep Dutta,Amazon,Others,17839.28571,Others_Individual
 2020,March,Rhythm Parikh,Amazon,Others,1159.821429,Others_Individual
 2020,March,Inderjit Jaswal,Amazon,Others,17839.28571,Others_Individual
 2020,March,Dheearaj Sharma,Amazon,Others,1159.821429,Others_Individual
-2020,March,Vinay Jagdale,Amazon,Others,1159.821429,Others_Individual
+2020,March,Vinay Jagdale,Amazon,Others,1159.821429,Others_etc
 2020,March,VLCC Healthcare Ltd,North,Health Center,44910.71429,Others_Aesthetic
 2020,March,VLCC Healthcare Ltd,East,Health Center,12946.42857,Others_Aesthetic
 2020,March,Gold's Gym Hadpasar,West 1,Fitness/Sports,30434.82143,Fitness
@@ -1608,52 +1608,52 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,March,F1 Fitness Club Private Ltd,North,Fitness/Sports,2.5,Fitness
 2020,March,Hummingbird Hospitality and healthcare,North,Fitness/Sports,379977.3839,Fitness
 2020,March,Hummingbird Hospitality and healthcare,North,Fitness/Sports,0.535714286,Fitness
-2020,March,Piyush Gupta,Amazon,Others,1159.821429,Others_Individual
+2020,March,Piyush Gupta,Amazon,Others,1159.821429,Others_etc
 2020,March,Lopmudra Nayak,Amazon,Others,1159.821429,Others_Individual
 2020,March,Nitro Gym Pune,West 1,Fitness/Sports,3571.428571,Fitness
 2020,March,Sportiquo Fitness LLP Kolkata,East,Fitness/Sports,7053.5714290000005,Fitness
 2020,March,Ritika Patil,Amazon,Others,1159.821429,Others_Individual
-2020,March,C Mathanmohan,Amazon,Others,1159.821429,Others_Individual
+2020,March,C Mathanmohan,Amazon,Others,1159.821429,Others_etc
 2020,March,Dr. Stephen Das,Amazon,Others,1159.821429,Others_Individual
-2020,March,Maloy,Amazon,Others,17839.28571,Others_Individual
+2020,March,Maloy,Amazon,Others,17839.28571,Others_etc
 2020,March,TATA Industries Ltd - DHP Division,South,Enterprise,15254.23729,Others_Others Corporate
 2020,March,M/S VIVID WAYS TRADERS,North,Enterprise,0.0,Others_Others Corporate
-2020,May,Balwant singh,Amazon,Others,1159.821429,Others_Individual
+2020,May,Balwant singh,Amazon,Others,1159.821429,Others_etc
 2020,May,RDS CONSTRUCTION COMPANY,West 1,Enterprise,1115910.7140000002,Others_Others Corporate
 2020,May,RDS CONSTRUCTION COMPANY,West 1,Enterprise,160.71428569999998,Others_Others Corporate
 2020,May,VARSHA ASHIYA,Amazon,Others,17839.28571,Others_Individual
-2020,May,Abhishek Ramesh,Amazon,Others,17839.28571,Others_Individual
-2020,May,Vasala Narsimha Reddy,Amazon,Others,1159.821429,Others_Individual
-2020,June,Teheran Hossain,Amazon,Others,1159.821429,Others_Individual
-2020,June,Ishita mohanty,Amazon,Others,1159.821429,Others_Individual
-2020,June,Rohan,Amazon,Others,17839.28571,Others_Individual
+2020,May,Abhishek Ramesh,Amazon,Others,17839.28571,Others_etc
+2020,May,Vasala Narsimha Reddy,Amazon,Others,1159.821429,Others_etc
+2020,June,Teheran Hossain,Amazon,Others,1159.821429,Others_etc
+2020,June,Ishita mohanty,Amazon,Others,1159.821429,Others_etc
+2020,June,Rohan,Amazon,Others,17839.28571,Others_etc
 2020,June,Fitness Corner,East,Fitness/Sports,192857.1429,Fitness
 2020,June,Fitness Corner,East,Fitness/Sports,0.0,Fitness
 2020,June,Fitness Corner,East,Fitness/Sports,0.0,Fitness
 2020,June,Fitness Corner,East,Fitness/Sports,0.0,Fitness
-2020,June,Abhinav Litkar,Amazon,Others,17839.28571,Others_Individual
+2020,June,Abhinav Litkar,Amazon,Others,17839.28571,Others_etc
 2020,June,M/S VIVID WAYS TRADERS,North,Enterprise,62500.0,Others_Others Corporate
 2020,June,Rajani gamangatti,Amazon,Others,1159.821429,Others_Individual
-2020,June,Aman Mehta,Amazon,Others,17839.28571,Others_Individual
+2020,June,Aman Mehta,Amazon,Others,17839.28571,Others_etc
 2020,June,Souvik,Amazon,Others,17839.28571,Others_Individual
 2020,June,Brigesh Gupta,Amazon,Others,1159.821429,Others_Individual
-2020,June,Bodyline Sports,East,Others,16428.57143,Others_Individual
+2020,June,Bodyline Sports,East,Others,16428.57143,Private Enterprise
 2020,June,Chaudhari dental hospital,North,Health Center,218750.0,Others_Aesthetic
 2020,June,Chaudhari dental hospital,North,Health Center,80.0,Others_Aesthetic
 2020,June,Chaudhari dental hospital,North,Health Center,190.7142857,Others_Aesthetic
-2020,June,Shruti Bhura,Amazon,Others,17839.28571,Others_Individual
-2020,June,Manish Uppal,Amazon,Others,17839.28571,Others_Individual
-2020,June,Kleos Communications Private Limited,Amazon,Others,17723.21429,Public Association
+2020,June,Shruti Bhura,Amazon,Others,17839.28571,Others_etc
+2020,June,Manish Uppal,Amazon,Others,17839.28571,Others_etc
+2020,June,Kleos Communications Private Limited,Amazon,Others,17723.21429,Others_Others Corporate
 2020,June,Urtronics India,North,Enterprise,379464.2857,Others_Others Corporate
 2020,June,Urtronics India,North,Enterprise,17.85714286,Others_Others Corporate
 2020,June,Urtronics India,North,Enterprise,17.85714286,Others_Others Corporate
-2020,June,Akhil Rishi Agarwal,Amazon,Others,17839.28571,Others_Individual
-2020,June,Bodynetic,Amazon,Others,17839.28571,Others_Individual
+2020,June,Akhil Rishi Agarwal,Amazon,Others,17839.28571,Others_etc
+2020,June,Bodynetic,Amazon,Others,17839.28571,Fitness
 2020,June,Mukesh Kumar,Amazon,Others,1159.821429,Others_Individual
-2020,June,Dhayalarajan,Amazon,Others,1159.821429,Others_Individual
-2020,June,Susmita Datta,Amazon,Others,8919.642856999999,Others_Individual
-2020,June,Sorabh Lakhanpal,Amazon,Others,8919.642856999999,Others_Individual
-2020,June,Ch jayaprakashreddy,Amazon,Others,1159.821429,Others_Individual
+2020,June,Dhayalarajan,Amazon,Others,1159.821429,Others_etc
+2020,June,Susmita Datta,Amazon,Others,8919.642856999999,Others_etc
+2020,June,Sorabh Lakhanpal,Amazon,Others,8919.642856999999,Others_etc
+2020,June,Ch jayaprakashreddy,Amazon,Others,1159.821429,Others_etc
 2020,June,Fitness Story,West 1,Fitness/Sports,200000.0,Fitness
 2020,June,Fitness Story,West 1,Fitness/Sports,446.4285714,Fitness
 2020,June,Fitness Story,West 1,Fitness/Sports,446.4285714,Fitness
@@ -1662,9 +1662,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,June,Jyoti Renewable Energy Pvt. Ltd,North,Enterprise,0.0,Others_Others Corporate
 2020,June,Sajan Kamani,Amazon,Others,1159.821429,Others_Individual
 2020,June,Baskaran Chandramauli,Amazon,Others,17839.28571,Others_Individual
-2020,June,Vishal Singh,Amazon,Others,17839.28571,Others_Individual
-2020,June,Col Amardeep S Gill,Amazon,Others,17839.28571,Others_Individual
-2020,June,Naveen Charugundla,Amazon,Others,17839.28571,Others_Individual
+2020,June,Vishal Singh,Amazon,Others,17839.28571,Others_etc
+2020,June,Col Amardeep S Gill,Amazon,Others,17839.28571,Others_etc
+2020,June,Naveen Charugundla,Amazon,Others,17839.28571,Others_etc
 2020,June,Nikhil Burute,Amazon,Others,17839.28571,Others_Individual
 2020,June,AESTHETIC FITNESS PRIVATE LIMITED,North,Fitness/Sports,800.0,Fitness
 2020,June,AESTHETIC FITNESS PRIVATE LIMITED,North,Fitness/Sports,800.0,Fitness
@@ -1682,11 +1682,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,June,Kaarya Naturals Private Limited,West 1,Health Center,1785.714286,Others_Aesthetic
 2020,June,N S Gaikwad Fitness Club,West 1,Fitness/Sports,15652.17391,Fitness
 2020,June,WARES AND WANTS TRADING PRIVATE LIMITED,East,Enterprise,6779.661017,Others_Others Corporate
-2020,July,Brijesh Prajapati,Amazon,Others,1159.821429,Others_Individual
+2020,July,Brijesh Prajapati,Amazon,Others,1159.821429,Others_etc
 2020,July,Mallikarjun M Gadagi,Amazon,Others,17839.28571,Others_Individual
-2020,July,Pranav Bharadwaj,Amazon,Others,1159.821429,Others_Individual
+2020,July,Pranav Bharadwaj,Amazon,Others,1159.821429,Others_etc
 2020,July,Boma Yeshwanth,Amazon,Others,1159.821429,Others_Individual
-2020,July,Prashant Hegde,Amazon,Others,17839.28571,Others_Individual
+2020,July,Prashant Hegde,Amazon,Others,17839.28571,Others_etc
 2020,June,Elegance health,West 2,Health Center,13392.85714,Others_Aesthetic
 2020,July,Green Corporation,Overseas,Enterprise,161000.0,Others_Others Corporate
 2020,July,Green Corporation,Overseas,Enterprise,369.76,Others_Others Corporate
@@ -1704,19 +1704,19 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,July,Mr.Manish Gandhi,West 1,Others,0.0,Others_Individual
 2020,July,Bhaghya Lakshmi,Amazon,Others,1159.821429,Others_Individual
 2020,July,M/S Garg Inox Limited,North,Enterprise,16071.428569999998,Others_Others Corporate
-2020,July,Nidhi Gupta,Amazon,Others,1159.821429,Others_Individual
+2020,July,Nidhi Gupta,Amazon,Others,1159.821429,Others_etc
 2020,July,Subhrashree sahu,Amazon,Others,1159.821429,Others_Individual
-2020,July,Jeongju Kim,Amazon,Others,17839.28571,Others_Individual
+2020,July,Jeongju Kim,Amazon,Others,17839.28571,Others_etc
 2020,July,Pradeep Kumar,Amazon,Others,17839.28571,Others_Individual
 2020,July,Pralhad Bhagat,Amazon,Others,1159.821429,Others_Individual
 2020,July,Pardeep Kumar,Amazon,Others,8919.642856999999,Others_Individual
 2020,July,Jaspreet sinha chaddha,Amazon,Others,17839.28571,Others_Individual
-2020,July,PSI Suraj Gore,Amazon,Others,17839.28571,Others_Individual
+2020,July,PSI Suraj Gore,Amazon,Others,17839.28571,Others_etc
 2020,July,Shiva Shekhar,Amazon,Others,1159.821429,Others_Individual
-2020,July,Sandeep Sardar,Amazon,Others,8919.642856999999,Others_Individual
+2020,July,Sandeep Sardar,Amazon,Others,8919.642856999999,Others_etc
 2020,July,Himanshu Bhardwaj,Amazon,Others,1159.821429,Others_Individual
-2020,August,Utsav Yadav,Amazon,Others,8919.642856999999,Others_Individual
-2020,August,Shanay Khemani,Amazon,Others,17839.28571,Others_Individual
+2020,August,Utsav Yadav,Amazon,Others,8919.642856999999,Others_etc
+2020,August,Shanay Khemani,Amazon,Others,17839.28571,Others_etc
 2020,August,Swati Modi,Amazon,Others,1159.821429,Others_Individual
 2020,August,SP Office,West 1,Government,256000.0,Public Association
 2020,August,SP Office,West 1,Government,132946.4286,Public Association
@@ -1733,7 +1733,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,August,S M enterprises,North,Fitness/Sports,0.0,Fitness
 2020,August,Xavia Joseph,Amazon,Others,16946.42857,Others_Individual
 2020,August,Manan Ketan,Amazon,Others,17839.28571,Others_Individual
-2020,August,Rajeshkumar Bhande,Amazon,Others,1159.821429,Others_Individual
+2020,August,Rajeshkumar Bhande,Amazon,Others,1159.821429,Others_etc
 2020,August,Dr.Srikant,Amazon,Others,16946.42857,Others_Individual
 2020,August,Body Dynamique,West 2,Fitness/Sports,347622.0,Fitness
 2020,August,Body Dynamique,West 2,Fitness/Sports,600.0,Fitness
@@ -1744,11 +1744,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,August,L & K WELLNESS SERVICES PVT LTD.,West 1,Health Center,1000000.0,Others_Aesthetic
 2020,August,L & K WELLNESS SERVICES PVT LTD.,West 1,Health Center,0.0,Others_Aesthetic
 2020,August,L & K WELLNESS SERVICES PVT LTD.,West 1,Health Center,0.0,Others_Aesthetic
-2020,August,Vandana Global Limited,Amazon,Others,16830.35714,Public Association
-2020,August,Kamal Manchanda,Amazon,Others,16946.42857,Others_Individual
-2020,August,Sunil Dhanawade,Amazon,Others,16946.42857,Others_Individual
-2020,August,Neha Mittal,Amazon,Others,16946.42857,Others_Individual
-2020,August,Suraj Ghatage,Amazon,Others,1159.821429,Others_Individual
+2020,August,Vandana Global Limited,Amazon,Others,16830.35714,Others_Individual
+2020,August,Kamal Manchanda,Amazon,Others,16946.42857,Others_etc
+2020,August,Sunil Dhanawade,Amazon,Others,16946.42857,Others_etc
+2020,August,Neha Mittal,Amazon,Others,16946.42857,Others_etc
+2020,August,Suraj Ghatage,Amazon,Others,1159.821429,Others_etc
 2020,August,Nikita Singla,Amazon,Others,16946.42857,Others_Individual
 2020,August,Munish sharma,Amazon,Others,17839.28571,Others_Individual
 2020,August,Mousumi Chatterjee,Amazon,Others,8919.642856999999,Others_Individual
@@ -1761,38 +1761,38 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,August,Excel Hospital,West 2,Hospitals,2321.428571,Hospital
 2020,August,Excel Hospital,West 2,Hospitals,357.14285710000007,Hospital
 2020,August,Praveen Sharma,Amazon,Others,16946.42857,Others_Individual
-2020,August,Mukesh Kumar Singh,Amazon,Others,1159.821429,Others_Individual
+2020,August,Mukesh Kumar Singh,Amazon,Others,1159.821429,Others_etc
 2020,August,Sushil Kumar V,Amazon,Others,1159.821429,Others_Individual
-2020,August,Hanwook Bae,Amazon,Others,17839.28571,Others_Individual
-2020,August,Arun Pandey,Amazon,Others,1159.821429,Others_Individual
+2020,August,Hanwook Bae,Amazon,Others,17839.28571,Others_etc
+2020,August,Arun Pandey,Amazon,Others,1159.821429,Others_etc
 2020,August,Onyx Enterprise,West 2,Enterprise,14732.14286,Others_Others Corporate
 2020,August,Rajput enterprises,West 2,Enterprise,12946.42857,Others_Others Corporate
 2020,August,Home Gym,South,Others,180446.4286,Others_Individual
 2020,August,Home Gym,South,Others,0.0,Others_Individual
 2020,August,Home Gym,South,Others,0.0,Others_Individual
 2020,August,Home Gym,South,Others,0.0,Others_Individual
-2020,August,PROXIMITY LABS PRIVATE LIMITED,Amazon,Others,17723.21429,Public Association
-2020,August,GurBani Judge,Amazon,Others,17839.28571,Others_Individual
-2020,August,Sandhya PC,Amazon,Others,17839.28571,Others_Individual
+2020,August,PROXIMITY LABS PRIVATE LIMITED,Amazon,Others,17723.21429,Others_Others Corporate
+2020,August,GurBani Judge,Amazon,Others,17839.28571,Others_etc
+2020,August,Sandhya PC,Amazon,Others,17839.28571,Others_etc
 2020,August,Bonton Nirale Mathews F,Amazon,Others,1159.821429,Others_Individual
-2020,August,Piyush Arora,Amazon,Others,17839.28571,Others_Individual
+2020,August,Piyush Arora,Amazon,Others,17839.28571,Others_etc
 2020,August,Nainaz Irani,Amazon,Others,17839.28571,Others_Individual
 2020,August,Dilip Jain,Amazon,Others,1159.821429,Others_Individual
 2020,August,ATHLETICA FITNESS LLP,West 2,Fitness/Sports,4464.285714,Fitness
 2020,August,Zaara Dreams health Private Limited,North,Enterprise,376419.6429,Others_Others Corporate
 2020,August,Zaara Dreams health Private Limited,North,Enterprise,366.0714286000001,Others_Others Corporate
 2020,August,VNV Fitness Private Limited,North,Fitness/Sports,0.0,Fitness
-2020,August,Anisur Rehman,Amazon,Others,1159.821429,Others_Individual
+2020,August,Anisur Rehman,Amazon,Others,1159.821429,Others_etc
 2020,August,Ranjish Arora,Amazon,Others,17839.28571,Others_Individual
-2020,August,Ganesh Akhade,Amazon,Others,17839.28571,Others_Individual
-2020,September,Sawrabh,Amazon,Others,17839.28571,Others_Individual
+2020,August,Ganesh Akhade,Amazon,Others,17839.28571,Others_etc
+2020,September,Sawrabh,Amazon,Others,17839.28571,Others_etc
 2020,September,Vibes Healthcare Ltd ,North,Health Center,0.0,Others_Aesthetic
 2020,September,Alpha Aesthetics ,North,Fitness/Sports,410714.2857,Fitness
 2020,September,Vivid Ways Traders,North,Enterprise,62500.0,Others_Others Corporate
 2020,September,Everyday Fitness ,North,Fitness/Sports,4500.0,Fitness
-2020,September,Hitesh Mehta,Amazon,Others,17839.28571,Others_Individual
-2020,September,Ashish Phadkule,Amazon,Others,1159.821429,Others_Individual
-2020,September,Omkar Fadnavis,Amazon,Others,17839.28571,Others_Individual
+2020,September,Hitesh Mehta,Amazon,Others,17839.28571,Others_etc
+2020,September,Ashish Phadkule,Amazon,Others,1159.821429,Others_etc
+2020,September,Omkar Fadnavis,Amazon,Others,17839.28571,Others_etc
 2020,September,Bamasis Paul,Amazon,Others,17839.28571,Others_Individual
 2020,September,Alsih Malty,Amazon,Others,1159.821429,Others_Individual
 2020,September,Eshan kaul,West 1,Others,16964.28571,Others_Individual
@@ -1803,9 +1803,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,September,Peso Medicare Pvt  ltd,South,Health Center,96250.0,Others_Aesthetic
 2020,September,Peso Medicare Pvt  ltd,South,Health Center,5760.0,Others_Aesthetic
 2020,September,Peso Medicare Pvt  ltd,South,Health Center,0.0,Others_Aesthetic
-2020,September,DAIVAM WELLNESS PRIVATE LIMITED,Amazon,Others,17723.21429,Public Association
-2020,September,Prenika Anand,Amazon,Others,8919.642856999999,Others_Individual
-2020,September,Jaimin Modi,Amazon,Others,17839.28571,Others_Individual
+2020,September,DAIVAM WELLNESS PRIVATE LIMITED,Amazon,Others,17723.21429,Others_Aesthetic
+2020,September,Prenika Anand,Amazon,Others,8919.642856999999,Others_etc
+2020,September,Jaimin Modi,Amazon,Others,17839.28571,Others_etc
 2020,September,Rahul Gupta,North,Others,205357.1429,Others_Individual
 2020,September,Rahul Gupta,North,Others,0.0,Others_Individual
 2020,September,Rahul Gupta,North,Others,0.0,Others_Individual
@@ -1815,17 +1815,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,September,Shiv Enterprise,West 2,Enterprise,347759.8214,Others_Others Corporate
 2020,September,Shiv Enterprise,West 2,Enterprise,600.0,Others_Others Corporate
 2020,September,Rani S Kumar ,Amazon,Others,17839.28571,Others_Individual
-2020,September,Anayatullah Haji,Amazon,Others,1159.821429,Others_Individual
-2020,September,Shilpa Shah,Amazon,Others,17839.28571,Others_Individual
-2020,September,Vinay Kumar Rai,Amazon,Others,1159.821429,Others_Individual
+2020,September,Anayatullah Haji,Amazon,Others,1159.821429,Others_etc
+2020,September,Shilpa Shah,Amazon,Others,17839.28571,Others_etc
+2020,September,Vinay Kumar Rai,Amazon,Others,1159.821429,Others_etc
 2020,September,Suresh Maheshwari,Amazon,Others,1159.821429,Others_Individual
 2020,September,Urvkash Hoyvoy,Amazon,Others,1159.821429,Others_Individual
 2020,September,Dr.Shajin Chandran,Amazon,Others,17839.28571,Others_Individual
 2020,September,Saleem Nakhtare,Amazon,Others,1159.821429,Others_Individual
-2020,September,Ainesh Gupta,Amazon,Others,17839.28571,Others_Individual
-2020,September,Shree,Amazon,Others,1159.821429,Others_Individual
-2020,September,Deepinder Goyal,Amazon,Others,17839.28571,Others_Individual
-2020,September,Kumar,Amazon,Others,1159.821429,Others_Individual
+2020,September,Ainesh Gupta,Amazon,Others,17839.28571,Others_etc
+2020,September,Shree,Amazon,Others,1159.821429,Others_etc
+2020,September,Deepinder Goyal,Amazon,Others,17839.28571,Others_etc
+2020,September,Kumar,Amazon,Others,1159.821429,Others_etc
 2020,September,Coach For Life ,West 2,Fitness/Sports,148660.7143,Fitness
 2020,September,Coach For Life ,West 2,Fitness/Sports,2500.0,Fitness
 2020,September,Coach For Life ,West 2,Fitness/Sports,625.0,Fitness
@@ -1849,33 +1849,33 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,October,Vineeth Kumar,Amazon,Others,17839.28571,Others_Individual
 2020,October,Sahil Patel,Amazon,Others,17839.28571,Others_Individual
 2020,October,Adarsh B,Amazon,Others,1231.25,Others_Individual
-2020,October,Praveen Kumar Mishra,Amazon,Others,1159.821429,Others_Individual
+2020,October,Praveen Kumar Mishra,Amazon,Others,1159.821429,Others_etc
 2020,October,Laksh Agrawal ,Amazon,Others,17839.28571,Others_Individual
 2020,October,Mr.Mahesh,Amazon,Others,1159.821429,Others_Individual
 2020,October,Parikshit G Lathia,West 2,Fitness/Sports,450125.0,Fitness
 2020,October,Parikshit G Lathia,West 2,Fitness/Sports,267.8571429,Fitness
-2020,October,Prayusha Parsai,Amazon,Others,8919.642856999999,Others_Individual
+2020,October,Prayusha Parsai,Amazon,Others,8919.642856999999,Others_etc
 2020,October,Godfather fitness and lifestyle private limited,North,Fitness/Sports,351838.3929,Fitness
 2020,October,Godfather fitness and lifestyle private limited,North,Fitness/Sports,841.0714286,Fitness
 2020,October,Daulat Enterprises ,North,Enterprise,414000.0,Others_Others Corporate
 2020,October,Daulat Enterprises ,North,Enterprise,0.0,Others_Others Corporate
 2020,October,Thera Wellness pvt ltd,West 1,Health Center,8000.0,Others_Aesthetic
-2020,October,Bijo Cheriyan,Amazon,Others,1159.821429,Others_Individual
-2020,October,Rajveersinh,Amazon,Others,1159.821429,Others_Individual
-2020,October,Aadhar Hospital,North,Others,0.0,Others_Individual
-2020,October,HUMMINGBIRD HOSPITALITY AND HEALTHCARE,North,Others,0.0,Others_Individual
-2020,October,AB health care Private Limited,West 2,Others,12946.42857,Public Association
-2020,October,Rajveersinh,Amazon,Others,1159.821429,Others_Individual
-2020,October,Vidur Gupta,Amazon,Others,17839.28571,Others_Individual
+2020,October,Bijo Cheriyan,Amazon,Others,1159.821429,Others_etc
+2020,October,Rajveersinh,Amazon,Others,1159.821429,Others_etc
+2020,October,Aadhar Hospital,North,Others,0.0,Hospital
+2020,October,HUMMINGBIRD HOSPITALITY AND HEALTHCARE,North,Others,0.0,Private Enterprise
+2020,October,AB health care Private Limited,West 2,Others,12946.42857,Others_Others Corporate
+2020,October,Rajveersinh,Amazon,Others,1159.821429,Others_etc
+2020,October,Vidur Gupta,Amazon,Others,17839.28571,Others_etc
 2020,October,N1 FITNESS STUDIO PRIVATE LIMITED,South,Fitness/Sports,30334.82143,Fitness
 2020,October,Gold's Gym kalyani Nagar,West 1,Fitness/Sports,8000.0,Fitness
 2020,October,AJV export,Amazon,Others,17723.21429,Others_Individual
 2020,October,Dr. Aniket Badve,Amazon,Others,17839.28571,Others_Individual
 2020,October,Sparsh Technologies ,South,Enterprise,6000.0,Others_Others Corporate
-2020,October,Manjula challa,Amazon,Others,1159.821429,Others_Individual
-2020,October,Firoz Jamshedji,Amazon,Others,1159.821429,Others_Individual
-2020,October,Bhubaneswari Berera,Amazon,Others,17839.28571,Others_Individual
-2020,October,Vastrakala,Amazon,Others,17723.21429,Others_Individual
+2020,October,Manjula challa,Amazon,Others,1159.821429,Others_etc
+2020,October,Firoz Jamshedji,Amazon,Others,1159.821429,Others_etc
+2020,October,Bhubaneswari Berera,Amazon,Others,17839.28571,Others_etc
+2020,October,Vastrakala,Amazon,Others,17723.21429,Others_etc
 2020,October,R3 Fitness enterprises,North,Fitness/Sports,487500.0,Fitness
 2020,October,R3 Fitness enterprises,North,Fitness/Sports,2250.0,Fitness
 2020,October,R3 Fitness enterprises,North,Fitness/Sports,428.5714286000001,Fitness
@@ -1883,7 +1883,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,October,OM Meditech systems,North,Enterprise,2800.0,Others_Others Corporate
 2020,October,OM Meditech systems,North,Enterprise,516.0714286,Others_Others Corporate
 2020,October,Samant shekhar Bahera,Amazon,Others,1159.821429,Others_Individual
-2020,October,Aneesh Sheth,Amazon,Others,17839.28571,Others_Individual
+2020,October,Aneesh Sheth,Amazon,Others,17839.28571,Others_etc
 2020,October,Aaruna Shrinivas,Amazon,Others,1159.821429,Others_Individual
 2020,October,Sap fitness,Amazon,Others,17839.28571,Others_Individual
 2020,October,M/S Chetna health,East,Fitness/Sports,332027.6786,Fitness
@@ -1891,10 +1891,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,October,Amita Garg,Amazon,Others,17839.28571,Others_Individual
 2020,October,Sri Vijay,Amazon,Others,1159.821429,Others_Individual
 2020,October,Essa Alomari,Amazon,Others,17839.28571,Others_Individual
-2020,October,P V Pavan Kumar,Amazon,Others,17839.28571,Others_Individual
-2020,October,Anushri Rajvir,Amazon,Others,1159.821429,Others_Individual
+2020,October,P V Pavan Kumar,Amazon,Others,17839.28571,Others_etc
+2020,October,Anushri Rajvir,Amazon,Others,1159.821429,Others_etc
 2020,October,Dr.Amit Vakanee,Amazon,Others,1159.821429,Others_Individual
-2020,October,"The Inspector General Of Police, Grey Hounds",South,Others,0.0,Others_Individual
+2020,October,"The Inspector General Of Police, Grey Hounds",South,Others,0.0,Military
 2020,October,Fit treat,West 2,Fitness/Sports,490535.7143,Fitness
 2020,October,Fit treat,West 2,Fitness/Sports,535.7142857,Fitness
 2020,October,Rajput enterprises,West 2,Enterprise,168750.0,Others_Others Corporate
@@ -1905,61 +1905,61 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,October,Kavitha J,Amazon,Others,1159.821429,Others_Individual
 2020,October,T Venugopal,Amazon,Others,1159.821429,Others_Individual
 2020,October,Harshit singh,Amazon,Others,17839.28571,Others_Individual
-2020,October,Sheriar Irani,Amazon,Others,17839.28571,Others_Individual
-2020,November,Daxa Khant,Amazon,Others,1159.821429,Others_Individual
-2020,November,Rahul khakholia,Amazon,Others,17839.28571,Others_Individual
-2020,November,Binson John,Amazon,Others,17839.28571,Others_Individual
-2020,November,Smriti Rai,Amazon,Others,17839.28571,Others_Individual
-2020,November,Rashmi Kulkarni,Amazon,Others,1159.821429,Others_Individual
-2020,November,Pramod Shrivastava,Amazon,Others,17839.28571,Others_Individual
-2020,November,Abhishek Choubey,Amazon,Others,1159.821429,Others_Individual
-2020,November,Biswabandita Rout,Amazon,Others,1159.821429,Others_Individual
-2020,November,Bada Business Pvt ltd,Amazon,Others,17839.28571,Public Association
-2020,November,Suryavilas Luxury Resorts & Spa,Amazon,Others,17839.28571,Others_Individual
-2020,November,Arth Diagnostics,West 2,Others,9322.033898,Others_Individual
+2020,October,Sheriar Irani,Amazon,Others,17839.28571,Others_etc
+2020,November,Daxa Khant,Amazon,Others,1159.821429,Others_etc
+2020,November,Rahul khakholia,Amazon,Others,17839.28571,Others_etc
+2020,November,Binson John,Amazon,Others,17839.28571,Others_etc
+2020,November,Smriti Rai,Amazon,Others,17839.28571,Others_etc
+2020,November,Rashmi Kulkarni,Amazon,Others,1159.821429,Others_etc
+2020,November,Pramod Shrivastava,Amazon,Others,17839.28571,Others_etc
+2020,November,Abhishek Choubey,Amazon,Others,1159.821429,Others_etc
+2020,November,Biswabandita Rout,Amazon,Others,1159.821429,Others_etc
+2020,November,Bada Business Pvt ltd,Amazon,Others,17839.28571,Others_Others Corporate
+2020,November,Suryavilas Luxury Resorts & Spa,Amazon,Others,17839.28571,Hotel
+2020,November,Arth Diagnostics,West 2,Others,9322.033898,Clinic
 2020,November,Forcefit Gym,North,Others,1339.285714,Others_Individual
 2020,November,Indraprastha Medical Corporation Limited,North,Hospitals,1150000.0,Hospital
 2020,November,Indraprastha Medical Corporation Limited,North,Hospitals,36400.0,Hospital
 2020,November,Indraprastha Medical Corporation Limited,North,Hospitals,0.0,Hospital
 2020,November,Indraprastha Medical Corporation Limited,North,Hospitals,0.0,Hospital
 2020,November,Kakshith,Amazon,Others,1159.821429,Others_Individual
-2020,November,Sivakumar Soundarapandian,Amazon,Others,17839.28571,Others_Individual
+2020,November,Sivakumar Soundarapandian,Amazon,Others,17839.28571,Others_etc
 2020,November,Mr. Arjun Chugani,East,Others,0.0,Others_Individual
-2020,November,Reni Joseph,Amazon,Others,17839.28571,Others_Individual
+2020,November,Reni Joseph,Amazon,Others,17839.28571,Others_etc
 2020,November,Saravaran Raju,Amazon,Others,1159.821429,Others_Individual
 2020,November,MUDDASSIR HUSSAIN FUZAEL,Amazon,Others,17839.28571,Others_Individual
 2020,November,MEDICS INTERNATIONAL LIFESCIENCES LIMITED,North,Health Center,504140.1786,Others_Aesthetic
 2020,November,MEDICS INTERNATIONAL LIFESCIENCES LIMITED,North,Health Center,46192.85714,Others_Aesthetic
 2020,November,MEDICS INTERNATIONAL LIFESCIENCES LIMITED,North,Health Center,559.8214286,Others_Aesthetic
-2020,November,Commandant Manish Saini,Amazon,Others,17839.28571,Others_Individual
+2020,November,Commandant Manish Saini,Amazon,Others,17839.28571,Others_etc
 2020,November,Sri Ram Enter Prises,South,Enterprise,389285.7143,Others_Others Corporate
 2020,November,Sri Ram Enter Prises,South,Enterprise,0.0,Others_Others Corporate
 2020,November,Sri Ram Enter Prises,South,Enterprise,0.0,Others_Others Corporate
 2020,November,MACAWBER BEEKAY PVT. LTD.,North,Enterprise,7589.285714,Others_Others Corporate
-2020,November,Ameena Singh,Amazon,Others,1159.821429,Others_Individual
-2020,November,Gopal Pradhan,Amazon,Others,17839.28571,Others_Individual
-2020,November,Aniket Potwekar,Amazon,Others,17839.28571,Others_Individual
+2020,November,Ameena Singh,Amazon,Others,1159.821429,Others_etc
+2020,November,Gopal Pradhan,Amazon,Others,17839.28571,Others_etc
+2020,November,Aniket Potwekar,Amazon,Others,17839.28571,Others_etc
 2020,November,Rahul Kumar sinha,Amazon,Others,17839.28571,Others_Individual
-2020,November,Irfan,Amazon,Others,1159.821429,Others_Individual
+2020,November,Irfan,Amazon,Others,1159.821429,Others_etc
 2020,November,ATHLETICA FITNESS LLP,West 2,Fitness/Sports,4464.285714,Fitness
 2020,November,Sambhu shankar Sahani,Amazon,Others,1159.821429,Others_Individual
 2020,November,Imran Solanki,Amazon,Others,17839.28571,Others_Individual
 2020,November,Mahantesh Kurubar,Amazon,Others,1159.821429,Others_Individual
-2020,November,Anand Ahuja,Amazon,Others,17839.28571,Others_Individual
+2020,November,Anand Ahuja,Amazon,Others,17839.28571,Others_etc
 2020,November,Elite Fitness,South,Fitness/Sports,6964.285714,Fitness
 2020,November,Be Fit Wellness Solution LLP,West 1,Fitness/Sports,25217.3913,Fitness
 2020,November,Santhosh GR,Amazon,Others,1159.821429,Others_Individual
 2020,December,Harpreet Pasricha Health and Diet Clinic LLP,West 1,Fitness/Sports,160714.2857,Fitness
 2020,December,Harpreet Pasricha Health and Diet Clinic LLP,West 1,Fitness/Sports,0.0,Fitness
 2020,December,Harpreet Pasricha Health and Diet Clinic LLP,West 1,Fitness/Sports,0.0,Fitness
-2020,December,Suryavilas Luxury Resorts & Spa,Amazon,Others,17839.28571,Others_Individual
-2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,370535.7143,Others_Individual
-2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,0.0,Others_Individual
-2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,0.0,Others_Individual
-2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,0.0,Others_Individual
+2020,December,Suryavilas Luxury Resorts & Spa,Amazon,Others,17839.28571,Hotel
+2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,370535.7143,Private Enterprise
+2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,0.0,Private Enterprise
+2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,0.0,Private Enterprise
+2020,December,BRIGHT FUTURE TRAINING CENTER,West 1,Others,0.0,Private Enterprise
 2020,December,Jitendra Kumar,Amazon,Others,1159.821429,Others_Individual
-2020,December,R V Sai Rajesh,Amazon,Others,8919.642856999999,Others_Individual
-2020,December,Amit Kumar Garg,Amazon,Others,17839.28571,Others_Individual
+2020,December,R V Sai Rajesh,Amazon,Others,8919.642856999999,Private Enterprise
+2020,December,Amit Kumar Garg,Amazon,Others,17839.28571,Others_etc
 2020,December,Ravi Kumar Jarwal,Amazon,Others,17839.28571,Others_Individual
 2020,December,Fab Fitness Enterprises,North,Fitness/Sports,376785.7143,Fitness
 2020,December,Fab Fitness Enterprises,North,Fitness/Sports,0.0,Fitness
@@ -1969,7 +1969,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,December,Fit Mantra,West 2,Fitness/Sports,800.0,Fitness
 2020,December,HEZZRON ELECTROFIT,South,Fitness/Sports,6964.285714,Fitness
 2020,December,Yoh Fitness,South,Fitness/Sports,12946.42857,Fitness
-2020,December,Krishna Kumar,Amazon,Others,1159.821429,Others_Individual
+2020,December,Krishna Kumar,Amazon,Others,1159.821429,Others_etc
 2020,December,Harsh health and Formation fitness PVT LTD,West 2,Fitness/Sports,196425.0,Fitness
 2020,December,Harsh health and Formation fitness PVT LTD,West 2,Fitness/Sports,2800.0,Fitness
 2020,December,Harsh health and Formation fitness PVT LTD,West 2,Fitness/Sports,800.0,Fitness
@@ -1977,14 +1977,14 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2020,December,KUK Medsolution,North,Hospitals,1285937.5,Hospital
 2020,December,KUK Medsolution,North,Hospitals,0.0,Hospital
 2020,December,KUK Medsolution,North,Hospitals,0.0,Hospital
-2020,December,Ashutosh Malviya,Amazon,Others,1159.821429,Others_Individual
+2020,December,Ashutosh Malviya,Amazon,Others,1159.821429,Others_etc
 2020,December,Doctors of Capital,West 1,Health Center,530357.1429,Others_Aesthetic
 2020,December,Doctors of Capital,West 1,Health Center,535.7142857,Others_Aesthetic
 2020,December,Doctors of Capital,West 1,Health Center,2500.0,Others_Aesthetic
 2020,December,Doctors of Capital,West 1,Health Center,0.0,Others_Aesthetic
 2020,December,Kaleidescope Private Limited ,West 1,Fitness/Sports,392437.5,Fitness
 2020,December,Kaleidescope Private Limited ,West 1,Fitness/Sports,419.64285710000007,Fitness
-2020,December,Amit Kumar Garg,Amazon,Others,8919.642856999999,Others_Individual
+2020,December,Amit Kumar Garg,Amazon,Others,8919.642856999999,Others_etc
 2020,December,Fitday Pvt Ltd,South,Fitness/Sports,180000.0,Fitness
 2020,December,Fitday Pvt Ltd,South,Fitness/Sports,0.0,Fitness
 2020,December,Fitday Pvt Ltd,South,Fitness/Sports,0.0,Fitness
@@ -2038,7 +2038,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,January,Yora Fitness Private Limited,South,Fitness/Sports,147321.0,Fitness
 2021,January,Yora Fitness Private Limited,South,Fitness/Sports,0.0,Fitness
 2021,January,Yora Fitness Private Limited,South,Fitness/Sports,0.0,Fitness
-2021,January,Mind soul and health,East,Others,5804.0,Others_Individual
+2021,January,Mind soul and health,East,Others,5804.0,Private Enterprise
 2021,January,Ms. Sunita Patil,West 1,Others,1786.0,Others_Individual
 2021,January,D2 Fitness,West 1,Fitness/Sports,348080.0,Fitness
 2021,January,D2 Fitness,West 1,Fitness/Sports,536.0,Fitness
@@ -2053,9 +2053,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,January,Tirupati Employees Welfare Society,North,Enterprise,1339.0,Others_Others Corporate
 2021,January,Alcon Biosciences Pvt Ltd,West 2,Scientific Research Institute,328982.0,Private Enterprise
 2021,January,Alcon Biosciences Pvt Ltd,West 2,Scientific Research Institute,1607.0,Private Enterprise
-2021,January,Anand Ahuja,Amazon,Others,0.0,Others_Individual
-2021,January,Pinkesh Kamwani,Amazon,Others,17839.0,Others_Individual
-2021,February,Ramesh Puranik,Amazon,Others,1160.0,Others_Individual
+2021,January,Anand Ahuja,Amazon,Others,0.0,Others_etc
+2021,January,Pinkesh Kamwani,Amazon,Others,17839.0,Others_etc
+2021,February,Ramesh Puranik,Amazon,Others,1160.0,Others_etc
 2021,February,Fitday Private limited,South,Fitness/Sports,180000.0,Fitness
 2021,February,Fitday Private limited,South,Fitness/Sports,0.0,Fitness
 2021,February,Fitday Private limited,South,Fitness/Sports,0.0,Fitness
@@ -2065,16 +2065,16 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,February,Fitness Lab Private Limited,North,Fitness/Sports,189000.0,Fitness
 2021,February,Fitness Lab Private Limited,North,Fitness/Sports,280.0,Fitness
 2021,February,Fitness Lab Private Limited,North,Fitness/Sports,8.0,Fitness
-2021,February,Santosh Hegde,Amazon,Others,0.0,Others_Individual
-2021,February,Shrikant Dharmadhikari,Amazon,Others,17839.0,Others_Individual
+2021,February,Santosh Hegde,Amazon,Others,0.0,Others_etc
+2021,February,Shrikant Dharmadhikari,Amazon,Others,17839.0,Others_etc
 2021,February,Vivak Fitness and wellness Club,West 1,Fitness/Sports,5357.0,Fitness
-2021,February,Vikas Kumar,Amazon,Others,1160.0,Others_Individual
-2021,February,Yogesh Sankhadasariya,Amazon,Others,17839.0,Others_Individual
+2021,February,Vikas Kumar,Amazon,Others,1160.0,Others_etc
+2021,February,Yogesh Sankhadasariya,Amazon,Others,17839.0,Others_etc
 2021,February,Jammu Hospital,North,Hospitals,19643.0,Hospital
 2021,February,Achieve Fitness Pvt.Ltd.,South,Fitness/Sports,3571.0,Fitness
 2021,February,Dr. Ashok Garg,North,Hospitals,89286.0,Hospital
 2021,February,TAE YOUNG KIM,Amazon,Others,17839.0,Others_Individual
-2021,February,Rohan Batra,Amazon,Others,17839.0,Others_Individual
+2021,February,Rohan Batra,Amazon,Others,17839.0,Others_etc
 2021,February,ALPHA Enterprises,West 2,Others,16071.0,Others_Individual
 2021,February,Savan Chaudhari,Amazon,Others,0.0,Others_Individual
 2021,February,UMB Fitness pvt ltd,South,Fitness/Sports,3800.0,Fitness
@@ -2083,7 +2083,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,February,URTRONICS INDIA,North,Enterprise,1285938.0,Others_Others Corporate
 2021,February,URTRONICS INDIA,North,Enterprise,0.0,Others_Others Corporate
 2021,February,URTRONICS INDIA,North,Enterprise,0.0,Others_Others Corporate
-2021,February,Tirupati Employees Welfare Society,North,Others,5357.0,Others_Individual
+2021,February,Tirupati Employees Welfare Society,North,Others,5357.0,Others_Aesthetic
 2021,February,Silver Line Fitness Systems (P) Ltd Initiative,South,Enterprise,16607.0,Others_Others Corporate
 2021,February,ROBOCOM BUSINESS SYSTEMS PRIVATE LIMITED,South,Academy,468214.0,Academic
 2021,February,ROBOCOM BUSINESS SYSTEMS PRIVATE LIMITED,South,Academy,0.0,Academic
@@ -2091,17 +2091,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,February,ROBOCOM BUSINESS SYSTEMS PRIVATE LIMITED,South,Academy,0.0,Academic
 2021,February,ROBOCOM BUSINESS SYSTEMS PRIVATE LIMITED,South,Academy,0.0,Academic
 2021,February,Atul Singh,Amazon,Others,1160.0,Others_Individual
-2021,February,SLIM Fitness Studio,South,Others,12946.0,Others_Individual
+2021,February,SLIM Fitness Studio,South,Others,12946.0,Fitness
 2021,February,QNTS Fitness Pvt Ltd,East,Fitness/Sports,365000.0,Fitness
 2021,February,QNTS Fitness Pvt Ltd,East,Fitness/Sports,0.0,Fitness
 2021,February,QNTS Fitness Pvt Ltd,East,Fitness/Sports,0.0,Fitness
 2021,February,QNTS Fitness Pvt Ltd,East,Fitness/Sports,0.0,Fitness
 2021,February,QNTS Fitness Pvt Ltd,East,Fitness/Sports,0.0,Fitness
 2021,February,QNTS Fitness Pvt Ltd,East,Fitness/Sports,0.0,Fitness
-2021,February,Laltlankimi Ralte,Amazon,Others,17839.0,Others_Individual
-2021,February,Ayush Murarka,Amazon,Others,17839.0,Others_Individual
-2021,February,Monishree Ray,Amazon,Others,1160.0,Others_Individual
-2021,February,Nikhil,Amazon,Others,17839.0,Others_Individual
+2021,February,Laltlankimi Ralte,Amazon,Others,17839.0,Others_etc
+2021,February,Ayush Murarka,Amazon,Others,17839.0,Others_etc
+2021,February,Monishree Ray,Amazon,Others,1160.0,Others_etc
+2021,February,Nikhil,Amazon,Others,17839.0,Others_etc
 2021,February,Universal Fitness Training Academy,East,Fitness/Sports,16607.0,Fitness
 2021,February,Avadh Club Limited,West 2,Fitness/Sports,452907.0,Fitness
 2021,February,Avadh Club Limited,West 2,Fitness/Sports,2800.0,Fitness
@@ -2125,15 +2125,15 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,February,The Cloud 9 Fitness Club,West 1,Fitness/Sports,152679.0,Fitness
 2021,February,The Cloud 9 Fitness Club,West 1,Fitness/Sports,5000.0,Fitness
 2021,February,The Cloud 9 Fitness Club,West 1,Fitness/Sports,3036.0,Fitness
-2021,February,Dr. M Sravanthi,Amazon,Others,1160.0,Others_Individual
-2021,February,Vipul Vyas,Amazon,Others,17839.0,Others_Individual
+2021,February,Dr. M Sravanthi,Amazon,Others,1160.0,Clinic
+2021,February,Vipul Vyas,Amazon,Others,17839.0,Others_etc
 2021,February,Shrey Singh,Amazon,Others,0.0,Others_Individual
 2021,February,Artaxerxes Fitness and Lifestyle Pvt. Ltd.,West 1,Fitness/Sports,348214.0,Fitness
 2021,February,Artaxerxes Fitness and Lifestyle Pvt. Ltd.,West 1,Fitness/Sports,1250.0,Fitness
 2021,February,Athletes Fitness Pvt Ltd,South,Fitness/Sports,389911.0,Fitness
 2021,February,Athletes Fitness Pvt Ltd,South,Fitness/Sports,0.0,Fitness
 2021,February,Athletes Fitness Pvt Ltd,South,Fitness/Sports,0.0,Fitness
-2021,February,Gagan Singh,Amazon,Others,17839.0,Others_Individual
+2021,February,Gagan Singh,Amazon,Others,17839.0,Others_etc
 2021,February,HKK GOLD FITNESS (OPC) PRIVATE LIMITED,North,Fitness/Sports,12964.0,Fitness
 2021,February,GLOBAL SURGICALS,South,Enterprise,357143.0,Others_Others Corporate
 2021,February,GLOBAL SURGICALS,South,Enterprise,0.0,Others_Others Corporate
@@ -2144,10 +2144,10 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,February,Aadvit Groups,South,Fitness/Sports,300000.0,Fitness
 2021,February,Aadvit Groups,South,Fitness/Sports,0.0,Fitness
 2021,February,Sunita Gupta,Amazon,Others,1160.0,Others_Individual
-2021,February,WING COMMANDER M ARIFUR RAHIM (RETD),Amazon,Others,1160.0,Others_Individual
-2021,February,Singarayar Arockiam,Amazon,Others,0.0,Others_Individual
-2021,February,Sekhar Sheshadri,Amazon,Others,17839.0,Others_Individual
-2021,February,Denzil e Mathews,Amazon,Others,17839.0,Others_Individual
+2021,February,WING COMMANDER M ARIFUR RAHIM (RETD),Amazon,Others,1160.0,Military
+2021,February,Singarayar Arockiam,Amazon,Others,0.0,Others_etc
+2021,February,Sekhar Sheshadri,Amazon,Others,17839.0,Others_etc
+2021,February,Denzil e Mathews,Amazon,Others,17839.0,Others_etc
 2021,March,Shrey Singh,Amazon,Others,17839.0,Others_Individual
 2021,March,Divesh Agrawal,Amazon,Others,17839.0,Others_Individual
 2021,March,Lupin Limited,South,Pharmacy,383929.0,Private Enterprise
@@ -2170,17 +2170,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,March,DEVYOG IMPEX PRIVATE LIMITED,North,Enterprise,857.0,Others_Others Corporate
 2021,March,Snap Fitness,South,Fitness/Sports,2857.0,Fitness
 2021,March,Snap Fitness,South,Fitness/Sports,1525.0,Fitness
-2021,March,Alby Alexander,Amazon,Others,17839.0,Others_Individual
+2021,March,Alby Alexander,Amazon,Others,17839.0,Others_etc
 2021,March,Hype Gym,Amazon,Others,17839.0,Others_Individual
 2021,March,AVADH CLUBS LIMITED,West 2,Health Center,10286.0,Others_Aesthetic
 2021,March,AVADH CLUBS LIMITED,West 2,Health Center,10286.0,Others_Aesthetic
-2021,March,Ravi Gosain,Amazon,Others,1160.0,Others_Individual
+2021,March,Ravi Gosain,Amazon,Others,1160.0,Others_etc
 2021,March,Sparsh Technology,South,Enterprise,4732.0,Others_Others Corporate
 2021,March,VIVID Fitness,West 1,Fitness/Sports,2232.0,Fitness
 2021,March,Dwidal Hospital,West 1,Hospitals,4464.0,Hospital
 2021,March,Ravel Fitness,North,Fitness/Sports,3571.0,Fitness
 2021,March,Ravel Fitness,North,Fitness/Sports,3390.0,Fitness
-2021,March,Balkrushna Attrawala,Amazon,Others,1160.0,Others_Individual
+2021,March,Balkrushna Attrawala,Amazon,Others,1160.0,Others_etc
 2021,March,ATHLETICA FITNESS LLP,West 2,Fitness/Sports,4464.0,Fitness
 2021,March,Chandra Shekhar Meghwal,East,Fitness/Sports,178571.0,Fitness
 2021,March,Chandra Shekhar Meghwal,East,Fitness/Sports,7143.0,Fitness
@@ -2205,9 +2205,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,March,Squire HWFS,South,Fitness/Sports,13650.0,Fitness
 2021,March,Squire HWFS,South,Fitness/Sports,0.0,Fitness
 2021,March,Squire HWFS,South,Fitness/Sports,6000.0,Fitness
-2021,March,Priya Ahuja,Amazon,Others,17839.0,Others_Individual
+2021,March,Priya Ahuja,Amazon,Others,17839.0,Others_etc
 2021,March,Meenakshi Sharma,Amazon,Others,17839.0,Others_Individual
-2021,March,Rajesh Sajwan,North,Others,16518.0,Others_Individual
+2021,March,Rajesh Sajwan,North,Others,16518.0,Private Enterprise
 2021,March,Sparsh Technology,South,Enterprise,214286.0,Others_Others Corporate
 2021,March,Sparsh Technology,South,Enterprise,8929.0,Others_Others Corporate
 2021,March,Sreyas Holistic Remedies Pvt. Ltd.,South,Corporate,330357.0,Others_Others Corporate
@@ -2231,8 +2231,8 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,March,URTRONICS INDIA,North,Enterprise,0.0,Others_Others Corporate
 2021,March,URTRONICS INDIA,North,Enterprise,0.0,Others_Others Corporate
 2021,March,URTRONICS INDIA,North,Enterprise,0.0,Others_Others Corporate
-2021,March,Vikas Koundal,Amazon,Others,1160.0,Others_Individual
-2021,March,Suraj,Amazon,Others,1160.0,Others_Individual
+2021,March,Vikas Koundal,Amazon,Others,1160.0,Others_etc
+2021,March,Suraj,Amazon,Others,1160.0,Others_etc
 2021,March,Lithop Pharma,South,Pharmacy,180893.0,Private Enterprise
 2021,March,Lithop Pharma,South,Pharmacy,0.0,Private Enterprise
 2021,March,Lithop Pharma,South,Pharmacy,0.0,Private Enterprise
@@ -2241,9 +2241,9 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,April,Shahrukh Khan,West 1,Others,1075.0,Others_Individual
 2021,April,Shahrukh Khan,West 1,Others,714.0,Others_Individual
 2021,April,JUPITER LIFELINE HOSPITALS LIMITED,West 1,Hospitals,50847.0,Hospital
-2021,April,Rotary club of Rajkot midtown charitable trust,West 2,Corporate,148500.0,Public Association
-2021,April,Rotary club of Rajkot midtown charitable trust,West 2,Corporate,800.0,Public Association
-2021,April,Rotary club of Rajkot midtown charitable trust,West 2,Corporate,2520.0,Public Association
+2021,April,Rotary club of Rajkot midtown charitable trust,West 2,Corporate,148500.0,Private Enterprise
+2021,April,Rotary club of Rajkot midtown charitable trust,West 2,Corporate,800.0,Private Enterprise
+2021,April,Rotary club of Rajkot midtown charitable trust,West 2,Corporate,2520.0,Private Enterprise
 2021,April,DEEPIKA PRAKASH PADUKONE,West 1,Others,176786.0,Others_Individual
 2021,April,DEEPIKA PRAKASH PADUKONE,West 1,Others,1075.0,Others_Individual
 2021,April,DEEPIKA PRAKASH PADUKONE,West 1,Others,714.0,Others_Individual
@@ -2253,19 +2253,19 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,April,GIRI Brothers,South,Enterprise,682500.0,Others_Others Corporate
 2021,April,GIRI Brothers,South,Enterprise,0.0,Others_Others Corporate
 2021,April,GIRI Brothers,South,Enterprise,0.0,Others_Others Corporate
-2021,April,Club Athletix,East,Corporate,321429.0,Fitness
-2021,April,Club Athletix,East,Corporate,0.0,Fitness
-2021,April,Club Athletix,East,Corporate,0.0,Fitness
-2021,April,Faculty High School,East,Others,16607.0,Others_Individual
+2021,April,Club Athletix,East,Corporate,321429.0,Others_Aesthetic
+2021,April,Club Athletix,East,Corporate,0.0,Others_Aesthetic
+2021,April,Club Athletix,East,Corporate,0.0,Others_Aesthetic
+2021,April,Faculty High School,East,Others,16607.0,Academic
 2021,April,Shree asthvinayak enterprise,West 2,Enterprise,321057.0,Others_Others Corporate
 2021,April,Shree asthvinayak enterprise,West 2,Enterprise,360.0,Others_Others Corporate
 2021,April,M/S CLASSIC FITNESS ACADEMY (LUCKNOW),North,Fitness/Sports,267857.0,Fitness
 2021,April,M/S CLASSIC FITNESS ACADEMY (LUCKNOW),North,Fitness/Sports,0.0,Fitness
-2021,April,A.SREEKANTH,Amazon,Others,1160.0,Others_Individual
+2021,April,A.SREEKANTH,Amazon,Others,1160.0,Others_Others Corporate
 2021,April,JYOTI,Amazon,Others,8920.0,Others_Individual
-2021,April,GAMMA ROTORS PVT LTD,Amazon,Others,17723.0,Public Association
-2021,April,Avish Aviation Equipment Private Limited,Amazon,Others,17723.0,Public Association
-2021,April,KAUCHUKANTRE CORPORATE TRAINER PRIVATE LIMITED,Amazon,Others,0.0,Public Association
+2021,April,GAMMA ROTORS PVT LTD,Amazon,Others,17723.0,Others_Others Corporate
+2021,April,Avish Aviation Equipment Private Limited,Amazon,Others,17723.0,Others_Others Corporate
+2021,April,KAUCHUKANTRE CORPORATE TRAINER PRIVATE LIMITED,Amazon,Others,0.0,Others_Others Corporate
 2021,April,Md Salam Pasha,Amazon,Others,1160.0,Others_Individual
 2021,April,Adhiraj Katkar,Amazon,Others,17839.0,Others_Individual
 2021,April,READY MIX TECHNOLOGIES,North,Enterprise,325893.0,Others_Others Corporate
@@ -2275,32 +2275,32 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,April,Friends Club Ltd,North,Fitness/Sports,16949.0,Fitness
 2021,April,SHRADDHA HEALTH AND FITNESS PRIVATE LIMITED,East,Fitness/Sports,35000.0,Fitness
 2021,April,PHYSIO ACTIVE PRIVATE LIMITED,North,Health Center,4000.0,Others_Aesthetic
-2021,April,Shrajay Thakur,Amazon,Others,17839.0,Others_Individual
-2021,April,K Sreejan,Amazon,Others,17839.0,Others_Individual
+2021,April,Shrajay Thakur,Amazon,Others,17839.0,Others_etc
+2021,April,K Sreejan,Amazon,Others,17839.0,Others_etc
 2021,April,Crosslay Remedies Limited,North,Hospitals,1150000.0,Hospital
 2021,April,Crosslay Remedies Limited,North,Hospitals,42000.0,Hospital
 2021,April,Crosslay Remedies Limited,North,Hospitals,5600.0,Hospital
 2021,April,Crosslay Remedies Limited,North,Hospitals,0.0,Hospital
-2021,April,Navya Jathavedan,Amazon,Others,17839.0,Others_Individual
-2021,April,Rajan Srivastava,Amazon,Others,0.0,Others_Individual
-2021,April,Deepinder Goyal,Amazon,Others,17839.0,Others_Individual
+2021,April,Navya Jathavedan,Amazon,Others,17839.0,Others_etc
+2021,April,Rajan Srivastava,Amazon,Others,0.0,Others_etc
+2021,April,Deepinder Goyal,Amazon,Others,17839.0,Others_etc
 2021,April,SAFA Furniture,Amazon,Others,17723.0,Others_Individual
 2021,May,TRINITY HEALTH TECHNOLOGIES PRIVATE LIMITED,West 1,Enterprise,420063.0,Others_Others Corporate
 2021,May,TRINITY HEALTH TECHNOLOGIES PRIVATE LIMITED,West 1,Enterprise,254.0,Others_Others Corporate
 2021,May,ZYDUS HOSPITALS AND HEALTHCARE RESEARCH PRIVATE LIMITED,West 2,Hospitals,701750.0,Hospital
 2021,May,ZYDUS HOSPITALS AND HEALTHCARE RESEARCH PRIVATE LIMITED,West 2,Hospitals,2660.0,Hospital
 2021,May,ZYDUS HOSPITALS AND HEALTHCARE RESEARCH PRIVATE LIMITED,West 2,Hospitals,1000.0,Hospital
-2021,May,Eva Rayees Bhat,Amazon,Others,17839.0,Others_Individual
+2021,May,Eva Rayees Bhat,Amazon,Others,17839.0,Others_etc
 2021,May,Vithhal Lakhekar,Amazon,Others,1160.0,Others_Individual
 2021,May,Hope Healthcare,West 2,Enterprise,641920.0,Others_Others Corporate
 2021,May,Hope Healthcare,West 2,Enterprise,900.0,Others_Others Corporate
 2021,May,Hope Healthcare,West 2,Enterprise,35854.0,Others_Others Corporate
-2021,May,Karan Hari,Amazon,Others,17839.0,Others_Individual
-2021,May,Supriya Kurlekar,Amazon,Others,17839.0,Others_Individual
-2021,May,Ved,Amazon,Others,17839.0,Others_Individual
-2021,May,Rajesh Padode,Amazon,Others,17839.0,Others_Individual
-2021,June,MAX HEALTHCARE INSTITUTE LTD,North,Others,11900.0,Public Association
-2021,June,Ishan Sanghi,Amazon,Others,17839.0,Others_Individual
+2021,May,Karan Hari,Amazon,Others,17839.0,Others_etc
+2021,May,Supriya Kurlekar,Amazon,Others,17839.0,Others_etc
+2021,May,Ved,Amazon,Others,17839.0,Others_etc
+2021,May,Rajesh Padode,Amazon,Others,17839.0,Others_etc
+2021,June,MAX HEALTHCARE INSTITUTE LTD,North,Others,11900.0,Others_Others Corporate
+2021,June,Ishan Sanghi,Amazon,Others,17839.0,Others_etc
 2021,June,Jaiveer singh,Amazon,Others,1160.0,Others_Individual
 2021,June,INSTITUTE OF LIVER AND BILIARY SCIENCES,North,Government,1290000.0,Public Association
 2021,June,INSTITUTE OF LIVER AND BILIARY SCIENCES,North,Government,0.0,Public Association
@@ -2308,7 +2308,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,June,INSTITUTE OF LIVER AND BILIARY SCIENCES,North,Government,0.0,Public Association
 2021,June,INSTITUTE OF LIVER AND BILIARY SCIENCES,North,Government,0.0,Public Association
 2021,June,Manoj jaiswal,Amazon,Others,1160.0,Others_Individual
-2021,June,Bigapple lifestyle Pvt Ltd,Amazon,Others,0.0,Public Association
+2021,June,Bigapple lifestyle Pvt Ltd,Amazon,Others,0.0,Others_Others Corporate
 2021,June,Khushi Mahajan ,Amazon,Others,1160.0,Others_Individual
 2021,June,BLIVUS MEDTECH,West 2,Enterprise,149850.0,Others_Others Corporate
 2021,June,BLIVUS MEDTECH,West 2,Enterprise,1148.0,Others_Others Corporate
@@ -2317,11 +2317,11 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,June,The Space,West 1,Fitness/Sports,107.0,Fitness
 2021,June,The Space,West 1,Fitness/Sports,875.0,Fitness
 2021,June,Transformers,West 1,Fitness/Sports,12946.0,Fitness
-2021,June,Bhanu Challa,Amazon,Others,17839.0,Others_Individual
-2021,June,Ujjwal Sachdeva,Amazon,Others,17839.0,Others_Individual
-2021,June,Riku Sayuj,Amazon,Others,17839.0,Others_Individual
+2021,June,Bhanu Challa,Amazon,Others,17839.0,Others_etc
+2021,June,Ujjwal Sachdeva,Amazon,Others,17839.0,Others_etc
+2021,June,Riku Sayuj,Amazon,Others,17839.0,Others_etc
 2021,June,Copperleaf Infra,Amazon,Others,17723.0,Others_Individual
-2021,June,Dr. Ahilya Barure,Amazon,Others,1160.0,Others_Individual
+2021,June,Dr. Ahilya Barure,Amazon,Others,1160.0,Clinic
 2021,June,Vaishnavi Wellness,North,Fitness/Sports,189321.0,Fitness
 2021,June,Vaishnavi Wellness,North,Fitness/Sports,0.0,Fitness
 2021,June,Vaishnavi Wellness,North,Fitness/Sports,0.0,Fitness
@@ -2333,12 +2333,12 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,June,Diet Dr Clinic powered by Harpreet Pasricha,West 1,Health Center,2500.0,Others_Aesthetic
 2021,June,Samrat Endocrine Lab,West 1,Health Center,488813.0,Others_Aesthetic
 2021,June,Samrat Endocrine Lab,West 1,Health Center,2259.0,Others_Aesthetic
-2021,June,Charu Gupta,Amazon,Others,17839.0,Others_Individual
+2021,June,Charu Gupta,Amazon,Others,17839.0,Others_etc
 2021,June,Naresh Kumar Panjiyar,Amazon,Others,1160.0,Others_Individual
 2021,June,Dr. Purvi M. Parikh,West 2,Diet,157140.0,Clinic
 2021,June,Dr. Purvi M. Parikh,West 2,Diet,2800.0,Clinic
 2021,June,Dr. Purvi M. Parikh,West 2,Diet,800.0,Clinic
-2021,June,Utkarsh saxena,Amazon,Others,1160.0,Others_Individual
+2021,June,Utkarsh saxena,Amazon,Others,1160.0,Others_etc
 2021,July,BLIVUS MEDTECH,West 2,Others,147195.0,Others_Individual
 2021,July,BLIVUS MEDTECH,West 2,Others,800.0,Others_Individual
 2021,July,BLIVUS MEDTECH,West 2,Others,2800.0,Others_Individual
@@ -2348,7 +2348,7 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,July,RAJU POOBATHY MEDICARE PRIVATE LIMITED,South,Hospitals,0.0,Hospital
 2021,July,Siddharth Verma,North,Others,16518.0,Others_Individual
 2021,July,K. Santosh Reddy,Amazon,Others,17839.0,Others_Individual
-2021,July,Shivakala Dambal,Amazon,Others,1160.0,Others_Individual
+2021,July,Shivakala Dambal,Amazon,Others,1160.0,Others_etc
 2021,July,BLIVUS MEDTECH,West 2,Enterprise,409500.0,Others_Others Corporate
 2021,July,BLIVUS MEDTECH,West 2,Enterprise,1169.0,Others_Others Corporate
 2021,July,Onyx Enterprise,West 2,Enterprise,320505.0,Others_Others Corporate
@@ -2367,17 +2367,17 @@ Year,Month,Client,Region,Category,Net,Industry Fin
 2021,July,Sparsh Technology,South,Enterprise,0.0,Others_Others Corporate
 2021,July,Sparsh Technology,South,Enterprise,0.0,Others_Others Corporate
 2021,July,Sparsh Technology,South,Enterprise,0.0,Others_Others Corporate
-2021,July,INTELLISERV TECHNOLOGIES PRIVATE LIMITED,Amazon,Others,17723.0,Public Association
-2021,July,Guruprasad H M,Amazon,Others,1160.0,Others_Individual
-2021,July,Jai Bhagwat,Amazon,Others,8920.0,Others_Individual
+2021,July,INTELLISERV TECHNOLOGIES PRIVATE LIMITED,Amazon,Others,17723.0,Others_Others Corporate
+2021,July,Guruprasad H M,Amazon,Others,1160.0,Others_etc
+2021,July,Jai Bhagwat,Amazon,Others,8920.0,Others_etc
 2021,July,Rananjay Singh,Amazon,Others,1160.0,Others_Individual
 2021,July,Multitech Engineering Enterprises,South,Enterprise,334821.0,Others_Others Corporate
 2021,July,Multitech Engineering Enterprises,South,Enterprise,0.0,Others_Others Corporate
 2021,July,Bangladesh Diabetes Care,East,Enterprise,86161.0,Others_Others Corporate
-2021,July,Tara communication,South,Others,16946.0,Others_Individual
+2021,July,Tara communication,South,Others,16946.0,Others_etc
 2021,July,Sakthivel A,Amazon,Others,1160.0,Others_Individual
-2021,July,Reena Dmello,Amazon,Others,1160.0,Others_Individual
-2021,July,Pallavi Sinha,Amazon,Others,1160.0,Others_Individual
+2021,July,Reena Dmello,Amazon,Others,1160.0,Others_etc
+2021,July,Pallavi Sinha,Amazon,Others,1160.0,Others_etc
 2021,July,Mukesh Kumar Sharma,Amazon,Others,1160.0,Others_Individual
 2021,July,Surendar Kumar Mittal,Amazon,Others,1160.0,Others_Individual
 2021,July,Anwar Shakeel,Amazon,Others,1160.0,Others_Individual
