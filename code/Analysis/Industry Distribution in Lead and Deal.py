@@ -55,7 +55,7 @@ deal = pd.read_csv(r"C:\Users\Lenovo\PycharmProjects\new_cleansing\resource\Clea
 ####1-2
 DD =deal[['Industry Fin', 'Territory_fin']]
 terrList = DD['Territory_fin'].unique()
-# terrList[6] = 'Amazon&CS'
+
 for terr in terrList:
     df = DD[DD['Territory_fin'] == terr]
     indList = df['Industry Fin'].unique()
@@ -71,8 +71,20 @@ for terr in terrList:
     plt.bar(a, b)
     plt.xticks(rotation=90)
     plt.ylabel('Counts', fontsize=12)
+    #png저장
     save_dir = r'../../resource/Plot'
-    saveT = ('/Distribution of Industry '+terr+'.png')
+    saveT = ('/Deal of Industry by '+terr+'.png')
     plt.savefig(save_dir + saveT)
+    #csv저장
+    data2 = {
+        'x':list(indList),
+        'Deal': list(dict_ind.values())
+    }
+    ld_df = pd.DataFrame(data2)
+    save_dir = r'C:\Users\Lenovo\PycharmProjects\new_cleansing\resource\PlotCSV'
+    saveT = ('\Deal of Industry by territories ' +terr+'.csv')
+    ld_df.to_csv(save_dir + saveT, index = False)
+
+
 
 
