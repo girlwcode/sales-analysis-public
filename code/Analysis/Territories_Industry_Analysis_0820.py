@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 revenue = pd.read_csv('../../resource/SalesData/Whole Revenue_fillTerritory.csv')
 lead = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryCleansed.csv')
@@ -36,51 +37,49 @@ for row in revenue.index :
         if (revenue['Month'][row] == month):
             revenue['Month'][row] = months[month]
 
+
 # 1-1. Territory별 Deal Success Rate
-
-# deal
-number_deal = deal.groupby(['year', 'month','Territory_fin']).size().reset_index()
-number_deal.rename(columns = {0 : 'deal number'}, inplace = True)
-
-# closed deal - Stage = 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment), 6. Installation
-stages = ['5','6','7']
-index_list= []
-for s in stages:
-    index_list.extend(deal[deal['Stage'].str.contains(s)].index.tolist())
-
-index_list = sorted(index_list)
-closed_deal = deal.loc[index_list]
-number_closed_deal = closed_deal.groupby(['year', 'month','Territory_fin']).size().reset_index()
-number_closed_deal.rename(columns = {0 : 'closed deal'}, inplace = True)
+West1 = deal[deal['Territory_fin'] == 'West 1']
+West2 = deal[deal['Territory_fin'] == 'West 2']
+South = deal[deal['Territory_fin'] == 'South']
+North = deal[deal['Territory_fin'] == 'North']
+East = deal[deal['Territory_fin'] == 'East']
+Overseas = deal[deal['Territory_fin'] == 'Overseas']
+Amazon = deal[deal['Territory_fin'] == 'Amazon']
 
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-territories = ['West 1','West 2','South','North','East','Overseas','Amazon']
+territories = ['West1','West 2','South','North','East','Overseas','Amazon']
+dfs = [West1,West2,South,North,East,Overseas,Amazon]
 years = [2017,2018,2019,2020,2021]
 
-superSet_terri = {'Territory':[],'Year':[],'Month':[],'deal number':[],'closed deal number':[],'Deal Success Rate':[],'Rev/no':[]}
-
-
-for territory in territories:
-    deal_terri = number_deal[number_deal['Territory_fin']==territory]
-    closed_deal_terri = number_closed_deal[number_closed_deal['Territory_fin']==territory]
+cnt = 0
+# terri 하나만
+for df in dfs:
+    terri_dict = {}
     for year in years:
         if (year == 2021) :
             months = [1, 2, 3, 4, 5, 6, 7]
-        for month in months :
-            condition1 = deal_terri['year'] == year
-            condition2 = deal_terri['month'] == month
-             = deal_terri[condition1 & condition2]['deal number'].index
-            deal_num
+        for month in months:
+            key = str(year) +'-'+ str(month)
+            df_terri = df[(df['year'] == year) & (df['month'] == month)]
+            if not df_terri.empty :
+                rate = len(df_terri[df_terri['Stage'].str.contains('5|6|7')]) / len(df_terri)
+                terri_dict[key] = rate
+            else: # 해당 month 데이터 존재하지않음
+                terri_dict[key] = 0
+    plt.figure(figsize=(15, 8))
+    plt.title('Monthly Deal Success Rate By Territories:' + territories[cnt] + ' (2017-2021)', fontsize=20)
+    plt.plot(list(terri_dict.keys()), list(terri_dict.values()))
+    plt.xticks(rotation=90)
+    plt.ylabel('Rs', fontsize=12)
+    title = 'Monthly Deal Success Rate By Territories ' + str(territories[cnt]) + ' (2017-2021)'
+    save_dir = '../../resource/Plot/' + title
+    plt.savefig(save_dir + '.png')
+    save_dir = '../../resource/PlotCSV/' + title
+    rev = pd.DataFrame(list(terri_dict.items()),
+                       columns=['x', 'y'])
+    rev.to_csv(save_dir + '.csv', index=False)
+    cnt += 1
 
-            condition1 = closed_deal_terri['year'] == year
-            condition2 = closed_deal_terri['month'] == month
-            close_deal_num = closed_deal_terri[condition1 & condition2]['closed deal']
-
-            superSet_terri['Territory'].append(territory)
-            superSet_terri['Year'].append(year)
-            superSet_terri['Month'].append(month)
-            superSet_terri['deal number'].append(deal_num)
-            superSet_terri['closed deal number'].append(close_deal_num)
-
-print(superSet_terri)
-
+# 2-1. Industry별 Deal Success Rate
+['Clinic','Fitness','Private Enterprise','Hospital','Others_Others Corporate','Public Association','Others_Individual','Others_Aesthetic' 'Hotel' 'Military' 'Academic' 'Others_etc']
