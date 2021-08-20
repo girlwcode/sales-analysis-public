@@ -15,8 +15,8 @@ for detail in details:
         # 리스트에 date 추가
         data['Date'] = pd.to_datetime(data['Date'])
         year, month = data['Date'].dt.year, data['Date'].dt.month
-        data_dict['Date'] = str(year[0])+'-'+str(month[0])
-        
+        data_dict['Date'] = pd.to_datetime(str(year[0])+'-'+str(month[0]))
+
         # 리스트에 mean의 곱 추가
         mean_multi = 1
         for col in data.columns:
@@ -30,8 +30,18 @@ for detail in details:
             mean_multi *= m
         # mean_multi *= 100
         data_dict['Interest Level'] = mean_multi
-        print(data_dict)
+        # print(data_dict)
         # 최종 데이터프레임에 리스트 추가
         monthly_mean = monthly_mean.append(data_dict, ignore_index=True)
 
+# 데이터프레임 날짜로 정렬
+monthly_mean = monthly_mean.sort_values('Date')
+
+# 관심도 min-max scaling
+mean_max = monthly_mean['Interest Level'].max()
+mean_min = monthly_mean['Interest Level'].min()
+denominator = mean_max - mean_min
+monthly_mean['Min-Max'] = (monthly_mean['Interest Level'] - mean_min) / denominator
+
+# data parsing
 monthly_mean.to_csv('../../resource/GoogleTrends/google_trends_monthly_mean.csv', index=False)
