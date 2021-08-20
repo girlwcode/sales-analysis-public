@@ -40,5 +40,14 @@ plt.plot(date_list, trends['Min-Max'], label='Google Trends')
 plt.plot(date_list, sales_by_month['Net_MinMax'], label='Sales Trends')
 plt.legend()
 plt.xticks(rotation=90)
-plt.savefig('../../resource/Plot/Google Trends And Sales Trends (Monthly).png')
-plt.show()
+plt.savefig('../../resource/Plot/Google Trends And Sales Trend (Monthly).png')
+# plt.show()
+
+# CSV
+data = {
+    'x': date_list,
+    'Google trends': list(trends['Min-Max']),
+    'Sales trend': list(sales_by_month['Net_MinMax'])
+}
+data_csv = pd.DataFrame(data)
+data_csv.to_csv('../../resource/PlotCSV/Google Trends And Sales Trend (Monthly).csv', index=False)
