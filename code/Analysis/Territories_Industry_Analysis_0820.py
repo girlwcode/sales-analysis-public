@@ -173,6 +173,7 @@ for industry in industries:
             months = [1, 2, 3, 4, 5, 6, 7]
         for month in months:
             key = str(year) +'-'+ str(month)
+
             df_lead1 = lead_ids1[(lead_ids1['year'] == year) & (lead_ids1['month'] == month)]
             df_deal1 = deal_ids1[(deal_ids1['year'] == year) & (deal_ids1['month'] == month)]
             if not df_lead1.empty and not df_deal1.empty :
@@ -188,7 +189,7 @@ for industry in industries:
             df_deal2 = deal_ids2[(deal_ids2['year'] == year) & (deal_ids2['month'] == month)]
             if not df_lead2.empty and not df_deal2.empty:
                 rate1 = len(df_deal2) / (len(df_lead2) + len(df_deal2))
-                rate2 = rate1 * (len(df_deal2[df_deal1['Stage'].str.contains('5|6|7')]) / len(df_deal2))
+                rate2 = rate1 * (len(df_deal2[df_deal2['Stage'].str.contains('5|6|7')]) / len(df_deal2))
                 CR2[key] = rate1
                 SS2[key] = rate2
             else:  # 해당 month 데이터 존재하지않음
@@ -198,38 +199,68 @@ for industry in industries:
             df_lead3 = lead_ids3[(lead_ids3['year'] == year) & (lead_ids3['month'] == month)]
             df_deal3 = deal_ids3[(deal_ids3['year'] == year) & (deal_ids3['month'] == month)]
             if not df_lead3.empty and not df_deal3.empty:
-                rate1 = len(df_deal3) / (len(df_lead3) + len(df_lead3))
-                rate2 = rate1 * (len(df_deal2[df_deal1['Stage'].str.contains('5|6|7')]) / len(df_deal2))
-                CR2[key] = rate1
-                SS2[key] = rate2
+                rate1 = len(df_deal3) / (len(df_lead3) + len(df_deal3))
+                rate2 = rate1 * (len(df_deal3[df_deal3['Stage'].str.contains('5|6|7')]) / len(df_deal3))
+                CR3[key] = rate1
+                SS3[key] = rate2
             else:  # 해당 month 데이터 존재하지않음
-                CR2[key] = 0
-                SS2[key] = 0
+                CR3[key] = 0
+                SS3[key] = 0
 
+    # plot and parsing the converted Rate
     fig = plt.figure(figsize=(15, 8))  ## 캔버스 생성
     fig.set_facecolor('white')  ## 캔버스 색상 설정
     ax = fig.add_subplot()  ## 그림 뼈대(프레임) 생성
 
-    ax.plot(list(ids1.keys()), list(ids1.values()), label=industry[0])  ## 선그래프 생성
-    ax.plot(list(ids1.keys()), list(ids2.values()), label=industry[1])
-    ax.plot(list(ids1.keys()), list(ids3.values()), label=industry[2])
+    ax.plot(list(CR1.keys()), list(CR1.values()), label=industry[0])  ## 선그래프 생성
+    ax.plot(list(CR1.keys()), list(CR2.values()), label=industry[1])
+    ax.plot(list(CR1.keys()), list(CR3.values()), label=industry[2])
 
     ax.legend()  ## 범례
     name = industry[0] + ', ' + industry[1] + ', ' + industry[2]
-    plt.title('Monthly Deal Success Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
+    plt.title('Monthly Converted Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
     plt.xticks(rotation=90)
     plt.ylabel('Rs', fontsize=12)
-    title = 'Monthly Deal Success Rate By Industry ' + str(name) + ' (2017-2021)'
+    title = 'Monthly Converted Rate By Industry ' + str(name) + ' (2017-2021)'
     save_dir = '../../resource/Plot/' + title
     plt.savefig(save_dir + '.png')
     save_dir = '../../resource/PlotCSV/' + title
     data = {
-        'x': list(ids1.keys()),
-        industry[0]: list(ids1.values()),
-        industry[1]: list(ids2.values()),
-        industry[2]: list(ids3.values())
+        'x': list(CR1.keys()),
+        industry[0]: list(CR1.values()),
+        industry[1]: list(CR2.values()),
+        industry[2]: list(CR3.values())
     }
     rev = pd.DataFrame(data)
     rev.to_csv(save_dir + '.csv', index=False)
+
+    # plot and parsing the Sales Success Rate
+    fig = plt.figure(figsize=(15, 8))  ## 캔버스 생성
+    fig.set_facecolor('white')  ## 캔버스 색상 설정
+    ax = fig.add_subplot()  ## 그림 뼈대(프레임) 생성
+
+    ax.plot(list(SS1.keys()), list(SS1.values()), label=industry[0])  ## 선그래프 생성
+    ax.plot(list(SS1.keys()), list(SS2.values()), label=industry[1])
+    ax.plot(list(SS1.keys()), list(SS3.values()), label=industry[2])
+
+    ax.legend()  ## 범례
+    name = industry[0] + ', ' + industry[1] + ', ' + industry[2]
+    plt.title('Monthly Sales Success Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
+    plt.xticks(rotation=90)
+    plt.ylabel('Rs', fontsize=12)
+    title = 'Monthly Sales Success Rate By Industry ' + str(name) + ' (2017-2021)'
+    save_dir = '../../resource/Plot/' + title
+    plt.savefig(save_dir + '.png')
+    save_dir = '../../resource/PlotCSV/' + title
+    data = {
+        'x': list(SS1.keys()),
+        industry[0]: list(SS1.values()),
+        industry[1]: list(SS2.values()),
+        industry[2]: list(SS3.values())
+    }
+    rev = pd.DataFrame(data)
+    rev.to_csv(save_dir + '.csv', index=False)
+
+
 
 
