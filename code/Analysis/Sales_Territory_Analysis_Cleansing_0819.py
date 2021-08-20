@@ -15,7 +15,7 @@ revenue_origin = revenue_origin.drop(revenue_origin[revenue_origin['Category']==
 # Inbody 본사 이벤트 - 본사(West 1)
 idx = revenue_origin[revenue_origin['Client'] == 'InBody Challenge'].index
 revenue_origin.at[idx,'Region']= 'West 1'
-revenue_origin.to_csv('../../resource/SalesData/Whole Revenue_fillTerritory.csv')
+revenue_origin.to_csv('../../resource/SalesData/Whole Revenue_fillTerritory.csv', index=False)
 
 
 # Whole Sales 분석
@@ -34,7 +34,6 @@ for row in revenue.index :
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 territories = ['West 1','West 2','South','North','East','Overseas','Amazon']
 years = [2017,2018,2019,2020,2021]
-cnt = 0
 
 for territory in territories :
     rev_terri = revenue[revenue['Region']==territory]
