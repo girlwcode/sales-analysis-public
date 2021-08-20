@@ -1,3 +1,11 @@
+"""
+Basic Analysis 분석 파일 (Revenue, deal, lead)
+1-1. Territory별  Deal Success Rate
+
+2-1. Industry 별 Deal Success Rate
+2-3. Industry 별 Converted Rate
+2-4. Industry 별 Sales Success Rate
+"""
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
