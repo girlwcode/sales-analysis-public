@@ -21,7 +21,7 @@ revenue_origin.to_csv('../../resource/SalesData/Whole Revenue_fillTerritory.csv'
 # Whole Sales 분석
 revenue = pd.read_csv('../../resource/SalesData/Whole Revenue_fillTerritory.csv')
 
-## 1. Territory 별 총 Sales
+# 1. Territory 별 총 Sales
 months = {'January':1,'February':2,'March':3,'April':4,'May':5,'June':6,'July':7,'August':8,'September':9,
           'October':10,'November':11,'December':12}
 
@@ -75,7 +75,7 @@ for territory in territories :
 
 print(collections.Counter(revenue['Industry Fin']))
 industries = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
-              ['Others_Others Corporate','Public Association','Public Association'],
+              ['Others_Others Corporate','Public Association','Others_Aesthetic'],
               ['Military','Others_Individual','Others_etc']]
 
 for industry in industries:
@@ -126,6 +126,8 @@ for industry in industries:
     }
     rev = pd.DataFrame(data)
     rev.to_csv(save_dir + '.csv', index=False)
+
+
 
 
 
