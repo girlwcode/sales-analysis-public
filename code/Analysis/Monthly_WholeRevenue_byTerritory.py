@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 #원본 csv
 wholeRevenue = pd.read_csv(r"C:\Users\Lenovo\PycharmProjects\new_cleansing\resource\SalesData\Whole Revenue.csv")
-wholeRevenue=pd.DataFrame(wholeRevenue)
+wholeRevenue = pd.DataFrame(wholeRevenue)
 wholeRevenue
 
 months = {'January':1,'February':2,'March':3,'April':4,'May':5,'June':6,'July':7,'August':8,'September':9,
@@ -57,7 +57,7 @@ for region in regions:
             condition1 = region['Year'] == y
             condition2 = region['Month'] == m
             r = sum(region[condition1 & condition2]['Net'])
-            key = str(y) + '.' + str(m)
+            key = str(y) + '-' + str(m)
             revenue[key] = r
     plt.figure(figsize=(15, 8))
     plt.title('Monthly Whole Revenue By Territories:'+titles[cnt]+' (2017-2021)', fontsize=20)
