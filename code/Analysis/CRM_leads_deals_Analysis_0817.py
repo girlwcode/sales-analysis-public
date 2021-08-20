@@ -1,3 +1,10 @@
+"""
+Sales Trend 분석 파일 (Zoho CRM)
+1. Lead Creation
+2. Deal Creation
+3. Converted Rate
+4. Sales Success Rate
+"""
 import collections
 import os
 import pandas as pd
@@ -10,7 +17,6 @@ deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillTerr
 installed = pd.read_csv('../../resource/SalesData/Install_full.csv')
 revenue = pd.read_csv('../../resource/SalesData/Whole Revenue.csv')
 
-print(revenue['Region'].unique())
 # Lead, Deal 월별로 구분
 lead = leads.loc[:, ['Lead Source', 'Lead Status', 'Created Time', 'Industry Fin']]
 deal = deals.loc[:, ['Amount', 'Stage', 'Lead Source', 'Created Time', 'Territory_fin']]
@@ -64,25 +70,23 @@ for y in rev_year.keys() :
         x.append(str(y)+"."+str(m))
         rm = round(sum(revenue[condition1 & condition2]['Net']),2)
         rev_month[y].append(rm)
-
 # print(rev_month.values())
 
-# Converted Rate - Monthly
+
+# Sales Trend - 1,2. Lead Creation & Deal Creation
 number_lead = lead.groupby(['year', 'month']).size().reset_index()
 number_deal = deal.groupby(['year', 'month']).size().reset_index()
 
 number_lead.rename(columns = {0 : 'lead'}, inplace = True)
 number_deal.rename(columns = {0 : 'deal'}, inplace = True)
 
+# Sales Trend - 3.Converted Rate - Monthly
 monthly_num = pd.concat([number_lead,number_deal['deal']],axis=1, ignore_index=True)
 monthly_num.rename(columns = {0 : 'year',1 : 'month',2 : 'lead',3 : 'deal'}, inplace = True)
 monthly_num['converted Rate'] = round(monthly_num['deal'] / (monthly_num['lead'] + monthly_num['deal']),3)
 
 
-
-
-
-# 영업 성공률 = conversion Rate * Deal Final Success Rate
+# Sales Trend - 4.Sales Success Rate = conversion Rate * Deal Final Success Rate
 # Stage = 7. Deal Closed (Payment done), 5. Confirmed (Partial Payment), 6. Installation
 stages = ['5','6','7']
 index_list= []
@@ -112,14 +116,13 @@ monthly_num = monthly_num[['year','month','lead','deal','closed deal','converted
 monthly_num['sales success Rate'] = round(monthly_num['converted Rate'] * (monthly_num['closed deal']/monthly_num['deal']),3)
 monthly_num.to_csv('../../resource/CleansedData/ZohoCRM/Monthly_Sales_Trend.csv',index=False)
 
-
 # monthly plot's x
 x = []
 for row in monthly_num.index:
     date = str(monthly_num['year'][row]) + '-' + str(monthly_num['month'][row])
     x.append(date)
 
-# plot the lead creation
+# 1. plot the lead creation
 plt.figure(figsize=(15,8))
 plt.title('Monthly Lead Creation (2017-2021)', fontsize=20)
 plt.plot(x, monthly_num['lead'])
@@ -136,7 +139,7 @@ df.to_csv('../../resource/PlotCSV/Monthly Lead Creation (2017-2021).csv', index=
 
 
 
-# plot the deal creation
+# 2. plot the deal creation
 plt.figure(figsize=(15,8))
 plt.title('Monthly Deal Creation (2017-2021)', fontsize=20)
 plt.plot(x, monthly_num['deal'])
@@ -153,7 +156,7 @@ df.to_csv('../../resource/PlotCSV/Monthly Deal Creation (2017-2021).csv', index=
 
 
 
-# plot the conversion Rate
+# 3. plot the conversion Rate
 plt.figure(figsize=(15,8))
 plt.title('Monthly Converted Rate (2017-2021)', fontsize=20)
 plt.plot(x, monthly_num['converted Rate'])
@@ -169,7 +172,7 @@ df = pd.DataFrame({
 df.to_csv('../../resource/PlotCSV/Monthly Converted Rate (2017-2021).csv', index=False)
 
 
-# plot the sales success Rate
+# 4. plot the sales success Rate
 plt.figure(figsize=(15,8))
 plt.title('Monthly Sales Success Rate (2017-2021)', fontsize=20)
 plt.plot(x, monthly_num['sales success Rate'])
@@ -227,7 +230,7 @@ df.to_csv('../../resource/PlotCSV/Monthly Sales Success Rate (2017-2021).csv', i
 # '10.Archive': 951, '7. Deal Closed (Payment done)': 532, '6. Installation': 431, '9. Rejected': 141, '3. B- Negotiation': 116,
 # '1.  D- Qualified Deal': 68, '8. Closed Lost to Competition': 28, '2. C- Consideration': 21, '5. Confirmed (Partial Payment)': 12,
 # '4. A- Verbal Approval': 11, 'Rejected': 1, 'DepositReceipt': 1
-deal_stage = collections.Counter(deal['Stage'])
+# deal_stage = collections.Counter(deal['Stage'])
 
 # # installed concat
 # df_list = []
