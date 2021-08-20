@@ -35,6 +35,7 @@ for date in trends['Date']:
     date_list.append(date[0]+'-'+date[1])
 
 plt.figure(figsize=(15,8))
+plt.title('Monthly Google Trend and Sales Trend', fontsize=20)
 plt.plot(date_list, trends['Min-Max'], label='Google Trends')
 plt.plot(date_list, sales_by_month['Net_MinMax'], label='Sales Trends')
 plt.legend()
