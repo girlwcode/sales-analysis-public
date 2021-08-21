@@ -11,7 +11,6 @@ for month in months:
     sales.at[idx_list,'Month'] = months[month]
 
 years = range(2017, 2022)
-months = range(1, 13)
 
 # 1-2. Monthly Territory별 총 Sales/거래개수
 terri_list = list(sales['Region'].unique())
@@ -21,6 +20,9 @@ for terri in terri_list:
     for year in years:
         if (year == 2021):
             months = [1, 2, 3, 4, 5, 6, 7]
+        else:
+            months = range(1, 13)
+
         for month in months:
             key = str(year) + '-' + str(month)
             df_date = df[(df['Year'] == year) & (df['Month'] == month)]
@@ -59,6 +61,9 @@ for industry in industry_list:
     for year in years:
         if (year == 2021) :
             months = [1, 2, 3, 4, 5, 6, 7]
+        else:
+            months = range(1, 13)
+
         for month in months:
             key = str(year) + '-' + str(month)
 

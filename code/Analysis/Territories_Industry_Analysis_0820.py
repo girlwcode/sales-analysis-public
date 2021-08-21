@@ -67,6 +67,8 @@ for df in dfs:
     for year in years:
         if (year == 2021) :
             months = [1, 2, 3, 4, 5, 6, 7]
+        else:
+            months = range(1, 13)
         for month in months:
             key = str(year) +'-'+ str(month)
             df_terri = df[(df['year'] == year) & (df['month'] == month)]
@@ -105,6 +107,8 @@ for industry in industries:
     for year in years:
         if (year == 2021) :
             months = [1, 2, 3, 4, 5, 6, 7]
+        else:
+            months = range(1, 13)
         for month in months:
             key = str(year) +'-'+ str(month)
 
@@ -179,6 +183,8 @@ for industry in industries:
     for year in years:
         if (year == 2021) :
             months = [1, 2, 3, 4, 5, 6, 7]
+        else:
+            months = range(1, 13)
         for month in months:
             key = str(year) +'-'+ str(month)
 
