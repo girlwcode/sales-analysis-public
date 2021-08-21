@@ -113,7 +113,7 @@ monthly_num = pd.concat([monthly_num,number_closed_deal['closed deal']],axis=1)
 
 monthly_num = monthly_num[monthly_num['year']!=2016]
 monthly_num = monthly_num[['year','month','lead','deal','closed deal','converted Rate']]
-monthly_num['sales success Rate'] = round(monthly_num['converted Rate'] * (monthly_num['closed deal']/monthly_num['deal']),3)
+monthly_num['sales success Rate'] = round(monthly_num['converted Rate'] * (monthly_num['closed deal']/monthly_num['deal']) * 100,3)
 monthly_num.to_csv('../../resource/CleansedData/ZohoCRM/Monthly_Sales_Trend.csv',index=False)
 
 # monthly plot's x

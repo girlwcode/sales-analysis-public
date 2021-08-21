@@ -192,7 +192,7 @@ for industry in industries:
             df_deal1 = deal_ids1[(deal_ids1['year'] == year) & (deal_ids1['month'] == month)]
             if not df_lead1.empty and not df_deal1.empty :
                 rate1 = len(df_deal1) / (len(df_lead1) + len(df_deal1))
-                rate2 = rate1 * (len(df_deal1[df_deal1['Stage'].str.contains('5|6|7')]) / len(df_deal1))
+                rate2 = rate1 * (len(df_deal1[df_deal1['Stage'].str.contains('5|6|7')]) / len(df_deal1)) * 100
                 CR1[key] = rate1
                 SS1[key] = rate2
             else: # 해당 month 데이터 존재하지않음
@@ -203,7 +203,7 @@ for industry in industries:
             df_deal2 = deal_ids2[(deal_ids2['year'] == year) & (deal_ids2['month'] == month)]
             if not df_lead2.empty and not df_deal2.empty:
                 rate1 = len(df_deal2) / (len(df_lead2) + len(df_deal2))
-                rate2 = rate1 * (len(df_deal2[df_deal2['Stage'].str.contains('5|6|7')]) / len(df_deal2))
+                rate2 = rate1 * (len(df_deal2[df_deal2['Stage'].str.contains('5|6|7')]) / len(df_deal2)) * 100
                 CR2[key] = rate1
                 SS2[key] = rate2
             else:  # 해당 month 데이터 존재하지않음
@@ -214,7 +214,7 @@ for industry in industries:
             df_deal3 = deal_ids3[(deal_ids3['year'] == year) & (deal_ids3['month'] == month)]
             if not df_lead3.empty and not df_deal3.empty:
                 rate1 = len(df_deal3) / (len(df_lead3) + len(df_deal3))
-                rate2 = rate1 * (len(df_deal3[df_deal3['Stage'].str.contains('5|6|7')]) / len(df_deal3))
+                rate2 = rate1 * (len(df_deal3[df_deal3['Stage'].str.contains('5|6|7')]) / len(df_deal3)) * 100
                 CR3[key] = rate1
                 SS3[key] = rate2
             else:  # 해당 month 데이터 존재하지않음
