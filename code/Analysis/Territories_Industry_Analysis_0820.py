@@ -56,9 +56,10 @@ Overseas = deal[deal['Territory_fin'] == 'Overseas']
 Amazon = deal[deal['Territory_fin'] == 'Amazon']
 
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+years = [2017,2018,2019,2020,2021]
 territories = ['West1','West 2','South','North','East','Overseas','Amazon']
 dfs = [West1,West2,South,North,East,Overseas,Amazon]
-years = [2017,2018,2019,2020,2021]
+
 
 cnt = 0
 # terri 하나만
@@ -96,6 +97,9 @@ for df in dfs:
 industries = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
               ['Others_Others Corporate','Public Association','Others_Aesthetic'],
               ['Military','Others_Individual','Others_etc']]
+
+months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+years = [2017,2018,2019,2020,2021]
 
 for industry in industries:
     deal_ids1 = deal[deal['Industry Fin'] == industry[0]]
@@ -159,7 +163,8 @@ for industry in industries:
     rev = pd.DataFrame(data)
     rev.to_csv(save_dir + '.csv', index=False)
 
-
+months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+years = [2017,2018,2019,2020,2021]
 # 2-3,4. Industry별 Convert Rate, Sales Success Rate
 for industry in industries:
     deal_ids1 = deal[deal['Industry Fin'] == industry[0]]

@@ -37,13 +37,15 @@ for row in revenue.index :
             revenue['Month'][row] = months[month]
 
 
-months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
 territories = ['West 1','West 2','South','North','East','Overseas','Amazon']
-years = [2017,2018,2019,2020,2021]
+
 
 for territory in territories :
     rev_terri = revenue[revenue['Region']==territory]
     rev = {}
+    months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    years = [2017, 2018, 2019, 2020, 2021]
     for y in years:
         if (y == 2021):
             months= [1, 2, 3, 4, 5, 6, 7]
@@ -78,10 +80,13 @@ for territory in territories :
 #  'Academic' 'Public Association' 'Military']
 # print(revenue['Industry Fin'].unique())
 
+
 print(collections.Counter(revenue['Industry Fin']))
 industries = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
               ['Others_Others Corporate','Public Association','Others_Aesthetic'],
               ['Military','Others_Individual','Others_etc']]
+
+
 
 for industry in industries:
     rev_ids1 = revenue[revenue['Industry Fin'] == industry[0]]
@@ -90,6 +95,8 @@ for industry in industries:
     rev1 = {}
     rev2 = {}
     rev3 = {}
+    months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    years = [2017, 2018, 2019, 2020, 2021]
     for y in years:
         if (y == 2021):
             months= [1, 2, 3, 4, 5, 6, 7]

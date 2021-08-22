@@ -46,9 +46,10 @@ onlyamazon =wholeRevenue[wholeRevenue['Region'] == 'Amazon']
 onlyamazon.head()
 
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+years = [2017,2018,2019,2020,2021]
 regions = [onlywest1,onlywest2, onlysouth, onlynorth, onlyeast, onlyoverseas, onlyamazon]
 titles = ['West1','West2','South','North','East','Overseas','Amazon']
-years = [2017,2018,2019,2020,2021]
+
 cnt = 0
 for region in regions:
     revenue = {}
