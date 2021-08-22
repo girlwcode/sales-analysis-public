@@ -14,6 +14,7 @@ years = range(2017, 2022)
 
 # 1-2. Monthly Territory별 총 Sales/거래개수
 terri_list = list(sales['Region'].unique())
+print(terri_list)
 for terri in terri_list:
     df = sales[sales['Region']==terri]
     terri_dict = {}
@@ -26,8 +27,8 @@ for terri in terri_list:
         for month in months:
             key = str(year) + '-' + str(month)
             df_date = df[(df['Year'] == year) & (df['Month'] == month)]
-            if not df_date.empty:
-                avg_sales = df['Net'].sum() / len(df_date)
+            if not df_date.empty and df_date['Net'].sum() != 0:
+                avg_sales = df_date['Net'].sum() / len(df_date)
                 terri_dict[key] = avg_sales
             else:  # 해당 month 데이터 존재하지않음
                 terri_dict[key] = 0
@@ -46,7 +47,7 @@ for terri in terri_list:
     save_dir = '../../resource/PlotCSV/' + title
     data = pd.DataFrame(list(terri_dict.items()), columns=['x', 'y'])
     data.to_csv(save_dir + '.csv', index=False)
-
+'''
 # 2-2. Monthly Industry 총 Sales/거래개수
 industry_list = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
               ['Others_Others Corporate','Public Association','Others_Aesthetic'],
@@ -114,8 +115,5 @@ for industry in industry_list:
     }
     data_csv = pd.DataFrame(data)
     save_dir = '../../resource/PlotCSV/' + title
-    data_csv.to_csv(save_dir+'.csv')
-
-
-
-
+    data_csv.to_csv(save_dir+'.csv', index=False)
+'''
