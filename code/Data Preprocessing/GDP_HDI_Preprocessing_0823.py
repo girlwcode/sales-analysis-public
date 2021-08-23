@@ -42,6 +42,7 @@ gdp_new['Date'] = x
 for i, state in enumerate(state_list):
     gdp_new[state] = gdp_list[i]
 
+gdp_new = gdp_new[(gdp_new['Date'] != 2019) & (gdp_new['Date'] != 2020)]
 gdp_new.to_csv('../../resource/External_Feature/GDP_transpose.csv', index=False)
 
 
