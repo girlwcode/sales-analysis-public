@@ -61,7 +61,7 @@ years = [2017,2018,2019,2020,2021]
 territories = ['West1','West 2','South','North','East','Overseas','Amazon']
 dfs = [West1,West2,South,North,East,Overseas,Amazon]
 
-'''
+
 cnt = 0
 # terri 하나만
 for df in dfs:
@@ -77,11 +77,11 @@ for df in dfs:
                 terri_dict[key] = 0
     del terri_dict['2021-4']
     plt.figure(figsize=(15, 8))
-    plt.title('Quarterly Deal Success Rate By Territories:' + territories[cnt] + ' (2017-2021)', fontsize=20)
+    plt.title('Monthly Deal Success Rate By Territories:' + territories[cnt] + ' (2017-2021)', fontsize=20)
     plt.plot(list(terri_dict.keys()), list(terri_dict.values()))
     plt.xticks(rotation=90)
     plt.ylabel('Rs', fontsize=12)
-    title = 'Quarterly Deal Success Rate By Territories ' + str(territories[cnt]) + ' (2017-2021)'
+    title = 'Monthly Deal Success Rate By Territories ' + str(territories[cnt]) + ' (2017-2021)'
     # plt.show()
     save_dir = '../../resource/Plot_Quarter/' + title
     plt.savefig(save_dir + '.png')
@@ -145,10 +145,10 @@ for industry in industries:
 
     ax.legend()  ## 범례
     name = industry[0] + ', ' + industry[1] + ', ' + industry[2]
-    plt.title('Quarterly Deal Success Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
+    plt.title('Monthly Deal Success Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
     plt.xticks(rotation=90)
     plt.ylabel('Rs', fontsize=12)
-    title = 'Quarterly Deal Success Rate By Industry ' + str(name) + ' (2017-2021)'
+    title = 'Monthly Deal Success Rate By Industry ' + str(name) + ' (2017-2021)'
     # plt.show()
     save_dir = '../../resource/Plot_Quarter/' + title
     plt.savefig(save_dir + '.png')
@@ -161,7 +161,7 @@ for industry in industries:
     }
     rev = pd.DataFrame(data)
     rev.to_csv(save_dir + '.csv', index=False)
-'''
+
 # months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 years = [2017,2018,2019,2020,2021]
 industries = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
@@ -240,10 +240,10 @@ for industry in industries:
 
     ax.legend()  ## 범례
     name = industry[0] + ', ' + industry[1] + ', ' + industry[2]
-    plt.title('Quarterly Converted Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
+    plt.title('Monthly Converted Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
     plt.xticks(rotation=90)
     plt.ylabel('Rs', fontsize=12)
-    title = 'Quarterly Converted Rate By Industry ' + str(name) + ' (2017-2021)'
+    title = 'Monthly Converted Rate By Industry ' + str(name) + ' (2017-2021)'
     save_dir = '../../resource/Plot_Quarter/' + title
     plt.savefig(save_dir + '.png')
     save_dir = '../../resource/PlotCSV_Quarter/' + title
@@ -267,10 +267,10 @@ for industry in industries:
 
     ax.legend()  ## 범례
     name = industry[0] + ', ' + industry[1] + ', ' + industry[2]
-    plt.title('Quarterly Sales Success Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
+    plt.title('Monthly Sales Success Rate By Industry:' + name + ' (2017-2021)', fontsize=20)
     plt.xticks(rotation=90)
     plt.ylabel('Rs', fontsize=12)
-    title = 'Quarterly Sales Success Rate By Industry ' + str(name) + ' (2017-2021)'
+    title = 'Monthly Sales Success Rate By Industry ' + str(name) + ' (2017-2021)'
     save_dir = '../../resource/Plot_Quarter/' + title
     plt.savefig(save_dir + '.png')
     save_dir = '../../resource/PlotCSV_Quarter/' + title

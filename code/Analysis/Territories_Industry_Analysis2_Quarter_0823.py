@@ -12,7 +12,7 @@ for month in months:
 
 years = range(2017, 2022)
 months = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
-'''
+
 # 1-2. Quarterly Territory별 총 Sales/거래개수
 terri_list = list(sales['Region'].unique())
 print(terri_list)
@@ -32,7 +32,7 @@ for terri in terri_list:
     # print(terri,':',terri_dict)
     # Plot
     plt.figure(figsize=(15, 8))
-    title = 'Quarterly Average Sales By Territories ' + terri + ' (2017-2021)'
+    title = 'Monthly Average Sales By Territories ' + terri + ' (2017-2021)'
     plt.title(title, fontsize=20)
     plt.plot(list(terri_dict.keys()), list(terri_dict.values()))
     plt.xticks(rotation=90)
@@ -44,7 +44,7 @@ for terri in terri_list:
     save_dir = '../../resource/PlotCSV_Quarter/' + title
     data = pd.DataFrame(list(terri_dict.items()), columns=['x', 'y'])
     data.to_csv(save_dir + '.csv', index=False)
-'''
+
 # 2-2. Quarterly Industry 총 Sales/거래개수
 industry_list = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
               ['Others_Others Corporate','Public Association','Others_Aesthetic'],
@@ -94,7 +94,7 @@ for industry in industry_list:
     ax.legend()  ## 범례
 
     name = industry[0] + ', ' + industry[1] + ', ' + industry[2]
-    title = 'Quarterly Average Sales By Industry ' + name + ' (2017-2021)'
+    title = 'Monthly Average Sales By Industry ' + name + ' (2017-2021)'
     plt.title(title, fontsize=20)
     plt.xticks(rotation=90)
     plt.ylabel('Average Sales', fontsize=12)
