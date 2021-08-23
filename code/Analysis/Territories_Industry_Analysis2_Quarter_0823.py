@@ -21,14 +21,14 @@ for terri in terri_list:
     terri_dict = {}
     for year in years:
         for i, month in enumerate(months):
-            key = str(year) + '-' + str(i+1)
+            key = str(year) + '-' + str(i+1) + 'Q'
             df_date = df[(df['Year'] == year) & (df['Month'].isin(month))]
             if not df_date.empty and df_date['Net'].sum() != 0:
                 avg_sales = df_date['Net'].sum() / len(df_date)
                 terri_dict[key] = avg_sales
             else:  # 해당 month 데이터 존재하지않음
                 terri_dict[key] = 0
-    del terri_dict['2021-4']
+    del terri_dict['2021-4Q']
     # print(terri,':',terri_dict)
     # Plot
     plt.figure(figsize=(15, 8))
@@ -58,7 +58,7 @@ for industry in industry_list:
     ids1, ids2, ids3 = {}, {}, {}
     for year in years:
         for i, month in enumerate(months):
-            key = str(year) + '-' + str(i+1)
+            key = str(year) + '-' + str(i+1) + 'Q'
 
             df_industry1 = df1[(df1['Year'] == year) & (df1['Month'].isin(month))]
             if not df_industry1.empty:
@@ -80,9 +80,9 @@ for industry in industry_list:
                 ids3[key] = avg_sales
             else:  # 해당 month 데이터 존재하지않음
                 ids3[key] = 0
-    del ids1['2021-4']
-    del ids2['2021-4']
-    del ids3['2021-4']
+    del ids1['2021-4Q']
+    del ids2['2021-4Q']
+    del ids3['2021-4Q']
     # Plot
     fig = plt.figure(figsize=(15, 8))  ## 캔버스 생성
     fig.set_facecolor('white')  ## 캔버스 색상 설정

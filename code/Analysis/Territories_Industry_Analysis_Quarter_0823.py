@@ -68,14 +68,14 @@ for df in dfs:
     terri_dict = {}
     for year in years:
         for i, month in enumerate(months):
-            key = str(year) +'-'+ str(i+1)
+            key = str(year) +'-'+ str(i+1) + 'Q'
             df_terri = df[(df['year'] == year) & (df['month'].isin(month))]
             if not df_terri.empty :
                 rate = len(df_terri[df_terri['Stage'].str.contains('5|6|7')]) / len(df_terri)
                 terri_dict[key] = rate
             else: # 해당 month 데이터 존재하지않음
                 terri_dict[key] = 0
-    del terri_dict['2021-4']
+    del terri_dict['2021-4Q']
     plt.figure(figsize=(15, 8))
     plt.title('Monthly Deal Success Rate By Territories:' + territories[cnt] + ' (2017-2021)', fontsize=20)
     plt.plot(list(terri_dict.keys()), list(terri_dict.values()))
@@ -109,7 +109,7 @@ for industry in industries:
     ids3 = {}
     for year in years:
         for i, month in enumerate(months):
-            key = str(year) +'-'+ str(i+1)
+            key = str(year) +'-'+ str(i+1) + 'Q'
 
             df_industry1 = deal_ids1[(deal_ids1['year'] == year) & (deal_ids1['month'].isin(month))]
             if not df_industry1.empty :
@@ -131,9 +131,9 @@ for industry in industries:
                 ids3[key] = rate
             else:  # 해당 month 데이터 존재하지않음
                 ids3[key] = 0
-    del ids1['2021-4']
-    del ids2['2021-4']
-    del ids3['2021-4']
+    del ids1['2021-4Q']
+    del ids2['2021-4Q']
+    del ids3['2021-4Q']
 
     fig = plt.figure(figsize=(15, 8))  ## 캔버스 생성
     fig.set_facecolor('white')  ## 캔버스 색상 설정
@@ -189,7 +189,7 @@ for industry in industries:
 
     for year in years:
         for i, month in enumerate(months):
-            key = str(year) +'-'+ str(i+1)
+            key = str(year) +'-'+ str(i+1) + 'Q'
 
             df_lead1 = lead_ids1[(lead_ids1['year'] == year) & (lead_ids1['month'].isin(month))]
             df_deal1 = deal_ids1[(deal_ids1['year'] == year) & (deal_ids1['month'].isin(month))]
@@ -223,12 +223,12 @@ for industry in industries:
             else:  # 해당 month 데이터 존재하지않음
                 CR3[key] = 0
                 SS3[key] = 0
-    del CR1['2021-4']
-    del CR2['2021-4']
-    del CR3['2021-4']
-    del SS1['2021-4']
-    del SS2['2021-4']
-    del SS3['2021-4']
+    del CR1['2021-4Q']
+    del CR2['2021-4Q']
+    del CR3['2021-4Q']
+    del SS1['2021-4Q']
+    del SS2['2021-4Q']
+    del SS3['2021-4Q']
     # plot and parsing the converted Rate
     fig = plt.figure(figsize=(15, 8))  ## 캔버스 생성
     fig.set_facecolor('white')  ## 캔버스 색상 설정

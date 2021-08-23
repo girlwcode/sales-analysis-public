@@ -128,7 +128,7 @@ years = [2017,2018,2019,2020,2021]
 lead_dict ={}
 for year in years:
     for i,quarter in enumerate(quarters):
-        key = str(year) +'-' + str(i+1)
+        key = str(year) +'-' + str(i+1) + 'Q'
         lead_dict[key] = monthly_num[(monthly_num['year']==year) & (monthly_num['month'].isin(quarter))]['lead'].sum()
 print(lead_dict)
 
@@ -138,7 +138,7 @@ years = [2017,2018,2019,2020,2021]
 deal_dict ={}
 for year in years:
     for i,quarter in enumerate(quarters):
-        key = str(year) +'-' + str(i+1)
+        key = str(year) +'-' + str(i+1) + 'Q'
         deal_dict[key] = monthly_num[(monthly_num['year']==year) & (monthly_num['month'].isin(quarter))]['deal'].sum()
 print(deal_dict)
 
@@ -148,7 +148,7 @@ years = [2017,2018,2019,2020,2021]
 converted_dict ={}
 for year in years:
     for i,quarter in enumerate(quarters):
-        key = str(year) +'-' + str(i+1)
+        key = str(year) +'-' + str(i+1) + 'Q'
         converted_dict[key] = deal_dict[key]/(deal_dict[key]+lead_dict[key])
 
 # sales success rate per quarter
@@ -157,15 +157,15 @@ years = [2017,2018,2019,2020,2021]
 sale_success_dict ={}
 for year in years:
     for i,quarter in enumerate(quarters):
-        key = str(year) + '-' + str(i + 1)
+        key = str(year) + '-' + str(i + 1) + 'Q'
         deal_success = monthly_num[(monthly_num['year'] == year) & (monthly_num['month'].isin(quarter))]['closed deal'].sum()
         deal_success = deal_success / deal_dict[key]
         sale_success_dict[key] = converted_dict[key] * deal_success * 100
 
-del converted_dict['2021-4']
-del deal_dict['2021-4']
-del lead_dict['2021-4']
-del sale_success_dict['2021-4']
+del converted_dict['2021-4Q']
+del deal_dict['2021-4Q']
+del lead_dict['2021-4Q']
+del sale_success_dict['2021-4Q']
 print(converted_dict)
 print(sale_success_dict)
 
@@ -283,9 +283,9 @@ for territory in territories :
             condition1 = rev_terri['Year'] == y
             condition2 = rev_terri['Month'].isin(quarter)
             r = sum(rev_terri[condition1 & condition2]['Net'])
-            key = str(y) + '-' + str(i+1)
+            key = str(y) + '-' + str(i+1) + 'Q'
             rev[key] = r
-    del rev['2021-4']
+    del rev['2021-4Q']
     plt.figure(figsize=(15, 8))
     plt.title('Monthly Whole Revenue By Territories:' + territory + ' (2017-2021)', fontsize=20)
     plt.plot(list(rev.keys()), list(rev.values()))
@@ -330,7 +330,7 @@ for industry in industries:
 
     for y in years:
         for i,quarter in enumerate(quarters):
-            key = str(y) + '-' + str(i+1)
+            key = str(y) + '-' + str(i+1) + 'Q'
             condition1 = rev_ids1['Year'] == y
             condition2 = rev_ids1['Month'].isin(quarter)
             r = sum(rev_ids1[condition1 & condition2]['Net'])
@@ -345,9 +345,9 @@ for industry in industries:
             condition2 = rev_ids3['Month'].isin(quarter)
             r = sum(rev_ids3[condition1 & condition2]['Net'])
             rev3[key] = r
-    del rev1['2021-4']
-    del rev2['2021-4']
-    del rev3['2021-4']
+    del rev1['2021-4Q']
+    del rev2['2021-4Q']
+    del rev3['2021-4Q']
     plt.figure(figsize=(15, 8))
     plt.bar(list(rev1.keys()), list(rev1.values()), color='green', label = industry[0])
     plt.bar(list(rev1.keys()), list(rev2.values()), color='blue',bottom=np.array(list(rev1.values())), label = industry[1])
