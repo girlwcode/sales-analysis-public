@@ -34,8 +34,9 @@ gdp_result['South'] = list(south.mean(axis=1))
 north = gdp[['Tamil Nadu', 'Karnataka', 'Andhra Pradesh', 'Telangana', 'Kerala', 'Puducherry']]
 gdp_result['North'] = list(north.mean(axis=1))
 
+gdp_result['Overseas'] = 1
+gdp_result['Amazon'] = 1
 # print(gdp_result)
-gdp_result.to_csv('../../resource/Score/Score_gdp.csv', index=False)
 
 east = hdi[['West Bengal', 'Assam', 'Tripura', 'Sikkim', 'Manipur', 'Nagaland', 'Arunachal Pradesh', 'Mizoram']]
 hdi_result['East'] = list(east.mean(axis=1))
@@ -49,5 +50,9 @@ hdi_result['South'] = list(south.mean(axis=1))
 north = hdi[['Tamil Nadu', 'Karnataka', 'Andhra Pradesh', 'Telangana', 'Kerala', 'Puducherry']]
 hdi_result['North'] = list(north.mean(axis=1))
 
+hdi_result['Overseas'] = 1
+hdi_result['Amazon'] = 1
 # print(hdi_result)
+
+gdp_result.to_csv('../../resource/Score/Score_gdp.csv', index=False)
 hdi_result.to_csv('../../resource/Score/Score_hdi.csv', index=False)
