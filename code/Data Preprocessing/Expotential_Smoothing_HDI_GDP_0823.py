@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing, Holt
 
@@ -29,7 +28,7 @@ def SimpleES(df):
 
 
 # Holt
-def HoltMethod(data) :
+def HoltMethod(data):
     fit1 = Holt(data, initialization_method="estimated").fit(smoothing_level=0.8, smoothing_trend=0.2, optimized=False)
     fcast1 = fit1.forecast(5).rename("Holt's linear trend")
     fit2 = Holt(data, exponential=True, initialization_method="estimated").fit(smoothing_level=0.8, smoothing_trend=0.2, optimized=False)
@@ -59,12 +58,12 @@ def MSE(data, fit1, fit2, fit3):
     print('[MSE] fit 1 :', mse1, ', fit 2 :', mse2, ', fit 3 :', mse3)
     m = min(mse1, mse2, mse3)
 
-    if (m == mse1):
+    if m == mse1:
         return m, fit1.forecast(5)
-    elif (m == mse2):
+    elif m == mse2:
         bestModel = 'fit2'
         return m, fit2.forecast(5)
-    elif (m == mse3):
+    elif m == mse3:
         bestModel = 'fit3'
         return m, fit3.forecast(5)
 
@@ -80,11 +79,11 @@ def MAE(data, fit1, fit2, fit3):
     print('[MSE] fit 1 :', mae1, ', fit 2 :', mae2, ', fit 3 :', mae3)
     m = min(mae1, mae2, mae3)
 
-    if (m == mae1):
+    if m == mae1:
         return m, fit1.forecast(5)
-    elif (m == mae2):
+    elif m == mae2:
         return m, fit2.forecast(5)
-    elif (m == mae3):
+    elif m == mae3:
         return m, fit3.forecast(5)
 
 # Main

@@ -47,7 +47,7 @@ for terri in terri_list:
     save_dir = '../../resource/PlotCSV/' + title
     data = pd.DataFrame(list(terri_dict.items()), columns=['x', 'y'])
     data.to_csv(save_dir + '.csv', index=False)
-'''
+
 # 2-2. Monthly Industry 총 Sales/거래개수
 industry_list = [['Hospital','Clinic','Fitness'],['Academic','Private Enterprise','Hotel'],
               ['Others_Others Corporate','Public Association','Others_Aesthetic'],
@@ -116,4 +116,4 @@ for industry in industry_list:
     data_csv = pd.DataFrame(data)
     save_dir = '../../resource/PlotCSV/' + title
     data_csv.to_csv(save_dir+'.csv', index=False)
-'''
+
