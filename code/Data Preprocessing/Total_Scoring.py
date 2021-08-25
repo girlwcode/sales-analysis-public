@@ -9,6 +9,8 @@ gdp = pd.read_csv('../../resource/Score/Score_gdp.csv')
 hdi = pd.read_csv('../../resource/Score/Score_hdi.csv')
 deal = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv')
 lead = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryCleansed.csv')
+deal_num = pd.read_csv('../../resource/PlotCSV/Monthly Deal Creation (2017-2021).csv')
+lead_num = pd.read_csv('../../resource/PlotCSV/Monthly Lead Creation (2017-2021).csv')
 
 
 # DealScore = leadSource * stage * territory * industry * gdp * hdi
@@ -54,6 +56,8 @@ def oneLeadScoring(df, i, date_idx):
     industry = df['Industry Fin'][i]
     oneLead_score *= industry_score[industry][date_idx]
 
+    return oneLead_score
+
 
 # Main
 result_df = pd.DataFrame()
@@ -84,7 +88,33 @@ for year_idx, year in enumerate(years):
 result_df['DealScore'] = deal_list
 
 # LeadScore
-deal['Created Time'] = pd.to_datetime(deal['Created Time'])
+months = range(1,13)
+lead['Created Time'] = pd.to_datetime(lead['Created Time'])
+lead_list = []
+date_idx = 0
+for year in years:
+    if year == 2021:
+        months = range(1,8)
+    for month in months:
+        month_score = 0
+        df = lead[(lead['Created Time'].dt.year == year) & (lead['Created Time'].dt.month == month)]
+        for i in df.index:
+            month_score += (oneLeadScoring(df, i, date_idx))
+        date_idx += 1
+        lead_list.append(month_score)
+result_df['LeadScore'] = lead_list
 
+# Converted Rate (DealNum / Deal+LeadNum)
+del deal_num['x']
+del lead_num['x']
+deal_num['DealAndLead'] = deal_num + lead_num
+deal_num['Convert'] = deal_num['y'].div(deal_num['DealAndLead'])
+result_df['ConvertedRate'] = list(deal_num['Convert'])
 
-# result_df.to_csv('xx.csv', index=False)
+# DealNum/LeadNum
+result_df['DealNum'] = list(deal_num['y'])
+result_df['LeadNum'] = list(lead_num['y'])
+
+print(result_df)
+
+result_df.to_csv('../../resource/Score/Total_Score_monthly.csv', index=False)
