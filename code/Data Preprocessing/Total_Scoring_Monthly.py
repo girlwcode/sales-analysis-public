@@ -7,6 +7,7 @@ leadSource_lead = pd.read_csv('../../resource/Score/Score_Lead_leadSource.csv')
 leadSource_deal = pd.read_csv('../../resource/Score/Score_Deal_leadSource.csv')
 gdp = pd.read_csv('../../resource/Score/Score_gdp.csv')
 hdi = pd.read_csv('../../resource/Score/Score_hdi.csv')
+net = pd.read_csv('../../resource/Model_Input/Monthly_net.csv')
 deal = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv')
 lead = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryCleansed.csv')
 deal_num = pd.read_csv('../../resource/PlotCSV/Monthly Deal Creation (2017-2021).csv')
@@ -114,6 +115,9 @@ result_df['ConvertedRate'] = list(deal_num['Convert'])
 # DealNum/LeadNum
 result_df['DealNum'] = list(deal_num['y'])
 result_df['LeadNum'] = list(lead_num['y'])
+
+# Net
+result_df['Net'] = list(net['Net'])
 
 print(result_df)
 
