@@ -20,7 +20,6 @@ hdi_result['Date'] = date_list
 
 # gdp
 gdp = gdp.iloc[16:21]
-hdi = hdi.iloc[27:32]
 
 east = gdp[['West Bengal', 'Assam', 'Tripura', 'Sikkim', 'Manipur', 'Nagaland', 'Arunachal Pradesh', 'Mizoram']]
 gdp_result['East'] = list(east.mean(axis=1))
@@ -38,6 +37,9 @@ gdp_result['Overseas'] = 1
 gdp_result['Amazon'] = 1
 # print(gdp_result)
 
+# hdi
+hdi = hdi.iloc[27:32]
+
 east = hdi[['West Bengal', 'Assam', 'Tripura', 'Sikkim', 'Manipur', 'Nagaland', 'Arunachal Pradesh', 'Mizoram']]
 hdi_result['East'] = list(east.mean(axis=1))
 west1 = hdi[['Maharashtra', 'Goa']]
@@ -50,8 +52,8 @@ hdi_result['South'] = list(south.mean(axis=1))
 north = hdi[['Tamil Nadu', 'Karnataka', 'Andhra Pradesh', 'Telangana', 'Kerala', 'Puducherry']]
 hdi_result['North'] = list(north.mean(axis=1))
 
-hdi_result['Overseas'] = 1
-hdi_result['Amazon'] = 1
+hdi_result['Overseas'] = 0.00001
+hdi_result['Amazon'] = 0.00001
 # print(hdi_result)
 
 gdp_result.to_csv('../../resource/Score/Score_gdp.csv', index=False)
