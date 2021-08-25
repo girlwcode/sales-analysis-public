@@ -19,6 +19,7 @@ df_list = []
 
 years = range(2017, 2022)
 months = range(1, 13)
+count = 1
 for year in years:
     if year == 2021:
         months = range(1, 8)
@@ -26,9 +27,33 @@ for year in years:
         deal_month = deals[(deals['Created Time'].dt.year == year) & (deals['Created Time'].dt.month == month)]
         lead_month = leads[(leads['Created Time'].dt.year == year) & (leads['Created Time'].dt.month == month)]
         full_month = pd.concat([deal_month, lead_month], ignore_index=True)
-
+        full_month['Quarter'] = count
+        count+=1
         df_list.append(full_month)
 
+# numeric
+le = LabelEncoder()
+full_df = pd.concat(df_list, ignore_index=True)
+full_df['IndustryNumeric'] = le.fit_transform(full_df['Industry Fin'])
+industry_list = list(full_df['IndustryNumeric'].groupby(full_df['Quarter']).sum())
+
+full_df = full_df.dropna(axis=0)
+full_df['TerriNumeric'] = le.fit_transform(full_df['Territory_fin'])
+terri_list = list(full_df['TerriNumeric'].groupby(full_df['Quarter']).sum())
+
+result_df = pd.DataFrame()
+result_df['Date'] = date_list
+result_df['IndustryNumeric'] = industry_list
+result_df['TerritoryNumeric'] = terri_list
+
+# DealNum/LeadNum/ConvertedRate 추가하여 데이터 완성
+result_df_numeric = pd.concat([result_df, score_data[['ConvertedRate','DealNum','LeadNum','Net']]], axis=1)
+result_df_full = pd.concat([result_df, score_data[['DealScore','LeadScore','ConvertedRate','DealNum','LeadNum','Net']]], axis=1)
+
+# print(result_df)
+result_df_numeric.to_csv('../../resource/Model_Input/Monthly_zoho_numeric.csv', index=False)
+result_df_full.to_csv('../../resource/Model_Input/Monthly_zoho_full.csv', index=False)
+'''
 # numeric
 industry_list =[]
 terri_list = []
@@ -52,4 +77,4 @@ result_df = pd.concat([full_df, score_data], axis=1)
 
 
 result_df.to_csv('../../resource/Model_Input/Monthly_zoho_numeric.csv', index=False)
-
+'''
