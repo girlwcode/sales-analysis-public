@@ -9,7 +9,7 @@ leads_minus = pd.read_csv('../../resource/Score/Lead_leadSource_Minus_Count.csv'
 date_list = list(for_date_list['x'])
 
 ## Deals
-# 가중치+ (비율*100)
+# 가중치+
 del deals_plus['Date']
 deals_plus['Sum'] = deals_plus.sum(axis=1)
 

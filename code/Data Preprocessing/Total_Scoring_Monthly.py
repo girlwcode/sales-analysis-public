@@ -117,4 +117,4 @@ result_df['LeadNum'] = list(lead_num['y'])
 
 print(result_df)
 
-result_df.to_csv('../../resource/Score/Total_Score_monthly.csv', index=False)
+result_df.to_csv('../../resource/Model_Input/Monthly_zoho.csv', index=False)
