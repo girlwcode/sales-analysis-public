@@ -5,6 +5,7 @@ leads = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryClean
 deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv')
 for_date_list = pd.read_csv('../../resource/Score/Score_Territory.csv')
 score_data = pd.read_csv('../../resource/Model_Input/Monthly_zoho.csv')
+google_trend = pd.read_csv('../../resource/GoogleTrends/google_trends_monthly_mean.csv')
 
 # Monthly로 deal과 lead의 territory(lead는 없음), industry concat하여 numeric
 deals = deals[['Created Time', 'Territory_fin', 'Industry Fin']]
@@ -28,7 +29,7 @@ for year in years:
         lead_month = leads[(leads['Created Time'].dt.year == year) & (leads['Created Time'].dt.month == month)]
         full_month = pd.concat([deal_month, lead_month], ignore_index=True)
         full_month['Quarter'] = count
-        count+=1
+        count += 1
         df_list.append(full_month)
 
 # numeric
@@ -47,12 +48,20 @@ result_df['IndustryNumeric'] = industry_list
 result_df['TerritoryNumeric'] = terri_list
 
 # DealNum/LeadNum/ConvertedRate 추가하여 데이터 완성
-result_df_numeric = pd.concat([result_df, score_data[['ConvertedRate','DealNum','LeadNum','Net']]], axis=1)
-result_df_full = pd.concat([result_df, score_data[['DealScore','LeadScore','ConvertedRate','DealNum','LeadNum','Net']]], axis=1)
+result_df_numeric = pd.concat([result_df, score_data[['ConvertedRate', 'DealNum', 'LeadNum', 'Net']]], axis=1)
+result_df_full = pd.concat(
+    [result_df, score_data[['DealScore', 'LeadScore', 'ConvertedRate', 'DealNum', 'LeadNum', 'Net']]], axis=1)
 
-# print(result_df)
+# GoogleTrend (2017~) +
+google_list = list(google_trend['Interest Level'].iloc[8:])
+score_data.insert(6, 'GoogleTrend', google_list)
+# print(score_data)
+
+# data parsing
 result_df_numeric.to_csv('../../resource/Model_Input/Monthly_zoho_numeric.csv', index=False)
 result_df_full.to_csv('../../resource/Model_Input/Monthly_zoho_full.csv', index=False)
+score_data.to_csv('../../resource/Model_Input/Monthly_googleTrend.csv', index=False)
+
 '''
 # numeric
 industry_list =[]
@@ -74,7 +83,6 @@ full_df['Industry'] = industry_list
 # DealNum/LeadNum/ConvertedRate 추가하여 데이터 완성
 score_data = score_data[['ConvertedRate','DealNum','LeadNum','Net']]
 result_df = pd.concat([full_df, score_data], axis=1)
-
 
 result_df.to_csv('../../resource/Model_Input/Monthly_zoho_numeric.csv', index=False)
 '''
