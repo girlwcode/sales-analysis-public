@@ -80,4 +80,5 @@ for i, terri in enumerate(terri_list):
     plt.bar(industry_list, score_list)
     plt.savefig('../../resource/Plot/'+title+'.png')
     # plt.show()
+    plt.cla()
     full_df.to_csv('../../resource/Score/'+title+'.csv', index=False)
