@@ -1,4 +1,7 @@
-## 시나리오 1 : LSTM을 활용하여 앞으로 12개월간의 매출 예측
+"""
+시나리오 1 : LSTM을 활용하여 앞으로 12개월간의 매출 예측
+"""
+
 # Import module
 import numpy as np
 import pandas as pd
