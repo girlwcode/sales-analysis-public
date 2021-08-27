@@ -1,10 +1,10 @@
 import pandas as pd
 
 for_date_list = pd.read_csv('../../resource/PlotCSV/Monthly Deal Success Rate By Territories Amazon (2017-2021).csv')
-deals_plus = pd.read_csv('../../resource/Score/Deal_leadSource_Plus_Count_Q.csv')
-deals_minus = pd.read_csv('../../resource/Score/Deal_leadSource_Minus_Count_Q.csv')
-leads_plus = pd.read_csv('../../resource/Score/Lead_leadSource_Plus_Count_Q.csv')
-leads_minus = pd.read_csv('../../resource/Score/Lead_leadSource_Minus_Count_Q.csv')
+deals_plus = pd.read_csv('../../resource/Score/Deal_leadSource_Plus_Count.csv')
+deals_minus = pd.read_csv('../../resource/Score/Deal_leadSource_Minus_Count.csv')
+leads_plus = pd.read_csv('../../resource/Score/Lead_leadSource_Plus_Count.csv')
+leads_minus = pd.read_csv('../../resource/Score/Lead_leadSource_Minus_Count.csv')
 
 date_list = list(for_date_list['x'])
 date_list_q = list(deals_plus['Date'])
@@ -36,8 +36,8 @@ deals_minus = (1 - deals_minus) * 5
 # deals_minus.to_csv('2.csv', index=False)
 
 deals_full = deals_plus * deals_minus
-deals_full.insert(0, 'Date', date_list_q)
-deals_full.to_csv('../../resource/Score/Score_Deal_leadSource_Q.csv', index=False)
+deals_full.insert(0, 'Date', date_list)
+deals_full.to_csv('../../resource/Score/Score_Deal_leadSource.csv', index=False)
 
 ## Leads
 # 가중치+
@@ -64,5 +64,5 @@ leads_minus = (1 - leads_minus) * 5
 # leads_minus = leads_minus.fillna(5)
 
 leads_full = leads_plus * leads_minus
-leads_full.insert(0, 'Date', date_list_q)
-leads_full.to_csv('../../resource/Score/Score_Lead_leadSource_Q.csv', index=False)
+leads_full.insert(0, 'Date', date_list)
+leads_full.to_csv('../../resource/Score/Score_Lead_leadSource.csv', index=False)

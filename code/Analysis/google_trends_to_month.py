@@ -44,4 +44,4 @@ denominator = mean_max - mean_min
 monthly_mean['Min-Max'] = (monthly_mean['Interest Level'] - mean_min) / denominator
 
 # data parsing
-monthly_mean.to_csv('../../resource/GoogleTrends/google_trends_monthly_mean.csv', index=False)
+monthly_mean.to_csv('../../resource/GoogleTrends/Google_trends_monthly_avg.csv', index=False)

@@ -1,14 +1,14 @@
 import pandas as pd
 
 for_date_q_list = pd.read_csv('../../resource/PlotCSV_Quarter/Monthly Deal Creation (2017-2021).csv')
-for_date_list = pd.read_csv('../../resource/Score/Total_Score_monthly.csv')
+# for_date_list = pd.read_csv('../../resource/Score/Total_Score_monthly.csv')
 deals_plus = pd.read_csv('../../resource/Score/Deal_leadSource_Plus_Count.csv')
 deals_minus = pd.read_csv('../../resource/Score/Deal_leadSource_Minus_Count.csv')
 leads_plus = pd.read_csv('../../resource/Score/Lead_leadSource_Plus_Count.csv')
 leads_minus = pd.read_csv('../../resource/Score/Lead_leadSource_Minus_Count.csv')
 
 date_list_q = list(for_date_q_list['x'])
-date_list = list(for_date_list['Date'])
+date_list = list(deals_plus['Date'])
 
 years = range(2017, 2022)
 months = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]

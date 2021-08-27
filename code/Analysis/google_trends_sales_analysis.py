@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-trends = pd.read_csv('../../resource/GoogleTrends/google_trends_monthly_mean.csv')
+trends = pd.read_csv('../../resource/GoogleTrends/Google_trends_monthly_avg.csv')
 sales = pd.read_csv('../../resource/SalesData/Whole Revenue_fillTerritory.csv')
 
 # trends 데이터 2016년 제외

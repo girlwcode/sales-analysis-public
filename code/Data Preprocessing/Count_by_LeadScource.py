@@ -38,7 +38,7 @@ for year in years:
         minus_dict['Date'] = str(year) + '-' + str(month)
         df = deals[(deals['Created Time'].dt.year == year) & (deals['Created Time'].dt.month == month)]
         if not df.empty:
-            count_source(df, plus_dict, '2|9|10')
+            count_source(df, plus_dict, '5|6|7|Deposit')
             count_source(df, minus_dict, '8|10|Rejected')
 
         plus_df = plus_df.append(plus_dict, ignore_index=True)
@@ -68,7 +68,7 @@ for year in years:
         minus_dict['Date'] = str(year) + '-' + str(month)
         df = leads[(leads['Created Time'].dt.year == year) & (leads['Created Time'].dt.month == month)]
         if not df.empty:
-            count_source(df, plus_dict, '5|6|7|Deposit')
+            count_source(df, plus_dict, '2|9|10')
             count_source(df, minus_dict, '1|6|7')
 
         plus_df = plus_df.append(plus_dict, ignore_index=True)

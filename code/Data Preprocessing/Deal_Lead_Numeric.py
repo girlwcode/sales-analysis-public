@@ -5,7 +5,7 @@ leads = pd.read_csv('../../resource/CleansedData/ZohoCRM/Leads_001_IndustryClean
 deals = pd.read_csv('../../resource/CleansedData/ZohoCRM/Potentials_001_fillIndustry.csv')
 for_date_list = pd.read_csv('../../resource/Score/Score_Territory.csv')
 score_data = pd.read_csv('../../resource/Model_Input/Monthly_zoho.csv')
-google_trend = pd.read_csv('../../resource/GoogleTrends/google_trends_monthly_mean.csv')
+google_trend = pd.read_csv('../../resource/GoogleTrends/Google_trends_monthly_avg.csv')
 
 # Monthly로 deal과 lead의 territory(lead는 없음), industry concat하여 numeric
 deals = deals[['Created Time', 'Territory_fin', 'Industry Fin']]
