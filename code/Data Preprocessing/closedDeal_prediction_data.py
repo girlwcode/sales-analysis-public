@@ -68,4 +68,4 @@ result_df['Industry'] = industry_list
 result_df['Stage'] = stage_list
 
 print(result_df)
-result_df.to_csv('../../resource/Model_Input/deal_closed_prediction_data')
+result_df.to_csv('../../resource/Model_Input/deal_closed_prediction_data', index=False)
