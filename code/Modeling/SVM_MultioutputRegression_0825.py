@@ -70,18 +70,23 @@ r_sq = model.score(train_X, train_y)
 print(r_sq)
 
 # define model evaluation method
-# cv = RepeatedKFold(n_splits=3, n_repeats=3, random_state=1)
-# scores = cross_val_score(model, test_X, test_y, scoring='neg_mean_squared_error', cv=cv, n_jobs=-1)
-# # force scores to be positive
-# scores = np.absolute(scores)
-# print('Mean MAE: %.3f (%.3f)' % (scores.mean(), scores.std()) )
+# evaluate model
+model = MultiOutputRegressor(SVR(C=500, gamma=300))
+cv = RepeatedKFold(n_splits=5, n_repeats=10, random_state=1)
+scores = cross_val_score(model, x, y, scoring='neg_mean_absolute_error', cv=cv, n_jobs=-1)
+# force scores to be positive
+scores = np.absolute(scores)
+print('Mean MAE of Cross Validations : %.3f (%.3f)' % (scores.mean(), scores.std()) )
+model.fit(train_X, train_y)
 
 y_pred = model.predict(test_X)
+score = model.score(test_X, test_y)
+print('R square value of prediction : ',score)
 # # print(y_pred)
 # # print(train_y.iloc[1])
-plt.plot(range(1,13), test_y.iloc[3], label='real')
-plt.plot(range(1,13), y_pred[3], label='predict')
-plt.legend()
-plt.show()
-
+for i in range (0,9) :
+  plt.plot(range(1,13), test_y.iloc[0], label='real')
+  plt.plot(range(1,13), y_pred[3], label='predict')
+  plt.legend()
+  plt.show()
 

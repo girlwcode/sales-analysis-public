@@ -1,6 +1,6 @@
 import pandas as pd
 
-csv_dir = '../resource/PlotCSV/'
+csv_dir = '../../resource/PlotCSV/'
 terri_list = ['East', 'West 1', 'West 2', 'South', 'North', 'Overseas', 'Amazon']
 
 

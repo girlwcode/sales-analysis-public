@@ -16,7 +16,7 @@ from xgboost import plot_importance, plot_tree
 from xgboost import XGBRegressor
 
 # Load the Dataset
-test_num = 3
+test_num = 1
 if test_num == 1:
     # Test1 - Extracted Feature
     revenue = pd.read_csv('../../resource/Model_Input/Monthly_zoho.csv')
