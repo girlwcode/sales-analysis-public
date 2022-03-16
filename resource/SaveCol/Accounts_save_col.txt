@@ -1,1 +1,0 @@
-Record Id	Company Owner ID	Sales Person	Rating	Company Name	Company Type	Industry	Sub industry	Territories	Shipping Street	Shipping City	Shipping State	Shipping State-	Shipping Code	Billing Street	Billing City	Billing State	Billing State-	Billing Code	Description	Custmer ID	Product	Tag	Created by ID	Modified by ID	Created Time	Modified Time	Last Activity Time
